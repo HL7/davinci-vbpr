@@ -5,11 +5,9 @@ This page is under development.
 
 List of profiles that define constrains on FHIR resources for systems conforming to this implementation guide.
 
-<!--
-|Resource Type|Profile Name|Link to Profile|
-|---|---|---|
-{: .grid}
--->
+* [VBPR MeasureReport]
+* [VBC Measure]
+* [VBC Contract]
 
 List of Extensions defined in this implementation guide.
 
