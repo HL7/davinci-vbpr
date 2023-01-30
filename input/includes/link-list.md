@@ -15,8 +15,8 @@
 
 <!-- Profiles -->
 [VBPR MeasureReport]: StructureDefinition-vbpr-MeasureReport.html
-[VBC Measure]: StructureDefinition-vbc-Measure.html
-[VBC Contract]: StructureDefinition-vbc-Contract.html
+[VBC Measure]: StructureDefinition-vbc-measure.html
+[VBC Contract]: StructureDefinition-vbc-contract.html
 
 
 
