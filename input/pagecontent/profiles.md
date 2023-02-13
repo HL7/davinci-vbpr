@@ -3,9 +3,10 @@
 This page is under development.
 </div>
 
-List of profiles that define constrains on FHIR resources for systems conforming to this implementation guide.
+List of profiles that define constrains on FHIR resources for systems conforming to this implementation guide:
 
 * [VBPR MeasureReport]
+* [VBPR Summary MeasureReport]
 * [VBC Measure]
 * [VBC Contract]
 

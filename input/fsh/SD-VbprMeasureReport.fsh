@@ -1,15 +1,10 @@
 Profile: VbprMeasureReport
 Parent: MeasureReport
-Id: vbpr-MeasureReport
+Id: vbpr-performance-measurereport
 Title: "Value-Based Performance Report"
 Description: "Value-Based Performance Report is a payer-generated performance report against the specific details (metrics) of a value-based contract which may include financial, quality, utilization, etc. over a time period."
-* extension contains Cost named cost 0..* MS
-* extension contains Revenue named revenue 0..* MS
-* extension contains Claim named claim 0..* MS
-* extension contains IBNR named ibnr 0..* MS
-* extension contains LossRatio named loss-ratio 0..* MS
-* extension contains PerformanceMetric named performance-metric 0..* MS
-* ^status = #active
+* ^status = #draft
+* ^version = "0.0.1"
 * status MS
 * type = #summary (exactly)
 * type MS
@@ -20,4 +15,18 @@ Description: "Value-Based Performance Report is a payer-generated performance re
 * date 1..1 MS
 * reporter 1..1 MS
 * reporter only Reference($USCoreOrganization)
-* improvementNotation ..0
+* period 1..1 MS
+* improvementNotation 0..0
+* group.stratifier MS
+* group.extension contains PerformanceMetric named performanceMetric 0..* MS
+* group.extension contains ServicePeriod named servicePeriod 0..1 MS
+* group.extension contains PaidThroughDate named paidThroughDate 0..1 MS
+* group.extension contains Weight named weight 0..1 MS
+* group.code from vbpr-payment-stream (extensible)
+* group.stratifier.extension contains MetricReference named metricReference 0..1 MS
+* group.stratifier.stratum MS
+* extension contains SummaryMeasureReport named summaryMeasureReport 0..* MS
+* extension contains ServicePeriod named servicePeriod 0..1 MS
+* extension contains PaidThroughDate named paidThroughDate 0..1 MS
+* extension contains PaymentStream named paymentStream 0..* MS 
+* extension contains WeightedStarScore named weightedStarScore 0..1 MS 

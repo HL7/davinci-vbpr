@@ -14,9 +14,11 @@
 [HL7 Da Vinci Guiding Principles]: https://confluence.hl7.org/display/DVP/Da+Vinci+Clinical+Advisory+Council+Members?preview=/66940155/66942916/Guiding%20Principles%20for%20Da%20Vinci%20Implementation%20Guides.pdf
 
 <!-- Profiles -->
-[VBPR MeasureReport]: StructureDefinition-vbpr-MeasureReport.html
+[VBPR MeasureReport]: StructureDefinition-vbpr-performance-measurereport.html
+[VBPR Summary MeasureReport]: StructureDefinition-vbpr-summary-measurereport.html
 [VBC Measure]: StructureDefinition-vbc-measure.html
 [VBC Contract]: StructureDefinition-vbc-contract.html
+[VBPR Bundle]: StructureDefinition-vbpr-bundle.html
 
 
 
