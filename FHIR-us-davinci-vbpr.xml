@@ -102,12 +102,12 @@
 <artifact deprecated="true" id="StructureDefinition/ra-suspectType" key="StructureDefinition-ra-suspectType" name="Risk Adjustment Suspect Type Extension"/>
 <artifact deprecated="true" id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type Value Set"/>
 <artifact id="StructureDefinition/ext-service-period" key="StructureDefinition-ext-service-period" name="Service Period"/>
-<artifact id="StructureDefinition/ext-summary-measure-report" key="StructureDefinition-ext-summary-measure-report" name="Summary MeasureReport"/>
 <artifact deprecated="true" id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
 <artifact id="ValueSet/lob" key="ValueSet-lob" name="Type of line of business"/>
 <artifact id="CodeSystem/vbpr-performance-metric-type" key="CodeSystem-vbpr-performance-metric-type" name="Type of performance metrics"/>
 <artifact id="StructureDefinition/ext-vbc-contract" key="StructureDefinition-ext-vbc-contract" name="VBC Contract Extension"/>
-<artifact id="StructureDefinition/vbpr-summary-measurereport" key="StructureDefinition-vbpr-summary-measurereport" name="VBPR Summary MeasureReport"/>
+<artifact id="StructureDefinition/vbpr-quality-measurereport" key="StructureDefinition-vbpr-quality-measurereport" name="VBPR Quality MeasureReport"/>
+<artifact id="StructureDefinition/ext-vbpr-quality-measure-report" key="StructureDefinition-ext-vbpr-quality-measure-report" name="VBPR Quality MeasureReport"/>
 <artifact id="StructureDefinition/vbc-contract" key="StructureDefinition-vbc-contract" name="Value-Based Contract"/>
 <artifact id="StructureDefinition/vbc-measure" key="StructureDefinition-vbc-measure" name="Value-Based Contract Measure"/>
 <artifact id="StructureDefinition/vbpr-performance-measurereport" key="StructureDefinition-vbpr-performance-measurereport" name="Value-Based Performance Report"/>

@@ -16,11 +16,11 @@ Description: "An extension for performance metric."
 * extension[Value].value[x] 1..1
 * extension[Value].value[x] only decimal or integer or Quantity or Money or string
 
-Extension: SummaryMeasureReport
-Id: ext-summary-measure-report
-Title: "Summary MeasureReport"
-Description: "An extension for summary MeasureReport."
-* valueReference only Reference (VbprSummaryMeasureReport)
+Extension: VBPRQualityMeasureReport
+Id: ext-vbpr-quality-measure-report
+Title: "VBPR Quality MeasureReport"
+Description: "An extension for VBPR quality MeasureReport at the summary level."
+* valueReference only Reference (VbprQualityMeasureReport)
 
 Extension: Contract
 Id: ext-vbc-contract

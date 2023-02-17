@@ -32,18 +32,18 @@ Standardization of payer/provider performance reporting for quality and risk con
 ### Scope
 
 The goals of implementation guide are:
-- standardize format of payer-generated Value Based Performance Report and 
+- Standardize the format of payer-generated Value-Based Performance Report and 
 - Exchange standardized payer-generated Value Based Performance Report from payer to provider. 
 
 The initial phase of this implementation guide focuses on:
-- defining standardized data structure and data elements on value-based performance reports
-- defining common definitions for data elements in the report and terms used in the IG, including definitions for time periods
-- supporting both Medicare value-based contracts (Medicare Advantage) and commercial value-based contracts, and other types of value-based contracts such as Medicaid.
+- Defining standardized data structure and data elements on value-based performance reports
+- Defining common definitions for data elements in the report and terms used in the IG
+- Supporting both Medicare value-based contracts (Medicare Advantage) and commercial value-based contracts, and other types of value-based contracts such as Medicaid.
 
 {% include img-portrait.html img="scope.png" caption="Figure 1-1 Scope"%}
 
 Future versions of this implementation guide will include functionalities to support topics such as:
-- final contract settlemetn calculations (including inclusions and exclusions)
+- Final contract settlement calculations (including inclusions and exclusions)
 - Invalidations (risk adjustment/payment retroactivity)
 - Interim settlements
 - QA process
