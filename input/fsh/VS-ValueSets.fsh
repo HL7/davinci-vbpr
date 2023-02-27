@@ -18,3 +18,10 @@ Id: vbpr-payment-stream
 Description: "Type of payment stream"
 * ^experimental = false
 * codes from system payment-stream
+
+ValueSet: HCPLANFramework
+Title: "HPCLAN Framework"
+Id: hcplan-framework
+Description: "HCPLAN framework represents payments from public and private payers to provider organizations."
+* ^experimental = false
+* codes from system hcplan-framework

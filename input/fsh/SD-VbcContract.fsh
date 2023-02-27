@@ -3,7 +3,9 @@ Parent: $Contract
 Id: vbc-contract
 Title: "Value-Based Contract"
 Description: "A value-based contract (VBC) is a written contractual arrangement between parties in which the payment for health care goods and services is tied to predetermined, mutually agreed upon terms that are based on clinical circumstances, patient outcomes, and other specified measures of the appropriateness and effectiveness of the services rendered."
-* extension contains LOB named line-of-business 0..* MS
+* extension contains LOB named lineOfBusiness 0..* MS
+* extension contains ProgramModel named programModel 0..1 MS
+* extension contains PaymentStream named paymentStream 0..* MS 
 * url 1.. MS
 * url ^short = "Canonical identifier for this contract, represented as a URI (globally unique)"
 * status 1..1 MS

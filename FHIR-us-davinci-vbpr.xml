@@ -55,6 +55,8 @@
 <artifact deprecated="true" id="StructureDefinition/ra-evidenceStatus" key="StructureDefinition-ra-evidenceStatus" name="Evidence Status Extension"/>
 <artifact deprecated="true" id="ValueSet/example-cmshcc" key="ValueSet-example-cmshcc" name="Example CMS Hierarchical Condition Category Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/ra-groupReference" key="StructureDefinition-ra-groupReference" name="Group Reference Extension"/>
+<artifact id="ValueSet/hcplan-framework" key="ValueSet-hcplan-framework" name="HPCLAN Framework"/>
+<artifact id="CodeSystem/hcplan-framework" key="CodeSystem-hcplan-framework" name="HPCLAN Framework"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hiearchicalStatus" key="StructureDefinition-ra-hiearchicalStatus" name="Hiearchical Status Extension"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status Extension"/>
 <artifact id="StructureDefinition/ext-lob" key="StructureDefinition-ext-lob" name="Line of Business Extension"/>
@@ -81,6 +83,7 @@
 <artifact deprecated="true" id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner: Harold Hippocrates"/>
 <artifact deprecated="true" id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact deprecated="true" id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
+<artifact id="StructureDefinition/ext-program-model" key="StructureDefinition-ext-program-model" name="Program Model"/>
 <artifact deprecated="true" id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact deprecated="true" id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline Extension"/>

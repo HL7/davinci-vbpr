@@ -57,3 +57,21 @@ Description: "Payment stream"
 * #cxp "Custom x participation" "Custom x participation"
 * #cxra "Custom x regional adjustment" "ustom x regional adjustment"
 * ^caseSensitive = true
+
+CodeSystem: HCPLANFramework
+Title: "HPCLAN Framework"
+Id: hcplan-framework
+Description: "HCPLAN Framework represents payments from public and private payers to provider organizations (including payments between the payment and delivery arms of highly integrated health systems). It is designed to accommodate payments in multiple categories that are made by a single payer, as well as single provider organizations that receive payments in different categories—potentially from the same payer. Although payments will be classified in discrete categories, the Framework captures a continuum of clinical and financial risk for provider organizations."
+* ^experimental = false
+* #1 "Category 1" "Category I Fee For Service - No Link to Quality & Value"
+* #2A "Category 2A" "Foundational Payments for Infrastructure and Operations, e.g., care coordination fees and payments for HIT investments"
+* #2B "Category 2B" "Pay for Reporting, e.g., bonuses for reporting data or penalies for not reporting data."
+* #2C "Category 2C" "Pay-for-Performance, e.g., bonuses for quality performance."
+* #3A "Category 3A" "APMs with Shared Savings, e.g., shared savings with upside risk only."
+* #3B "Category 3B" "APMs with Shared Savings and Downside Risk, e.g., episode-based payments for procedures and comprehensive payments with upside and downside risk."
+* #3N "Category 3N" "Risk Based Payments not linked to quality"
+* #4A "Category 4A" "Condition-Specific Population-Based Payment, e.g., per member per month payments, payments for speciality services, such as oncology or mental health" 
+* #4B "Category 4B" "Comprehensive Population-Based Payment, e.g., global budgets or full/percent of premium payments"
+* #4C "Category 4C" "Integrated Finance and Delivery System, e.g., global budgets or full/percent of premium payments in integrated systems."
+* #4N "Category 4N" "Capitated Payments not linked to quality"
+* ^caseSensitive = true

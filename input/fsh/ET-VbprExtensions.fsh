@@ -77,3 +77,10 @@ Title: "Payment Stream"
 Description: "Type of payment stream"
 * value[x] 1..1 
 * valueCodeableConcept from vbpr-payment-stream (extensible)
+
+Extension: ProgramModel
+Id: ext-program-model
+Title: "Program Model"
+Description: "HCP-LAN APM framework"
+* value[x] 1..1 
+* valueCodeableConcept from hcplan-framework (extensible)
