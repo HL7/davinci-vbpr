@@ -10,7 +10,9 @@ Title: "Type of line of business"
 Id: lob
 Description: "Type of line of business"
 * ^experimental = false
-* codes from system lob
+* $SOP#1  "MEDICARE"
+* $SOP#2  "MEDICAID"
+* $SOP#5 "PRIVATE HEALTH INSURANCE"
 
 ValueSet: PaymentStream
 Title: "Payment stream"
@@ -22,6 +24,6 @@ Description: "Type of payment stream"
 ValueSet: HCPLANFramework
 Title: "HPCLAN Framework"
 Id: hcplan-framework
-Description: "HCPLAN framework represents payments from public and private payers to provider organizations."
+Description: "HCPLAN framework categories for value-based performance. HCPLAN framework represents payments from public and private payers to provider organizations."
 * ^experimental = false
 * codes from system hcplan-framework

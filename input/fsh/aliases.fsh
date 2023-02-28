@@ -24,3 +24,6 @@ Alias: $VbprSummaryMeasureReport = http://hl7.org/fhir/us/davinc-vbpr/StructureD
 
 //DEQM
 Alias: $DEQMSummaryMeasureReport = http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm
+
+//Code system
+Alias: $SOP = https://nahdo.org/sopt
