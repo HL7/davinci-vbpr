@@ -22,12 +22,19 @@ Title: "VBPR Quality MeasureReport"
 Description: "An extension for VBPR quality MeasureReport at the summary level."
 * valueReference only Reference (VbprQualityMeasureReport)
 
-Extension: Contract
-Id: ext-vbc-contract
-Title: "VBC Contract Extension"
-Description: "An extension for a Value-Based Contract."
+//Extension: Contract
+//Id: ext-vbc-contract
+//Title: "VBC Contract Extension"
+//Description: "An extension for a Value-Based Contract."
+//* value[x] 1..1 
+//* valueReference only Reference (VbcContract) 
+
+Extension: MetricValue
+Id: ext-metric-value
+Title: "Value of a performance metric"
+Description: "An extension for performance metric value."
 * value[x] 1..1 
-* valueReference only Reference (VbcContract) 
+* value[x] only decimal or integer or Quantity or Money or string
 
 Extension: LOB
 Id: ext-lob

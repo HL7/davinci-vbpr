@@ -8,7 +8,7 @@ List of profiles that define constrains on FHIR resources for systems conforming
 * [VBPR MeasureReport]
 * [VBPR Quality MeasureReport]
 * [VBC Measure]
-* [VBC Contract]
+<!-- * [VBC Contract] -->
 
 List of Extensions defined in this implementation guide.
 

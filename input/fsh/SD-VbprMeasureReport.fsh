@@ -19,10 +19,11 @@ Description: "Value-Based Performance Report is a payer-generated performance re
 * improvementNotation 0..0
 * group.stratifier MS
 * group.extension contains PerformanceMetric named performanceMetric 0..* MS
-* group.extension contains ServicePeriod named servicePeriod 0..1 MS
+//* group.extension contains ServicePeriod named servicePeriod 0..1 MS
 * group.extension contains PaidThroughDate named paidThroughDate 0..1 MS
 * group.code from vbpr-payment-stream (extensible)
-* group.stratifier.extension contains MetricReference named metricReference 0..1 MS
+* group.stratifier.stratum.extension contains MetricReference named metricReference 0..1 MS
+* group.stratifier.stratum.extension contains MetricValue named metricValue 0..1 MS
 * group.stratifier.stratum MS
 * extension contains VBPRQualityMeasureReport named vbprQualityMeasureReport 0..* MS
 * extension contains ServicePeriod named servicePeriod 0..1 MS

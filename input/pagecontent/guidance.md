@@ -34,7 +34,7 @@ Note: this is a draft for discussion purpose and is under developement
 
 Note: this is a draft for discussion purpose and is under developement
 
-{% include img-portrait.html img="vbpr-measurereport-measure-contract.png" caption = "Figure 2-2 Relationship of VBPR MeasureReport - Measure - Contract overview" %}
+{% include img-portrait.html img="vbpr-measurereport-measure.png" caption = "Figure 2-2 Relationship of VBPR MeasureReport - Measure overview" %}
 
 ### Must Support
 Certain elements in the profiles defined in this IG are marked as Must Support. This flag is used to indicate that the element plays a critical role in defining and sharing value-based performance reports, and implementations SHALL understand and process the element.

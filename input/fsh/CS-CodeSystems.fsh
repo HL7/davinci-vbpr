@@ -56,6 +56,7 @@ Description: "Payment stream"
 * #eoc "Episode of care" "Episode of care (EOC)"
 * #cxp "Custom x participation" "Custom x participation"
 * #cxra "Custom x regional adjustment" "ustom x regional adjustment"
+* #cdm "Chronic Disease Management" "Chronic Disease Management (CDM)" 
 * ^caseSensitive = true
 
 CodeSystem: HCPLANFramework
