@@ -17,16 +17,18 @@ Description: "Value-Based Performance Report is a payer-generated performance re
 * reporter only Reference($USCoreOrganization)
 * period 1..1 MS
 * improvementNotation 0..0
+* group 0..* MS
+* group.id MS 
+* group.code from vbpr-performance-metric-type (extensible)
+* group.measureScore 0..1 MS 
+* group.measureScore.extension contains AlternateScoreType named altScoreType 0..1 MS
+* group.extension contains PaymentStream named paymentStream 0..* MS  
 * group.stratifier MS
-* group.extension contains PerformanceMetric named performanceMetric 0..* MS
-//* group.extension contains ServicePeriod named servicePeriod 0..1 MS
-* group.extension contains PaidThroughDate named paidThroughDate 0..1 MS
-* group.code from vbpr-payment-stream (extensible)
-* group.stratifier.stratum.extension contains MetricReference named metricReference 0..1 MS
-* group.stratifier.stratum.extension contains MetricValue named metricValue 0..1 MS
 * group.stratifier.stratum MS
+* group.stratifier.stratum.measureScore MS
+* group.stratifier.stratum.measureScore.extension contains AlternateScoreType named altScoreType 0..1 MS
 * extension contains VBPRQualityMeasureReport named vbprQualityMeasureReport 0..* MS
-* extension contains ServicePeriod named servicePeriod 0..1 MS
 * extension contains PaidThroughDate named paidThroughDate 0..1 MS
-* extension contains PaymentStream named paymentStream 0..* MS 
-* extension contains WeightedStarScore named weightedStarScore 0..1 MS 
+//* extension contains WeightedStarScore named weightedStarScore 0..1 MS 
+
+

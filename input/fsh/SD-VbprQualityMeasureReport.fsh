@@ -6,4 +6,4 @@ Description: "VBPR quality measure report at the summary level for a population.
 * ^status = #draft
 * ^version = "0.0.1"
 * extension contains PerformanceMetric named performanceMetric 0..* MS
-* extension contains Weight named weight 0..1 MS
+* extension contains $WeightExtension named weight 0..1 MS

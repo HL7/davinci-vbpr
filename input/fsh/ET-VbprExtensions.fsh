@@ -1,6 +1,6 @@
 
 Extension: PerformanceMetric
-Id: ext-performance-metric
+Id: performance-metric
 Title: "Performance Metric Extension"
 Description: "An extension for performance metric."
 * ^context[0].type = #element
@@ -17,7 +17,7 @@ Description: "An extension for performance metric."
 * extension[Value].value[x] only decimal or integer or Quantity or Money or string
 
 Extension: VBPRQualityMeasureReport
-Id: ext-vbpr-quality-measure-report
+Id: vbpr-quality-measure-report
 Title: "VBPR Quality MeasureReport"
 Description: "An extension for VBPR quality MeasureReport at the summary level."
 * valueReference only Reference (VbprQualityMeasureReport)
@@ -30,64 +30,71 @@ Description: "An extension for VBPR quality MeasureReport at the summary level."
 //* valueReference only Reference (VbcContract) 
 
 Extension: MetricValue
-Id: ext-metric-value
+Id: metric-value
 Title: "Value of a performance metric"
 Description: "An extension for performance metric value."
 * value[x] 1..1 
 * value[x] only decimal or integer or Quantity or Money or string
 
 Extension: LOB
-Id: ext-lob
+Id: lob
 Title: "Line of Business Extension"
 Description: "An extension for a line of business (LOB)."
 * value[x] 1..1 
 * valueCodeableConcept from lob (extensible)
 
-Extension: ServicePeriod
-Id: ext-service-period
-Title: "Service Period"
-Description: "Service period"
-* value[x] 1..1 
-* value[x] only Period
+//Extension: ServicePeriod
+//Id: ext-service-period
+//Title: "Service Period"
+//Description: "Service period"
+//* value[x] 1..1 
+//* value[x] only Period
 
 Extension: PaidThroughDate
-Id: ext-paid-through-date
+Id: paid-through-date
 Title: "Paid through date"
 Description: "Paid through date"
 * value[x] 1..1 
 * value[x] only date
 
-Extension: Weight
-Id: ext-weight
-Title: "Weight"
-Description: "Weight"
-* value[x] 1..1 
-* value[x] only decimal
+//Extension: Weight
+//Id: weight
+//Title: "Weight"
+//Description: "Weight"
+//* value[x] 1..1 
+//* value[x] only decimal
 
 Extension: WeightedStarScore
-Id: ext-weighted-star-score
+Id: weighted-star-score
 Title: "Weight Star Score"
 Description: "Weight star score"
 * value[x] 1..1 
 * value[x] only decimal
 
-Extension: MetricReference
-Id: ext-metric-reference
-Title: "Metric reference"
-Description: "Reference the unique id of performance metric in this report"
-* value[x] 1..1 
-* value[x] only string
+//Extension: MetricReference
+//Id: ext-metric-reference
+//Title: "Metric reference"
+//Description: "Reference the unique id of performance metric in this report"
+//* value[x] 1..1 
+//* value[x] only string
 
 Extension: PaymentStream
-Id: ext-payment-stream
+Id: payment-stream
 Title: "Payment Stream"
 Description: "Type of payment stream"
 * value[x] 1..1 
 * valueCodeableConcept from vbpr-payment-stream (extensible)
 
 Extension: ProgramModel
-Id: ext-program-model
+Id: program-model
 Title: "Program Model"
 Description: "HCP-LAN APM framework"
 * value[x] 1..1 
 * valueCodeableConcept from hcplan-framework (extensible)
+
+Extension: AlternateScoreType
+Id: alt-score-type
+Title: "Alternate Score Type"
+Description: "Possible value types for the measureScore elements in addition to the standard Quantity type. The alternate type is determined by the performance metric type."
+* value[x] 0..1 
+* value[x] only decimal or integer or Money or string

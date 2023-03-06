@@ -28,13 +28,20 @@ This following is a list of pre-requisites for using this implementation guide (
 
 Note: this is a draft for discussion purpose and is under developement
 
-{% include img-portrait.html img="vbpr-measurereport.png" caption = "Figure 2-1 Value-Based Performance Reporting MeasureReport overview" %}
+{% include img-portrait.html img="vbpr-measurereport.png" caption = "Figure 2-1 Value-Based Performance Reporting MeasureReport overview - part 1" %}
 
-### VBPR MeasureReport / Measure / Contract
+{% include img-portrait.html img="vbpr-quality-measurereport-colorectralcancer.png" caption = "Figure 2-2 Value-Based Performance Reporting MeasureReport overview - part 2" %}
+
+{% include img-portrait.html img="vbpr-quality-measurereport-breastcancer.png" caption = "Figure 2-3 Value-Based Performance Reporting MeasureReport overview - part 3" %}
+
+{% include img-portrait.html img="vbpr-quality-measurereport-composite.png" caption = "Figure 2-3 Value-Based Performance Reporting MeasureReport overview - part 4" %}
+
+### VBPR MeasureReport / Measure
 
 Note: this is a draft for discussion purpose and is under developement
 
-{% include img-portrait.html img="vbpr-measurereport-measure.png" caption = "Figure 2-2 Relationship of VBPR MeasureReport - Measure overview" %}
+{% include img-portrait.html img="vbpr-measurereport-measure.png" caption = "Figure 2-5 Relationship of VBPR MeasureReport - Measure overview" %}
+
 
 ### Must Support
 Certain elements in the profiles defined in this IG are marked as Must Support. This flag is used to indicate that the element plays a critical role in defining and sharing value-based performance reports, and implementations SHALL understand and process the element.

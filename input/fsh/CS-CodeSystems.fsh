@@ -22,6 +22,7 @@ Description: "Type of value-based contract performance metrics."
 * #avg-star-rating-bonus "Average star rating bonus" "Average star rating bonus is a type of quality incentive payment"
 * #avg-star-rating-improvement-bonus "Average star rating year over year improvement bonus" "Average star rating year over year improvement bonus is a type of quality incentive payment"
 * #quality-metric-performance-incentive "Quality metric performance incentive" "Quality metric performance incentive paymetn is a type of quality incentive payment."
+* #weighted-star-score "Weighted Star Score" "Weighted star score"
 * ^caseSensitive = true
 
 CodeSystem: LineOfBusiness

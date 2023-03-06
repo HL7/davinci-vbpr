@@ -21,8 +21,14 @@ Alias: $VbcContractExtension = http://hl7.org/fhir/us/davinc-vbpr/StructureDefin
 Alias: $PerformanceMetricTypeVS = http://hl7.org/fhir/us/davinc-vbpr/ValueSet/vbpr-performance-metric-type
 Alias: $VbprSummaryMeasureReport = http://hl7.org/fhir/us/davinc-vbpr/StructureDefinition/vbpr-summary-measurereport
 
+Alias: $PerformanceMetricTypeCS = http://hl7.org/fhir/us/davinc-vbpr/CodeSystem/vbpr-performance-metric-type
+
+
 //DEQM
 Alias: $DEQMSummaryMeasureReport = http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm
+
+//QM IG
+Alias: $WeightExtension = http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-weight
 
 //Code system
 Alias: $SOP = https://nahdo.org/sopt
