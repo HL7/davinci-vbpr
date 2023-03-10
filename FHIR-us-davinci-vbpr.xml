@@ -104,16 +104,16 @@
 <artifact deprecated="true" id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type Code System"/>
 <artifact deprecated="true" id="StructureDefinition/ra-suspectType" key="StructureDefinition-ra-suspectType" name="Risk Adjustment Suspect Type Extension"/>
 <artifact deprecated="true" id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type Value Set"/>
+<artifact id="StructureDefinition/star-score" key="StructureDefinition-star-score" name="Star Score"/>
 <artifact deprecated="true" id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
 <artifact id="ValueSet/lob" key="ValueSet-lob" name="Type of line of business"/>
 <artifact id="CodeSystem/vbpr-performance-metric-type" key="CodeSystem-vbpr-performance-metric-type" name="Type of performance metrics"/>
 <artifact id="StructureDefinition/vbpr-quality-measurereport" key="StructureDefinition-vbpr-quality-measurereport" name="VBPR Quality MeasureReport"/>
 <artifact id="StructureDefinition/vbpr-quality-measure-report" key="StructureDefinition-vbpr-quality-measure-report" name="VBPR Quality MeasureReport"/>
 <artifact id="StructureDefinition/metric-value" key="StructureDefinition-metric-value" name="Value of a performance metric"/>
-<artifact id="StructureDefinition/vbc-measure" key="StructureDefinition-vbc-measure" name="Value-Based Contract Measure"/>
+<artifact id="StructureDefinition/vbpr-measure" key="StructureDefinition-vbpr-measure" name="Value-Based Performance Measure"/>
 <artifact id="StructureDefinition/vbpr-performance-measurereport" key="StructureDefinition-vbpr-performance-measurereport" name="Value-Based Performance Report"/>
 <artifact id="StructureDefinition/vbpr-bundle" key="StructureDefinition-vbpr-bundle" name="Value-Based Performance Report Bundle"/>
-<artifact id="StructureDefinition/weighted-star-score" key="StructureDefinition-weighted-star-score" name="Weight Star Score"/>
 <artifact deprecated="true" id="Bundle/ra-bundle01" key="Bundle-ra-bundle01" name="ra-bundle01: Risk Adjustment Bundle"/>
 <artifact deprecated="true" id="Group/ra-group01" key="Group-ra-group01" name="ra-group01: Risk Adjustment Patient Group"/>
 <artifact deprecated="true" id="Group/ra-group02" key="Group-ra-group02" name="ra-group02: Risk Adjustment Patient Group"/>

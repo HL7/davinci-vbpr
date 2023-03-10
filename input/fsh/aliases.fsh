@@ -29,6 +29,7 @@ Alias: $DEQMSummaryMeasureReport = http://hl7.org/fhir/us/davinci-deqm/Structure
 
 //QM IG
 Alias: $WeightExtension = http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-weight
+Alias: $CQFMCompositeMeasure = http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/composite-measure-cqfm
 
 //Code system
 Alias: $SOP = https://nahdo.org/sopt
