@@ -16,8 +16,7 @@
 <!-- Profiles -->
 [VBPR MeasureReport]: StructureDefinition-vbpr-performance-measurereport.html
 [VBPR Quality MeasureReport]: StructureDefinition-vbpr-quality-measurereport.html
-[VBC Measure]: StructureDefinition-vbc-measure.html
-[VBC Contract]: StructureDefinition-vbc-contract.html
+[VBPR Measure]: StructureDefinition-vbpr-measure.html
 [VBPR Bundle]: StructureDefinition-vbpr-bundle.html
 
 

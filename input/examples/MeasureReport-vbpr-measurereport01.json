@@ -1,0 +1,278 @@
+{
+    "resourceType": "MeasureReport",
+    "id": "vbpr-measurereport01",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/vbpr-performance-measurereport"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+            "valueDate": "2022-12-31"
+        }
+    ],
+    "status": "complete",
+    "type": "summary",
+    "measure": "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-VbprMeasureExample01",
+    "subject": {
+        "reference": "Organization/vbpr-provider01"  
+    },
+    "date": "2023-01-15",
+    "reporter": {
+        "reference": "Organization/vbpr-payer01"
+    },
+    "period": {
+        "start": "2022-01-01",
+        "end": "2022-12-31"
+    },
+    "group": [
+        {
+            "id": "ccf-group-001",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ccf",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream",
+                                "display": "Care coordination fee"
+                            }
+                        ],
+                        "text": "Care coordination fee"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "ccf",
+                        "display": "Care coordination fee"
+                    }
+                ],
+                "text": "Care coordination fee"
+            }  ,
+            "measureScore": {
+                "value": 5
+            }          
+        },
+        {
+            "id": "ssq-group-01",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "member-months"
+                    }
+                ],
+                "text": "Member months"
+            }  ,
+            "measureScore": {
+                "value": 300
+            }              
+                     
+        },
+        {
+            "id": "ssq-group-02",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "avg-risk-score",
+                        "display": "Average risk score"
+                    }
+                ],
+                "text": "Average risk score"
+            },
+            "measureScore": {
+                "value": 0.70
+            }              
+        },
+        {
+            "id": "ssq-group-03",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "total-revenue",
+                        "display": "Total revenue"
+                    }
+                ],
+                "text": "Total revenue"
+            },
+            "measureScore": {
+                "value": 10000
+            }              
+        },
+        {
+            "id": "ssq-group-04",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "revenue-pmpm",
+                        "display": "Revenue PMPM"
+                    }
+                ],
+                "text": "Revenue PMPM"
+            },
+            "measureScore": {
+                "value": 33
+            }              
+        },
+        {
+            "id": "ssq-group-05",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "med-rx-cost",
+                        "display": "Medical prescription cost"
+                    }
+                ],
+                "text": "Medical prescription cost"
+            },
+            "measureScore": {
+                "value": 9000
+            }              
+        }                                           
+    ]
+}

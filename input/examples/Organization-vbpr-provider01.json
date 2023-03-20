@@ -1,0 +1,53 @@
+{
+  "resourceType" : "Organization",
+  "id" : "vbpr-provider01",
+  "meta" : {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-name",
+        "valueString" : "Provider"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/instance-description",
+        "valueMarkdown" : "Provider organization the Value-Based Performance Report is for."
+      }
+    ],
+    "profile" : [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+    ]
+  },
+  "active" : true,
+  "type" : [
+    {
+      "coding" : [
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+          "code" : "prov",
+          "display" : "Healthcare Provider"
+        }
+      ]
+    }
+  ],
+  "name" : "GoodHealth",
+  "telecom" : [
+    {
+      "system" : "phone",
+      "value" : "(+1) 123-456-7890"
+    },
+    {
+      "system" : "email",
+      "value" : "contact@goodhealth.com"
+    }
+  ],
+  "address" : [
+    {
+      "line" : [
+        "100 Good Health Lane"
+      ],
+      "city" : "Amherst",
+      "state" : "MA",
+      "postalCode" : "01002",
+      "country" : "USA"
+    }
+  ]
+}

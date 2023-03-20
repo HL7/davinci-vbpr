@@ -1,0 +1,69 @@
+{
+  "resourceType": "Measure",
+  "id": "VbprMeasureExample01",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/vbpr-measure"
+    ]
+  },
+  "url": "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-VbprMeasureExample01",
+  "identifier": [
+    {
+      "use": "temp",
+      "system": "http://example.org/fhir/server",
+      "value": "vbpr-measure-ex01"
+    }
+  ],
+  "version": "1",
+  "name": "VbprMeasureExample01",
+  "title": "Example Value-Based Contract - ABC Payer and GoodHealth",
+  "status": "active",
+  "experimental": true,
+  "date": "2021-09-01",
+  "publisher" : "Clinical Quality Information WG",
+  "contact" : [
+    {
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://www.hl7.org/Special/committees/cqi"
+        }
+      ]
+    }
+  ],
+  "description": "Example Value-Based Contract between ABC Payer and GoodHealth",
+  "approvalDate" : "2021-09-30",
+  "lastReviewDate" : "2021-12-01",
+  "effectivePeriod" : {
+    "start" : "2022-01-01",
+    "end" : "2024-12-31"
+  },  
+  "extension": [
+    {
+        "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/lob",
+        "valueCodeableConcept": {
+          "coding": [
+              {
+                  "code": "1",
+                  "system": "https://nahdo.org/sopt",
+                  "display": "MEDICARE"
+              }
+          ],
+          "text": "MEDICARE"
+        }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/program-model",
+      "valueCodeableConcept": {
+        "coding": [
+            {
+                "code": "3A",
+                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/hcplan-framework",
+                "display": "Category 3A"
+            }
+        ],
+        "text": "Category 3A"
+      }
+  }
+  ]    
+}

@@ -18,7 +18,7 @@ This implementation guide is divided into several pages which are listed at the 
 - FHIR Artifacts: These pages lists FHIR artifacts specified in this implementation guide. 
     - [Profiles and Extensions]\: This page lists the set of Profiles and Extenstions that are defined in this implementation guide.
     - [Terminology]\: This page lists code systems and value sets defined in this implementation guide.
-    - [Capability Statements]\: This page describes the expected FHIR capabilities of this implementation guide.
+    - Capability Statements: This page describes the expected FHIR capabilities of this implementation guide.
 - [Examples]\: This page lists all the examples used in this implementation guide.
 - [Glossary]\: This page lists glossary and acronyms for this implementation guide.
 - [Downloads]\: This page provides links to downloadable artifacts.

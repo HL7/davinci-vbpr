@@ -22,12 +22,12 @@ Title: "VBPR Quality MeasureReport"
 Description: "An extension for VBPR quality MeasureReport at the summary level."
 * valueReference only Reference (VbprQualityMeasureReport)
 
-Extension: MetricValue
-Id: metric-value
-Title: "Value of a performance metric"
-Description: "An extension for performance metric value."
-* value[x] 1..1 
-* value[x] only decimal or integer or Quantity or Money or string
+//Extension: MetricValue
+//Id: metric-value
+//Title: "Value of a performance metric"
+//Description: "An extension for performance metric value."
+//* value[x] 1..1 
+//* value[x] only decimal or integer or Quantity or Money or string
 
 Extension: LOB
 Id: lob
@@ -38,7 +38,7 @@ Description: "An extension for a line of business (LOB)."
 
 Extension: PaidThroughDate
 Id: paid-through-date
-Title: "Paid through date"
+Title: "Paid Through Date"
 Description: "Paid through date"
 * value[x] 1..1 
 * value[x] only date
@@ -46,7 +46,7 @@ Description: "Paid through date"
 Extension: StarScore
 Id: star-score
 Title: "Star Score"
-Description: "star score"
+Description: "Star score"
 * value[x] 1..1 
 * value[x] only decimal
 
@@ -65,8 +65,22 @@ Description: "HCP-LAN APM framework"
 * valueCodeableConcept from hcplan-framework (extensible)
 
 Extension: AlternateScoreType
-Id: alt-score-type
+Id: alternate-score-type
 Title: "Alternate Score Type"
 Description: "Possible value types for the measureScore elements in addition to the standard Quantity type. The alternate type is determined by the performance metric type."
 * value[x] 0..1 
 * value[x] only decimal or integer or Money or string
+
+Extension: AlternateSubject
+Id: alternate-subject
+Title: "Alternate Subject"
+Description: "Possible additional resource type as Subject reference. R5 has Organization as a choice for MeasureReport.subject."
+* value[x] 0..1 
+* value[x] only Reference ($USCoreOrganization)
+
+Extension: ServicePeriod
+Id: service-period
+Title: "Service Period"
+Description: "Service period"
+* value[x] 1..1 
+* value[x] only Period

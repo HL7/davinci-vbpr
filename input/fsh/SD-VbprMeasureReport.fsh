@@ -12,6 +12,7 @@ Description: "Value-Based Performance Report is a payer-generated performance re
 * measure only Canonical(vbpr-measure)
 * subject 1..1 MS
 * subject only Reference($USCorePractitioner or $USCorePractitionerRole or $Group)
+* subject.extension contains AlternateSubject named altSubject 0..1 MS 
 * date 1..1 MS
 * reporter 1..1 MS
 * reporter only Reference($USCoreOrganization)
@@ -22,7 +23,9 @@ Description: "Value-Based Performance Report is a payer-generated performance re
 * group.code from vbpr-performance-metric-type (extensible)
 * group.measureScore 0..1 MS 
 * group.measureScore.extension contains AlternateScoreType named altScoreType 0..1 MS
-* group.extension contains PaymentStream named paymentStream 0..* MS  
+* group.extension contains PaymentStream named paymentStream 0..* MS 
+* group.extension contains ServicePeriod named servicePeriod 0..1 MS 
+* group.extension contains PaidThroughDate named paidThroughDate 0..1 MS
 * group.stratifier MS
 * group.stratifier.stratum MS
 * group.stratifier.stratum.measureScore MS
