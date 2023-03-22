@@ -11,11 +11,11 @@ Description: "Value-Based Performance Report is a payer-generated performance re
 * measure MS
 * measure only Canonical(vbpr-measure)
 * subject 1..1 MS
-* subject only Reference($USCorePractitioner or $USCorePractitionerRole or $Group)
+* subject only Reference($us-core-practitioner or $us-core-practitionerrole or $Group)
 * subject.extension contains AlternateSubject named altSubject 0..1 MS 
 * date 1..1 MS
 * reporter 1..1 MS
-* reporter only Reference($USCoreOrganization)
+* reporter only Reference($us-core-organization)
 * period 1..1 MS
 * improvementNotation 0..0
 * group 0..* MS
@@ -30,6 +30,8 @@ Description: "Value-Based Performance Report is a payer-generated performance re
 * group.stratifier.stratum MS
 * group.stratifier.stratum.measureScore MS
 * group.stratifier.stratum.measureScore.extension contains AlternateScoreType named altScoreType 0..1 MS
-* extension contains VBPRQualityMeasureReport named vbprQualityMeasureReport 0..* MS
-* extension contains PaidThroughDate named paidThroughDate 0..1 MS
-
+//* evaluatedResource Reference($VbprQualityMeasureReport) 0..*
+* evaluatedResource 0..* MS
+* evaluatedResource only Reference($vbpr-quality-measurereport)
+* evaluatedResource ^short = "What data was used to calculate the weighted star score"
+//* extension contains VBPRQualityMeasureReport named vbprQualityMeasureReport 0..* MS

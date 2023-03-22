@@ -16,11 +16,11 @@ Description: "An extension for performance metric."
 * extension[Value].value[x] 1..1
 * extension[Value].value[x] only decimal or integer or Quantity or Money or string
 
-Extension: VBPRQualityMeasureReport
-Id: vbpr-quality-measure-report
-Title: "VBPR Quality MeasureReport"
-Description: "An extension for VBPR quality MeasureReport at the summary level."
-* valueReference only Reference (VbprQualityMeasureReport)
+//Extension: VBPRQualityMeasureReport
+//Id: vbpr-quality-measure-report
+//Title: "VBPR Quality MeasureReport"
+//Description: "An extension for VBPR quality MeasureReport at the summary level."
+//* valueReference only Reference (VbprQualityMeasureReport)
 
 //Extension: MetricValue
 //Id: metric-value
@@ -76,7 +76,7 @@ Id: alternate-subject
 Title: "Alternate Subject"
 Description: "Possible additional resource type as Subject reference. R5 has Organization as a choice for MeasureReport.subject."
 * value[x] 0..1 
-* value[x] only Reference ($USCoreOrganization)
+* value[x] only Reference ($us-core-organization)
 
 Extension: ServicePeriod
 Id: service-period

@@ -1,13 +1,10 @@
 //US Core
-Alias:   $USCorePractitioner = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner
-Alias:   $USCoreOrganization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
-Alias:   $USCoreLocation = http://hl7.org/fhir/us/core/StructureDefinition/us-core-location
-Alias:   $USCorePractitionerRole = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole
-Alias:   $USCareTeam = http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam
+Alias: $us-core-practitioner = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner
+Alias: $us-core-practitionerrole = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole
+Alias: $us-core-organization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
 
 //Base Resource
 Alias: $Bundle = http://hl7.org/fhir/StructureDefinition/Bundle
-//Alias: $Contract = http://hl7.org/fhir/StructureDefinition/Contract
 Alias: $MeasureReport = http://hl7.org/fhir/StructureDefinition/MeasureReport
 Alias: $Measure = http://hl7.org/fhir/StructureDefinition/Measure
 Alias: $Group = http://hl7.org/fhir/StructureDefinition/Group
@@ -15,13 +12,7 @@ Alias: $Group = http://hl7.org/fhir/StructureDefinition/Group
 Alias: $ClaimTypeValueSet = http://hl7.org/fhir/ValueSet/claim-type
 
 //VBPR aliases
-Alias: $VbcMeasure = http://hl7.org/fhir/us/davinc-vbpr/StructureDefinition/vbc-measure
-//Alias: $VbcContract = http://hl7.org/fhir/us/davinc-vbpr/StructureDefinition/vbc-contract
-Alias: $VbcContractExtension = http://hl7.org/fhir/us/davinc-vbpr/StructureDefinition/extension-vbc-contract
-Alias: $PerformanceMetricTypeVS = http://hl7.org/fhir/us/davinc-vbpr/ValueSet/vbpr-performance-metric-type
-Alias: $VbprSummaryMeasureReport = http://hl7.org/fhir/us/davinc-vbpr/StructureDefinition/vbpr-summary-measurereport
-
-Alias: $PerformanceMetricTypeCS = http://hl7.org/fhir/us/davinc-vbpr/CodeSystem/vbpr-performance-metric-type
+Alias: $vbpr-quality-measurereport = http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/vbpr-quality-measurereport
 
 
 //DEQM
@@ -33,3 +24,12 @@ Alias: $CQFMCompositeMeasure = http://hl7.org/fhir/us/cqfmeasures/StructureDefin
 
 //Code system
 Alias: $SOP = https://nahdo.org/sopt
+
+
+
+//Alias: $alternate-subject = http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-subject
+//Alias: $payment-stream = http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream
+//Alias: $service-period = http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period
+//Alias: $paid-through-date = http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date
+//Alias: $alternate-score-type = http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-score-type
+//Alias: $vbpr-performance-metric-type-vs = http://hl7.org/fhir/us/davinci-vbpr/ValueSet/vbpr-performance-metric-type
