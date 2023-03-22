@@ -71,10 +71,10 @@ Description: "Possible value types for the measureScore elements in addition to 
 * value[x] 0..1 
 * value[x] only decimal or integer or Money or string
 
-Extension: AlternateSubject
-Id: alternate-subject
-Title: "Alternate Subject"
-Description: "Possible additional resource type as Subject reference. R5 has Organization as a choice for MeasureReport.subject."
+Extension: OrganizationSubject
+Id: organization-subject
+Title: "Orgnization Subject"
+Description: "Additional resource type, Organization, as Subject reference. MeasureReport in FHIR R5 has Organization as a choice for MeasureReport.subject."
 * value[x] 0..1 
 * value[x] only Reference ($us-core-organization)
 

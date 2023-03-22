@@ -1,24 +1,24 @@
 CodeSystem: VBCPerformanceMetrics
-Title: "Type of performance metrics"
+Title: "Performance Metric Type Code System"
 Id: vbpr-performance-metric-type
 Description: "Type of value-based contract performance metrics."
 * ^experimental = false
 * #admin-cost "Administrative cost" "A general term that refers to Medicare and Medicaid administrative costs, as well as CMS administrative costs. Medicare administrative costs are comprised of the Medicare related outlays and non-CMS administrative outlays. Medicaid administrative costs refer to the Federal share of the States' expenditures for administration of the Medicaid program. CMS administrative costs are the costs of operating CMS (e.g., salaries and expenses, facilities, equipment, rent and utilities, etc.). These costs are reflected in the Program Management account."
 * #annual-care-visit-bonus "Annual care visit bonus" "Bonus to qualified annual care visit (ACV). A type of quality incentive payment."
-* #avg-risk-score "Average risk score" "Average risk score."
+* #avg-risk-score "Average risk score" "The sum of designated demographic and health factors weighted by their marginal contribution to risk across a specified population."
 * #avg-star-rating-bonus "Average star rating bonus" "Bonus earned when achieve a certain Average Star Rating. A type of quality incentive payment."
 * #avg-star-rating-improvement-bonus "Average star rating improvement bonus" "Bonus earned when achieve improvement performance year over year based on average star rating. A type of quality incentive payment"
 * #capitation-pmpu "Capitation per member per unit of time" "Capitation per member per unit of time, e.g., per month. Capitation is a fixed amount of money per patient per unit of time paid in advance to the physician [or health care provider] for the delivery of health care services."
 * #ccf "Care coordination fee" "Care coordination fee (CCF) is per member per payments based on the number of patients that are assigned to primary care physicians."
-* #current-year-ibnr "Current year IBNR" "The current year Incurred But Not Reported(IBNR)."
-* #med-cost-fund "Medical cost fund" "Medical cost fund."
-* #med-cost-target "Medical cost target" "The target of the medical cost."
+* #current-year-ibnr "Current year IBNR" "Estimated medical and pharmacy expenses incurred but not yet reported (IBNR) during the current year."
+* #med-cost-fund "Medical cost fund" "The sum of dollars available for medical spend calculated using the medical cost target relative to estimated revenue."
+* #med-cost-target "Medical cost target" "The goal medical spend level as specified by a value-based contract below which savings are generated, often represented as a percent of total revenue."
 * #med-loss-ratio "Medical loss ratio" "The medical loss ratio (MLR) is the share of total health care premiums spent on medical claims."
-* #med-loss-ratio-target "Medical loss ratio target" "The target medical loss ratio (MLR)."
-* #med-rx-cost "Medical prescription cost" "Medical prescription cost."
-* #med-rx-cost-pmpm "Medical Rx cost PMPM" "Medical prescription cost per member per month (PMPM)."
+* #med-loss-ratio-target "Medical loss ratio target" "The goal medical spend level relative to revenue as specified in a value-based care contract, often represented as a percent of revenue."
+* #med-rx-cost "Medical pharmacy cost" "Total spend on pharmacy cost for a specified population."
+* #med-rx-cost-pmpm "Medical pharmacy cost PMPM" "Total spend on pharmacy cost for a specified population represented on a per member per month (PMPM) basis."
 * #member-months "Member months" "Sum of member months in a given period."
-* #prior-year-ibnr "Prior year IBNR" "The prior year Incurred But Not Reported(IBNR)."
+* #prior-year-ibnr "Prior year IBNR" "Estimated medical and pharmacy expenses incurred but not yet reported (IBNR)during the prior year."
 * #quality-metric-performance-incentive "Quality metric performance incentive" "Quality metric performance incentive paymetn is a type of quality incentive payment."
 * #revenue-pmpm "Revenue PMPM" "Revenue earned per member per month (PMPM)."
 * #total-capitation "Total capitation" "Total capitation. Capitation is a fixed amount of money per patient per unit of time paid in advance to the physician [or health care provider] for the delivery of health care services."
@@ -27,21 +27,11 @@ Description: "Type of value-based contract performance metrics."
 * #total-ma-revenue "Total Medical Advantage revenue" "Total revenue earned for Medical Advantage."
 * #total-revenue "Total revenue" "Total revenue earned."
 * #variance-cost "Variance cost" "How much actual costs vary from projected costs."
-* #weighted-star-score "Weighted Star Score" "Weighted star score"
-* ^caseSensitive = true
-
-CodeSystem: LineOfBusiness
-Title: "Line of business"
-Id: lob
-Description: "Line of business."
-* ^experimental = false
-* #commercial "Commercial" "Commercial"
-* #ma "Medicare" "Medicare"
-* #medicaid "Medicaid" "Medicaid"
+* #weighted-avg-star "Weighted average star" "The average quality score across a specified set of measures, weighted by importance of the individual measures for a specific population. Often used in relation to CMS Medicare Star rating reports, e.g., where medication adherence measures are 3x weighted relative to other quality measures in the set."
 * ^caseSensitive = true
 
 CodeSystem: PaymentStream
-Title: "Payment Stream"
+Title: "Payment Stream Code System"
 Id: payment-stream
 Description: "Payment stream"
 * ^experimental = false
@@ -68,7 +58,7 @@ on a specific schedule."
 * ^caseSensitive = true
 
 CodeSystem: HCPLANFramework
-Title: "HPCLAN Framework"
+Title: "HPCLAN Framework Code System"
 Id: hcplan-framework
 Description: "HCPLAN Framework represents payments from public and private payers to provider organizations (including payments between the payment and delivery arms of highly integrated health systems). It is designed to accommodate payments in multiple categories that are made by a single payer, as well as single provider organizations that receive payments in different categories—potentially from the same payer. Although payments will be classified in discrete categories, the Framework captures a continuum of clinical and financial risk for provider organizations."
 * ^experimental = false

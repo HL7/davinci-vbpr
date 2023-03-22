@@ -5,7 +5,6 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/alternate-score-type" key="StructureDefinition-alternate-score-type" name="Alternate Score Type"/>
-<artifact id="StructureDefinition/alternate-subject" key="StructureDefinition-alternate-subject" name="Alternate Subject"/>
 <artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact deprecated="true" id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact deprecated="true" id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
@@ -57,18 +56,19 @@
 <artifact deprecated="true" id="StructureDefinition/ra-evidenceStatus" key="StructureDefinition-ra-evidenceStatus" name="Evidence Status Extension"/>
 <artifact deprecated="true" id="ValueSet/example-cmshcc" key="ValueSet-example-cmshcc" name="Example CMS Hierarchical Condition Category Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/ra-groupReference" key="StructureDefinition-ra-groupReference" name="Group Reference Extension"/>
-<artifact id="ValueSet/hcplan-framework" key="ValueSet-hcplan-framework" name="HPCLAN Framework"/>
-<artifact id="CodeSystem/hcplan-framework" key="CodeSystem-hcplan-framework" name="HPCLAN Framework"/>
+<artifact id="CodeSystem/hcplan-framework" key="CodeSystem-hcplan-framework" name="HPCLAN Framework Code System"/>
+<artifact id="ValueSet/hcplan-framework" key="ValueSet-hcplan-framework" name="HPCLAN Framework Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hiearchicalStatus" key="StructureDefinition-ra-hiearchicalStatus" name="Hiearchical Status Extension"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status Extension"/>
 <artifact id="StructureDefinition/lob" key="StructureDefinition-lob" name="Line of Business Extension"/>
-<artifact id="CodeSystem/lob" key="CodeSystem-lob" name="Line of business"/>
+<artifact id="ValueSet/lob" key="ValueSet-lob" name="Line of Business Value Set"/>
 <artifact deprecated="true" id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Observation: Creatinine Result from 20210728"/>
 <artifact deprecated="true" id="Observation/ra-obs02pat03" key="Observation-ra-obs02pat03" name="Observation: PHQ9 from 20190823"/>
 <artifact deprecated="true" id="Organization/ra-payer01" key="Organization-ra-payer01" name="Organization01: ABC Payer"/>
 <artifact deprecated="true" id="Organization/ra-org03pat03" key="Organization-ra-org03pat03" name="Organization: Community HealthCenter"/>
 <artifact deprecated="true" id="Organization/ra-org01pat01" key="Organization-ra-org01pat01" name="Organization: Community Urgent Care"/>
 <artifact deprecated="true" id="Organization/ra-org02pat02" key="Organization-ra-org02pat02" name="Organization: GHH Outpatient Clinic"/>
+<artifact id="StructureDefinition/organization-subject" key="StructureDefinition-organization-subject" name="Orgnization Subject"/>
 <artifact id="StructureDefinition/paid-through-date" key="StructureDefinition-paid-through-date" name="Paid Through Date"/>
 <artifact deprecated="true" id="StructureDefinition/ra-patient-group" key="StructureDefinition-ra-patient-group" name="Patient Group Profile"/>
 <artifact deprecated="true" id="Patient/ra-patient01" key="Patient-ra-patient01" name="Patient01: Eve Everywoman"/>
@@ -78,10 +78,11 @@
 <artifact deprecated="true" id="Patient/ra-patient04" key="Patient-ra-patient04" name="Patient04: Jane Doh"/>
 <artifact id="Organization/vbpr-payer01" key="Organization-vbpr-payer01" name="Payer"/>
 <artifact id="StructureDefinition/payment-stream" key="StructureDefinition-payment-stream" name="Payment Stream"/>
-<artifact id="CodeSystem/payment-stream" key="CodeSystem-payment-stream" name="Payment Stream"/>
-<artifact id="ValueSet/vbpr-payment-stream" key="ValueSet-vbpr-payment-stream" name="Payment stream"/>
+<artifact id="CodeSystem/payment-stream" key="CodeSystem-payment-stream" name="Payment Stream Code System"/>
+<artifact id="ValueSet/vbpr-payment-stream" key="ValueSet-vbpr-payment-stream" name="Payment Stream Value Set"/>
 <artifact id="StructureDefinition/performance-metric" key="StructureDefinition-performance-metric" name="Performance Metric Extension"/>
-<artifact id="ValueSet/vbpr-performance-metric-type" key="ValueSet-vbpr-performance-metric-type" name="Performance metric type"/>
+<artifact id="CodeSystem/vbpr-performance-metric-type" key="CodeSystem-vbpr-performance-metric-type" name="Performance Metric Type Code System"/>
+<artifact id="ValueSet/vbpr-performance-metric-type" key="ValueSet-vbpr-performance-metric-type" name="Performance Metric Type Value Set"/>
 <artifact deprecated="true" id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner: Harold Hippocrates"/>
 <artifact deprecated="true" id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact deprecated="true" id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
@@ -110,8 +111,6 @@
 <artifact id="StructureDefinition/service-period" key="StructureDefinition-service-period" name="Service Period"/>
 <artifact id="StructureDefinition/star-score" key="StructureDefinition-star-score" name="Star Score"/>
 <artifact deprecated="true" id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
-<artifact id="ValueSet/lob" key="ValueSet-lob" name="Type of line of business"/>
-<artifact id="CodeSystem/vbpr-performance-metric-type" key="CodeSystem-vbpr-performance-metric-type" name="Type of performance metrics"/>
 <artifact id="StructureDefinition/vbpr-quality-measurereport" key="StructureDefinition-vbpr-quality-measurereport" name="VBPR Quality MeasureReport"/>
 <artifact id="StructureDefinition/vbpr-measure" key="StructureDefinition-vbpr-measure" name="Value-Based Performance Measure"/>
 <artifact id="StructureDefinition/vbpr-performance-measurereport" key="StructureDefinition-vbpr-performance-measurereport" name="Value-Based Performance Report"/>

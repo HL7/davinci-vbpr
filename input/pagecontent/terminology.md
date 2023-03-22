@@ -1,11 +1,7 @@
 
-<div class="bg-info" markdown="1">
-This page is under development.
-</div>
-
 This page lists the code systems and value sets defined in this IG.
 
-<!--
+
 ### Value Sets
 
 {% include list-simple-valuesets.xhtml %}
@@ -15,7 +11,7 @@ This page lists the code systems and value sets defined in this IG.
 {% include list-simple-codesystems.xhtml %}
 
 ---
--->
+
 
 <br />
 
