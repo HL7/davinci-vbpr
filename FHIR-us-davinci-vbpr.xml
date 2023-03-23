@@ -4,7 +4,7 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="StructureDefinition/alternate-score-type" key="StructureDefinition-alternate-score-type" name="Alternate Score Type"/>
+<artifact id="StructureDefinition/alternate-measurescore" key="StructureDefinition-alternate-measurescore" name="Alternate Measure Score"/>
 <artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact deprecated="true" id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact deprecated="true" id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
@@ -80,7 +80,6 @@
 <artifact id="StructureDefinition/payment-stream" key="StructureDefinition-payment-stream" name="Payment Stream"/>
 <artifact id="CodeSystem/payment-stream" key="CodeSystem-payment-stream" name="Payment Stream Code System"/>
 <artifact id="ValueSet/vbpr-payment-stream" key="ValueSet-vbpr-payment-stream" name="Payment Stream Value Set"/>
-<artifact id="StructureDefinition/performance-metric" key="StructureDefinition-performance-metric" name="Performance Metric Extension"/>
 <artifact id="CodeSystem/vbpr-performance-metric-type" key="CodeSystem-vbpr-performance-metric-type" name="Performance Metric Type Code System"/>
 <artifact id="ValueSet/vbpr-performance-metric-type" key="ValueSet-vbpr-performance-metric-type" name="Performance Metric Type Value Set"/>
 <artifact deprecated="true" id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner: Harold Hippocrates"/>
@@ -111,10 +110,10 @@
 <artifact id="StructureDefinition/service-period" key="StructureDefinition-service-period" name="Service Period"/>
 <artifact id="StructureDefinition/star-score" key="StructureDefinition-star-score" name="Star Score"/>
 <artifact deprecated="true" id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
+<artifact id="ValueSet/vbpr-measure-population-type" key="ValueSet-vbpr-measure-population-type" name="VBPR Measure Population Type Value Set"/>
 <artifact id="StructureDefinition/vbpr-quality-measurereport" key="StructureDefinition-vbpr-quality-measurereport" name="VBPR Quality MeasureReport"/>
 <artifact id="StructureDefinition/vbpr-measure" key="StructureDefinition-vbpr-measure" name="Value-Based Performance Measure"/>
 <artifact id="StructureDefinition/vbpr-performance-measurereport" key="StructureDefinition-vbpr-performance-measurereport" name="Value-Based Performance Report"/>
-<artifact id="StructureDefinition/vbpr-bundle" key="StructureDefinition-vbpr-bundle" name="Value-Based Performance Report Bundle"/>
 <artifact id="Measure/VbprMeasureExample01" key="Measure-VbprMeasureExample01" name="VbprMeasureExample01"/>
 <artifact deprecated="true" id="Bundle/ra-bundle01" key="Bundle-ra-bundle01" name="ra-bundle01: Risk Adjustment Bundle"/>
 <artifact deprecated="true" id="Group/ra-group01" key="Group-ra-group01" name="ra-group01: Risk Adjustment Patient Group"/>

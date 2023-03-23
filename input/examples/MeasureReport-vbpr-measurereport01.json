@@ -16,7 +16,14 @@
     "type": "summary",
     "measure": "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-VbprMeasureExample01",
     "subject": {
-        "reference": "Organization/vbpr-provider01"  
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/organization-subject",
+                "valueReference": {
+                    "reference": "Organization/vbpr-provider01" 
+                }
+            }
+        ]
     },
     "date": "2023-01-15",
     "reporter": {
@@ -28,7 +35,7 @@
     },
     "group": [
         {
-            "id": "ccf-group-001",
+            "id": "ccf-group-01",
             "extension": [
                 {
                     "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
@@ -66,8 +73,34 @@
                 "text": "Care coordination fee"
             }  ,
             "measureScore": {
-                "value": 5
-            }                      
+                "value": 5  
+            },
+            "population": [
+                {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "PPO"
+                        }
+                    ],
+                    "text": "PPO"
+                },
+                "count": 1500
+                },
+                {
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                            "code": "HMO"
+                        }
+                    ],
+                    "text": "HMO"
+                },
+                "count": 1500                    
+                }                    
+            ]            
         },
         {
             "id": "ssq-group-01",
@@ -265,7 +298,7 @@
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
                         "code": "med-rx-cost",
-                        "display": "Medical prescription cost"
+                        "display": "Medical pharmacy cost"
                     }
                 ],
                 "text": "Medical prescription cost"

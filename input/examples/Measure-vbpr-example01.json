@@ -19,7 +19,6 @@
   "title": "Example Value-Based Contract - ABC Payer and GoodHealth",
   "status": "active",
   "experimental": true,
-  "date": "2021-09-01",
   "publisher" : "Clinical Quality Information WG",
   "contact" : [
     {
@@ -32,8 +31,6 @@
     }
   ],
   "description": "Example Value-Based Contract between ABC Payer and GoodHealth",
-  "approvalDate" : "2021-09-30",
-  "lastReviewDate" : "2021-12-01",
   "effectivePeriod" : {
     "start" : "2022-01-01",
     "end" : "2024-12-31"
@@ -64,6 +61,54 @@
         ],
         "text": "Category 3A"
       }
-  }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+      "valueCodeableConcept": {
+        "coding": [
+            {
+                "code": "ssq",
+                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+            }
+        ],
+        "text": "Shared savings gated on quality"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+      "valueCodeableConcept": {
+        "coding": [
+            {
+                "code": "ccf",
+                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+            }
+        ],
+        "text": "Care coordination fee"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+      "valueCodeableConcept": {
+        "coding": [
+            {
+                "code": "qip",
+                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+            }
+        ],
+        "text": "Quality incentive payment"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+      "valueCodeableConcept": {
+        "coding": [
+            {
+                "code": "p4p",
+                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+            }
+        ],
+        "text": "Pay for performance"
+      }
+    }            
   ]    
 }
