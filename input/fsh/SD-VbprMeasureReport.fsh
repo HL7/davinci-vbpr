@@ -29,9 +29,10 @@ Description: "Value-Based Performance Report is a payer-generated performance re
 * group.extension contains ServicePeriod named servicePeriod 0..1 MS 
 * group.extension contains PaidThroughDate named paidThroughDate 0..1 MS
 * group.extension[paidThroughDate] ^short = "Ending date of the pay cycle"
-* group.population MS
-* group.population.code from vbpr-measure-population-type (extensible)
-* group.population.code ^short = "HMO | PPO | initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | measure-population | measure-population-exclusion | measure-observation"
+//* group.population MS
+//* group.population.code from vbpr-measure-population-type (extensible)
+//* group.population.code ^short = "HMO | PPO | initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | measure-population | measure-population-exclusion | measure-observation"
+//* group.population.count.extension contains AlternateCount named altCount 0..1 MS
 * group.stratifier MS
 * group.stratifier.stratum MS
 * group.stratifier.stratum.measureScore MS

@@ -75,31 +75,168 @@
             "measureScore": {
                 "value": 5  
             },
-            "population": [
+            "stratifier": [
                 {
-                "code": {
-                    "coding": [
-                        {
-                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                            "code": "PPO"
-                        }
-                    ],
-                    "text": "PPO"
-                },
-                "count": 1500
-                },
-                {
-                "code": {
-                    "coding": [
-                        {
-                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                            "code": "HMO"
-                        }
-                    ],
-                    "text": "HMO"
-                },
-                "count": 1500                    
-                }                    
+                "stratum": [
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 1000
+                        }                        
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 500
+                        }                    
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"
+                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 1000
+                        }                    
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 500
+                        }                    
+                    }                    
+                ]
+             }
             ]            
         },
         {
@@ -140,8 +277,191 @@
             }  ,
             "measureScore": {
                 "value": 300
-            }              
-                     
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 100
+                        }  
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 50
+                        }  
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 50
+                        }                      },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 200
+                        }                      
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 150
+                        }                      },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 50
+                        }                      
+                    }                    
+                ]
+             }
+            ]                                             
         },
         {
             "id": "ssq-group-02",
@@ -182,7 +502,193 @@
             },
             "measureScore": {
                 "value": 0.70
-            }              
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 0.80
+                        }
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 0.90
+                        }   
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 1.00
+                        }   
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 1.10
+                        }                       
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 1.20
+                        }                       
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 1.30
+                        }                       
+                    }                    
+                ]
+             }
+            ]                            
         },
         {
             "id": "ssq-group-03",
@@ -215,15 +721,201 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "total-revenue",
-                        "display": "Total revenue"
+                        "code": "revenue",
+                        "display": "Revenue"
                     }
                 ],
                 "text": "Total revenue"
             },
             "measureScore": {
                 "value": 10000
-            }              
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 6000
+                        }
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 3000
+                        }   
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 3000
+                        }   
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 4000
+                        }                       
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 2000
+                        }                       
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 2000
+                        }                       
+                    }                    
+                ]
+             }
+            ]                            
         },
         {
             "id": "ssq-group-04",
@@ -264,7 +956,193 @@
             },
             "measureScore": {
                 "value": 33
-            }              
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 60
+                        }
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 60
+                        }   
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 60
+                        }   
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 20
+                        }                       
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 13
+                        }                       
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 40
+                        }                       
+                    }                    
+                ]
+             }
+            ]                            
         },
         {
             "id": "ssq-group-05",
@@ -301,11 +1179,2963 @@
                         "display": "Medical pharmacy cost"
                     }
                 ],
-                "text": "Medical prescription cost"
+                "text": "Medical pharmacy cost"
             },
             "measureScore": {
                 "value": 9000
-            }              
-        }                                           
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 5000
+                        }
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 3000
+                        }   
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 2000
+                        }   
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 4000
+                        }                       
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 2000
+                        }                       
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 3000
+                        }                       
+                    }                    
+                ]
+             }
+            ]                            
+        },
+        {
+            "id": "ssq-group-06",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "med-rx-cost-pmpm",
+                        "display": "Medical pharmacy cost PMPM"
+                    }
+                ],
+                "text": "Medical pharmacy cost PMPM"
+            },
+            "measureScore": {
+                "value": 30
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 50
+                        }
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 60
+                        }   
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 40
+                        }   
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 20
+                        }                       
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 13
+                        }                       
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 60
+                        }                       
+                    }                    
+                ]
+             }
+            ]                            
+        },
+        {
+            "id": "ssq-group-07",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "med-cost-fund",
+                        "display": "Medical cost fund"
+                    }
+                ],
+                "text": "Medical cost fund"
+            },
+            "measureScore": {
+                "value": 90.0,
+                "code": "%",
+                "system": "http://unitsofmeasure.org"
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 83.3,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }  
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 100.0,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        } 
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 66.7,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }  
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 100.0,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }                       
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 100.0,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }                         
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 150.0,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }                        
+                    }                    
+                ]
+             }
+            ]                            
+        },
+        {
+            "id": "ssq-group-08",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "med-cost-target",
+                        "display": "Medical cost target"
+                    }
+                ],
+                "text": "Medical cost target"
+            },
+            "measureScore": {
+                "value": 85.0,
+                "vode": "%",
+                "system": "http://unitsofmeasure.org"
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 85.0,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }  
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 85.0,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        } 
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 85.0,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }  
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 85.0,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }                       
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 85.0,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }                         
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 85.0,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }                        
+                    }                    
+                ]
+             }
+            ]                            
+        },
+        {
+            "id": "ssq-group-09",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "med-rx-cost-target",
+                        "display": "Medical pharmacy cost target"
+                    }
+                ],
+                "text": "Medical pharmacy cost target"
+            },
+            "measureScore": {
+                "value": 8500
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 5100
+                        }  
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 2550
+                        }  
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 2550
+                        }  
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 3400
+                        }                     
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 1700
+                        }                         
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 1700
+                        }                      
+                    }                    
+                ]
+             }
+            ]                            
+        },
+        {
+            "id": "ssq-group-10",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "variance-cost",
+                        "display": "Variance cost"
+                    }
+                ],
+                "text": "Variance cost"
+            },
+            "measureScore": {
+                "value": -500
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 100
+                        }  
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 450
+                        }  
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 550
+                        }  
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": -600
+                        }                     
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": -300
+                        }                         
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": -1300
+                        }                      
+                    }                    
+                ]
+             }
+            ]                            
+        },
+        {
+            "id": "ssq-group-11",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "avg-risk-score-market",
+                        "display": "Average risk score market"
+                    }
+                ],
+                "text": "Average risk score market"
+            },
+            "measureScore": {
+                "value": 0.70
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 0.71
+                        }  
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 0.72
+                        }  
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 0.72
+                        }  
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 0.71
+                        }                     
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 0.70
+                        }                         
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 0.69
+                        }                      
+                    }                    
+                ]
+             }
+            ]                            
+        },
+        {
+            "id": "ssq-group-12",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "avg-revenue-pmpm-market",
+                        "display": "Average revenue PMPM market"
+                    }
+                ],
+                "text": "Average revenue PMPM market"
+            },
+            "measureScore": {
+                "value": 35
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 40
+                        }  
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 32
+                        }  
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 36
+                        }  
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 50
+                        }                     
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 29
+                        }                         
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 30
+                        }                      
+                    }                    
+                ]
+             }
+            ]                            
+        },
+        {
+            "id": "ssq-group-13",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "avg-med-rx-cost-pmpm-market",
+                        "display": "Market average medical pharmacy cost PMPM"
+                    }
+                ],
+                "text": "Market average medical pharmacy cost PMPM"
+            },
+            "measureScore": {
+                "value": 94.3,
+                "code": "%",
+                "system": "http://unitsofmeasure.org"
+            },   
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 102.5,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }    
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 109.4,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }   
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 83.3,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }    
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 70.0,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }                       
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 103.4,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }                          
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 110.0,
+                            "code": "%",
+                            "system": "http://unitsofmeasure.org"
+                        }                       
+                    }                    
+                ]
+             }
+            ]                            
+        },
+        {
+            "id": "ssq-group-14",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "ccf",
+                        "display": "Care coordination fee"
+                    }
+                ],
+                "text": "Care coordination fee"
+            },
+            "measureScore": {
+                "value": 1500
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 500
+                        }  
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 250
+                        }  
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 250                        }  
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                
+                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 1000
+                        }                     
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 750
+                        }                         
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 250
+                        }                      
+                    }                    
+                ]
+             }
+            ]                            
+        },
+        {
+            "id": "ssq-group-15",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "quality-pmt-chronic",
+                        "display": "Qulaity payment chronic"
+                    }
+                ],
+                "text": "Qulaity payment chronic"
+            },
+            "measureScore": {
+                "value": 11900
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 3966.67
+                        }  
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 1983.33
+                        }  
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 1983.33                        }  
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                
+                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 7933.33
+                        }                     
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 5950
+                        }                         
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 1983.33
+                        }                      
+                    }                    
+                ]
+             }
+            ]                            
+        }, 
+        {
+            "id": "ssq-group-16",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "quality-pmt-office-visit",
+                        "display": "Qulaity payment office visit"
+                    }
+                ],
+                "text": "Qulaity payment office visit"
+            },
+            "measureScore": {
+                "value": 300
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 100
+                        }  
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 50
+                        }  
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 50                        }  
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                
+                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 200
+                        }                     
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": 150
+                        }                         
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 50
+                        }                      
+                    }                    
+                ]
+             }
+            ]                            
+        }, 
+        {
+            "id": "ssq-group-17",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "ssq",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"
+                            }
+                        ],
+                        "text": "Shared savings gated on quality"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "shared-saving-deficit",
+                        "display": "Shared saving deficit"
+                    }
+                ],
+                "text": "Shared saving deficit"
+            },
+            "measureScore": {
+                "value": -400
+            },
+            "stratifier": [
+                {                
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "HMO"                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": 50
+                        }  
+                    },                    
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": -360
+                        }  
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "HMO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": 275                        }  
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                    "code": "PPO"                                
+                                }
+                            ]
+                        },
+                        "measureScore": {
+                            "value": -480
+                        }                     
+                    },                       
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                                },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 1"
+                                }                            
+                            }                       
+                        ],
+                        "measureScore": {
+                            "value": -240
+                        }                         
+                    },
+                    {
+                        "component":[
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://loinc.org",
+                                            "code": "87520-3",
+                                            "display": "Coverage type"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "PPO"                                        }
+                                    ]
+                                }                            
+                            },
+                            {
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                                            "code": "LOC",
+                                            "display": "location"
+                                        }
+                                    ]
+                                },
+                                "value": {
+                                    "text": "Region 2"
+                                }                           
+                            }
+                        ],
+                        "measureScore": {
+                            "value": -1040
+                        }                      
+                    }                    
+                ]
+             }
+            ]                            
+        }                                                                                                                                                        
     ]
 }

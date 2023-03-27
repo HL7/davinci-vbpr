@@ -110,7 +110,6 @@
 <artifact id="StructureDefinition/service-period" key="StructureDefinition-service-period" name="Service Period"/>
 <artifact id="StructureDefinition/star-score" key="StructureDefinition-star-score" name="Star Score"/>
 <artifact deprecated="true" id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
-<artifact id="ValueSet/vbpr-measure-population-type" key="ValueSet-vbpr-measure-population-type" name="VBPR Measure Population Type Value Set"/>
 <artifact id="StructureDefinition/vbpr-quality-measurereport" key="StructureDefinition-vbpr-quality-measurereport" name="VBPR Quality MeasureReport"/>
 <artifact id="StructureDefinition/vbpr-measure" key="StructureDefinition-vbpr-measure" name="Value-Based Performance Measure"/>
 <artifact id="StructureDefinition/vbpr-performance-measurereport" key="StructureDefinition-vbpr-performance-measurereport" name="Value-Based Performance Report"/>

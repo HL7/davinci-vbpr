@@ -28,11 +28,11 @@ Description: "HCPLAN framework categories for value-based performance. HCPLAN fr
 * ^experimental = false
 * codes from system hcplan-framework
 
-ValueSet: VBPRMeasurePopulationType
-Title: "VBPR Measure Population Type Value Set"
-Id: vbpr-measure-population-type
-Description: "The type of population."
-* ^experimental = false
-* include codes from system http://terminology.hl7.org/CodeSystem/measure-population
-* include $coverage-type-cs#PPO
-* include $coverage-type-cs#HMO 
+//ValueSet: VBPRMeasurePopulationType
+//Title: "VBPR Measure Population Type Value Set"
+//Id: vbpr-measure-population-type
+//Description: "The type of population."
+//* ^experimental = false
+//* include codes from system http://terminology.hl7.org/CodeSystem/measure-population
+//* include $coverage-type-cs#PPO
+//* include $coverage-type-cs#HMO 

@@ -67,7 +67,7 @@ Description: "HCP-LAN APM framework"
 Extension: AlternateMeasureScore
 Id: alternate-measurescore
 Title: "Alternate Measure Score"
-Description: "Other allowed data type choices for the measureScore element in addition to the Quantity. The alternate data type for measure score is determined by the performance metric type."
+Description: "Other allowed data type choices for the measureScore element in addition to Quantity. The alternate data type for measure score is determined by the performance metric type."
 * value[x] 0..1 
 * value[x] only decimal or integer or Money or string
 
@@ -93,3 +93,10 @@ Description: "Service period"
 //Description: "Weight"
 //* value[x] 1..1 
 //* value[x] only decimal or integer
+
+//Extension: AlternateCount
+//Id: alternate-count
+//Title: "Alternate Count"
+//Description: "Other allowed data type choices for the count element in addition to Integer. The alternate data type for count is determined by the performance metric type."
+//* value[x] 0..1 
+//* value[x] only Quantity or decimal or Money or string
