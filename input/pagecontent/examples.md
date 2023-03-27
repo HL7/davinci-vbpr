@@ -12,9 +12,15 @@ This page lists examples included in this IG.
 
 <!-- ================================================ -->
 
-- [Measure: VBPR Measure Example01](Measure-VbprMeasureExample01.html)
+- [Measure: VBPR Measure Example01](Measure-vbpr-example01.html)
 
 - [MeasureReport: Example Value-Based Performance Report MeasureReport01](MeasureReport-vbpr-measurereport01.html)
+
+- [MeasureReport: Example Breast Cancer Screening Quality Performance Report MeasureReport01](MeasureReport-quality-measurereport01.html)
+
+- [MeasureReport: Example Colorectal Cancer Screening Quality Performance Report MeasureReport01](MeasureReport-quality-measurereport02.html)
+
+- [MeasureReport: Example Diabetes Care - Blood Sugar Controlled Performance Report MeasureReport01](MeasureReport-vbpr-measurereport03.html)
 
 - [Organization: ABC Payer payer01](Organization-vbpr-payer01.html)
 

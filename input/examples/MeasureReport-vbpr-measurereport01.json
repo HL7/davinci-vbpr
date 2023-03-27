@@ -14,7 +14,7 @@
     ],
     "status": "complete",
     "type": "summary",
-    "measure": "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-VbprMeasureExample01",
+    "measure": "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-vbpr-example01",
     "subject": {
         "extension": [
             {
@@ -34,6 +34,19 @@
         "end": "2022-12-31"
     },
     "group": [
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "weighted-avg-star"                    }
+                ],
+                "text": "Weighted average star"
+            },
+            "measureScore": {
+                "value": 3.8  
+            }              
+        },
         {
             "id": "ccf-group-01",
             "extension": [
@@ -4528,5 +4541,16 @@
              }
             ]             
         }                                                                                                                                                                                                                        
-    ]
+    ],
+    "evaluatedResource": [
+        {
+            "reference": "MeasureReport/quality-measurereport01"
+        },
+        {
+            "reference": "MeasureReport/quality-measurereport02"
+        }, 
+        {
+            "reference": "MeasureReport/quality-measurereport03"
+        }               
+    ]     
 }

@@ -1,12 +1,12 @@
 {
   "resourceType": "Measure",
-  "id": "VbprMeasureExample01",
+  "id": "vbpr-example01",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/vbpr-measure"
     ]
   },
-  "url": "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-VbprMeasureExample01",
+  "url": "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-vbpr-example01",
   "identifier": [
     {
       "use": "temp",

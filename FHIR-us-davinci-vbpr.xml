@@ -116,7 +116,9 @@
 <artifact id="StructureDefinition/vbpr-quality-measurereport" key="StructureDefinition-vbpr-quality-measurereport" name="VBPR Quality MeasureReport"/>
 <artifact id="StructureDefinition/vbpr-measure" key="StructureDefinition-vbpr-measure" name="Value-Based Performance Measure"/>
 <artifact id="StructureDefinition/vbpr-performance-measurereport" key="StructureDefinition-vbpr-performance-measurereport" name="Value-Based Performance Report"/>
-<artifact id="Measure/VbprMeasureExample01" key="Measure-VbprMeasureExample01" name="VbprMeasureExample01"/>
+<artifact id="MeasureReport/quality-measurereport01" key="MeasureReport-quality-measurereport01" name="quality-measurereport01"/>
+<artifact id="MeasureReport/quality-measurereport02" key="MeasureReport-quality-measurereport02" name="quality-measurereport02"/>
+<artifact id="MeasureReport/quality-measurereport03" key="MeasureReport-quality-measurereport03" name="quality-measurereport03"/>
 <artifact deprecated="true" id="Bundle/ra-bundle01" key="Bundle-ra-bundle01" name="ra-bundle01: Risk Adjustment Bundle"/>
 <artifact deprecated="true" id="Group/ra-group01" key="Group-ra-group01" name="ra-group01: Risk Adjustment Patient Group"/>
 <artifact deprecated="true" id="Group/ra-group02" key="Group-ra-group02" name="ra-group02: Risk Adjustment Patient Group"/>
@@ -126,6 +128,7 @@
 <artifact deprecated="true" id="MeasureReport/ra-measurereport04" key="MeasureReport-ra-measurereport04" name="ra-measurereport04: Risk Adjustment Measure Report for HCC V21 for Patient 03"/>
 <artifact deprecated="true" id="MeasureReport/ra-measurereport05" key="MeasureReport-ra-measurereport05" name="ra-measurereport05: Risk Adjustment Measure Report for RxHCC V5 for Patient03"/>
 <artifact deprecated="true" id="MeasureReport/ra-measurereport06" key="MeasureReport-ra-measurereport06" name="ra-measurereport06: Risk Adjustment Measure Report for RxHCC V5 for Patient02"/>
+<artifact id="Measure/vbpr-example01" key="Measure-vbpr-example01" name="vbpr-example01"/>
 <artifact id="MeasureReport/vbpr-measurereport01" key="MeasureReport-vbpr-measurereport01" name="vbpr-measurereport01"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
