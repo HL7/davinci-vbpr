@@ -87,6 +87,9 @@
 <artifact deprecated="true" id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
 <artifact id="StructureDefinition/program-model" key="StructureDefinition-program-model" name="Program Model"/>
 <artifact id="Organization/vbpr-provider01" key="Organization-vbpr-provider01" name="Provider"/>
+<artifact id="StructureDefinition/quality-program" key="StructureDefinition-quality-program" name="Quality Program"/>
+<artifact id="CodeSystem/quality-program" key="CodeSystem-quality-program" name="Quality Program Code System"/>
+<artifact id="ValueSet/quality-program" key="ValueSet-quality-program" name="Quality Program Value Set"/>
 <artifact deprecated="true" id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact deprecated="true" id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline Extension"/>

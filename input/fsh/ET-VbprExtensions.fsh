@@ -87,6 +87,13 @@ Description: "Service period"
 * value[x] 1..1 
 * value[x] only Period
 
+Extension: QualityProgram
+Id: quality-program
+Title: "Quality Program"
+Description: "Quality program"
+* value[x] 1..1 
+* valueCodeableConcept from quality-program (example)
+
 //Extension: Weight
 //Id: weight
 //Title: "Weight"

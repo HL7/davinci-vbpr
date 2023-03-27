@@ -38,7 +38,14 @@ Description: "Type of value-based contract performance metrics."
 * #avg-med-cost-fund-market "Market average medical cost fund" "TBD"
 * #quality-pmt-chronic "Qulaity payment chronic" "TBD"
 * #quality-pmt-office-visit "Qulaity payment office visit" "TBD"
-* #share-saving-deficit "Share saving deficit" "TBD"
+* #shared-saving-deficit "Shared saving deficit" "TBD"
+* #avg-member-office-visit "Average members with office visit" "TBD"
+* #condition-count "Condition count" "TBD"
+* #eligible-member "Eligible members" "TBD"
+* #1-gap-closed "1 gap closed" "TBD"
+* #2-gap-closed "2 gaps closed" "TBD"
+* #interim-pmt-rate "Interim payment rate" "TBD"
+* #earned-incentive "earned-incentive" "TBD"
 * ^caseSensitive = true
 
 CodeSystem: PaymentStream
@@ -83,4 +90,13 @@ Description: "HCPLAN Framework represents payments from public and private payer
 * #4B "Category 4B" "Comprehensive Population-Based Payment, e.g., global budgets or full/percent of premium payments"
 * #4C "Category 4C" "Integrated Finance and Delivery System, e.g., global budgets or full/percent of premium payments in integrated systems."
 * #4N "Category 4N" "Capitated Payments not linked to quality"
+* ^caseSensitive = true
+
+CodeSystem: QualityProgram
+Title: "Quality Program Code System"
+Id: quality-program
+Description: "Quality program"
+* ^experimental = false
+* #chronic "Chronic care management incentive program" "Chronic Care Management Incentive Program"
+* #annual-visit "Annuall office visits" "Annuall Office Visit"
 * ^caseSensitive = true

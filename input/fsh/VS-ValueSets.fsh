@@ -28,6 +28,13 @@ Description: "HCPLAN framework categories for value-based performance. HCPLAN fr
 * ^experimental = false
 * codes from system hcplan-framework
 
+ValueSet: QualityProgram
+Title: "Quality Program Value Set"
+Id: quality-program
+Description: "Quality program"
+* ^experimental = false
+* codes from system quality-program
+
 //ValueSet: VBPRMeasurePopulationType
 //Title: "VBPR Measure Population Type Value Set"
 //Id: vbpr-measure-population-type

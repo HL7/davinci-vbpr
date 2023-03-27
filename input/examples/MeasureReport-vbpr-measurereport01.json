@@ -43,9 +43,7 @@
                         "coding": [
                             {
                                 "code": "ccf",
-                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream",
-                                "display": "Care coordination fee"
-                            }
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"                            }
                         ],
                         "text": "Care coordination fee"
                     }
@@ -66,9 +64,7 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "ccf",
-                        "display": "Care coordination fee"
-                    }
+                        "code": "ccf"                    }
                 ],
                 "text": "Care coordination fee"
             }  ,
@@ -85,9 +81,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -103,9 +97,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -124,9 +116,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -142,9 +132,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -163,9 +151,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -182,9 +168,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -203,9 +187,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -221,9 +203,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -300,9 +280,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -318,9 +296,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -339,9 +315,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -357,9 +331,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -389,9 +361,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -407,9 +377,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -427,9 +395,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -445,9 +411,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -494,9 +458,7 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "avg-risk-score",
-                        "display": "Average risk score"
-                    }
+                        "code": "avg-risk-score"                    }
                 ],
                 "text": "Average risk score"
             },
@@ -525,9 +487,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -543,9 +503,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -564,9 +522,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -582,9 +538,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -615,9 +569,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -633,9 +585,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -654,9 +604,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -672,9 +620,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -721,9 +667,7 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "revenue",
-                        "display": "Revenue"
-                    }
+                        "code": "revenue"                    }
                 ],
                 "text": "Total revenue"
             },
@@ -752,9 +696,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -770,9 +712,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -791,9 +731,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -809,9 +747,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -842,9 +778,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -860,9 +794,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -881,9 +813,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -899,9 +829,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -948,9 +876,7 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "revenue-pmpm",
-                        "display": "Revenue PMPM"
-                    }
+                        "code": "revenue-pmpm"                    }
                 ],
                 "text": "Revenue PMPM"
             },
@@ -979,9 +905,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -997,9 +921,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1018,9 +940,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1036,9 +956,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1069,9 +987,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1087,9 +1003,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1108,9 +1022,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1126,9 +1038,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1175,9 +1085,7 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "med-rx-cost",
-                        "display": "Medical pharmacy cost"
-                    }
+                        "code": "med-rx-cost"                    }
                 ],
                 "text": "Medical pharmacy cost"
             },
@@ -1206,9 +1114,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1224,9 +1130,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1245,9 +1149,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1263,9 +1165,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1296,9 +1196,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1314,9 +1212,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1335,9 +1231,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1353,9 +1247,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1402,9 +1294,7 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "med-rx-cost-pmpm",
-                        "display": "Medical pharmacy cost PMPM"
-                    }
+                        "code": "med-rx-cost-pmpm"                    }
                 ],
                 "text": "Medical pharmacy cost PMPM"
             },
@@ -1433,9 +1323,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1451,9 +1339,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1472,9 +1358,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1490,9 +1374,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1523,9 +1405,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1541,9 +1421,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1562,9 +1440,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1580,9 +1456,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1629,9 +1503,7 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "med-cost-fund",
-                        "display": "Medical cost fund"
-                    }
+                        "code": "med-cost-fund"                    }
                 ],
                 "text": "Medical cost fund"
             },
@@ -1664,9 +1536,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1682,9 +1552,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1705,9 +1573,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1723,9 +1589,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1760,9 +1624,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1778,9 +1640,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1801,9 +1661,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1819,9 +1677,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1870,15 +1726,13 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "med-cost-target",
-                        "display": "Medical cost target"
-                    }
+                        "code": "med-cost-target"                    }
                 ],
                 "text": "Medical cost target"
             },
             "measureScore": {
                 "value": 85.0,
-                "vode": "%",
+                "code": "%",
                 "system": "http://unitsofmeasure.org"
             },
             "stratifier": [
@@ -1905,9 +1759,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1923,9 +1775,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1946,9 +1796,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -1964,9 +1812,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2001,9 +1847,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2019,9 +1863,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2042,9 +1884,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2060,9 +1900,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2111,9 +1949,7 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "med-rx-cost-target",
-                        "display": "Medical pharmacy cost target"
-                    }
+                        "code": "med-rx-cost-target"                    }
                 ],
                 "text": "Medical pharmacy cost target"
             },
@@ -2142,9 +1978,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2160,9 +1994,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2181,9 +2013,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2199,9 +2029,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2232,9 +2060,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2250,9 +2076,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2271,9 +2095,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2289,9 +2111,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2338,9 +2158,7 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "variance-cost",
-                        "display": "Variance cost"
-                    }
+                        "code": "variance-cost"                    }
                 ],
                 "text": "Variance cost"
             },
@@ -2369,9 +2187,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2387,9 +2203,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2408,9 +2222,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2426,9 +2238,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2459,9 +2269,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2477,9 +2285,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2498,9 +2304,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2516,9 +2320,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2565,8 +2367,7 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "avg-risk-score-market",
-                        "display": "Average risk score market"
+                        "code": "avg-risk-score-market"
                     }
                 ],
                 "text": "Average risk score market"
@@ -2582,7 +2383,8 @@
                             "coding": [
                                 {
                                     "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                    "code": "HMO"                                }
+                                    "code": "HMO"                                
+                                }
                             ]
                         },
                         "measureScore": {
@@ -2596,8 +2398,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
+                                            "code": "87520-3"
                                         }
                                     ]
                                 },
@@ -2614,9 +2415,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2635,9 +2434,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2653,9 +2450,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2686,9 +2481,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2704,9 +2497,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2725,9 +2516,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2743,9 +2532,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2792,11 +2579,8 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "avg-revenue-pmpm-market",
-                        "display": "Average revenue PMPM market"
-                    }
-                ],
-                "text": "Average revenue PMPM market"
+                        "code": "avg-revenue-pmpm-market"                    }
+                ]
             },
             "measureScore": {
                 "value": 35
@@ -2823,9 +2607,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2841,9 +2623,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2862,9 +2642,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2880,9 +2658,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2913,9 +2689,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2931,9 +2705,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2952,9 +2724,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -2970,9 +2740,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3019,11 +2787,8 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "avg-med-rx-cost-pmpm-market",
-                        "display": "Market average medical pharmacy cost PMPM"
-                    }
-                ],
-                "text": "Market average medical pharmacy cost PMPM"
+                        "code": "avg-med-rx-cost-pmpm-market"                    }
+                ]
             },
             "measureScore": {
                 "value": 94.3,
@@ -3054,9 +2819,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3072,9 +2835,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3095,9 +2856,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3113,9 +2872,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3150,9 +2907,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3168,9 +2923,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3191,9 +2944,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3209,9 +2960,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3260,9 +3009,7 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "ccf",
-                        "display": "Care coordination fee"
-                    }
+                        "code": "ccf"                    }
                 ],
                 "text": "Care coordination fee"
             },
@@ -3291,9 +3038,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3309,9 +3054,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3330,9 +3073,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3348,9 +3089,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3381,9 +3120,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3399,9 +3136,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3420,9 +3155,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3438,9 +3171,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3487,9 +3218,7 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "quality-pmt-chronic",
-                        "display": "Qulaity payment chronic"
-                    }
+                        "code": "quality-pmt-chronic"                    }
                 ],
                 "text": "Qulaity payment chronic"
             },
@@ -3518,9 +3247,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3536,9 +3263,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3557,9 +3282,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3575,9 +3298,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3608,9 +3329,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3626,9 +3345,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3647,9 +3364,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3665,9 +3380,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3714,9 +3427,7 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "quality-pmt-office-visit",
-                        "display": "Qulaity payment office visit"
-                    }
+                        "code": "quality-pmt-office-visit"                    }
                 ],
                 "text": "Qulaity payment office visit"
             },
@@ -3745,9 +3456,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3763,9 +3472,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3784,9 +3491,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3802,9 +3507,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3835,9 +3538,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3853,9 +3554,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3874,9 +3573,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3892,9 +3589,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3941,9 +3636,7 @@
                 "coding": [
                     {
                         "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
-                        "code": "shared-saving-deficit",
-                        "display": "Shared saving deficit"
-                    }
+                        "code": "shared-saving-deficit"                    }
                 ],
                 "text": "Shared saving deficit"
             },
@@ -3972,9 +3665,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -3990,9 +3681,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -4011,9 +3700,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -4029,9 +3716,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -4062,9 +3747,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -4080,9 +3763,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -4101,9 +3782,7 @@
                                     "coding": [
                                         {
                                             "system": "http://loinc.org",
-                                            "code": "87520-3",
-                                            "display": "Coverage type"
-                                        }
+                                            "code": "87520-3"                                        }
                                     ]
                                 },
                                 "value": {
@@ -4119,9 +3798,7 @@
                                     "coding": [
                                         {
                                             "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-                                            "code": "LOC",
-                                            "display": "location"
-                                        }
+                                            "code": "LOC"                                        }
                                     ]
                                 },
                                 "value": {
@@ -4136,6 +3813,720 @@
                 ]
              }
             ]                            
-        }                                                                                                                                                        
+        },
+        {
+            "id": "qip-group-01",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "qip",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"                            }
+                        ],
+                        "text": "Quality incentive payment"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/quality-program",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "annual-visit",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-program"                            }
+                        ],
+                        "text": "Annual office visit"
+                    }
+                },                
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-11-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-12-31"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "avg-member-office-visit"                    }
+                ],
+                "text": "Average members with office visit"
+            }  ,
+            "measureScore": {
+                "value": 87.0,
+                "code": "%",
+                "system": "http://unitsofmeasure.org"
+            }
+        },
+        {
+            "id": "qip-group-02",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "qip",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"                            }
+                        ],
+                        "text": "Quality incentive payment"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/quality-program",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "chronic",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-program"                            }
+                        ],
+                        "text": "Chronic care management incentive program"
+                    }
+                },                
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-09-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-09-30"
+                }               
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "eligible-member"                    }
+                ],
+                "text": "Eligible member"
+            }  ,
+            "measureScore": {
+                "value": 500
+            },
+            "stratifier": [
+                { 
+                    "code": [{
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                                "code": "condition-count"                                
+                            }
+                        ]
+                    }],               
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6112-2"                                
+                                }
+                            ],
+                            "text": "1"
+                        },
+                        "measureScore": {
+                            "value": 100
+                        }  
+                    },                    
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6113-0"                                
+                                }
+                            ],
+                            "text": "2"
+                        },
+                        "measureScore": {
+                            "value": 200
+                        }                     
+                    },  
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6114-8"                                
+                                }
+                            ],
+                            "text": "3"
+                        },
+                        "measureScore": {
+                            "value": 50
+                        }                     
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6115-5"                                
+                                }
+                            ],
+                            "text": "4"
+                        },
+                        "measureScore": {
+                            "value": 50
+                        }                     
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA10137-0"                                
+                                }
+                            ],
+                            "text": "5+"
+                        },
+                        "measureScore": {
+                            "value": 100
+                        }                     
+                    }                                                                          
+                ]
+             }
+            ]             
+        },
+        {
+            "id": "qip-group-03",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "qip",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"                            }
+                        ],
+                        "text": "Quality incentive payment"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/quality-program",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "chronic",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-program"                            }
+                        ],
+                        "text": "Chronic care management incentive program"
+                    }
+                },                
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-09-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-09-30"
+                }               
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "1-gap-closed"                    
+                    }
+                ],
+                "text": "1 gap closed"
+            }  ,
+            "measureScore": {
+                "value": 100
+            },
+            "stratifier": [
+                { 
+                    "code": [{
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                                "code": "condition-count"                                
+                            }
+                        ]
+                    }],                                     
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6112-2"                                
+                                }
+                            ],
+                            "text": "1"
+                        },
+                        "measureScore": {
+                            "value": 20
+                        }  
+                    },                    
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6113-0"                                
+                                }
+                            ],
+                            "text": "2"
+                        },
+                        "measureScore": {
+                            "value": 30
+                        }                     
+                    },  
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6114-8"                                
+                                }
+                            ],
+                            "text": "3"
+                        },
+                        "measureScore": {
+                            "value": 20
+                        }                     
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6115-5"                                
+                                }
+                            ],
+                            "text": "4"
+                        },
+                        "measureScore": {
+                            "value": 10
+                        }                     
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA10137-0"                                
+                                }
+                            ],
+                            "text": "5+"
+                        },
+                        "measureScore": {
+                            "value": 20
+                        }                     
+                    }                                                                          
+                ]
+             }
+            ]             
+        },
+        {
+            "id": "qip-group-04",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "qip",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"                            }
+                        ],
+                        "text": "Quality incentive payment"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/quality-program",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "chronic",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-program"                            }
+                        ],
+                        "text": "Chronic care management incentive program"
+                    }
+                },                
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-09-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-09-30"
+                }             
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "2-gap-closed"                    }
+                ],
+                "text": "2 gap closed"
+            }  ,
+            "measureScore": {
+                "value": 0
+            },
+            "stratifier": [
+                {   
+                    "code": [{
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                                "code": "condition-count"                                
+                            }
+                        ]
+                    }],                                  
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6112-2"                                
+                                }
+                            ],
+                            "text": "1"
+                        },
+                        "measureScore": {
+                            "value": 0
+                        }  
+                    },                    
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6113-0"                                
+                                }
+                            ],
+                            "text": "2"
+                        },
+                        "measureScore": {
+                            "value": 0
+                        }                     
+                    },  
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6114-8"                                
+                                }
+                            ],
+                            "text": "3"
+                        },
+                        "measureScore": {
+                            "value": 0
+                        }                     
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6115-5"                                
+                                }
+                            ],
+                            "text": "4"
+                        },
+                        "measureScore": {
+                            "value": 0
+                        }                     
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA10137-0"                                
+                                }
+                            ],
+                            "text": "5+"
+                        },
+                        "measureScore": {
+                            "value": 0
+                        }                     
+                    }                                                                          
+                ]
+             }
+            ]             
+        },
+        {
+            "id": "qip-group-05",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "qip",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"                            }
+                        ],
+                        "text": "Quality incentive payment"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/quality-program",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "chronic",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-program"                            }
+                        ],
+                        "text": "Chronic care management incentive program"
+                    }
+                },                
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-09-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-09-30"
+                }              
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "interim-pmt-rate"                    }
+                ],
+                "text": "Interim payment rate"
+            }  ,
+            "stratifier": [
+                {   
+                    "code": [{
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                                "code": "condition-count"                                
+                            }
+                        ]
+                    }],                                  
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6112-2"                                
+                                }
+                            ],
+                            "text": "1"
+                        },
+                        "measureScore": {
+                            "value": 20
+                        }  
+                    },                    
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6113-0"                                
+                                }
+                            ],
+                            "text": "2"
+                        },
+                        "measureScore": {
+                            "value": 50
+                        }                     
+                    },  
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6114-8"                                
+                                }
+                            ],
+                            "text": "3"
+                        },
+                        "measureScore": {
+                            "value": 100
+                        }                     
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6115-5"                                
+                                }
+                            ],
+                            "text": "4"
+                        },
+                        "measureScore": {
+                            "value": 200
+                        }                     
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA10137-0"                                
+                                }
+                            ],
+                            "text": "5+"
+                        },
+                        "measureScore": {
+                            "value": 300
+                        }                     
+                    }                                                                          
+                ]
+             }
+            ]             
+        },
+        {
+            "id": "qip-group-06",
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "qip",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream"                            }
+                        ],
+                        "text": "Quality incentive payment"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/quality-program",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "code": "chronic",
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-program"                            }
+                        ],
+                        "text": "Chronic care management incentive program"
+                    }
+                },                
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period",
+                    "valuePeriod": {
+                        "start" : "2022-01-01",
+                        "end" : "2022-09-30"
+                    }
+                },
+                {
+                    "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date",
+                    "valueDate": "2022-09-30"
+                }                
+            ],
+            "code": {
+                "coding": [
+                    {
+                        "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                        "code": "earned-incentive"                    }
+                ],
+                "text": "Earned incentive"
+            }  ,
+            "measureScore": {
+                "value": 11900
+            },            
+            "stratifier": [
+                {    
+                    "code": [{
+                        "coding": [
+                            {
+                                "system": "http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbpr-performance-metric-type",
+                                "code": "condition-count"                                
+                            }
+                        ]
+                    }],                                 
+                "stratum": [ 
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6112-2"                                
+                                }
+                            ],
+                            "text": "1"
+                        },
+                        "measureScore": {
+                            "value": 400
+                        }  
+                    },                    
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6113-0"                                
+                                }
+                            ],
+                            "text": "2"
+                        },
+                        "measureScore": {
+                            "value": 1500
+                        }                     
+                    },  
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6114-8"                                
+                                }
+                            ],
+                            "text": "3"
+                        },
+                        "measureScore": {
+                            "value": 2000
+                        }                     
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA6115-5"                                
+                                }
+                            ],
+                            "text": "4"
+                        },
+                        "measureScore": {
+                            "value": 2000
+                        }                     
+                    },
+                    {
+                        "value": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "LA10137-0"                                
+                                }
+                            ],
+                            "text": "5+"
+                        },
+                        "measureScore": {
+                            "value": 6000
+                        }                     
+                    }                                                                          
+                ]
+             }
+            ]             
+        }                                                                                                                                                                                                                        
     ]
 }

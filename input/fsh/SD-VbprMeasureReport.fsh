@@ -26,6 +26,7 @@ Description: "Value-Based Performance Report is a payer-generated performance re
 * group.measureScore ^short = "Performance metric value"
 * group.measureScore.extension contains AlternateMeasureScore named altMeasureScore 0..1 MS
 * group.extension contains PaymentStream named paymentStream 0..* MS 
+* group.extension contains QualityProgram named qualityProgram 0..1 MS 
 * group.extension contains ServicePeriod named servicePeriod 0..1 MS 
 * group.extension contains PaidThroughDate named paidThroughDate 0..1 MS
 * group.extension[paidThroughDate] ^short = "Ending date of the pay cycle"
