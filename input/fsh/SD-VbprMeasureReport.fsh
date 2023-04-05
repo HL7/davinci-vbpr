@@ -5,11 +5,13 @@ Title: "Value-Based Performance Report"
 Description: "Value-Based Performance Report is a payer-generated performance report against the specific details (metrics) of a value-based contract which may include financial, quality, utilization, etc. over a time period."
 * ^status = #draft
 * ^version = "0.1.0"
+* . ^short = "A value-based performance report"
 * status MS
 * type = #summary (exactly)
 * type MS
 * measure MS
 * measure only Canonical(vbpr-measure)
+* measure ^short = "A Measure definition with contract level data for a value-based contract the report is for"
 * subject MS
 * subject only Reference($us-core-practitioner or $us-core-practitionerrole or $Group)
 * subject.extension contains OrganizationSubject named orgSubject 1..1 MS 
@@ -18,26 +20,34 @@ Description: "Value-Based Performance Report is a payer-generated performance re
 * reporter 1..1 MS
 * reporter only Reference($us-core-organization)
 * period 1..1 MS
+* period ^short = "What performance period the report covers"
 * improvementNotation 0..0
 * group 0..* MS
+* group ^short = "Performance metrics in the report. Each group contains data for a performance metric."
 * group.id MS 
 * group.code from vbpr-performance-metric-type (extensible)
+* group.code ^short = "The performance metric"
 * group.measureScore 0..1 MS 
-* group.measureScore ^short = "Performance metric value"
+* group.measureScore ^short = "The performance metric value"
 * group.measureScore.extension contains AlternateMeasureScore named altMeasureScore 0..1 MS
+* group.measureScore.extension[AlternateMeasureScore] ^short = "Additional data type choices for the value of the performance metric"
 * group.extension contains PaymentStream named paymentStream 0..* MS 
+* group.extension[PaymentStream] ^short = "The payment stream the performance metric is part of"
 * group.extension contains QualityProgram named qualityProgram 0..1 MS 
+* group.extension[QualityProgram] ^short = "The quality program the performance metric is part of"
 * group.extension contains ServicePeriod named servicePeriod 0..1 MS 
+* group.extension[ServicePeriod] ^short = "The service period for the performance metric"
+* group.extension[ServicePeriod] ^definition = "The service period may be the same as or a subset of the performance period the report covers."
 * group.extension contains PaidThroughDate named paidThroughDate 0..1 MS
 * group.extension[paidThroughDate] ^short = "Ending date of the pay cycle"
-//* group.population MS
-//* group.population.code from vbpr-measure-population-type (extensible)
-//* group.population.code ^short = "HMO | PPO | initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | measure-population | measure-population-exclusion | measure-observation"
-//* group.population.count.extension contains AlternateCount named altCount 0..1 MS
+* group.extension contains Baseline named baseline 0..1 MS
+* group.extension[Baseline] ^short = "The baseline data for the performance metric"
 * group.stratifier MS
 * group.stratifier.stratum MS
 * group.stratifier.stratum.measureScore MS
+* group.stratifier.stratum.measureScore ^short = "Stratified performance metric value"
 * group.stratifier.stratum.measureScore.extension contains AlternateMeasureScore named altMeasureScore 0..1 MS
+* group.stratifier.stratum.measureScore.extension[AlternateMeasureScore] ^short = "Additional data type choices for the stratified performance metric value"
 * evaluatedResource 0..* MS
 * evaluatedResource only Reference($vbpr-quality-measurereport)
-* evaluatedResource ^short = "Quality measure report(s) used to calculate the weighted average star"
+* evaluatedResource ^short = "Quality measure report(s) used to calculate the performance metric - weighted average star"

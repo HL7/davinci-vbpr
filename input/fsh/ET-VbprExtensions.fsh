@@ -94,16 +94,20 @@ Description: "Quality program"
 * value[x] 1..1 
 * valueCodeableConcept from quality-program (example)
 
+Extension: Baseline
+Id: baseline
+Title: "Baseline"
+Description: "Baseline data of a financial metric"
+* extension contains value 1..1 MS and period 1..1 MS
+* extension[value].value[x] ^short = "The baseline data for the metric"
+* extension[value].value[x] 1..1
+* extension[value].value[x] only decimal or integer or Quantity or Money or string
+* extension[period] ^short = "The baseline data performance period"
+* extension[period].valuePeriod 1..1
+
 //Extension: Weight
 //Id: weight
 //Title: "Weight"
 //Description: "Weight"
 //* value[x] 1..1 
 //* value[x] only decimal or integer
-
-//Extension: AlternateCount
-//Id: alternate-count
-//Title: "Alternate Count"
-//Description: "Other allowed data type choices for the count element in addition to Integer. The alternate data type for count is determined by the performance metric type."
-//* value[x] 0..1 
-//* value[x] only Quantity or decimal or Money or string
