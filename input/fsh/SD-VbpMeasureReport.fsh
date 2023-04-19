@@ -1,8 +1,8 @@
-Profile: VbprMeasureReport
+Profile: VbpMeasureReport
 Parent: MeasureReport
-Id: vbpr-performance-measurereport
-Title: "Value-Based Performance Report"
-Description: "Value-Based Performance Report is a payer-generated performance report against the specific details (metrics) of a value-based contract which may include financial, quality, utilization, etc. over a time period."
+Id: vbp-performance-measurereport
+Title: "Value-Based Performance MeasureReport"
+Description: "Value-Based Performance MeasureReport is a payer-generated performance report against the specific details (metrics) of a value-based contract (VBC) or a value-based purchasing (VBP) which may include financial, quality, utilization, etc. over a time period."
 * ^status = #draft
 * ^version = "0.1.0"
 * . ^short = "A value-based performance report"
@@ -10,7 +10,7 @@ Description: "Value-Based Performance Report is a payer-generated performance re
 * type = #summary (exactly)
 * type MS
 * measure MS
-* measure only Canonical(vbpr-measure)
+* measure only Canonical(vbp-measure)
 * measure ^short = "A Measure definition with contract level data for a value-based contract the report is for"
 * subject MS
 * subject only Reference($us-core-practitioner or $us-core-practitionerrole or $Group)
@@ -25,7 +25,7 @@ Description: "Value-Based Performance Report is a payer-generated performance re
 * group 0..* MS
 * group ^short = "Performance metrics in the report. Each group contains data for a performance metric."
 * group.id MS 
-* group.code from vbpr-performance-metric-type (extensible)
+* group.code from vbp-performance-metric-type (extensible)
 * group.code ^short = "The performance metric"
 * group.measureScore 0..1 MS 
 * group.measureScore ^short = "The performance metric value"
@@ -41,7 +41,7 @@ Description: "Value-Based Performance Report is a payer-generated performance re
 * group.extension contains PaidThroughDate named paidThroughDate 0..1 MS
 * group.extension[paidThroughDate] ^short = "Ending date of the pay cycle"
 * group.extension contains Baseline named baseline 0..1 MS
-* group.extension[Baseline] ^short = "The baseline data for the performance metric"
+* group.extension[Baseline] ^short = "The baseline for the performance metric"
 * group.stratifier MS
 * group.stratifier.stratum MS
 * group.stratifier.stratum.measureScore MS
@@ -49,5 +49,5 @@ Description: "Value-Based Performance Report is a payer-generated performance re
 * group.stratifier.stratum.measureScore.extension contains AlternateMeasureScore named altMeasureScore 0..1 MS
 * group.stratifier.stratum.measureScore.extension[AlternateMeasureScore] ^short = "Additional data type choices for the stratified performance metric value"
 * evaluatedResource 0..* MS
-* evaluatedResource only Reference($vbpr-quality-measurereport)
-* evaluatedResource ^short = "Quality measure report(s) used to calculate the performance metric - weighted average star"
+* evaluatedResource only Reference($vbp-quality-measurereport)
+* evaluatedResource ^short = "Quality measure report(s) referenced by the value-based performance report"

@@ -1,7 +1,7 @@
-CodeSystem: VBCPerformanceMetrics
+CodeSystem: VbpPerformanceMetrics
 Title: "Performance Metric Type Code System"
-Id: vbpr-performance-metric-type
-Description: "Type of value-based contract performance metrics."
+Id: vbp-performance-metric-type
+Description: "Type of value-based performance metrics."
 * ^experimental = false
 * #admin-cost "Administrative cost" "A general term that refers to Medicare and Medicaid administrative costs, as well as CMS administrative costs. Medicare administrative costs are comprised of the Medicare related outlays and non-CMS administrative outlays. Medicaid administrative costs refer to the Federal share of the States' expenditures for administration of the Medicaid program. CMS administrative costs are the costs of operating CMS (e.g., salaries and expenses, facilities, equipment, rent and utilities, etc.). These costs are reflected in the Program Management account."
 * #annual-care-visit-bonus "Annual care visit bonus" "Bonus to qualified annual care visit (ACV). A type of quality incentive payment."
@@ -99,4 +99,25 @@ Description: "Quality program"
 * ^experimental = false
 * #chronic "Chronic care management incentive program" "Chronic Care Management Incentive Program"
 * #annual-visit "Annuall office visits" "Annuall Office Visit"
+* ^caseSensitive = true
+
+CodeSystem: VbpMeasurePopulationType
+Title: "Value-Based Performance Measure Population Type"
+Id: vbp-measure-population
+Description: "Measure population type"
+* ^experimental = false
+* #calculated-denominator "Calculated denominator"
+* #calculated-numerator "Calculated numerator"
+* ^caseSensitive = true
+
+CodeSystem: QualityStarRating
+Title: "Quality Star Rating"
+Id: quality-star-rating
+Description: "Quality star rating"
+* ^experimental = false
+* #star-1 "Star 1"
+* #star-2 "Star 2"
+* #star-3 "Star 3"
+* #star-4 "Star 4"
+* #star-5 "Star 5"
 * ^caseSensitive = true

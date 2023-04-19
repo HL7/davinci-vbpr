@@ -12,18 +12,18 @@ This page lists examples included in this IG.
 
 <!-- ================================================ -->
 
-- [Measure: VBPR Measure Example01](Measure-vbpr-example01.html)
+- [Measure: VBP Measure Example01](Measure-vbp-example01.html)
 
-- [MeasureReport: Example Value-Based Performance Report MeasureReport01](MeasureReport-vbpr-measurereport01.html)
+- [MeasureReport: Example Value-Based Performance MeasureReport01](MeasureReport-vbp-measurereport01.html)
 
-- [MeasureReport: Example Breast Cancer Screening Quality Performance Report MeasureReport01](MeasureReport-quality-measurereport01.html)
+- [MeasureReport: Example Breast Cancer Screening Quality Performance MeasureReport01](MeasureReport-quality-measurereport01.html)
 
-- [MeasureReport: Example Colorectal Cancer Screening Quality Performance Report MeasureReport01](MeasureReport-quality-measurereport02.html)
+- [MeasureReport: Example Colorectal Cancer Screening Quality Performance MeasureReport02](MeasureReport-quality-measurereport02.html)
 
-- [MeasureReport: Example Diabetes Care - Blood Sugar Controlled Performance Report MeasureReport01](MeasureReport-vbpr-measurereport03.html)
+- [MeasureReport: Example Diabetes Care - Blood Sugar Controlled Performance MeasureReport03](MeasureReport-quality-measurereport03.html)
 
-- [Organization: ABC Payer payer01](Organization-vbpr-payer01.html)
+- [Organization: ABC Payer payer01](Organization-vbp-payer01.html)
 
-- [Organization: GoodHealth provider01](Organization-vbpr-provider01.html)
+- [Organization: GoodHealth provider01](Organization-vbp-provider01.html)
 
 {% include link-list.md %}

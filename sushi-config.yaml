@@ -80,7 +80,15 @@ pages:
 # For parameters defined by the FHIR Tools IG see:
 # http://build.fhir.org/ig/FHIR/fhir-tools-ig/branches/master/CodeSystem-ig-parameters.html
 #
-parameters:
+
+parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
+  path-resource:
+    - input/resources
+    - fsh-generated/resources
+  path-pages:
+    - input/pagecontent
+    - input/intro-notes
+    - fsh-generated/includes
   show-inherited-invariants: false
   version-comparison: n/a
 #   excludettl: true

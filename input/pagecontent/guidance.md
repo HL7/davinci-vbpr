@@ -5,6 +5,13 @@ This page is under development.
 
 ### Introduction
 
+Value-based purchasing (VBP) refers to a broad set of performance-based payment strategies that link financial incentives to providers' performance on a set of defined measures. VBP programs are private or public programs that link financial reimbursement to performance on measures of quality (i.e., structure, process, outcomes, access, and patient experience) and cost or resource use.<sup>[1](https://www.rand.org/pubs/periodicals/health-quarterly/issues/v4/n3/09.html)</sup> 
+
+
+
+In this IG, we use the term metrics to refer to finanacial measures in the report, and the term quality measures or measures to refer to the quality measures such as the colorectral cancer screening measure. 
+
+
 ### Preconditions and Assumptions
 
 This following is a list of pre-requisites for using this implementation guide (IG):
@@ -24,7 +31,9 @@ This following is a list of pre-requisites for using this implementation guide (
 - Provider submits attributed member quality and risk adjustment data to payer  
 - Payer and provider has established security and privacy practices in place
 
-### VBPR MeasureReport
+### Value-based Performance MeasureReport
+
+The [VBP MeasureReport]
 
 Note: this is a draft for discussion purpose and is under developement
 
