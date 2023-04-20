@@ -50,3 +50,10 @@ Id: quality-star-rating
 Description: "Quality star rating"
 * ^experimental = false
 * codes from system quality-star-rating
+
+ValueSet: MeasureStratifierExample
+Title: "Measure Stratifier Example"
+Id: measure-stratifier-example
+Description: "Example stratifiers that could be used to stratify measure or performance metrics"
+* ^experimental = true
+* codes from system measure-stratifier-example

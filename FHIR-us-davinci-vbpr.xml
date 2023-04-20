@@ -63,6 +63,8 @@
 <artifact deprecated="true" id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status Extension"/>
 <artifact id="StructureDefinition/lob" key="StructureDefinition-lob" name="Line of Business Extension"/>
 <artifact id="ValueSet/lob" key="ValueSet-lob" name="Line of Business Value Set"/>
+<artifact id="ValueSet/measure-stratifier-example" key="ValueSet-measure-stratifier-example" name="Measure Stratifier Example"/>
+<artifact id="CodeSystem/measure-stratifier-example" key="CodeSystem-measure-stratifier-example" name="Measure Stratifier Example"/>
 <artifact deprecated="true" id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Observation: Creatinine Result from 20210728"/>
 <artifact deprecated="true" id="Observation/ra-obs02pat03" key="Observation-ra-obs02pat03" name="Observation: PHQ9 from 20190823"/>
 <artifact deprecated="true" id="Organization/ra-payer01" key="Organization-ra-payer01" name="Organization01: ABC Payer"/>

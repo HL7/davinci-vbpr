@@ -47,62 +47,58 @@ Description: "This is an example Statin Use in Persons with Diabetes (SUPD) Meas
 * improvementNotation = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase "Increased score indicates improvement"
 
 * group.population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
-* group.population[=].id = "calculated-numerator"
+* group.population[=].id = "pop1"
 * group.population[=].count = 220
 * group.population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
-* group.population[=].id = "calculated-denominator"
+* group.population[=].id = "pop2"
 * group.population[=].count = 386
-* group.measureScore = 57 '%'
+* group.measureScore.value = 0.57
 
-* group.stratifier.code = http://hl7.org/fhir/measure-stratifier-example#region
-* group.stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group.stratifier.stratum[=].component[0].code = http://loinc.org#87520-3
+* group.stratifier.code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#region-cohort
+* group.stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
 * group.stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
 * group.stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group.stratifier.stratum[=].component[=].value.text = "Region 1"
 * group.stratifier.stratum[=].population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
-* group.stratifier.stratum[=].population[=].id = "calculated-numerator"
+* group.stratifier.stratum[=].population[=].id = "strat-pop1"
 * group.stratifier.stratum[=].population[=].count = 100
 * group.stratifier.stratum[=].population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
-* group.stratifier.stratum[=].population[=].id = "calculated-denominator"
+* group.stratifier.stratum[=].population[=].id = "strat-pop2"
 * group.stratifier.stratum[=].population[=].count = 180
-* group.stratifier.stratum[=].measureScore = 56 '%'
+* group.stratifier.stratum[=].measureScore.value = 0.56
 
-* group.stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group.stratifier.stratum[=].component[0].code = http://loinc.org#87520-3
+* group.stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
 * group.stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
 * group.stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group.stratifier.stratum[=].component[=].value.text = "Region 2"
 * group.stratifier.stratum[=].population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
-* group.stratifier.stratum[=].population[=].id = "calculated-numerator"
+* group.stratifier.stratum[=].population[=].id = "strat-pop3"
 * group.stratifier.stratum[=].population[=].count = 10
 * group.stratifier.stratum[=].population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
-* group.stratifier.stratum[=].population[=].id = "calculated-denominator"
+* group.stratifier.stratum[=].population[=].id = "strat-pop4"
 * group.stratifier.stratum[=].population[=].count = 13
-* group.stratifier.stratum[=].measureScore = 8 '%'
+* group.stratifier.stratum[=].measureScore.value = 0.08
 
-* group.stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group.stratifier.stratum[=].component[0].code = http://loinc.org#87520-3
+* group.stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
 * group.stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
 * group.stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group.stratifier.stratum[=].component[=].value.text = "Region 1"
 * group.stratifier.stratum[=].population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
-* group.stratifier.stratum[=].population[=].id = "calculated-numerator"
+* group.stratifier.stratum[=].population[=].id = "strat-pop5"
 * group.stratifier.stratum[=].population[=].count = 100
 * group.stratifier.stratum[=].population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
-* group.stratifier.stratum[=].population[=].id = "calculated-denominator"
+* group.stratifier.stratum[=].population[=].id = "strat-pop6"
 * group.stratifier.stratum[=].population[=].count = 1880
-* group.stratifier.stratum[=].measureScore = 56 '%'
+* group.stratifier.stratum[=].measureScore.value = 0.56
 
-* group.stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group.stratifier.stratum[=].component[0].code = http://loinc.org#87520-3
+* group.stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
 * group.stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
 * group.stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group.stratifier.stratum[=].component[=].value.text = "Region 2"
 * group.stratifier.stratum[=].population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
-* group.stratifier.stratum[=].population[=].id = "calculated-numerator"
+* group.stratifier.stratum[=].population[=].id = "strat-pop7"
 * group.stratifier.stratum[=].population[=].count = 10
 * group.stratifier.stratum[=].population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
-* group.stratifier.stratum[=].population[=].id = "calculated-denominator"
+* group.stratifier.stratum[=].population[=].id = "strat-pop8"
 * group.stratifier.stratum[=].population[=].count = 13
-* group.stratifier.stratum[=].measureScore = 8 '%'
+* group.stratifier.stratum[=].measureScore.value = 0.08

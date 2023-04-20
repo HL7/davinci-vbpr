@@ -121,3 +121,12 @@ Description: "Quality star rating"
 * #star-4 "Star 4"
 * #star-5 "Star 5"
 * ^caseSensitive = true
+
+CodeSystem: MeasureStratifierExample
+Title: "Measure Stratifier Example"
+Id: measure-stratifier-example
+Description: "Example stratifiers that could be used to stratify measure or performance metrics"
+* ^experimental = true
+* #region-cohort "region and cohort" "Stratification on both region and cohort"
+* #region "Region" "Region stratification"
+* ^caseSensitive = true

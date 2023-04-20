@@ -34,7 +34,11 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valueDate = "2022-12-31"
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#ccf
 * group[=].code.text = "Care coordination fee"
-* group[=].measureScore.value = 5
+//* group[=].measureScore.value = 5
+* group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
+* group[=].measureScore.extension.valueMoney.value = 5
+* group[=].measureScore.extension.valueMoney.currency = #USD
+
 * group[=].stratifier.stratum[0].component[0].code = http://loinc.org#87520-3
 * group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
@@ -837,3 +841,9 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * evaluatedResource[0] = Reference(MeasureReport/quality-measurereport01)
 * evaluatedResource[+] = Reference(MeasureReport/quality-measurereport02)
 * evaluatedResource[+] = Reference(MeasureReport/quality-measurereport03)
+* evaluatedResource[0] = Reference(MeasureReport/quality-measurereport04)
+* evaluatedResource[+] = Reference(MeasureReport/quality-measurereport05)
+* evaluatedResource[+] = Reference(MeasureReport/quality-measurereport06)
+* evaluatedResource[0] = Reference(MeasureReport/quality-measurereport07)
+* evaluatedResource[+] = Reference(MeasureReport/quality-measurereport08)
+* evaluatedResource[+] = Reference(MeasureReport/quality-measurereport09)
