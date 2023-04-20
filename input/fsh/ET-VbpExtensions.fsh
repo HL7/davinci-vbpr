@@ -135,17 +135,17 @@ Title: "Threshold"
 Description: "Threshold"
 * extension contains 
     value 1..1 MS and 
-    starRating 0..1 MS
+    star 0..1 MS
 * extension[value] only Extension    
 * extension[value] ^short = "Threshold"
 * extension[value] ^definition = "The value of threshold cut point"
 * extension[value].value[x] 1..1
 * extension[value].value[x] only decimal or Quantity
-* extension[starRating] only Extension
-* extension[starRating] ^short = "Star rating"
-* extension[starRating] ^definition = "Indicates whether is star 1, star 2, etc."
+* extension[star] only Extension
+* extension[star] ^short = "Star for star threshold"
+* extension[star] ^definition = "Indicates whether is star 1, star 2, etc."
 //* extension[starRating].value[x] only CodeableConcept
-* extension[starRating].valueCodeableConcept from quality-star-rating (extensible)
+* extension[star].valueCodeableConcept from quality-star-rating (extensible)
 
 Extension: Weight
 Id: weight

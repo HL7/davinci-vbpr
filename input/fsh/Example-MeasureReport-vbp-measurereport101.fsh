@@ -1,4 +1,4 @@
-Instance: vbp-measurereport01
+Instance: vbp-measurereport101
 InstanceOf: MeasureReport
 Usage: #example
 Description: "This is an example Value-Based Performance MeasureReport for the *VBP MeasureReport* profile., which includes examples for payment streams shared savings - gated on quality, care coordination fee, quality incentive payment for the chronic care management incentive program, quality incentive payment for the annual office visits, and quality measure performance."
@@ -13,7 +13,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * extension.valueDate = "2022-12-31"
 * status = #complete
 * type = #summary
-* measure = "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-vbp-example01"
+* measure = "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-vbp-measure01"
 * subject.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/organization-subject"
 * subject.extension.valueReference = Reference(Organization/vbp-provider01)
 * date = "2023-01-15"

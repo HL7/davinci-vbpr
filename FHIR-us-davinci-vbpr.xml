@@ -124,6 +124,12 @@
 <artifact id="MeasureReport/quality-measurereport01" key="MeasureReport-quality-measurereport01" name="quality-measurereport01"/>
 <artifact id="MeasureReport/quality-measurereport02" key="MeasureReport-quality-measurereport02" name="quality-measurereport02"/>
 <artifact id="MeasureReport/quality-measurereport03" key="MeasureReport-quality-measurereport03" name="quality-measurereport03"/>
+<artifact id="MeasureReport/quality-measurereport04" key="MeasureReport-quality-measurereport04" name="quality-measurereport04"/>
+<artifact id="MeasureReport/quality-measurereport05" key="MeasureReport-quality-measurereport05" name="quality-measurereport05"/>
+<artifact id="MeasureReport/quality-measurereport06" key="MeasureReport-quality-measurereport06" name="quality-measurereport06"/>
+<artifact id="MeasureReport/quality-measurereport07" key="MeasureReport-quality-measurereport07" name="quality-measurereport07"/>
+<artifact id="MeasureReport/quality-measurereport08" key="MeasureReport-quality-measurereport08" name="quality-measurereport08"/>
+<artifact id="MeasureReport/quality-measurereport09" key="MeasureReport-quality-measurereport09" name="quality-measurereport09"/>
 <artifact deprecated="true" id="Bundle/ra-bundle01" key="Bundle-ra-bundle01" name="ra-bundle01: Risk Adjustment Bundle"/>
 <artifact deprecated="true" id="Group/ra-group01" key="Group-ra-group01" name="ra-group01: Risk Adjustment Patient Group"/>
 <artifact deprecated="true" id="Group/ra-group02" key="Group-ra-group02" name="ra-group02: Risk Adjustment Patient Group"/>
@@ -133,8 +139,8 @@
 <artifact deprecated="true" id="MeasureReport/ra-measurereport04" key="MeasureReport-ra-measurereport04" name="ra-measurereport04: Risk Adjustment Measure Report for HCC V21 for Patient 03"/>
 <artifact deprecated="true" id="MeasureReport/ra-measurereport05" key="MeasureReport-ra-measurereport05" name="ra-measurereport05: Risk Adjustment Measure Report for RxHCC V5 for Patient03"/>
 <artifact deprecated="true" id="MeasureReport/ra-measurereport06" key="MeasureReport-ra-measurereport06" name="ra-measurereport06: Risk Adjustment Measure Report for RxHCC V5 for Patient02"/>
-<artifact id="Measure/vbp-example01" key="Measure-vbp-example01" name="vbp-example01"/>
-<artifact id="MeasureReport/vbp-measurereport01" key="MeasureReport-vbp-measurereport01" name="vbp-measurereport01"/>
+<artifact id="Measure/vbp-measure01" key="Measure-vbp-measure01" name="vbp-measure01"/>
+<artifact id="MeasureReport/vbp-measurereport101" key="MeasureReport-vbp-measurereport101" name="vbp-measurereport101"/>
 <artifact id="Organization/vbp-payer01" key="Organization-vbp-payer01" name="vbp-payer01"/>
 <artifact id="Organization/vbp-provider01" key="Organization-vbp-provider01" name="vbp-provider01"/>
 <page key="NA" name="(NA)"/>

@@ -1,4 +1,4 @@
-Instance: vbp-example01
+Instance: vbp-measure01
 InstanceOf: Measure
 Usage: #example
 Description: "This is an example measure for the *VBP Measure* profile."
@@ -8,10 +8,10 @@ Description: "This is an example measure for the *VBP Measure* profile."
 * meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
 * meta.extension[=].valueMarkdown = "This is an example measure for the *VBP Measure* profile."
 
-* url = "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-vbp-example01"
+* url = "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-vbp-measure01"
 * identifier.use = #temp
 * identifier.system = "http://example.org/fhir/server"
-* identifier.value = "vbp-measure-ex01"
+* identifier.value = "ex-vbp-measure01"
 * version = "1"
 * name = "VbprMeasureExample01"
 * title = "Example Value-Based Contract - ABC Payer and GoodHealth"

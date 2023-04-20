@@ -19,22 +19,22 @@ Description: "This is an example Colorectal Cancer Screening MeasureReport for t
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
 * extension[=].extension[0].url = "value"
 * extension[=].extension[=].valueQuantity = 40 '%'
-* extension[=].extension[+].url = "starRating"
+* extension[=].extension[+].url = "star"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-star-rating#star-2
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
 * extension[=].extension[0].url = "value"
 * extension[=].extension[=].valueQuantity = 50 '%'
-* extension[=].extension[+].url = "starRating"
+* extension[=].extension[+].url = "star"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-star-rating#star-3
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
 * extension[=].extension[0].url = "value"
 * extension[=].extension[=].valueQuantity = 60 '%'
-* extension[=].extension[+].url = "starRating"
+* extension[=].extension[+].url = "star"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-star-rating#star-4
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
 * extension[=].extension[0].url = "value"
 * extension[=].extension[=].valueQuantity = 70 '%'
-* extension[=].extension[+].url = "starRating"
+* extension[=].extension[+].url = "star"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-star-rating#star-5
 
 * status = #complete
@@ -45,22 +45,64 @@ Description: "This is an example Colorectal Cancer Screening MeasureReport for t
 * period.end = "2022-11-30"
 * reporter = Reference(Organization/vbp-payer01)
 * improvementNotation = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase "Increased score indicates improvement"
+
 * group.population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
 * group.population[=].id = "calculated-numerator"
-* group.population[=].count = 70
+* group.population[=].count = 180
 * group.population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
 * group.population[=].id = "calculated-denominator"
-* group.population[=].count = 100
-* group.population[+].code = http://terminology.hl7.org/CodeSystem/measure-population#initial-population
-* group.population[=].id = "initial-population"
-* group.population[=].count = 100
-* group.population[+].code = http://terminology.hl7.org/CodeSystem/measure-population#numerator "Numerator"
-* group.population[=].id = "numerator"
-* group.population[=].count = 70
-* group.population[+].code = http://terminology.hl7.org/CodeSystem/measure-population#denominator "Denominator"
-* group.population[=].id = "denominator"
-* group.population[=].count = 100
-* group.population[+].code = http://terminology.hl7.org/CodeSystem/measure-population#denominator-exclusion "Denominator Exclusion"
-* group.population[=].id = "denominator-exclusion"
-* group.population[=].count = 0
-* group.measureScore.value = 0.7
+* group.population[=].count = 520
+* group.measureScore = 34.6 '%'
+
+* group.stratifier.code = http://hl7.org/fhir/measure-stratifier-example#region
+* group.stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group.stratifier.stratum[=].component[0].code = http://loinc.org#87520-3
+* group.stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group.stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group.stratifier.stratum[=].component[=].value.text = "Region 1"
+* group.stratifier.stratum[=].population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
+* group.stratifier.stratum[=].population[=].id = "calculated-numerator"
+* group.stratifier.stratum[=].population[=].count = 70
+* group.stratifier.stratum[=].population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
+* group.stratifier.stratum[=].population[=].id = "calculated-denominator"
+* group.stratifier.stratum[=].population[=].count = 100
+* group.stratifier.stratum[=].measureScore = 70 '%'
+
+* group.stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group.stratifier.stratum[=].component[0].code = http://loinc.org#87520-3
+* group.stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group.stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group.stratifier.stratum[=].component[=].value.text = "Region 2"
+* group.stratifier.stratum[=].population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
+* group.stratifier.stratum[=].population[=].id = "calculated-numerator"
+* group.stratifier.stratum[=].population[=].count = 20
+* group.stratifier.stratum[=].population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
+* group.stratifier.stratum[=].population[=].id = "calculated-denominator"
+* group.stratifier.stratum[=].population[=].count = 160
+* group.stratifier.stratum[=].measureScore = 13 '%'
+
+* group.stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group.stratifier.stratum[=].component[0].code = http://loinc.org#87520-3
+* group.stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group.stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group.stratifier.stratum[=].component[=].value.text = "Region 1"
+* group.stratifier.stratum[=].population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
+* group.stratifier.stratum[=].population[=].id = "calculated-numerator"
+* group.stratifier.stratum[=].population[=].count = 70
+* group.stratifier.stratum[=].population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
+* group.stratifier.stratum[=].population[=].id = "calculated-denominator"
+* group.stratifier.stratum[=].population[=].count = 100
+* group.stratifier.stratum[=].measureScore = 70 '%'
+
+* group.stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group.stratifier.stratum[=].component[0].code = http://loinc.org#87520-3
+* group.stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group.stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group.stratifier.stratum[=].component[=].value.text = "Region 2"
+* group.stratifier.stratum[=].population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
+* group.stratifier.stratum[=].population[=].id = "calculated-numerator"
+* group.stratifier.stratum[=].population[=].count = 20
+* group.stratifier.stratum[=].population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
+* group.stratifier.stratum[=].population[=].id = "calculated-denominator"
+* group.stratifier.stratum[=].population[=].count = 160
+* group.stratifier.stratum[=].measureScore = 13 '%'

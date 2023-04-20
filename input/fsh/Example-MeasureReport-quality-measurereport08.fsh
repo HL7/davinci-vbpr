@@ -1,47 +1,45 @@
-Instance: quality-measurereport01
+Instance: quality-measurereport08
 InstanceOf: MeasureReport
 Usage: #example
-Description: "This is an example Breast Cancer Screening MeasureReport for the *VBP Quality MeasureReport* profile."
+Description: "This is an example Statin Therapy for Patients with Cardiovascular Disease MeasureReport for the *VBP Quality MeasureReport* profile."
 * meta.profile = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/vbp-quality-measurereport"
 * meta.source = "http://example.org/fhir/server"
 * meta.extension[0].url = "http://hl7.org/fhir/StructureDefinition/instance-name"
 * meta.extension[=].valueString = "VBP Quality MeasureReport Example"
 * meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
-* meta.extension[=].valueMarkdown = "This is an example Breast Cancer Screening MeasureReport for the *VBP Quality MeasureReport* profile."
+* meta.extension[=].valueMarkdown = "This is an example Statin Therapy for Patients with Cardiovascular Disease MeasureReport for the *VBP Quality MeasureReport* profile."
 
 * extension[0].url = "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring"
 * extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/measure-scoring#proportion
-
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/star-score"
 * extension[=].valueDecimal = 0
-
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/weight"
 * extension[=].valueDecimal = 1
 
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
 * extension[=].extension[0].url = "value"
-* extension[=].extension[=].valueQuantity = 85 '%'
+* extension[=].extension[=].valueQuantity = 80 '%'
 * extension[=].extension[+].url = "star"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-star-rating#star-2
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
 * extension[=].extension[0].url = "value"
-* extension[=].extension[=].valueQuantity = 88 '%'
+* extension[=].extension[=].valueQuantity = 85 '%'
 * extension[=].extension[+].url = "star"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-star-rating#star-3
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
 * extension[=].extension[0].url = "value"
-* extension[=].extension[=].valueQuantity = 91 '%'
+* extension[=].extension[=].valueQuantity = 90 '%'
 * extension[=].extension[+].url = "star"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-star-rating#star-4
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
 * extension[=].extension[0].url = "value"
-* extension[=].extension[=].valueQuantity = 95 '%'
+* extension[=].extension[=].valueQuantity = 93 '%'
 * extension[=].extension[+].url = "star"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-star-rating#star-5
 
 * status = #complete
 * type = #summary
-* measure = "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm125-FHIR"
+* measure = "http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR"
 * date = "2023-01-15"
 * period.start = "2022-01-01"
 * period.end = "2022-11-30"
@@ -50,11 +48,11 @@ Description: "This is an example Breast Cancer Screening MeasureReport for the *
 
 * group.population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
 * group.population[=].id = "calculated-numerator"
-* group.population[=].count = 200
+* group.population[=].count = 260
 * group.population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
 * group.population[=].id = "calculated-denominator"
-* group.population[=].count = 580
-* group.measureScore = 34.5 '%'
+* group.population[=].count = 640
+* group.measureScore = 40.6 '%'
 
 * group.stratifier.code = http://hl7.org/fhir/measure-stratifier-example#region
 * group.stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -64,11 +62,11 @@ Description: "This is an example Breast Cancer Screening MeasureReport for the *
 * group.stratifier.stratum[=].component[=].value.text = "Region 1"
 * group.stratifier.stratum[=].population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
 * group.stratifier.stratum[=].population[=].id = "calculated-numerator"
-* group.stratifier.stratum[=].population[=].count = 50
+* group.stratifier.stratum[=].population[=].count = 60
 * group.stratifier.stratum[=].population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
 * group.stratifier.stratum[=].population[=].id = "calculated-denominator"
-* group.stratifier.stratum[=].population[=].count = 200
-* group.stratifier.stratum[=].measureScore = 25 '%'
+* group.stratifier.stratum[=].population[=].count = 150
+* group.stratifier.stratum[=].measureScore = 40 '%'
 
 * group.stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
 * group.stratifier.stratum[=].component[0].code = http://loinc.org#87520-3
@@ -77,11 +75,11 @@ Description: "This is an example Breast Cancer Screening MeasureReport for the *
 * group.stratifier.stratum[=].component[=].value.text = "Region 2"
 * group.stratifier.stratum[=].population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
 * group.stratifier.stratum[=].population[=].id = "calculated-numerator"
-* group.stratifier.stratum[=].population[=].count = 50
+* group.stratifier.stratum[=].population[=].count = 70
 * group.stratifier.stratum[=].population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
 * group.stratifier.stratum[=].population[=].id = "calculated-denominator"
-* group.stratifier.stratum[=].population[=].count = 90
-* group.stratifier.stratum[=].measureScore = 56 '%'
+* group.stratifier.stratum[=].population[=].count = 170
+* group.stratifier.stratum[=].measureScore = 41 '%'
 
 * group.stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
 * group.stratifier.stratum[=].component[0].code = http://loinc.org#87520-3
@@ -90,11 +88,11 @@ Description: "This is an example Breast Cancer Screening MeasureReport for the *
 * group.stratifier.stratum[=].component[=].value.text = "Region 1"
 * group.stratifier.stratum[=].population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
 * group.stratifier.stratum[=].population[=].id = "calculated-numerator"
-* group.stratifier.stratum[=].population[=].count = 50
+* group.stratifier.stratum[=].population[=].count = 60
 * group.stratifier.stratum[=].population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
 * group.stratifier.stratum[=].population[=].id = "calculated-denominator"
-* group.stratifier.stratum[=].population[=].count = 200
-* group.stratifier.stratum[=].measureScore = 25 '%'
+* group.stratifier.stratum[=].population[=].count = 150
+* group.stratifier.stratum[=].measureScore = 40 '%'
 
 * group.stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
 * group.stratifier.stratum[=].component[0].code = http://loinc.org#87520-3
@@ -103,8 +101,8 @@ Description: "This is an example Breast Cancer Screening MeasureReport for the *
 * group.stratifier.stratum[=].component[=].value.text = "Region 2"
 * group.stratifier.stratum[=].population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
 * group.stratifier.stratum[=].population[=].id = "calculated-numerator"
-* group.stratifier.stratum[=].population[=].count = 50
+* group.stratifier.stratum[=].population[=].count = 70
 * group.stratifier.stratum[=].population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
 * group.stratifier.stratum[=].population[=].id = "calculated-denominator"
-* group.stratifier.stratum[=].population[=].count = 90
-* group.stratifier.stratum[=].measureScore = 56 '%'
+* group.stratifier.stratum[=].population[=].count = 170
+* group.stratifier.stratum[=].measureScore = 41 '%'

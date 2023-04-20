@@ -19,6 +19,7 @@ List of Extensions defined in this implementation guide.
 * [Program Model]
 * [Quality Program]
 * [Service Period]
+* [Threshold]
 
 <br />
 
