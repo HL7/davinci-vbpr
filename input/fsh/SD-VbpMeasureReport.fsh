@@ -51,3 +51,5 @@ Description: "Value-Based Performance MeasureReport is a payer-generated perform
 * evaluatedResource 0..* MS
 * evaluatedResource only Reference($vbp-quality-measurereport)
 * evaluatedResource ^short = "Quality measure report(s) referenced by the value-based performance report"
+* evaluatedResource.extension contains GroupReference named groupRef 0..* MS
+* evaluatedResource.extension[GroupReference] ^short = "Reference a performance metric (MeasureReport.group.id) on the report"

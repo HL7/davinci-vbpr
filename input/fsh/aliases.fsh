@@ -17,6 +17,7 @@ Alias: $vbp-measure-population = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/
 
 //DEQM
 Alias: $DEQMSummaryMeasureReport = http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm
+//Alias: $CriteriaReference = http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference
 
 //QM IG
 //Alias: $cqfmWeightExtension = http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-weight

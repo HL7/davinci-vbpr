@@ -7,32 +7,47 @@ This page lists examples included in this IG.
 <!-- {% include example-list-generator.md %} -->
 
 <!-- ================================================ -->
+### Example Value-Based Performance Report - vbp-measurereport101
+This example value-based performance MeasureReport ([vbp-measurereport101](MeasureReport-vbp-measurereport101.html)) includes example payment streams: 
+- shared savings - gated on quality,
+- care coordination fee,
+- quality incentive payment for the quality program: chronic care management incentive program, and
+- quality incentive payment for the quality program: annual office visits
 
-- [Measure: Example VBP Measure - (Measure01)](Measure-vbp-measure01.html)
+The example "shared savings - gated on quality" payment stream's weighted average star score is based on 9 quality measures.  
 
-- [MeasureReport: Example Value-Based Performance MeasureReport - (MeasureReport101)](MeasureReport-vbp-measurereport101.html)
+|[vbp-measurereport101](MeasureReport-vbp-measurereport101.html)|Example Value-Based Performance MeasureReport|
+|[quality-measurereport01](MeasureReport-quality-measurereport01.html)|Example Quality Performance MeasureReport for Breast Cancer Screening|
+|[quality-measurereport02](MeasureReport-quality-measurereport02.html)|Example Quality Performance MeasureReport for Colorectal Cancer Screening|
+|[quality-measurereport03](MeasureReport-quality-measurereport03.html)|Example Quality Performance MeasureReport Diabetes Care - Blood Sugar Controlled|
+|[quality-measurereport04](MeasureReport-quality-measurereport04.html)|Example Quality Performance MeasureReport Diabetes Care - Blood Sugar Controlled|
+|[quality-measurereport05](MeasureReport-quality-measurereport05.html)|Example Quality Performance MeasureReport Medication Adherence for Cholesterol (Statins)|
+|[quality-measurereport06](MeasureReport-quality-measurereport06.html)|Example Quality Performance MeasureReport Medication Adherence for Hypertension (RAS antagonists)|
+|[quality-measurereport07](MeasureReport-quality-measurereport07.html)|Example Quality Performance MeasureReport MMedication Adherence for Diabetes Medications|
+|[quality-measurereport08](MeasureReport-quality-measurereport08.html)|Example Quality Performance MeasureReport Statin Therapy for Patients with Cardiovascular Disease|
+|[quality-measurereport09](MeasureReport-quality-measurereport09.html)|Example Quality Performance MeasureReport Statin Use in Persons with Diabetes (SUPD)|
+|[vbp-measure01](Measure-vbp-measure01.html)|Example VBP Measure|
+|[vbp-payer01](Organization-vbp-payer01.html)|Example Organization: ABC Payer|
+|[vbp-provider01](Organization-vbp-provider01.html)|Example Organization: GoodHealth|
+{: .grid}
 
-- [MeasureReport: Example Quality Performance MeasureReport for Breast Cancer Screening - (MeasureReport01)](MeasureReport-quality-measurereport01.html)
+### Example Value-Based Performance Report - vbp-measurereport102
 
-- [MeasureReport: Example Quality Performance MeasureReport for Colorectal Cancer Screening - (MeasureReport02)](MeasureReport-quality-measurereport02.html)
+This example value-based performance MeasureReport ([vbp-measurereport102](MeasureReport-vbp-measurereport102.html)) includes example payment streams: 
+- utilization incentive payment
+- shared savings - gated on quality
 
-- [MeasureReport: Example Quality Performance MeasureReport Diabetes Care - Blood Sugar Controlled - (MeasureReport03)](MeasureReport-quality-measurereport03.html)
+The example "shared savings - gated on quality" is based on 5 quality measures. 
 
-- [MeasureReport: Example Quality Performance MeasureReport Diabetes Care - Eye Exam - (MeasureReport04)](MeasureReport-quality-measurereport04.html)
-
-- [MeasureReport: Example Quality Performance MeasureReport Medication Adherence for Cholesterol (Statins) - (MeasureReport05)](MeasureReport-quality-measurereport05.html)
-
-- [MeasureReport: Example Quality Performance MeasureReport Medication Adherence for Hypertension (RAS antagonists) - (MeasureReport06)](MeasureReport-quality-measurereport06.html)
-
-- [MeasureReport: Example Quality Performance MeasureReport Medication Adherence for Diabetes Medications Performance - (MeasureReport07)](MeasureReport-quality-measurereport07.html)
-
-- [MeasureReport: Example Quality Performance MeasureReport Statin Therapy for Patients with Cardiovascular Disease - (MeasureReport08)](MeasureReport-quality-measurereport08.html)
-
-- [MeasureReport: Example Quality Performance MeasureReport Statin Use in Persons with Diabetes (SUPD) - (MeasureReport09)](MeasureReport-quality-measurereport09.html)
-
-
-- [Organization: ABC Payer - (payer01)](Organization-vbp-payer01.html)
-
-- [Organization: GoodHealth - (provider01)](Organization-vbp-provider01.html)
+|[vbp-measurereport102](MeasureReport-vbp-measurereport102.html)|Example Value-Based Performance MeasureReport|
+|[quality-measurereport11](MeasureReport-quality-measurereport11.html)|Example Quality Performance MeasureReport for Breast Cancer Screening|
+|[quality-measurereport12](MeasureReport-quality-measurereport12.html)|Example Quality Performance MeasureReport for Colorectal Cancer Screening|
+|[quality-measurereport13](MeasureReport-quality-measurereport13.html)|Example Quality Performance MeasureReport Diabetic Retinopathy: Communication with the Physician Managing Ongoing Diabetes Care|
+|[quality-measurereport14](MeasureReport-quality-measurereport14.html)|Example Quality Performance MeasureReport Diabetes: Hemoglobin A1c (HbA1c) Poor Control (> 9%)|
+|[quality-measurereport15](MeasureReport-quality-measurereport15.html)|Example Quality Performance MeasureReport Diabetes: Medical Attention for Nephropathy|
+|[vbp-measure02](Measure-vbp-measure02.html)|Example VBP Measure|
+|[vbp-payer01](Organization-vbp-payer01.html)|Example Organization: ABC Payer|
+|[vbp-provider01](Organization-vbp-provider01.html)|Example Organization: GoodHealth|
+{: .grid}
 
 {% include link-list.md %}

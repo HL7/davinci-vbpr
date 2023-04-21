@@ -122,6 +122,7 @@
 <artifact id="StructureDefinition/vbp-measure" key="StructureDefinition-vbp-measure" name="Value-Based Performance Measure"/>
 <artifact id="CodeSystem/vbp-measure-population" key="CodeSystem-vbp-measure-population" name="Value-Based Performance Measure Population Type"/>
 <artifact id="StructureDefinition/vbp-performance-measurereport" key="StructureDefinition-vbp-performance-measurereport" name="Value-Based Performance MeasureReport"/>
+<artifact id="StructureDefinition/group-reference" key="StructureDefinition-group-reference" name="Weight"/>
 <artifact id="StructureDefinition/weight" key="StructureDefinition-weight" name="Weight"/>
 <artifact id="MeasureReport/quality-measurereport01" key="MeasureReport-quality-measurereport01" name="quality-measurereport01"/>
 <artifact id="MeasureReport/quality-measurereport02" key="MeasureReport-quality-measurereport02" name="quality-measurereport02"/>
@@ -132,6 +133,11 @@
 <artifact id="MeasureReport/quality-measurereport07" key="MeasureReport-quality-measurereport07" name="quality-measurereport07"/>
 <artifact id="MeasureReport/quality-measurereport08" key="MeasureReport-quality-measurereport08" name="quality-measurereport08"/>
 <artifact id="MeasureReport/quality-measurereport09" key="MeasureReport-quality-measurereport09" name="quality-measurereport09"/>
+<artifact id="MeasureReport/quality-measurereport11" key="MeasureReport-quality-measurereport11" name="quality-measurereport11"/>
+<artifact id="MeasureReport/quality-measurereport12" key="MeasureReport-quality-measurereport12" name="quality-measurereport12"/>
+<artifact id="MeasureReport/quality-measurereport13" key="MeasureReport-quality-measurereport13" name="quality-measurereport13"/>
+<artifact id="MeasureReport/quality-measurereport14" key="MeasureReport-quality-measurereport14" name="quality-measurereport14"/>
+<artifact id="MeasureReport/quality-measurereport15" key="MeasureReport-quality-measurereport15" name="quality-measurereport15"/>
 <artifact deprecated="true" id="Bundle/ra-bundle01" key="Bundle-ra-bundle01" name="ra-bundle01: Risk Adjustment Bundle"/>
 <artifact deprecated="true" id="Group/ra-group01" key="Group-ra-group01" name="ra-group01: Risk Adjustment Patient Group"/>
 <artifact deprecated="true" id="Group/ra-group02" key="Group-ra-group02" name="ra-group02: Risk Adjustment Patient Group"/>
@@ -142,7 +148,9 @@
 <artifact deprecated="true" id="MeasureReport/ra-measurereport05" key="MeasureReport-ra-measurereport05" name="ra-measurereport05: Risk Adjustment Measure Report for RxHCC V5 for Patient03"/>
 <artifact deprecated="true" id="MeasureReport/ra-measurereport06" key="MeasureReport-ra-measurereport06" name="ra-measurereport06: Risk Adjustment Measure Report for RxHCC V5 for Patient02"/>
 <artifact id="Measure/vbp-measure01" key="Measure-vbp-measure01" name="vbp-measure01"/>
+<artifact id="Measure/vbp-measure02" key="Measure-vbp-measure02" name="vbp-measure02"/>
 <artifact id="MeasureReport/vbp-measurereport101" key="MeasureReport-vbp-measurereport101" name="vbp-measurereport101"/>
+<artifact id="MeasureReport/vbp-measurereport102" key="MeasureReport-vbp-measurereport102" name="vbp-measurereport102"/>
 <artifact id="Organization/vbp-payer01" key="Organization-vbp-payer01" name="vbp-payer01"/>
 <artifact id="Organization/vbp-provider01" key="Organization-vbp-provider01" name="vbp-provider01"/>
 <page key="NA" name="(NA)"/>

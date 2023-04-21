@@ -34,6 +34,6 @@ Description: "This is an example measure for the *VBP Measure* profile."
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
 * extension[=].valueCodeableConcept.text = "Quality incentive payment"
-* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#p4p
-* extension[=].valueCodeableConcept.text = "Pay for performance"
+//* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+//* extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#p4p
+//* extension[=].valueCodeableConcept.text = "Pay for performance"

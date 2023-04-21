@@ -155,3 +155,14 @@ Description: "What is the weight of the contribution of this measure to the over
 * ^context[=].expression = "MeasureReport"
 * value[x] 1..1 
 * value[x] only decimal
+
+Extension: GroupReference
+Id: group-reference
+Title: "Weight"
+Description: "Reference to a group within the MeasureReport"
+* ^context[+].type = #element
+* ^context[=].expression = "MeasureReport.evaluatedResource"
+* value[x] 1..1 
+* value[x] only string
+
+

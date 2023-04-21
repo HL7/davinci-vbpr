@@ -1,11 +1,11 @@
 Instance: vbp-measurereport101
 InstanceOf: MeasureReport
 Usage: #example
-Description: "This is an example Value-Based Performance MeasureReport for the *VBP MeasureReport* profile., which includes examples for payment streams shared savings - gated on quality, care coordination fee, quality incentive payment for the chronic care management incentive program, quality incentive payment for the annual office visits, and quality measure performance."
+Description: "This is an example Value-Based Performance MeasureReport for the *VBP MeasureReport* profile., which includes examples for payment streams shared savings - gated on quality, care coordination fee, quality incentive payment for the chronic care management incentive program, and quality incentive payment for the annual office visits."
 
 * meta.profile = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/vbp-performance-measurereport"
 * meta.extension[0].url = "http://hl7.org/fhir/StructureDefinition/instance-name"
-* meta.extension[=].valueString = "VBP Quality MeasureReport Example"
+* meta.extension[=].valueString = "VBP Quality MeasureReport Example 101"
 * meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
 * meta.extension[=].valueMarkdown = "This is an example Value-Based Performance MeasureReport for the *VBP MeasureReport* profile., which includes examples for payment streams shared savings - gated on quality, care coordination fee, quality incentive payment for the chronic care management incentive program, quality incentive payment for the annual office visits, and quality measure performance."
 
@@ -20,10 +20,8 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * reporter = Reference(Organization/vbp-payer01)
 * period.start = "2022-01-01"
 * period.end = "2022-12-31"
-* group[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#weighted-avg-star
-* group[=].code.text = "Weighted average star"
-* group[=].measureScore.value = 3.8
-* group[+].id = "ccf-group-01"
+
+* group[0].id = "ccf-group-01"
 * group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ccf
 * group[=].extension[=].valueCodeableConcept.text = "Care coordination fee"
@@ -43,22 +41,47 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
-* group[=].stratifier.stratum[=].measureScore.value = 1000
+//* group[=].stratifier.stratum[=].measureScore.value = 1000
+* group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
+* group[=].measureScore.extension.valueMoney.value = 1000
+* group[=].measureScore.extension.valueMoney.currency = #USD
 * group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
 * group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
-* group[=].stratifier.stratum[=].measureScore.value = 500
+//* group[=].stratifier.stratum[=].measureScore.value = 500
+* group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
+* group[=].measureScore.extension.valueMoney.value = 500
+* group[=].measureScore.extension.valueMoney.currency = #USD
 * group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
 * group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
-* group[=].stratifier.stratum[=].measureScore.value = 1000
+//* group[=].stratifier.stratum[=].measureScore.value = 1000
+* group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
+* group[=].measureScore.extension.valueMoney.value = 1000
+* group[=].measureScore.extension.valueMoney.currency = #USD
 * group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
 * group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
-* group[=].stratifier.stratum[=].measureScore.value = 500
+//* group[=].stratifier.stratum[=].measureScore.value = 500
+* group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
+* group[=].measureScore.extension.valueMoney.value = 500
+* group[=].measureScore.extension.valueMoney.currency = #USD
+
+* group[+].id = "ssq-group-starscore"
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#weighted-avg-star
+* group[=].code.text = "Weighted average star"
+* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
+* group[=].extension[=].valuePeriod.start = "2022-01-01"
+* group[=].extension[=].valuePeriod.end = "2022-11-30"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
+* group[=].extension[=].valueDate = "2022-12-31"
+* group[=].measureScore.value = 3.8
 * group[+].id = "ssq-group-01"
 * group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
@@ -839,11 +862,29 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].value.text = "5+"
 * group[=].stratifier.stratum[=].measureScore.value = 6000
 * evaluatedResource[0] = Reference(MeasureReport/quality-measurereport01)
+* evaluatedResource[=].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/group-reference"
+* evaluatedResource[=].extension.valueString = "ssq-group-starscore"
 * evaluatedResource[+] = Reference(MeasureReport/quality-measurereport02)
+* evaluatedResource[=].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/group-reference"
+* evaluatedResource[=].extension.valueString = "ssq-group-starscore"
 * evaluatedResource[+] = Reference(MeasureReport/quality-measurereport03)
-* evaluatedResource[0] = Reference(MeasureReport/quality-measurereport04)
+* evaluatedResource[=].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/group-reference"
+* evaluatedResource[=].extension.valueString = "ssq-group-starscore"
+* evaluatedResource[+] = Reference(MeasureReport/quality-measurereport04)
+* evaluatedResource[=].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/group-reference"
+* evaluatedResource[=].extension.valueString = "ssq-group-starscore"
 * evaluatedResource[+] = Reference(MeasureReport/quality-measurereport05)
+* evaluatedResource[=].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/group-reference"
+* evaluatedResource[=].extension.valueString = "ssq-group-starscore"
 * evaluatedResource[+] = Reference(MeasureReport/quality-measurereport06)
-* evaluatedResource[0] = Reference(MeasureReport/quality-measurereport07)
+* evaluatedResource[=].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/group-reference"
+* evaluatedResource[=].extension.valueString = "ssq-group-starscore"
+* evaluatedResource[+] = Reference(MeasureReport/quality-measurereport07)
+* evaluatedResource[=].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/group-reference"
+* evaluatedResource[=].extension.valueString = "ssq-group-starscore"
 * evaluatedResource[+] = Reference(MeasureReport/quality-measurereport08)
+* evaluatedResource[=].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/group-reference"
+* evaluatedResource[=].extension.valueString = "ssq-group-starscore"
 * evaluatedResource[+] = Reference(MeasureReport/quality-measurereport09)
+* evaluatedResource[=].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/group-reference"
+* evaluatedResource[=].extension.valueString = "ssq-group-starscore"
