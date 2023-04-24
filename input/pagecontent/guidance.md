@@ -35,7 +35,7 @@ This following is a list of pre-requisites for using this implementation guide (
 
 {% include img-portrait.html img="vbp-measurereport.png" caption = "Figure 2-1 VBP Performance MeasureReport overview" %}
 
-{% include img-portrait.html img="vbp-quality-measurereport-colorectralcancer.png" caption = "Figure 2-2 VBP Quality MeasureReport overview" %}
+{% include img-portrait.html img="vbp-quality-measurereport-colorectalcancer.png" caption = "Figure 2-2 VBP Quality MeasureReport overview - colorectal cancer screening measure example" %}
 
 {% include img-portrait.html img="vbp-measure.png" caption = "Figure 2-2 VBP Measure overview" %}
 
