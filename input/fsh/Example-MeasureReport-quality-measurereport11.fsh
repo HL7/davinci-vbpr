@@ -15,9 +15,6 @@ Description: "This is an example Breast Cancer Screening MeasureReport for the *
 //* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/star-score"
 //* extension[=].valueDecimal = 0
 
-//* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/weight"
-//* extension[=].valueDecimal = 1
-
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
 * extension[=].extension[0].url = "value"
 * extension[=].extension[=].valueQuantity = 66 '%'

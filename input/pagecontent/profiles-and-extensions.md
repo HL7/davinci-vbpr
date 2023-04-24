@@ -1,24 +1,26 @@
 
-<div class="bg-info" markdown="1">
-This page is under development.
-</div>
-
-List of profiles that define constrains on FHIR resources for systems conforming to this implementation guide:
+### Profiles
+List of profiles defined for this implementation guide:
 
 * [VBP MeasureReport]
 * [VBP Quality MeasureReport]
 * [VBP Measure]
 
-List of Extensions defined in this implementation guide.
+### Extensions
+
+List of [Extensions]({{site.data.fhir.path}}extensibility.html) defined as part of this implementation guide. 
 
 * [Alternate MeasureScore]
 * [Baseline]
+* [Group Reference]
 * [Line of Business]
 * [Paid Through Date]
 * [Payment Stream]
 * [Program Model]
+* [Organization Subject]
 * [Quality Program]
 * [Service Period]
+* [Star Score]
 * [Threshold]
 
 <br />

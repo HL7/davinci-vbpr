@@ -30,7 +30,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#ccf
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#ccf
 * group[=].code.text = "Care coordination fee"
 //* group[=].measureScore.value = 5
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
@@ -71,7 +71,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].measureScore.extension.valueMoney.currency = #USD
 
 * group[+].id = "ssq-group-starscore"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#weighted-avg-star
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#weighted-avg-star
 * group[=].code.text = "Weighted average star"
 * group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
@@ -91,7 +91,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#member-months
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#member-months
 * group[=].code.text = "Member months"
 * group[=].measureScore.value = 300
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -127,7 +127,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#avg-risk-score
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#avg-risk-score
 * group[=].code.text = "Average risk score"
 * group[=].measureScore.value = 0.7
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -163,7 +163,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#revenue
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#revenue
 * group[=].code.text = "Total revenue"
 * group[=].measureScore.value = 10000
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -199,7 +199,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#revenue-pmpm
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#revenue-pmpm
 * group[=].code.text = "Revenue PMPM"
 * group[=].measureScore.value = 33
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -235,7 +235,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#med-rx-cost
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#med-rx-cost
 * group[=].code.text = "Medical pharmacy cost"
 * group[=].measureScore.value = 9000
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -271,7 +271,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#med-rx-cost-pmpm
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#med-rx-cost-pmpm
 * group[=].code.text = "Medical pharmacy cost PMPM"
 * group[=].measureScore.value = 30
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -307,7 +307,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#med-cost-fund
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#med-cost-fund
 * group[=].code.text = "Medical cost fund"
 * group[=].measureScore = 90 '%'
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -343,7 +343,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#med-cost-target
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#med-cost-target
 * group[=].code.text = "Medical cost target"
 * group[=].measureScore = 85 '%'
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -379,7 +379,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#med-rx-cost-target
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#med-rx-cost-target
 * group[=].code.text = "Medical pharmacy cost target"
 * group[=].measureScore.value = 8500
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -415,7 +415,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#variance-cost
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#variance-cost
 * group[=].code.text = "Variance cost"
 * group[=].measureScore.value = -500
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -451,7 +451,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#avg-risk-score-market
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#avg-risk-score-market
 * group[=].code.text = "Average risk score market"
 * group[=].measureScore.value = 0.7
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -487,7 +487,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#avg-revenue-pmpm-market
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#avg-revenue-pmpm-market
 * group[=].measureScore.value = 35
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
 * group[=].stratifier.stratum[=].measureScore.value = 40
@@ -522,7 +522,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#avg-med-rx-cost-pmpm-market
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#avg-med-rx-cost-pmpm-market
 * group[=].measureScore = 94.3 '%'
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
 * group[=].stratifier.stratum[=].measureScore = 102.5 '%'
@@ -557,7 +557,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#ccf
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#ccf
 * group[=].code.text = "Care coordination fee"
 * group[=].measureScore.value = 1500
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -593,7 +593,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#quality-pmt-chronic
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#quality-pmt-chronic
 * group[=].code.text = "Qulaity payment chronic"
 * group[=].measureScore.value = 11900
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -629,7 +629,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#quality-pmt-office-visit
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#quality-pmt-office-visit
 * group[=].code.text = "Qulaity payment office visit"
 * group[=].measureScore.value = 300
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -665,7 +665,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#shared-saving-deficit
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#shared-saving-deficit
 * group[=].code.text = "Shared saving deficit"
 * group[=].measureScore.value = -400
 * group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
@@ -704,7 +704,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-12-31"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#avg-member-office-visit
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#avg-member-office-visit
 * group[=].code.text = "Average members with office visit"
 * group[=].measureScore = 87 '%'
 * group[+].id = "qip-group-02"
@@ -719,10 +719,10 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-09-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-09-30"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#eligible-member
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#eligible-member
 * group[=].code.text = "Eligible member"
 * group[=].measureScore.value = 500
-* group[=].stratifier.code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#condition-count
+* group[=].stratifier.code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#condition-count
 * group[=].stratifier.stratum[0].value = http://loinc.org#LA6112-2
 * group[=].stratifier.stratum[=].value.text = "1"
 * group[=].stratifier.stratum[=].measureScore.value = 100
@@ -750,10 +750,10 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-09-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-09-30"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#1-gap-closed
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#1-gap-closed
 * group[=].code.text = "1 gap closed"
 * group[=].measureScore.value = 100
-* group[=].stratifier.code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#condition-count
+* group[=].stratifier.code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#condition-count
 * group[=].stratifier.stratum[0].value = http://loinc.org#LA6112-2
 * group[=].stratifier.stratum[=].value.text = "1"
 * group[=].stratifier.stratum[=].measureScore.value = 20
@@ -781,10 +781,10 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-09-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-09-30"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#2-gap-closed
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#2-gap-closed
 * group[=].code.text = "2 gap closed"
 * group[=].measureScore.value = 0
-* group[=].stratifier.code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#condition-count
+* group[=].stratifier.code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#condition-count
 * group[=].stratifier.stratum[0].value = http://loinc.org#LA6112-2
 * group[=].stratifier.stratum[=].value.text = "1"
 * group[=].stratifier.stratum[=].measureScore.value = 0
@@ -812,9 +812,9 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-09-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-09-30"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#interim-pmt-rate
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#interim-pmt-rate
 * group[=].code.text = "Interim payment rate"
-* group[=].stratifier.code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#condition-count
+* group[=].stratifier.code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#condition-count
 * group[=].stratifier.stratum[0].value = http://loinc.org#LA6112-2
 * group[=].stratifier.stratum[=].value.text = "1"
 * group[=].stratifier.stratum[=].measureScore.value = 20
@@ -842,10 +842,10 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valuePeriod.end = "2022-09-30"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 * group[=].extension[=].valueDate = "2022-09-30"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#earned-incentive
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#earned-incentive
 * group[=].code.text = "Earned incentive"
 * group[=].measureScore.value = 11900
-* group[=].stratifier.code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#condition-count
+* group[=].stratifier.code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#condition-count
 * group[=].stratifier.stratum[0].value = http://loinc.org#LA6112-2
 * group[=].stratifier.stratum[=].value.text = "1"
 * group[=].stratifier.stratum[=].measureScore.value = 400

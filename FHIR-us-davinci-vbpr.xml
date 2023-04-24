@@ -57,12 +57,12 @@
 <artifact deprecated="true" id="StructureDefinition/ra-evidenceStatus" key="StructureDefinition-ra-evidenceStatus" name="Evidence Status Extension"/>
 <artifact deprecated="true" id="ValueSet/example-cmshcc" key="ValueSet-example-cmshcc" name="Example CMS Hierarchical Condition Category Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/ra-groupReference" key="StructureDefinition-ra-groupReference" name="Group Reference Extension"/>
+<artifact id="ValueSet/hcplan-framework" key="ValueSet-hcplan-framework" name="HPCLAN Framework"/>
 <artifact id="CodeSystem/hcplan-framework" key="CodeSystem-hcplan-framework" name="HPCLAN Framework Code System"/>
-<artifact id="ValueSet/hcplan-framework" key="ValueSet-hcplan-framework" name="HPCLAN Framework Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hiearchicalStatus" key="StructureDefinition-ra-hiearchicalStatus" name="Hiearchical Status Extension"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status Extension"/>
+<artifact id="ValueSet/lob" key="ValueSet-lob" name="Line of Business"/>
 <artifact id="StructureDefinition/lob" key="StructureDefinition-lob" name="Line of Business Extension"/>
-<artifact id="ValueSet/lob" key="ValueSet-lob" name="Line of Business Value Set"/>
 <artifact id="ValueSet/measure-stratifier-example" key="ValueSet-measure-stratifier-example" name="Measure Stratifier Example"/>
 <artifact id="CodeSystem/measure-stratifier-example" key="CodeSystem-measure-stratifier-example" name="Measure Stratifier Example"/>
 <artifact deprecated="true" id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Observation: Creatinine Result from 20210728"/>
@@ -80,17 +80,17 @@
 <artifact deprecated="true" id="Patient/ra-patient03" key="Patient-ra-patient03" name="Patient03: Nelda Nuclear"/>
 <artifact deprecated="true" id="Patient/ra-patient04" key="Patient-ra-patient04" name="Patient04: Jane Doh"/>
 <artifact id="StructureDefinition/payment-stream" key="StructureDefinition-payment-stream" name="Payment Stream"/>
+<artifact id="ValueSet/vbp-payment-stream" key="ValueSet-vbp-payment-stream" name="Payment Stream"/>
 <artifact id="CodeSystem/payment-stream" key="CodeSystem-payment-stream" name="Payment Stream Code System"/>
-<artifact id="ValueSet/vbp-payment-stream" key="ValueSet-vbp-payment-stream" name="Payment Stream Value Set"/>
-<artifact id="CodeSystem/vbp-performance-metric-type" key="CodeSystem-vbp-performance-metric-type" name="Performance Metric Type Code System"/>
-<artifact id="ValueSet/vbp-performance-metric-type" key="ValueSet-vbp-performance-metric-type" name="Performance Metric Type Value Set"/>
+<artifact id="ValueSet/vbp-performance-metric" key="ValueSet-vbp-performance-metric" name="Performance Metric"/>
+<artifact id="CodeSystem/vbp-performance-metric" key="CodeSystem-vbp-performance-metric" name="Performance Metric Code System"/>
 <artifact deprecated="true" id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner: Harold Hippocrates"/>
 <artifact deprecated="true" id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact deprecated="true" id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
 <artifact id="StructureDefinition/program-model" key="StructureDefinition-program-model" name="Program Model"/>
 <artifact id="StructureDefinition/quality-program" key="StructureDefinition-quality-program" name="Quality Program"/>
+<artifact id="ValueSet/quality-program" key="ValueSet-quality-program" name="Quality Program"/>
 <artifact id="CodeSystem/quality-program" key="CodeSystem-quality-program" name="Quality Program Code System"/>
-<artifact id="ValueSet/quality-program" key="ValueSet-quality-program" name="Quality Program Value Set"/>
 <artifact id="ValueSet/quality-star-rating" key="ValueSet-quality-star-rating" name="Quality Star Rating"/>
 <artifact id="CodeSystem/quality-star-rating" key="CodeSystem-quality-star-rating" name="Quality Star Rating"/>
 <artifact deprecated="true" id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
@@ -123,7 +123,6 @@
 <artifact id="CodeSystem/vbp-measure-population" key="CodeSystem-vbp-measure-population" name="Value-Based Performance Measure Population Type"/>
 <artifact id="StructureDefinition/vbp-performance-measurereport" key="StructureDefinition-vbp-performance-measurereport" name="Value-Based Performance MeasureReport"/>
 <artifact id="StructureDefinition/group-reference" key="StructureDefinition-group-reference" name="Weight"/>
-<artifact id="StructureDefinition/weight" key="StructureDefinition-weight" name="Weight"/>
 <artifact id="MeasureReport/quality-measurereport01" key="MeasureReport-quality-measurereport01" name="quality-measurereport01"/>
 <artifact id="MeasureReport/quality-measurereport02" key="MeasureReport-quality-measurereport02" name="quality-measurereport02"/>
 <artifact id="MeasureReport/quality-measurereport03" key="MeasureReport-quality-measurereport03" name="quality-measurereport03"/>
@@ -153,6 +152,7 @@
 <artifact id="MeasureReport/vbp-measurereport102" key="MeasureReport-vbp-measurereport102" name="vbp-measurereport102"/>
 <artifact id="Organization/vbp-payer01" key="Organization-vbp-payer01" name="vbp-payer01"/>
 <artifact id="Organization/vbp-provider01" key="Organization-vbp-provider01" name="vbp-provider01"/>
+<artifact id="Organization/vbp-provider02" key="Organization-vbp-provider02" name="vbp-provider02"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
@@ -166,7 +166,8 @@
 <page key="guidance" name="Guidance"/>
 <page key="index" name="Home"/>
 <page deprecated="true" key="operations" name="Operation"/>
-<page key="profiles" name="Profiles and Extensions"/>
+<page deprecated="true" key="profiles" name="Profiles"/>
+<page key="profiles-and-extensions" name="Profiles and Extensions"/>
 <page key="toc" name="Table of Contents"/>
 <page key="terminology" name="Terminology"/>
 </specification>

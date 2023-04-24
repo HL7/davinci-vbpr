@@ -15,13 +15,13 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * type = #summary
 * measure = "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-vbp-measure02"
 * subject.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/organization-subject"
-* subject.extension.valueReference = Reference(Organization/vbp-provider01)
+* subject.extension.valueReference = Reference(Organization/vbp-provider02)
 * date = "2022-12-31"
 * reporter = Reference(Organization/vbp-payer01)
 * period.start = "2022-10-01"
 * period.end = "2022-12-31"
 * group[0].id = "ubip-group-01"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#inpatient-admission
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#inpatient-admission
 * group[=].code.text = "In patient admission"
 * group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ubip
@@ -40,7 +40,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].measureScore = 400 '{/1000}'
 
 * group[+].id = "ubip-group-02"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#inpatient-acute
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#inpatient-acute
 * group[=].code.text = "In patient acute"
 * group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ubip
@@ -59,7 +59,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].measureScore = 350 '{/1000}'
 
 * group[+].id = "ubip-group-03"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#readmission
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#readmission
 * group[=].code.text = "Readmission"
 * group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ubip
@@ -78,7 +78,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].measureScore = 120 '{/1000}'
 
 * group[+].id = "ubip-group-04"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#ed-visit
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#ed-visit
 * group[=].code.text = "ED visit"
 * group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ubip
@@ -97,7 +97,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].measureScore = 300 '{/100}'
 
 * group[+].id = "ubip-group-05"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#snf-admission
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#snf-admission
 * group[=].code.text = "Skilled Nursing Facility admission"
 * group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ubip
@@ -116,7 +116,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].measureScore = 50 '{/1000}'
 
 * group[+].id = "ubip-group-06"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#snf-avg-los
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#snf-avg-los
 * group[=].code.text = "Skilled Nursing Facility average length of stay"
 * group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ubip
@@ -135,7 +135,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].measureScore = 22 'd'
 
 * group[+].id = "ssq-group-starscore"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#weighted-avg-star
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#weighted-avg-star
 * group[=].code.text = "Weighted average star"
 * group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
@@ -148,7 +148,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].measureScore.value = 2.5
 
 * group[+].id = "financial-group-01"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#med-cost-pmpm
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#med-cost-pmpm
 * group[=].code.text = "Total medical expense PMPM"
 * group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ubip
@@ -165,7 +165,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].measureScore.extension.valueMoney.currency = #USD
 
 * group[+].id = "financial-group-02"
-* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric-type#ibnr-pmpm
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#ibnr-pmpm
 * group[=].code.text = "Total medical expense PMPM"
 * group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ubip

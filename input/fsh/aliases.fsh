@@ -20,11 +20,13 @@ Alias: $DEQMSummaryMeasureReport = http://hl7.org/fhir/us/davinci-deqm/Structure
 //Alias: $CriteriaReference = http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference
 
 //QM IG
-//Alias: $cqfmWeightExtension = http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-weight
-//Alias: $CQFMCompositeMeasure = http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/composite-measure-cqfm
+Alias: $cqfmWeightExtension = http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-weight
+Alias: $CQFMCompositeMeasure = http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/composite-measure-cqfm
 
-//Code system
+//Code System and Value Set
 Alias: $SOP = https://nahdo.org/sopt
 //Alias: $mesure-population-cs = http://terminology.hl7.org/CodeSystem/measure-population
 Alias: $coverage-type-cs = http://terminology.hl7.org/CodeSystem/v3-ActCode
 //Alias: $measure-population-vs = http://hl7.org/fhir/ValueSet/measure-population
+
+//Alias: $payerVS = http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591

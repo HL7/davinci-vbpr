@@ -13,8 +13,6 @@ Description: "This is an example Diabetes: Hemoglobin A1c (HbA1c) Poor Control (
 * extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/measure-scoring#proportion
 //* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/star-score"
 //* extension[=].valueDecimal = 5
-//* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/weight"
-//* extension[=].valueDecimal = 3
 
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
 * extension[=].extension[0].url = "value"
@@ -24,7 +22,7 @@ Description: "This is an example Diabetes: Hemoglobin A1c (HbA1c) Poor Control (
 
 * status = #complete
 * type = #summary
-* measure = "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-diabetes-A1c-FHIR"
+* measure = "http://example.org/Measure/measure-diabetes-A1c-FHIR"
 * date = "2022-12-31"
 * period.start = "2022-10-01"
 * period.end = "2022-12-31"

@@ -51,7 +51,7 @@ pages:
     title: Home
   guidance.md:
     title: Guidance
-  profiles.md:
+  profiles-and-extensions.md:
     title: Profiles and Extensions
   terminology.md:
     title: Terminology
@@ -106,7 +106,7 @@ menu:
   Home: index.html
   Guidance: guidance.html
   FHIR Artifacts: 
-    Profiles and Extensions: profiles.html
+    Profiles and Extensions: profiles-and-extensions.html
     Terminology: terminology.html  
   Examples: examples.html
   Glossary: glossary.html

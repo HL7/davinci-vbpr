@@ -33,7 +33,7 @@ Description: "Other allowed data type choices for the measureScore element in ad
 * ^context[+].type = #element
 * ^context[=].expression = "MeasureReport.group.stratifier.stratum.measureScore"
 * value[x] 0..1 
-* value[x] only decimal or integer or Money or string
+* value[x] only decimal or integer or Money or CodeableConcept
 
 Extension: Baseline
 Id: baseline
@@ -42,7 +42,7 @@ Description: "Performance metric baseline"
 * extension contains value 1..1 MS and period 1..1 MS
 * extension[value] ^short = "The baseline data for the metric"
 * extension[value].value[x] 1..1
-* extension[value].value[x] only decimal or integer or Quantity or Money or string
+* extension[value].value[x] only decimal or integer or Quantity or Money or CodeableConcept
 * extension[period] ^short = "The baseline data performance period"
 * extension[period].value[x] only Period 
 * extension[period].valuePeriod 1..1
@@ -147,14 +147,14 @@ Description: "Threshold"
 //* extension[starRating].value[x] only CodeableConcept
 * extension[star].valueCodeableConcept from quality-star-rating (extensible)
 
-Extension: Weight
-Id: weight
-Title: "Weight"
-Description: "What is the weight of the contribution of this measure to the overall score."
-* ^context[+].type = #element
-* ^context[=].expression = "MeasureReport"
-* value[x] 1..1 
-* value[x] only decimal
+//Extension: Weight
+//Id: weight
+//Title: "Weight"
+//Description: "What is the weight of the contribution of this measure to the overall score."
+//* ^context[+].type = #element
+//* ^context[=].expression = "MeasureReport"
+//* value[x] 1..1 
+//* value[x] only decimal
 
 Extension: GroupReference
 Id: group-reference

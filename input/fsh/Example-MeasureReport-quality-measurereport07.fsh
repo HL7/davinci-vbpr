@@ -13,8 +13,9 @@ Description: "This is an example Medication Adherence for Diabetes Medications M
 * extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/measure-scoring#proportion
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/star-score"
 * extension[=].valueDecimal = 0
-* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/weight"
-* extension[=].valueDecimal = 3
+
+//* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/weight"
+//* extension[=].valueDecimal = 3
 
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
 * extension[=].extension[0].url = "value"
@@ -39,7 +40,7 @@ Description: "This is an example Medication Adherence for Diabetes Medications M
 
 * status = #complete
 * type = #summary
-* measure = "http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR"
+* measure = "http://example.org/Measure/measure-med-adherence-diabetes-meds-FHIR"
 * date = "2023-01-15"
 * period.start = "2022-01-01"
 * period.end = "2022-11-30"

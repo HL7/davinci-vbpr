@@ -1,6 +1,6 @@
 CodeSystem: VbpPerformanceMetrics
-Title: "Performance Metric Type Code System"
-Id: vbp-performance-metric-type
+Title: "Performance Metric Code System"
+Id: vbp-performance-metric
 Description: "Type of value-based performance metrics."
 * ^experimental = false
 * #admin-cost "Administrative cost" "A general term that refers to Medicare and Medicaid administrative costs, as well as CMS administrative costs. Medicare administrative costs are comprised of the Medicare related outlays and non-CMS administrative outlays. Medicaid administrative costs refer to the Federal share of the States' expenditures for administration of the Medicaid program. CMS administrative costs are the costs of operating CMS (e.g., salaries and expenses, facilities, equipment, rent and utilities, etc.). These costs are reflected in the Program Management account."
@@ -73,7 +73,6 @@ Description: "Type of value-based performance metrics."
 * #avg-membership "Average membership" "TBD"
 * #goal-hcc-raf "Goal HCC RAF" "TBD"
 * #actual-hcc-raf "Actual HCC RAF" "TBD"
-
 * ^caseSensitive = true
 
 CodeSystem: PaymentStream

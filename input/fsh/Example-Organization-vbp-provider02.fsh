@@ -1,4 +1,4 @@
-Instance: vbp-provider01
+Instance: vbp-provider02
 InstanceOf: Organization
 Usage: #example
 Description: "This is an example of Provider organization the Value-Based Performance Report is for."
@@ -10,12 +10,12 @@ Description: "This is an example of Provider organization the Value-Based Perfor
 * meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
 * active = true
 * type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
-* name = "Good Health Clinic"
+* name = "Every Hospital"
 * telecom[0].system = #phone
-* telecom[=].value = "(+1) 123-456-7890"
+* telecom[=].value = "(+1) 456-123-7890"
 * telecom[+].system = #email
-* telecom[=].value = "contact@goodhealth.com"
-* address.line = "100 Good Health Lane"
+* telecom[=].value = "contact@everyhospital.com"
+* address.line = "100 Every Hospital Lane"
 * address.city = "Amherst"
 * address.state = "MA"
 * address.postalCode = "01002"

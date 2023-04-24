@@ -8,15 +8,18 @@ Description: "This is an example measure for the *VBP Measure* profile."
 * meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
 * meta.extension[=].valueMarkdown = "This is an example measure for the *VBP Measure* profile."
 
-* url = "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-vbp-measure01"
+* url = "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-vbp-measure02"
 * identifier.use = #temp
 * identifier.system = "http://example.org/fhir/server"
 * identifier.value = "ex-vbp-measure02"
 * version = "1"
 * name = "VbprMeasureExample02"
-* title = "Example Value-Based Contract - ABC Payer and GoodHealth"
+* title = "Example Value-Based Contract - ABC Payer and EveryHospital"
 * status = #active
-* description = "Example Value-Based Contract between ABC Payer and GoodHealth"
+* description = "Example Value-Based Contract between ABC Payer and EveryHospital"
+* experimental = true
+* publisher = "ABC Payer"
+
 * effectivePeriod.start = "2022-10-01"
 * effectivePeriod.end = "2023-09-30"
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
@@ -25,6 +28,27 @@ Description: "This is an example measure for the *VBP Measure* profile."
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#p4p
 * extension[=].valueCodeableConcept.text = "Pay for performance"
+
+* relatedArtifact[0].type = #composed-of
+* relatedArtifact[=].display = "Breast Cancer Screening"
+* relatedArtifact[=].resource = "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm125-FHIR"
+
+* relatedArtifact[+].type = #composed-of
+* relatedArtifact[=].display = "Colorectal Cancer Screening"
+* relatedArtifact[=].resource = "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR"
+
+* relatedArtifact[+].type = #composed-of
+* relatedArtifact[=].display = "Diabetic Retinopathy: Communication with the Physician Managing Ongoing Diabetes Care"
+* relatedArtifact[=].resource = "http://example.org/Measure/measure-diabetes-retinopathy-FHIR"
+
+* relatedArtifact[+].type = #composed-of
+* relatedArtifact[=].display = "Diabetes: Hemoglobin A1c (HbA1c) Poor Control (> 9%)"
+* relatedArtifact[=].resource = "http://example.org/Measure/measure-diabetes-A1c-FHIR"
+
+* relatedArtifact[+].type = #composed-of
+* relatedArtifact[=].display = "Diabetes: Medical Attention for Nephropathy"
+* relatedArtifact[=].resource = "http://example.org/Measure/measure-diabetes-nephropathy-FHIR"
+
 //* extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/lob"
 //* extension[=].valueCodeableConcept = https://nahdo.org/sopt#1 "MEDICARE"
 //* extension[=].valueCodeableConcept.text = "MEDICARE"

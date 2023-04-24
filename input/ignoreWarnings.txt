@@ -1,3 +1,20 @@
 == Suppressed Messages ==
 
-# 
+# INFORMATION: 'https://nahdo.org/sopt' code system is in THO, but THO doesn't define the codes. 
+INFORMATION: Measure/vbp-measure01: Measure.extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://nahdo.org/sopt' is unknown so the code cannot be validated
+
+# WARNING: 'https://nahdo.org/sopt' code system is in THO, but THO doesn't define the codes.
+WARNING: ValueSet/lob: ValueSet.compose[0].include[0].concept[0]: The code 1 is not valid in the system https://nahdo.org/sopt
+WARNING: ValueSet/lob: ValueSet.compose[0].include[0].concept[1]: The code 2 is not valid in the system https://nahdo.org/sopt
+WARNING: ValueSet/lob: ValueSet.compose[0].include[0].concept[2]: The code 5 is not valid in the system https://nahdo.org/sopt
+WARNING: ValueSet.where(id = 'lob'): Error from server: Unable to provide support for code system https://nahdo.org/sopt
+
+WARNING: MeasureReport/quality-measurereport14: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-A1c-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport13: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-retinopathy-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport15: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-nephropathy-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport03: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport04: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-eye-exam-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport06: MeasureReport: The Measure 'http://example.org/Measure/measure-med-adherence-hypertension-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport07: MeasureReport: The Measure 'http://example.org/Measure/measure-med-adherence-diabetes-meds-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport08: MeasureReport: The Measure 'http://example.org/Measure/measure-statin-therapy-cardiovascular-disease-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport09: MeasureReport: The Measure 'http://example.org/Measure/measure-statin-use-diabetes-supd-FHIR' could not be resolved, so no validation can be performed against the Measure

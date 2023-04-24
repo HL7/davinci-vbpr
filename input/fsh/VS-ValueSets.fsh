@@ -1,12 +1,12 @@
 ValueSet: VbpPerformanceMetrics
-Title: "Performance Metric Type Value Set"
-Id: vbp-performance-metric-type
+Title: "Performance Metric"
+Id: vbp-performance-metric
 Description: "Type of value-based performance reporting performance metric"
 * ^experimental = false
-* codes from system vbp-performance-metric-type
+* codes from system vbp-performance-metric
 
 ValueSet: LineOfBusiness
-Title: "Line of Business Value Set"
+Title: "Line of Business"
 Id: lob
 Description: "Type of line of business"
 * ^experimental = false
@@ -15,21 +15,21 @@ Description: "Type of line of business"
 * $SOP#5 "PRIVATE HEALTH INSURANCE"
 
 ValueSet: PaymentStream
-Title: "Payment Stream Value Set"
+Title: "Payment Stream"
 Id: vbp-payment-stream
 Description: "Type of payment stream"
 * ^experimental = false
 * codes from system payment-stream
 
 ValueSet: HCPLANFramework
-Title: "HPCLAN Framework Value Set"
+Title: "HPCLAN Framework"
 Id: hcplan-framework
 Description: "HCPLAN framework categories for value-based performance. HCPLAN framework represents payments from public and private payers to provider organizations."
 * ^experimental = false
 * codes from system hcplan-framework
 
 ValueSet: QualityProgram
-Title: "Quality Program Value Set"
+Title: "Quality Program"
 Id: quality-program
 Description: "Quality program"
 * ^experimental = false

@@ -13,8 +13,9 @@ Description: "This is an example Diabetes Care - Eye Exam MeasureReport for the 
 * extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/measure-scoring#proportion
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/star-score"
 * extension[=].valueDecimal = 0
-* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/weight"
-* extension[=].valueDecimal = 3
+
+//* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/weight"
+//* extension[=].valueDecimal = 3
 
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
 * extension[=].extension[0].url = "value"

@@ -1,6 +1,6 @@
 [Home]: index.html "Home Page"
 
-[Profiles and Extensions]: profiles.html
+[Profiles and Extensions]: profiles-and-extensions.html
 [Downloads]: downloads.html
 [Examples]: examples.html
 [Glossary]: glossary.html
@@ -22,13 +22,15 @@
 <!-- Extensions -->
 [Alternate MeasureScore]: StructureDefinition-alternate-measurescore.html
 [Baseline]: StructureDefinition-baseline.html
+[Group Reference]: StructureDefinition-group-reference.html
 [Line of Business]: StructureDefinition-lob.html
+[Organization Subject]: StructureDefinition-organization-subject.html
 [Paid Through Date]: StructureDefinition-paid-through-date.html
 [Payment Stream]: StructureDefinition-payment-stream.html
 [Program Model]: StructureDefinition-program-model.html
 [Quality Program]: StructureDefinition-quality-program.html
 [Service Period]: StructureDefinition-service-period.html
+[Star Score]: StructureDefinition-star-score.html
 [Threshold]: StructureDefinition-threshold.html
-
 
 
