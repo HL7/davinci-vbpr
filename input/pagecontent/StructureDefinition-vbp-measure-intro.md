@@ -9,7 +9,7 @@ The [Formal Views](StructureDefinition-vbp-measure.html#profile) below provides 
 1. A `url` - a canonical identifier for this measure (value-based contract)
 1. A `version` - version of the measure (value-based contract)
 1. A `name` - a computer friendly name for this measure (value-based contract)
-1. A `status` - status of this measure, which would often be `active`
+1. A `status` - status of this measure
 1. An `experimental` element - set to `true` if for testing
 1. A `publisher` - name of the publisher for this measure (value-based contract)
 1. A `description` - description of the measure (value-based contract)
@@ -23,7 +23,7 @@ The [Formal Views](StructureDefinition-vbp-measure.html#profile) below provides 
 1. Zeor to one `programModel` - program model for the measure (value-based contract) based on the HPCLAN Framework
 1. Zero to many `group.code` - list of performance metrics that could be reported on the measure (value-based contract)
 1. zero to many `relatedArtifact` - list of quality measures specified in the value-based contract that ties to the payment stream based on quality measures
-1. zeor to one `relatedArtifact.weight` for each relatedArtifact - the weight of a quality measure that contributes to the scoring
+1. zero to one `relatedArtifact.weight` for each relatedArtifact - the weight of a quality measure that contributes to the scoring
 
 
 {% include link-list.md %}

@@ -27,10 +27,10 @@ Description: "Value-Based Performance MeasureReport is a payer-generated perform
 * group 0..* MS
 * group ^short = "Performance metrics in the report. Each group contains data for a performance metric."
 * group.id MS 
-* group.code 1.. MS
+* group.code 1..1 MS
 * group.code from vbp-performance-metric (extensible)
 * group.code ^short = "Performance metric"
-* group.measureScore 0..1 MS 
+//* group.measureScore 1..1 MS 
 * group.measureScore ^short = "The performance metric value"
 * group.measureScore.extension contains AlternateMeasureScore named altMeasureScore 0..1 MS
 * group.measureScore.extension[AlternateMeasureScore] ^short = "Additional data type choices for the value of the performance metric"
@@ -51,11 +51,6 @@ Description: "Value-Based Performance MeasureReport is a payer-generated perform
 * group.stratifier.stratum.measureScore ^short = "Stratified performance metric value"
 * group.stratifier.stratum.measureScore.extension contains AlternateMeasureScore named altMeasureScore 0..1 MS
 * group.stratifier.stratum.measureScore.extension[AlternateMeasureScore] ^short = "Additional data type choices for the stratified performance metric value"
-//* evaluatedResource 0..* MS
-//* evaluatedResource only Reference($vbp-quality-measurereport)
-//* evaluatedResource ^short = "Quality measure report(s) referenced by the value-based performance report"
-//* evaluatedResource.extension contains GroupReference named groupRef 0..* MS
-//* evaluatedResource.extension[GroupReference] ^short = "Reference a performance metric (MeasureReport.group.id) on the report"
 
 * evaluatedResource MS
 * evaluatedResource ^short = "What data was used to calculate the performance metric(s)"
@@ -66,7 +61,6 @@ Description: "Value-Based Performance MeasureReport is a payer-generated perform
 * evaluatedResource ^slicing.ordered = false
 * evaluatedResource ^slicing.rules = #open
 * evaluatedResource ^slicing.description = "quality measure MeasureReport(s) for quality measure performance"
-//* evaluatedResource ^slicing.definition = "Evaluated resources are used to capture what data was involved in the calculation of performance metrics."
 * evaluatedResource contains qualityReport 0..*
 * evaluatedResource[qualityReport] only Reference($vbp-quality-measurereport)
 * evaluatedResource[qualityReport] ^short = "quality measure MeasureReport"

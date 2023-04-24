@@ -31,25 +31,13 @@ This following is a list of pre-requisites for using this implementation guide (
 - Provider submits attributed member quality and risk adjustment data to payer  
 - Payer and provider has established security and privacy practices in place
 
-### Value-based Performance MeasureReport
+### VBP Performance MeasureReport, VBP Quality MeasureReport, and VBP Measure Profiles
 
-The [VBP MeasureReport]
+{% include img-portrait.html img="vbp-measurereport.png" caption = "Figure 2-1 VBP Performance MeasureReport overview" %}
 
-Note: this is a draft for discussion purpose and is under developement
+{% include img-portrait.html img="vbp-quality-measurereport-colorectralcancer.png" caption = "Figure 2-2 VBP Quality MeasureReport overview" %}
 
-{% include img-portrait.html img="vbpr-measurereport.png" caption = "Figure 2-1 Value-Based Performance Reporting MeasureReport overview - part 1" %}
-
-{% include img-portrait.html img="vbpr-quality-measurereport-colorectralcancer.png" caption = "Figure 2-2 Value-Based Performance Reporting MeasureReport overview - part 2" %}
-
-{% include img-portrait.html img="vbpr-quality-measurereport-breastcancer.png" caption = "Figure 2-3 Value-Based Performance Reporting MeasureReport overview - part 3" %}
-
-{% include img-portrait.html img="vbpr-quality-measurereport-composite.png" caption = "Figure 2-3 Value-Based Performance Reporting MeasureReport overview - part 4" %}
-
-### VBPR MeasureReport / Measure
-
-Note: this is a draft for discussion purpose and is under developement
-
-{% include img-portrait.html img="vbpr-measurereport-measure.png" caption = "Figure 2-5 Relationship of VBPR MeasureReport - Measure overview" %}
+{% include img-portrait.html img="vbp-measure.png" caption = "Figure 2-2 VBP Measure overview" %}
 
 
 ### Must Support
