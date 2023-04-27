@@ -5,7 +5,6 @@ The Value-Based Performance Measure is designed to derive from the [CQFM Composi
 The [Formal Views](StructureDefinition-vbp-measure.html#profile) below provides the formal summary, definitions, and terminology requirements.
 
 **Each Value-Based Performance Measure has the following mandatory elements:**
-1. A `meta` and `meta.profile`
 1. A `url` - a canonical identifier for this measure (value-based contract)
 1. A `version` - version of the measure (value-based contract)
 1. A `name` - a computer friendly name for this measure (value-based contract)

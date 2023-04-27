@@ -6,8 +6,8 @@ Description: "Value-Based Performance MeasureReport is a payer-generated perform
 * ^status = #draft
 * ^version = "0.1.0"
 * . ^short = "A value-based performance report"
-* meta 1..1 MS
-* meta.profile 1.. MS
+//* meta 1..1 MS
+//* meta.profile 1.. MS
 * status MS
 * type = #summary (exactly)
 * type MS

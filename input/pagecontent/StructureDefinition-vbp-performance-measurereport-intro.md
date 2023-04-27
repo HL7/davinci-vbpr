@@ -3,7 +3,6 @@
 The [Formal Views](StructureDefinition-vbp-performance-measurereport.html#profile) below provides the formal summary, definitions, and terminology requirements.
 
 **Each Value-Based Performance MeasureReport has the following mandatory elements**
-1. A `meta` and `meta.profile`
 1. A `status` - status of this report
 1. A `type` - with a fixed value `summary`
 1. A `measure` - that references the Value-Based Performance Measure
@@ -14,7 +13,7 @@ The [Formal Views](StructureDefinition-vbp-performance-measurereport.html#profil
 
 **Each Value-Based Performance MeasureReport should have the following elements**
 1. Zero to many `group` - each group corresponds to a performance metric
-    * If `group` is present, each group must have a `group.code` that represents the performance metric    
+    * If `group` is present, each group must have a `group.code` that represents the performance metric   
 1. Zero to many `evaluatedResource` - references the VBP Quality MeasureReport profile
 
 
