@@ -91,8 +91,6 @@
 <artifact id="StructureDefinition/quality-program" key="StructureDefinition-quality-program" name="Quality Program"/>
 <artifact id="ValueSet/quality-program" key="ValueSet-quality-program" name="Quality Program"/>
 <artifact id="CodeSystem/quality-program" key="CodeSystem-quality-program" name="Quality Program Code System"/>
-<artifact id="ValueSet/quality-star-rating" key="ValueSet-quality-star-rating" name="Quality Star Rating"/>
-<artifact id="CodeSystem/quality-star-rating" key="CodeSystem-quality-star-rating" name="Quality Star Rating"/>
 <artifact deprecated="true" id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact deprecated="true" id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline Extension"/>
@@ -113,9 +111,11 @@
 <artifact deprecated="true" id="CodeSystem/suspect-type" key="CodeSystem-suspect-type" name="Risk Adjustment Suspect Type Code System"/>
 <artifact deprecated="true" id="StructureDefinition/ra-suspectType" key="StructureDefinition-ra-suspectType" name="Risk Adjustment Suspect Type Extension"/>
 <artifact deprecated="true" id="ValueSet/suspect-type" key="ValueSet-suspect-type" name="Risk Adjustment Suspect Type Value Set"/>
+<artifact id="StructureDefinition/score" key="StructureDefinition-score" name="Score"/>
 <artifact id="StructureDefinition/service-period" key="StructureDefinition-service-period" name="Service Period"/>
-<artifact id="StructureDefinition/star-score" key="StructureDefinition-star-score" name="Star Score"/>
 <artifact id="StructureDefinition/threshold" key="StructureDefinition-threshold" name="Threshold"/>
+<artifact id="ValueSet/threshold-type" key="ValueSet-threshold-type" name="Threshold Type"/>
+<artifact id="CodeSystem/threshold-type" key="CodeSystem-threshold-type" name="Threshold Type"/>
 <artifact deprecated="true" id="Observation/ra-obs21pat01" key="Observation-ra-obs21pat01" name="Trypsin [Mass/volume] in Serum or Plasma from 20170617"/>
 <artifact id="ValueSet/vbp-measure-population" key="ValueSet-vbp-measure-population" name="VBP Measure Population Type"/>
 <artifact id="StructureDefinition/vbp-quality-measurereport" key="StructureDefinition-vbp-quality-measurereport" name="VBP Quality MeasureReport"/>
@@ -137,6 +137,12 @@
 <artifact id="MeasureReport/quality-measurereport13" key="MeasureReport-quality-measurereport13" name="quality-measurereport13"/>
 <artifact id="MeasureReport/quality-measurereport14" key="MeasureReport-quality-measurereport14" name="quality-measurereport14"/>
 <artifact id="MeasureReport/quality-measurereport15" key="MeasureReport-quality-measurereport15" name="quality-measurereport15"/>
+<artifact id="MeasureReport/quality-measurereport20" key="MeasureReport-quality-measurereport20" name="quality-measurereport20"/>
+<artifact id="MeasureReport/quality-measurereport21" key="MeasureReport-quality-measurereport21" name="quality-measurereport21"/>
+<artifact id="MeasureReport/quality-measurereport22" key="MeasureReport-quality-measurereport22" name="quality-measurereport22"/>
+<artifact id="MeasureReport/quality-measurereport23" key="MeasureReport-quality-measurereport23" name="quality-measurereport23"/>
+<artifact id="MeasureReport/quality-measurereport24" key="MeasureReport-quality-measurereport24" name="quality-measurereport24"/>
+<artifact id="MeasureReport/quality-measurereport25" key="MeasureReport-quality-measurereport25" name="quality-measurereport25"/>
 <artifact deprecated="true" id="Bundle/ra-bundle01" key="Bundle-ra-bundle01" name="ra-bundle01: Risk Adjustment Bundle"/>
 <artifact deprecated="true" id="Group/ra-group01" key="Group-ra-group01" name="ra-group01: Risk Adjustment Patient Group"/>
 <artifact deprecated="true" id="Group/ra-group02" key="Group-ra-group02" name="ra-group02: Risk Adjustment Patient Group"/>
@@ -150,6 +156,7 @@
 <artifact id="Measure/vbp-measure02" key="Measure-vbp-measure02" name="vbp-measure02"/>
 <artifact id="MeasureReport/vbp-measurereport101" key="MeasureReport-vbp-measurereport101" name="vbp-measurereport101"/>
 <artifact id="MeasureReport/vbp-measurereport102" key="MeasureReport-vbp-measurereport102" name="vbp-measurereport102"/>
+<artifact id="MeasureReport/vbp-measurereport103" key="MeasureReport-vbp-measurereport103" name="vbp-measurereport103"/>
 <artifact id="Organization/vbp-payer01" key="Organization-vbp-payer01" name="vbp-payer01"/>
 <artifact id="Organization/vbp-provider01" key="Organization-vbp-provider01" name="vbp-provider01"/>
 <artifact id="Organization/vbp-provider02" key="Organization-vbp-provider02" name="vbp-provider02"/>
@@ -167,7 +174,6 @@
 <page key="index" name="Home"/>
 <page deprecated="true" key="operations" name="Operation"/>
 <page deprecated="true" key="profiles" name="Profiles"/>
-<page key="profiles-and-extensions" name="Profiles and Extensions"/>
 <page key="toc" name="Table of Contents"/>
-<page key="terminology" name="Terminology"/>
+<page deprecated="true" key="terminology" name="Terminology"/>
 </specification>

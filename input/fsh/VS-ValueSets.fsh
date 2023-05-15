@@ -44,12 +44,19 @@ Description: "The type of population."
 * include $vbp-measure-population#calculated-denominator "calculated-donominator"
 * include $vbp-measure-population#calculated-numerator "calculated-numerator"
 
-ValueSet: QualityStarRating
-Title: "Quality Star Rating"
-Id: quality-star-rating
-Description: "Quality star rating"
+//ValueSet: QualityStarRating
+//Title: "Quality Star Rating"
+//Id: quality-star-rating
+//Description: "Quality star rating"
+//* ^experimental = false
+//* codes from system quality-star-rating
+
+ValueSet: ThresholdType
+Title: "Threshold Type"
+Id: threshold-type
+Description: "Threshold type"
 * ^experimental = false
-* codes from system quality-star-rating
+* codes from system threshold-type
 
 ValueSet: MeasureStratifierExample
 Title: "Measure Stratifier Example"

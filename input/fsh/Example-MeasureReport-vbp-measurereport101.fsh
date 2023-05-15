@@ -14,6 +14,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * status = #complete
 * type = #summary
 * measure = "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-vbp-measure01"
+* subject
 * subject.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/organization-subject"
 * subject.extension.valueReference = Reference(Organization/vbp-provider01)
 * date = "2023-01-15"

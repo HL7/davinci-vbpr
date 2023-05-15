@@ -8,7 +8,7 @@ Description: "VBP quality measure report at the summary level for a population. 
 //* meta 1..1 MS
 //* meta.profile 1.. MS
 //* extension contains Weight named weight 0..1 MS
-* extension contains StarScore named starScore 0..1 MS
+* extension contains Score named score 0..1 MS
 * extension contains Threshold named threshold 0..* MS 
 * group.population.code from vbp-measure-population (extensible)
 * group.stratifier.stratum.population.code from vbp-measure-population (extensible)

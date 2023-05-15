@@ -120,10 +120,19 @@ Description: "Service period"
 * value[x] 1..1 
 * value[x] only Period
 
-Extension: StarScore
-Id: star-score
-Title: "Star Score"
-Description: "Weighted average star score of individual measures"
+//Extension: StarScore
+//Id: star-score
+//Title: "Star Score"
+//Description: "Weighted average star score of individual measures"
+//* ^context[+].type = #element
+//* ^context[=].expression = "MeasureReport"
+//* value[x] 1..1 
+//* value[x] only decimal
+
+Extension: Score
+Id: score
+Title: "Score"
+Description: "Score of individual measures"
 * ^context[+].type = #element
 * ^context[=].expression = "MeasureReport"
 * value[x] 1..1 
@@ -135,17 +144,22 @@ Title: "Threshold"
 Description: "Threshold"
 * extension contains 
     value 1..1 MS and 
-    star 0..1 MS
+    type 0..1 MS and
+    period 0..1 MS
 * extension[value] only Extension    
-* extension[value] ^short = "Threshold"
+* extension[value] ^short = "Value of the threshold"
 * extension[value] ^definition = "The value of threshold cut point"
 * extension[value].value[x] 1..1
 * extension[value].value[x] only decimal or Quantity
-* extension[star] only Extension
-* extension[star] ^short = "Star for star threshold"
-* extension[star] ^definition = "Indicates whether is star 1, star 2, etc."
+* extension[type] only Extension
+* extension[type] ^short = "The threshold type"
+* extension[type] ^definition = "The threshold type"
 //* extension[starRating].value[x] only CodeableConcept
-* extension[star].valueCodeableConcept from quality-star-rating (extensible)
+* extension[type].valueCodeableConcept 1..1
+* extension[type].valueCodeableConcept from threshold-type (extensible)
+* extension[period] ^short = "Performance period for the threshold"
+* extension[period].value[x] only Period 
+* extension[period].valuePeriod 0..1
 
 //Extension: Weight
 //Id: weight

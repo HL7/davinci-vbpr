@@ -40,7 +40,7 @@ Description: "This is an example Medication Adherence for Cholesterol (Statins) 
 
 * status = #complete
 * type = #summary
-* measure = "http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR"
+* measure = "http://example.org/Measure/measure-med-adherence-cholesterol-statins-FHIR"
 * date = "2023-01-15"
 * period.start = "2022-01-01"
 * period.end = "2022-11-30"

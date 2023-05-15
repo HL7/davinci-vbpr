@@ -4,7 +4,18 @@ This implementation guide is under development.
 
 ###  Summary
 
-With the shift from fee-for-service to value-based care, value-based contracts have emerged as a mechanism that payers may use to better align their contracting structures with broader changes in the healthcare system. This Da Vinci Fast Healthcare Interoperability Resource (FHIR) Value-Based Performance Reporting (VBPR) Implementation Guide specifies a standard format for value-based performance reports and mechanisms for exchanging standardized value-based performance reports between providers and payers for value-based quality and risk contracts. 
+The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Value-Based Performance Reporting (VBPR) Implementation Guide supports exchanging financial and quality performance data based on contractual performance measurements agreed to by payers and providers. 
+
+Value-based contracting is important to the US healthcare system for several reasons:
+- Encourages providers to focus on quality outcomes and efficiency
+- Helps to reduce wasteful healthcare spending and improve the affordability of healthcare for individuals, employers, and the government
+- Promotes cost containment by incentivizing providers to improve the quality of care, rather than just providing more services
+- Has shown to lead to better health outcomes for patients and improved patient satisfaction
+- Promotes innovation in healthcare delivery and payment models, which can help drive improvements in healthcare quality, efficiency, and affordability
+
+Reporting performance against the specific details of a contract may include financial, quality, utilization, etc. over defined time periods. This timely performance reporting provides the needed transparency required at the point of care and is essential to the success of value-based contracts for both payers and providers.
+
+The first Standard for Trial Use (STU) version of this implementation guide focuses on the standard exchange format of value-based financial and quality performance reports for payers to providers. It may also benefit both providers and payers by reducing the administrative burden to providers by standardizing the reporting they receive across all payers.
 
 This implementation guide is supported by the Da Vinci initiative which is a private effort to accelerate the adoption of Health Level Seven International Fast Healthcare Interoperability Resources (HL7® FHIR®) as the standard to support and integrate value-based care data exchange across communities. Like all Da Vinci Implementation Guides, it follows the [HL7 Da Vinci Guiding Principles] for exchange of patient health information. As an HL7 FHIR Implementation Guide, changes to this specification are managed by the sponsoring [Clinical Quality Information (CQI) Work Group] and are incorporated as part of the standard balloting process.
 
@@ -25,9 +36,46 @@ This implementation guide is divided into several pages which are listed at the 
 
 ### Background
 {: #background}
-A value-based contract is a written contractual agreement between parties in which the payment for health care goods and services is tied to predetermined, mutually agreed upon terms that are based on clinical circumstances, patient outcomes, financial benchmarks, and other specified measures of the appropriateness and effectiveness of the services rendered. With the shift from fee-for-service to value-based care, value-based contracts have emerged as a mechanism that payers may use to better align their contracting structures with broader changes in the health care system.
+Value-Based Performance Reporting (VBPR) offer insights into the performance of healthcare providers and organizations by evaluating their financial, quality, cost, and efficiency aspects. These reports play a crucial role in assessing and comparing providers within value-based contracts. The objective of such contracts is to encourage superior care, enhance patient outcomes, and lower costs by compensating providers according to their performance, as opposed to the quantity of services provided.
 
-Standardization of payer/provider performance reporting for quality and risk contracts is crucial for health systems and other provider organizations to receive timely interim reports to track and manage their performance on value-based contracts during the term. This implementation guide standardizes the value-based performance reporting format and exchange methods between payers and providers.  Standardized bi-directional, FHIR-based communication will connect payer baseline reporting data with provider organization data at the population level. It will also provide the flexibility to compare interim progress at different times during the contract performance period, in addition to notifying providers of non-clinical pre-defined events that may have a direct effect on financial performance and ultimately success.
+Payer-generated performance reports are crucial because payers are generally the arbiters in determining financial performance on risk contracts with health systems. Many times, payers have the best source of information on Per Member Per Month (PMPM) spend, contractual terms, regional or historical trends, and other financial information that health systems need to track and manage performance on those contracts. Claims data is important but insufficient on its own because state and federal requirements mask certain types of data that make accurate financial calculations difficult.  
+
+#### Key Components of VBPR Reports
+
+- **Quality Measures**: Quantitative metrics that assess the performance of healthcare providers and organizations in terms of clinical outcomes, patient safety, patient experience, and adherence to clinical guidelines and best practices.
+- **Performance Categories**: Distinct areas of provider performance, such as clinical quality, cost, utilization, and patient experience, which are evaluated and weighted to calculate an overall performance score.
+- **Risk Adjustment**: A methodology applied to account for differences in patient populations, such as demographic factors, clinical conditions, and social determinants of health, to ensure fair comparisons of provider performance.
+- **Performance Benchmarks**: Comparative metrics used to evaluate provider performance against established industry standards or the historic performance of peer organizations.
+- **Incentive Payments**: Financial rewards or penalties applied to providers based on their performance to encourage improvements in care quality and efficiency.
+
+Healthcare providers and participating organizations submit performance data, including quality measures, cost, and utilization metrics, to payers or other regulatory bodies for evaluation and analysis. There have been numerous value-based performance initiatives launched by both public and private payers, including accountable care organizations (ACOs), bundled payments, and pay-for-performance programs to name a few. These initiatives have continued to evolve and expand, with a growing emphasis on patient-centered care, population health management, and the use of data analytics to drive quality improvement and cost containment. 
+ 
+Value-based performance reports are generated by payers to summarize provider performance across different categories, including lines of business, contracts, populations, quality measures, and financial metrics and reporting periods on a scheduled and ad-hoc basis. 
+ 
+Based on the calculated performance scores, incentive payments are calculated and distributed to providers as rewards or penalties, encouraging continuous improvement in care quality and efficiency.
+
+#### HCP-LAN APM Framework 
+HCP-LAN (Health Care Payment Learning and Action Network)<sup>[1](https://hcp-lan.org/)</sup> is a public-private partnership established in 2015 by the US Department of Health and Human Services (HHS) to accelerate the transition to value-based payment models in the US healthcare system. HCP-LAN has defined several categories that help to categorize the alternative payment models (APMs).<sup>[2](https://hcp-lan.org/workproducts/apm-figure-1-final.pdf)</sup> These categories are intended to provide a framework for evaluating the complexity and risk associated with different APMs, and to help stakeholders understand the trade-offs between different payment models. 
+
+{% include img-portrait.html img="hcplan-apm-framework.png" caption = "Figure 1-1 HCP-LAN APM Framework" %}
+
+- **Category 1**: Fee-for-Service with No Link to Quality and Value: This level includes traditional fee-for-service payment models that do not provide incentives for quality improvement or cost containment. (Note that Category 1 is not addressed in this implementation guide).
+ 
+- **Category 2**: Fee-for-Service with Links to Quality and Value: foundational payments for infrastructure and operations, pay for reporting, or shared savings. 
+
+- **Category 3**: APMs build on fee-for-service architecture: This level includes payment models that focus on upside risk only or that episode-based payment for procedures and comprehensive payments with upside and downside risk. This category also included risk-based payments NOT linked to quality.  
+
+- **Category 4**: Population-based Payment: This level includes payment models where providers receive a fixed payment for a specific population, such as a patient panel, and are responsible for delivering all necessary care within that population. This category also includes global budgets or full/percent of premium payment and integrated finance and delivery system. This category also includes capitated payments not linked to quality. 
+
+While a framework is in place to identify the types of value-based agreements payers and providers can participate in, there is a challenge in collecting, analyzing and reconciling the numerous reports providers receive from payers. Some of these challenges include:
+- Lack of standardizations for reporting format (proprietary)
+- Data retrieval is time intensive b/c coming from various portals and is not scalable
+- Data is error-prone based on human error when entering into reporting systems
+- Data is in unstructured formats
+- Lack of common definitions for example TCC could have many different calculations
+- Misalignment on periods when data is shared, and care is delivered. 
+- Various reporting, payment, and reconciliation periods can make tracking performance across contractual measures difficult for providers to understand how well they are performing prior to various settlement dates.
+
 
 ### Scope
 
@@ -40,7 +88,7 @@ The initial phase of this implementation guide focuses on:
 - Defining common definitions for data elements in the report and terms used in the IG
 - Supporting both Medicare value-based contracts (Medicare Advantage) and commercial value-based contracts, and other types of value-based contracts such as Medicaid.
 
-{% include img-portrait.html img="scope.png" caption="Figure 1-1 Scope"%}
+{% include img-portrait.html img="scope.png" caption="Figure 1-2 Scope"%}
 
 Future versions of this implementation guide will include functionalities to support topics such as:
 - Final contract settlement calculations (including inclusions and exclusions)
@@ -50,7 +98,7 @@ Future versions of this implementation guide will include functionalities to sup
 - External (out of network) reconciliations
 - Other Alternative Payment Models (APM)  
 - Using CQL for calculations
-- Provider doesn’t meet all of the measure to qualify-how does the provider know where they are? Splits and mergers in - provider groups for attribution (whole year /partial year contribution
+- Provider doesn’t meet all of the measure to qualify-how does the provider know where they are? Splits and mergers in - provider groups for attribution (whole year /partial year contribution)
 - Consolidating data inputs to create a report from heterogeneous sources
 
 

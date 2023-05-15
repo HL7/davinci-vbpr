@@ -137,16 +137,19 @@ Description: "Measure population type"
 * #calculated-numerator "Calculated numerator"
 * ^caseSensitive = true
 
-CodeSystem: QualityStarRating
-Title: "Quality Star Rating"
-Id: quality-star-rating
-Description: "Quality star rating"
+CodeSystem: ThresholdType
+Title: "Threshold Type"
+Id: threshold-type
+Description: "What threshold"
 * ^experimental = false
 * #star-1 "Star 1"
 * #star-2 "Star 2"
 * #star-3 "Star 3"
 * #star-4 "Star 4"
 * #star-5 "Star 5"
+* #hedis-50-percentile "hedis-50-percentile"
+* #hedis-75-percentile "hedis-75-percentile"
+* #hedis-90-percentile "hedis-90-percentile"
 * ^caseSensitive = true
 
 CodeSystem: MeasureStratifierExample
