@@ -56,9 +56,10 @@
 <artifact deprecated="true" id="Encounter/ra-encounter04pat03" key="Encounter-ra-encounter04pat03" name="Encounter on 20211218"/>
 <artifact deprecated="true" id="StructureDefinition/ra-evidenceStatus" key="StructureDefinition-ra-evidenceStatus" name="Evidence Status Extension"/>
 <artifact deprecated="true" id="ValueSet/example-cmshcc" key="ValueSet-example-cmshcc" name="Example CMS Hierarchical Condition Category Value Set"/>
+<artifact id="StructureDefinition/group-reference" key="StructureDefinition-group-reference" name="Group Reference"/>
 <artifact deprecated="true" id="StructureDefinition/ra-groupReference" key="StructureDefinition-ra-groupReference" name="Group Reference Extension"/>
-<artifact id="ValueSet/hcplan-framework" key="ValueSet-hcplan-framework" name="HPCLAN Framework"/>
-<artifact id="CodeSystem/hcplan-framework" key="CodeSystem-hcplan-framework" name="HPCLAN Framework Code System"/>
+<artifact id="ValueSet/hcplan-framework" key="ValueSet-hcplan-framework" name="HCPLAN Framework"/>
+<artifact id="CodeSystem/hcplan-framework" key="CodeSystem-hcplan-framework" name="HCPLAN Framework Code System"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hiearchicalStatus" key="StructureDefinition-ra-hiearchicalStatus" name="Hiearchical Status Extension"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status Extension"/>
 <artifact id="ValueSet/lob" key="ValueSet-lob" name="Line of Business"/>
@@ -122,7 +123,6 @@
 <artifact id="StructureDefinition/vbp-measure" key="StructureDefinition-vbp-measure" name="Value-Based Performance Measure"/>
 <artifact id="CodeSystem/vbp-measure-population" key="CodeSystem-vbp-measure-population" name="Value-Based Performance Measure Population Type"/>
 <artifact id="StructureDefinition/vbp-performance-measurereport" key="StructureDefinition-vbp-performance-measurereport" name="Value-Based Performance MeasureReport"/>
-<artifact id="StructureDefinition/group-reference" key="StructureDefinition-group-reference" name="Weight"/>
 <artifact id="MeasureReport/quality-measurereport01" key="MeasureReport-quality-measurereport01" name="quality-measurereport01"/>
 <artifact id="MeasureReport/quality-measurereport02" key="MeasureReport-quality-measurereport02" name="quality-measurereport02"/>
 <artifact id="MeasureReport/quality-measurereport03" key="MeasureReport-quality-measurereport03" name="quality-measurereport03"/>

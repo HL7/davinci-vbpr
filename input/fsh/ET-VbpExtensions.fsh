@@ -39,6 +39,10 @@ Extension: Baseline
 Id: baseline
 Title: "Baseline"
 Description: "Performance metric baseline"
+* ^context[+].type = #element
+* ^context[=].expression = "MeasureReport"
+* ^context[+].type = #element
+* ^context[=].expression = "MeasureReport.group"
 * extension contains value 1..1 MS and period 1..1 MS
 * extension[value] ^short = "The baseline data for the metric"
 * extension[value].value[x] 1..1
@@ -144,8 +148,7 @@ Title: "Threshold"
 Description: "Threshold"
 * extension contains 
     value 1..1 MS and 
-    type 0..1 MS and
-    period 0..1 MS
+    type 1..1 MS 
 * extension[value] only Extension    
 * extension[value] ^short = "Value of the threshold"
 * extension[value] ^definition = "The value of threshold cut point"
@@ -157,9 +160,6 @@ Description: "Threshold"
 //* extension[starRating].value[x] only CodeableConcept
 * extension[type].valueCodeableConcept 1..1
 * extension[type].valueCodeableConcept from threshold-type (extensible)
-* extension[period] ^short = "Performance period for the threshold"
-* extension[period].value[x] only Period 
-* extension[period].valuePeriod 0..1
 
 //Extension: Weight
 //Id: weight
@@ -172,7 +172,7 @@ Description: "Threshold"
 
 Extension: GroupReference
 Id: group-reference
-Title: "Weight"
+Title: "Group Reference"
 Description: "Reference to a group within the MeasureReport"
 * ^context[+].type = #element
 * ^context[=].expression = "MeasureReport.evaluatedResource"

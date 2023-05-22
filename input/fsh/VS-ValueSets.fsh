@@ -22,7 +22,7 @@ Description: "Type of payment stream"
 * codes from system payment-stream
 
 ValueSet: HCPLANFramework
-Title: "HPCLAN Framework"
+Title: "HCPLAN Framework"
 Id: hcplan-framework
 Description: "HCPLAN framework categories for value-based performance. HCPLAN framework represents payments from public and private payers to provider organizations."
 * ^experimental = false

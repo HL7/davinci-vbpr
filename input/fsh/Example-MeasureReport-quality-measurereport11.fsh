@@ -12,14 +12,14 @@ Description: "This is an example Breast Cancer Screening MeasureReport for the *
 * extension[0].url = "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring"
 * extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/measure-scoring#proportion
 
-//* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/star-score"
+//* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/score"
 //* extension[=].valueDecimal = 0
 
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
 * extension[=].extension[0].url = "value"
 * extension[=].extension[=].valueQuantity = 66 '%'
-* extension[=].extension[+].url = "star"
-* extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-star-rating#star-3
+* extension[=].extension[+].url = "type"
+* extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/threshold-type#star-3
 
 * status = #complete
 * type = #summary

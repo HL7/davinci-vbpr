@@ -103,7 +103,7 @@ on a specific schedule."
 * ^caseSensitive = true
 
 CodeSystem: HCPLANFramework
-Title: "HPCLAN Framework Code System"
+Title: "HCPLAN Framework Code System"
 Id: hcplan-framework
 Description: "HCPLAN Framework represents payments from public and private payers to provider organizations (including payments between the payment and delivery arms of highly integrated health systems). It is designed to accommodate payments in multiple categories that are made by a single payer, as well as single provider organizations that receive payments in different categories—potentially from the same payer. Although payments will be classified in discrete categories, the Framework captures a continuum of clinical and financial risk for provider organizations."
 * ^experimental = false
