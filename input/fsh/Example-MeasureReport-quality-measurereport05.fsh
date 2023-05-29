@@ -18,22 +18,22 @@ Description: "This is an example Medication Adherence for Cholesterol (Statins) 
 //* extension[=].valueDecimal = 3
 
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
-* extension[=].extension[0].url = "value"
+* extension[=].extension[0].url = "threshold"
 * extension[=].extension[=].valueQuantity = 80 '%'
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/threshold-type#star-2
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
-* extension[=].extension[0].url = "value"
+* extension[=].extension[0].url = "threshold"
 * extension[=].extension[=].valueQuantity = 85 '%'
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/threshold-type#star-3
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
-* extension[=].extension[0].url = "value"
+* extension[=].extension[0].url = "threshold"
 * extension[=].extension[=].valueQuantity = 90 '%'
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/threshold-type#star-4
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
-* extension[=].extension[0].url = "value"
+* extension[=].extension[0].url = "threshold"
 * extension[=].extension[=].valueQuantity = 93 '%'
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/threshold-type#star-5

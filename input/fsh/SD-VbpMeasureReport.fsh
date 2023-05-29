@@ -36,8 +36,9 @@ Description: "Value-Based Performance MeasureReport is a payer-generated perform
 * group.measureScore.extension[AlternateMeasureScore] ^short = "Additional data type choices for the value of the performance metric"
 * group.extension contains PaymentStream named paymentStream 0..* MS 
 * group.extension[PaymentStream] ^short = "The payment stream the performance metric is part of"
-* group.extension contains QualityProgram named qualityProgram 0..1 MS 
-* group.extension[QualityProgram] ^short = "The quality program the performance metric is part of"
+//* group.extension[PaymentStream] contains QualityProgram named qualityProgram 0..1 MS 
+//* group.extension[QualityProgram] ^short = "The quality program the performance metric is part of"
+//* group.extension contains QualityProgram named qualityProgram 0..1 MS 
 * group.extension contains ServicePeriod named servicePeriod 0..1 MS 
 * group.extension[ServicePeriod] ^short = "The service period for the performance metric"
 * group.extension[ServicePeriod] ^definition = "The service period may be the same as or a subset of the performance period the report covers."

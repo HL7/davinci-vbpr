@@ -16,7 +16,7 @@ Description: "This is an example Breast Cancer Screening MeasureReport for the *
 //* extension[=].valueDecimal = 0
 
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
-* extension[=].extension[0].url = "value"
+* extension[=].extension[0].url = "threshold"
 * extension[=].extension[=].valueQuantity = 66 '%'
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/threshold-type#star-3

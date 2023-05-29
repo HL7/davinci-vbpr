@@ -6,6 +6,8 @@
 <artifactPageExtension value="-mappings"/>
 <artifact id="StructureDefinition/alternate-measurescore" key="StructureDefinition-alternate-measurescore" name="Alternate Measure Score"/>
 <artifact id="StructureDefinition/baseline" key="StructureDefinition-baseline" name="Baseline"/>
+<artifact id="ValueSet/vbp-cohort" key="ValueSet-vbp-cohort" name="Cohort"/>
+<artifact id="CodeSystem/vbp-cohort" key="CodeSystem-vbp-cohort" name="Cohort"/>
 <artifact deprecated="true" id="Condition/ra-condition01" key="Condition-ra-condition01" name="Condition01: Type 2 diabetes with unspecified manisfestations"/>
 <artifact deprecated="true" id="Condition/ra-condition01pat03" key="Condition-ra-condition01pat03" name="Condition01pat03: Other artificial openings of gastrointestinal tract status"/>
 <artifact deprecated="true" id="Condition/ra-condition02" key="Condition-ra-condition02" name="Condition02: Major Depressive Disorder, Single episode"/>
@@ -59,11 +61,13 @@
 <artifact id="StructureDefinition/group-reference" key="StructureDefinition-group-reference" name="Group Reference"/>
 <artifact deprecated="true" id="StructureDefinition/ra-groupReference" key="StructureDefinition-ra-groupReference" name="Group Reference Extension"/>
 <artifact id="ValueSet/hcplan-framework" key="ValueSet-hcplan-framework" name="HCPLAN Framework"/>
-<artifact id="CodeSystem/hcplan-framework" key="CodeSystem-hcplan-framework" name="HCPLAN Framework Code System"/>
+<artifact id="CodeSystem/hcplan-framework" key="CodeSystem-hcplan-framework" name="HCPLAN Framework"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hiearchicalStatus" key="StructureDefinition-ra-hiearchicalStatus" name="Hiearchical Status Extension"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status Extension"/>
+<artifact id="ValueSet/vbp-incentive" key="ValueSet-vbp-incentive" name="Incentive"/>
+<artifact id="CodeSystem/vbp-incentive" key="CodeSystem-vbp-incentive" name="Incentive payment"/>
+<artifact id="StructureDefinition/lob" key="StructureDefinition-lob" name="Line of Business"/>
 <artifact id="ValueSet/lob" key="ValueSet-lob" name="Line of Business"/>
-<artifact id="StructureDefinition/lob" key="StructureDefinition-lob" name="Line of Business Extension"/>
 <artifact id="ValueSet/measure-stratifier-example" key="ValueSet-measure-stratifier-example" name="Measure Stratifier Example"/>
 <artifact id="CodeSystem/measure-stratifier-example" key="CodeSystem-measure-stratifier-example" name="Measure Stratifier Example"/>
 <artifact deprecated="true" id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Observation: Creatinine Result from 20210728"/>
@@ -82,16 +86,13 @@
 <artifact deprecated="true" id="Patient/ra-patient04" key="Patient-ra-patient04" name="Patient04: Jane Doh"/>
 <artifact id="StructureDefinition/payment-stream" key="StructureDefinition-payment-stream" name="Payment Stream"/>
 <artifact id="ValueSet/vbp-payment-stream" key="ValueSet-vbp-payment-stream" name="Payment Stream"/>
-<artifact id="CodeSystem/payment-stream" key="CodeSystem-payment-stream" name="Payment Stream Code System"/>
+<artifact id="CodeSystem/payment-stream" key="CodeSystem-payment-stream" name="Payment Stream"/>
 <artifact id="ValueSet/vbp-performance-metric" key="ValueSet-vbp-performance-metric" name="Performance Metric"/>
-<artifact id="CodeSystem/vbp-performance-metric" key="CodeSystem-vbp-performance-metric" name="Performance Metric Code System"/>
+<artifact id="CodeSystem/vbp-performance-metric" key="CodeSystem-vbp-performance-metric" name="Performance Metric"/>
 <artifact deprecated="true" id="Practitioner/ra-prac01pat01" key="Practitioner-ra-prac01pat01" name="Practitioner: Harold Hippocrates"/>
 <artifact deprecated="true" id="Practitioner/ra-prac03pat03" key="Practitioner-ra-prac03pat03" name="Practitioner: Otto Osler"/>
 <artifact deprecated="true" id="Practitioner/ra-prac02pat02" key="Practitioner-ra-prac02pat02" name="Practitioner: Patrick Pump"/>
 <artifact id="StructureDefinition/program-model" key="StructureDefinition-program-model" name="Program Model"/>
-<artifact id="StructureDefinition/quality-program" key="StructureDefinition-quality-program" name="Quality Program"/>
-<artifact id="ValueSet/quality-program" key="ValueSet-quality-program" name="Quality Program"/>
-<artifact id="CodeSystem/quality-program" key="CodeSystem-quality-program" name="Quality Program Code System"/>
 <artifact deprecated="true" id="OperationDefinition/report" key="OperationDefinition-report" name="Report Operation"/>
 <artifact deprecated="true" id="CapabilityStatement/ra-client" key="CapabilityStatement-ra-client" name="Risk Adjustment Client Capability Statement"/>
 <artifact deprecated="true" id="StructureDefinition/ra-clinicalDataCollectionDeadline" key="StructureDefinition-ra-clinicalDataCollectionDeadline" name="Risk Adjustment Clinical Data Collection Deadline Extension"/>

@@ -15,7 +15,7 @@ Description: "This is an example Diabetic Retinopathy: Communication with the Ph
 //* extension[=].valueDecimal = 5
 
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
-* extension[=].extension[0].url = "value"
+* extension[=].extension[0].url = "threshold"
 * extension[=].extension[=].valueQuantity = 69 '%'
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/threshold-type#star-3

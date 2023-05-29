@@ -23,9 +23,11 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * period.end = "2022-12-31"
 
 * group[0].id = "ccf-group-01"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ccf
-* group[=].extension[=].valueCodeableConcept.text = "Care coordination fee"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ccf
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Care coordination fee"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -74,9 +76,11 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[+].id = "ssq-group-starscore"
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#weighted-avg-star
 * group[=].code.text = "Weighted average star"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -84,9 +88,11 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valueDate = "2022-12-31"
 * group[=].measureScore.value = 3.8
 * group[+].id = "ssq-group-01"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -120,9 +126,11 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 50
 * group[+].id = "ssq-group-02"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -155,10 +163,12 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 1.3
+
 * group[+].id = "ssq-group-03"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -191,10 +201,13 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 2000
+
 * group[+].id = "ssq-group-04"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -227,10 +240,13 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 40
+
 * group[+].id = "ssq-group-05"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -263,10 +279,13 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 3000
+
 * group[+].id = "ssq-group-06"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -299,10 +318,13 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 60
+
 * group[+].id = "ssq-group-07"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -335,10 +357,12 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore = 150 '%'
+
 * group[+].id = "ssq-group-08"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -371,10 +395,13 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore = 85 '%'
+
 * group[+].id = "ssq-group-09"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -407,10 +434,12 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 1700
+
 * group[+].id = "ssq-group-10"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -443,10 +472,12 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = -1300
+
 * group[+].id = "ssq-group-11"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -479,10 +510,13 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 0.69
+
 * group[+].id = "ssq-group-12"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -514,10 +548,13 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 30
+
 * group[+].id = "ssq-group-13"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -549,10 +586,13 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore = 110 '%'
+
 * group[+].id = "ssq-group-14"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -585,10 +625,13 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 250
+
 * group[+].id = "ssq-group-15"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -621,10 +664,13 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 1983.33
+
 * group[+].id = "ssq-group-16"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -657,10 +703,12 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 50
+
 * group[+].id = "ssq-group-17"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* group[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -693,13 +741,16 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = -1040
+
 * group[+].id = "qip-group-01"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
-* group[=].extension[=].valueCodeableConcept.text = "Quality incentive payment"
-* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/quality-program"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-program#annual-visit
-* group[=].extension[=].valueCodeableConcept.text = "Annual office visit"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Quality incentive payment"
+* group[=].extension[=].extension[+].url = "incentive"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-incentive#annual-visit
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Annual office visit"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-11-30"
@@ -708,13 +759,15 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#avg-member-office-visit
 * group[=].code.text = "Average members with office visit"
 * group[=].measureScore = 87 '%'
+
 * group[+].id = "qip-group-02"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
-* group[=].extension[=].valueCodeableConcept.text = "Quality incentive payment"
-* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/quality-program"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-program#chronic
-* group[=].extension[=].valueCodeableConcept.text = "Chronic care management incentive program"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Quality incentive payment"
+* group[=].extension[=].extension[+].url = "incentive"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-incentive#chronic-care-mgmt
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Chronic care management incentive program"
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-09-30"
@@ -739,13 +792,16 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[+].value = http://loinc.org#LA10137-0
 * group[=].stratifier.stratum[=].value.text = "5+"
 * group[=].stratifier.stratum[=].measureScore.value = 100
+
 * group[+].id = "qip-group-03"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
-* group[=].extension[=].valueCodeableConcept.text = "Quality incentive payment"
-* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/quality-program"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-program#chronic
-* group[=].extension[=].valueCodeableConcept.text = "Chronic care management incentive program"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Quality incentive payment"
+* group[=].extension[=].extension[+].url = "incentive"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-incentive#chronic-care-mgmt
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Chronic care management incentive program"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-09-30"
@@ -770,13 +826,16 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[+].value = http://loinc.org#LA10137-0
 * group[=].stratifier.stratum[=].value.text = "5+"
 * group[=].stratifier.stratum[=].measureScore.value = 20
+
 * group[+].id = "qip-group-04"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
-* group[=].extension[=].valueCodeableConcept.text = "Quality incentive payment"
-* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/quality-program"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-program#chronic
-* group[=].extension[=].valueCodeableConcept.text = "Chronic care management incentive program"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Quality incentive payment"
+* group[=].extension[=].extension[+].url = "incentive"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-incentive#chronic-care-mgmt
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Chronic care management incentive program"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-09-30"
@@ -801,13 +860,16 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[+].value = http://loinc.org#LA10137-0
 * group[=].stratifier.stratum[=].value.text = "5+"
 * group[=].stratifier.stratum[=].measureScore.value = 0
+
 * group[+].id = "qip-group-05"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
-* group[=].extension[=].valueCodeableConcept.text = "Quality incentive payment"
-* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/quality-program"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-program#chronic
-* group[=].extension[=].valueCodeableConcept.text = "Chronic care management incentive program"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Quality incentive payment"
+* group[=].extension[=].extension[+].url = "incentive"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-incentive#chronic-care-mgmt
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Chronic care management incentive program"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-09-30"
@@ -831,13 +893,16 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].stratifier.stratum[+].value = http://loinc.org#LA10137-0
 * group[=].stratifier.stratum[=].value.text = "5+"
 * group[=].stratifier.stratum[=].measureScore.value = 300
+
 * group[+].id = "qip-group-06"
-* group[=].extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
-* group[=].extension[=].valueCodeableConcept.text = "Quality incentive payment"
-* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/quality-program"
-* group[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/quality-program#chronic
-* group[=].extension[=].valueCodeableConcept.text = "Chronic care management incentive program"
+* group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+* group[=].extension[=].extension[0].url = "type"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Quality incentive payment"
+* group[=].extension[=].extension[+].url = "incentive"
+* group[=].extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-incentive#chronic-care-mgmt
+* group[=].extension[=].extension[=].valueCodeableConcept.text = "Chronic care management incentive program"
+
 * group[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
 * group[=].extension[=].valuePeriod.start = "2022-01-01"
 * group[=].extension[=].valuePeriod.end = "2022-09-30"

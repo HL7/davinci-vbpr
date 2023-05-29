@@ -79,18 +79,42 @@ Description: "This is an example measure for the *VBP Measure* profile."
 * extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/lob"
 * extension[=].valueCodeableConcept = https://nahdo.org/sopt#1 "MEDICARE"
 * extension[=].valueCodeableConcept.text = "MEDICARE"
+
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/program-model"
-* extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/hcplan-framework#3A "Category 3A"
-* extension[=].valueCodeableConcept.text = "Category 3A"
+* extension[=].extension[0].url = "hcplan"
+* extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/hcplan-framework#3A "Category 3A"
+* extension[=].extension[+].url = "cohort"
+* extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo "HMO cohort"
+* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/program-model"
+* extension[=].extension[+].url = "hcplan"
+* extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/hcplan-framework#3B "Category 3B"
+* extension[=].extension[+].url = "cohort"
+* extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo "PPO cohort"
+
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
-* extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+* extension[=].extension[0].url = "type"
+* extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+* extension[=].extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ccf
-* extension[=].valueCodeableConcept.text = "Care coordination fee"
+* extension[=].extension[+].url = "type"
+* extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ccf
+* extension[=].extension[=].valueCodeableConcept.text = "Care coordination fee"
+
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
-* extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
-* extension[=].valueCodeableConcept.text = "Quality incentive payment"
+* extension[=].extension[+].url = "type"
+* extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
+* extension[=].extension[=].valueCodeableConcept.text = "Quality incentive payment"
+
+//* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+//* extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ssq
+//* extension[=].valueCodeableConcept.text = "Shared savings gated on quality"
+//* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+//* extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ccf
+//* extension[=].valueCodeableConcept.text = "Care coordination fee"
+//* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+//* extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#qip
+//* extension[=].valueCodeableConcept.text = "Quality incentive payment"
 //* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 //* extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#p4p
 //* extension[=].valueCodeableConcept.text = "Pay for performance"

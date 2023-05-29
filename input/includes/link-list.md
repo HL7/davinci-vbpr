@@ -1,11 +1,11 @@
 [Home]: index.html "Home Page"
 
-[Profiles and Extensions]: profiles-and-extensions.html
+[Profiles and Extensions]: artifacts.html#structures-resource-profiles
 [Downloads]: downloads.html
 [Examples]: examples.html
 [Glossary]: glossary.html
 [Guidance]: guidance.html
-[Terminology]: terminology.html
+[Terminology]: artifacts.html#terminology-value-sets
 [Capability Statements]: capabilities.html
 
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm

@@ -1,5 +1,5 @@
 CodeSystem: VbpPerformanceMetrics
-Title: "Performance Metric Code System"
+Title: "Performance Metric"
 Id: vbp-performance-metric
 Description: "Type of value-based performance metrics."
 * ^experimental = false
@@ -76,34 +76,35 @@ Description: "Type of value-based performance metrics."
 * ^caseSensitive = true
 
 CodeSystem: PaymentStream
-Title: "Payment Stream Code System"
+Title: "Payment Stream"
 Id: payment-stream
-Description: "Payment stream"
+Description: "Payment stream defined in a value-based contract. A value-based contract may contain multiple payment streams."
 * ^experimental = false
-* #aha "Annual health assessment" "This payment stream type pays either a per variable member per month (PMPM) for each attributed based on the percentage or pays each member who has a recorded Annual Health Assesment."
+* ^hierarchyMeaning = #is-a
+* ^caseSensitive = true
 * #ccf "Care coordination fee" "A payment stream that providers are paid a per member per month (PMPM) incentive payments
 on a specific schedule."
 * #ccf-with-risk "Care coordination fee with risk adjustment" "A payment stream that providers are paid a per variable member per month (PMPM) incentive payments on a specific schedule based on risk."
-* #cdm "Chronic Disease Management" "A payment stream tha pays extra for members with chronic conditions." 
 * #cxp "Custom x participation" "Custom x participation"
 * #cxra "Custom x regional adjustment" "custom x regional adjustment"
 * #eoc "Episode of care" "Episodes-of-care refers to an all-inclusive health-and-payment model in which a single, bundled payment includes all services associated with the treatment for an illness, condition or medical event rather than a separate fee-for-service model."
 * #mlrt "MLR target" "Medical loss ratio"
-* #p4p "Pay for performance" "A payment stream that is based on meeting certain quality performance criteria."
-* #p4r "Pay for reporting" "A payment stream that is based on pay for reporting quality. There is no min performance criteria requirement."
 * #pcpcp "PCP capitation payment" "Capitation is a payment arrangement for health care services in which an entity (e.g., a physician or group of physicians) receives a risk adjusted amount of money for each person attributed to them, per period of time, regardless of the volume of services that person seeks."
-* #qip "Quality incentive payment" "Quality Incentive Payments (QIP) is any incentive payment based on quality. This includes (SIP), (SST), (P4P), (P4R), (CDM), (AHA) or (UBIP)."
-* #sip "Stars incentive payment" "A payment stream that is based on meeting certain individual star performance criteria."
 * #ssq "Shared savings gated on quality" "Shared saving gated on quality."
 * #ssl "Shared savings loss percent" "Shared saving with two sided payment and risk for provider."
 * #ssp "Shared savings percent" "Shared savings payment with no risk to provider."
-* #sst "Star score threshold" "A payment stream that is based on meeting certain Provider star performance criteria."
 * #tcoc "Total cost of care" "Total cost of care"
-* #ubip "Utilization incentive payment" "A payment stream that compares current utilization to a benchmark utilization and pays a variable per variable member per month (PMPM) for different rate of change in utilization."
-* ^caseSensitive = true
+* #qip "Quality incentive payment" "Quality Incentive Payments (QIP) is any incentive payment based on quality. This includes (SIP), (SST), (P4P), (P4R), (CDM), (AHA) or (UBIP)."
+  * #aha "Annual health assessment" "This payment stream type pays either a per variable member per month (PMPM) for each attributed based on the percentage or pays each member who has a recorded Annual Health Assesment."
+  * #cdm "Chronic Disease Management" "A payment stream tha pays extra for members with chronic conditions." 
+  * #p4r "Pay for reporting" "A payment stream that is based on pay for reporting quality. There is no min performance criteria requirement."
+  * #p4p "Pay for performance" "A payment stream that is based on meeting certain quality performance criteria."
+  * #sip "Stars incentive payment" "A payment stream that is based on meeting certain individual star performance criteria."
+  * #sst "Star score threshold" "A payment stream that is based on meeting certain Provider star performance criteria."
+  * #ubip "Utilization incentive payment" "A payment stream that compares current utilization to a benchmark utilization and pays a variable per variable member per month (PMPM) for different rate of change in utilization."
 
 CodeSystem: HCPLANFramework
-Title: "HCPLAN Framework Code System"
+Title: "HCPLAN Framework"
 Id: hcplan-framework
 Description: "HCPLAN Framework represents payments from public and private payers to provider organizations (including payments between the payment and delivery arms of highly integrated health systems). It is designed to accommodate payments in multiple categories that are made by a single payer, as well as single provider organizations that receive payments in different categories—potentially from the same payer. Although payments will be classified in discrete categories, the Framework captures a continuum of clinical and financial risk for provider organizations."
 * ^experimental = false
@@ -119,28 +120,37 @@ Description: "HCPLAN Framework represents payments from public and private payer
 * #4N "Category 4N" "Capitated Payments not linked to quality"
 * ^caseSensitive = true
 
-CodeSystem: QualityProgram
-Title: "Quality Program Code System"
-Id: quality-program
-Description: "Quality program"
+CodeSystem: VbpIncentive
+Title: "Incentive payment"
+Id: vbp-incentive
+Description: "What type of incentive for a payment stream such as quality incentive payment."
 * ^experimental = false
-* #chronic "Chronic care management incentive program" "Chronic Care Management Incentive Program"
+* #chronic-care-mgmt "Chronic care management incentive program" "Chronic Care Management Incentive Program"
 * #annual-visit "Annuall office visits" "Annuall Office Visit"
+* ^caseSensitive = true
+
+CodeSystem: VbpCohort
+Title: "Cohort"
+Id: vbp-cohort
+Description: "Cohort population."
+* ^experimental = false
+* #hmo "HMO cohort" "Cohort population that is under HMO"
+* #ppo "PPO cohort" "Cohort population that is under PPO"
 * ^caseSensitive = true
 
 CodeSystem: VbpMeasurePopulationType
 Title: "Value-Based Performance Measure Population Type"
 Id: vbp-measure-population
-Description: "Measure population type"
+Description: "Measure population type."
 * ^experimental = false
-* #calculated-denominator "Calculated denominator"
-* #calculated-numerator "Calculated numerator"
+* #calculated-denominator "Calculated denominator. For example, for a proportion measure, the calculated denominator = (denominator – denominator exclusion – denominator exception)."
+* #calculated-numerator "Calculated numerator. For example, for a proportion measure, the calculated numerator = (numerator - numerator exclusion)."
 * ^caseSensitive = true
 
 CodeSystem: ThresholdType
 Title: "Threshold Type"
 Id: threshold-type
-Description: "What threshold"
+Description: "The type or the name of the threashold."
 * ^experimental = false
 * #star-1 "Star 1"
 * #star-2 "Star 2"
@@ -155,7 +165,7 @@ Description: "What threshold"
 CodeSystem: MeasureStratifierExample
 Title: "Measure Stratifier Example"
 Id: measure-stratifier-example
-Description: "Example stratifiers that could be used to stratify measure or performance metrics"
+Description: "Example stratifiers that could be used to stratify measure or performance metrics."
 * ^experimental = true
 * #region-cohort "region and cohort" "Stratification on both region and cohort"
 * #region "Region" "Region stratification"

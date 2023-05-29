@@ -19,22 +19,22 @@ Description: "This is an example Breast Cancer Screening MeasureReport for the *
 //* extension[=].valueDecimal = 1
 
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
-* extension[=].extension[0].url = "value"
+* extension[=].extension[0].url = "threshold"
 * extension[=].extension[=].valueQuantity = 85 '%'
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/threshold-type#star-2
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
-* extension[=].extension[0].url = "value"
+* extension[=].extension[0].url = "threshold"
 * extension[=].extension[=].valueQuantity = 88 '%'
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/threshold-type#star-3
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
-* extension[=].extension[0].url = "value"
+* extension[=].extension[0].url = "threshold"
 * extension[=].extension[=].valueQuantity = 91 '%'
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/threshold-type#star-4
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
-* extension[=].extension[0].url = "value"
+* extension[=].extension[0].url = "threshold"
 * extension[=].extension[=].valueQuantity = 95 '%'
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/threshold-type#star-5
