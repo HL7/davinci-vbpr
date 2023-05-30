@@ -34,13 +34,18 @@ This following is a list of pre-requisites for using this implementation guide:
 - Provider submits attributed member quality and risk adjustment data to payer  
 - Payer and provider has established security and privacy practices in place
 
+
+
+
 ### VBP Performance MeasureReport, VBP Quality MeasureReport, and VBP Measure Profiles
 
 {% include img-portrait.html img="vbp-measurereport.png" caption = "Figure 2-1 VBP Performance MeasureReport overview" %}
 
 {% include img-portrait.html img="vbp-quality-measurereport-colorectalcancer.png" caption = "Figure 2-2 VBP Quality MeasureReport overview - colorectal cancer screening measure example" %}
 
-{% include img-portrait.html img="vbp-measure.png" caption = "Figure 2-2 VBP Measure overview" %}
+{% include img-portrait.html img="vbp-quality-measurereport-breastcancer.png" caption = "Figure 2-3 VBP Quality MeasureReport overview - breast cancer screening measure example" %}
+
+{% include img-portrait.html img="vbp-measure.png" caption = "Figure 2-4 VBP Measure overview" %}
 
 
 ### Must Support
