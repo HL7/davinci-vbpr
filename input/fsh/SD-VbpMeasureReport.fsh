@@ -23,6 +23,7 @@ Description: "Value-Based Performance MeasureReport is a payer-generated perform
 * reporter only Reference($us-core-organization)
 * period 1..1 MS
 * period ^short = "What performance period the report covers"
+* period ^definition = "What performance period the report covers. If the report contains multiple payment streams and each with different service periods, the report period covers the entire time span of these payment streams service periods. "
 * improvementNotation 0..0
 * group 0..* MS
 * group ^short = "Performance metrics in the report. Each group contains data for a performance metric."

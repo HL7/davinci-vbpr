@@ -72,11 +72,11 @@
 <artifact id="CodeSystem/measure-stratifier-example" key="CodeSystem-measure-stratifier-example" name="Measure Stratifier Example"/>
 <artifact deprecated="true" id="Observation/ra-obs01pat03" key="Observation-ra-obs01pat03" name="Observation: Creatinine Result from 20210728"/>
 <artifact deprecated="true" id="Observation/ra-obs02pat03" key="Observation-ra-obs02pat03" name="Observation: PHQ9 from 20190823"/>
+<artifact id="StructureDefinition/organization-subject" key="StructureDefinition-organization-subject" name="Organization Subject"/>
 <artifact deprecated="true" id="Organization/ra-payer01" key="Organization-ra-payer01" name="Organization01: ABC Payer"/>
 <artifact deprecated="true" id="Organization/ra-org03pat03" key="Organization-ra-org03pat03" name="Organization: Community HealthCenter"/>
 <artifact deprecated="true" id="Organization/ra-org01pat01" key="Organization-ra-org01pat01" name="Organization: Community Urgent Care"/>
 <artifact deprecated="true" id="Organization/ra-org02pat02" key="Organization-ra-org02pat02" name="Organization: GHH Outpatient Clinic"/>
-<artifact id="StructureDefinition/organization-subject" key="StructureDefinition-organization-subject" name="Orgnization Subject"/>
 <artifact id="StructureDefinition/paid-through-date" key="StructureDefinition-paid-through-date" name="Paid Through Date"/>
 <artifact deprecated="true" id="StructureDefinition/ra-patient-group" key="StructureDefinition-ra-patient-group" name="Patient Group Profile"/>
 <artifact deprecated="true" id="Patient/ra-patient01" key="Patient-ra-patient01" name="Patient01: Eve Everywoman"/>

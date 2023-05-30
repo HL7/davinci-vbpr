@@ -1,7 +1,7 @@
 Extension: AlternateMeasureScore
 Id: alternate-measurescore
 Title: "Alternate Measure Score"
-Description: "Other allowed data type choices for the measureScore element in addition to Quantity. The alternate data type for measure score is determined by the performance metric type."
+Description: "The Alternate Measure Score Extension allows other data type choices be used for the measureScore element in addition to Quantity. The alternate data type for measure score is determined by the performance metric type."
 * ^context[+].type = #element
 * ^context[=].expression = "MeasureReport"
 * ^context[+].type = #element
@@ -14,7 +14,7 @@ Description: "Other allowed data type choices for the measureScore element in ad
 Extension: Baseline
 Id: baseline
 Title: "Baseline"
-Description: "Baseline for a performance metric tused for comparisons."
+Description: "The Baseline Extension is a complex extension. It is used to state the baseline that the performance metric is used for comparisons."
 * ^context[+].type = #element
 * ^context[=].expression = "MeasureReport"
 * ^context[+].type = #element
@@ -32,7 +32,7 @@ Description: "Baseline for a performance metric tused for comparisons."
 Extension: LOB
 Id: lob
 Title: "Line of Business"
-Description: "Line of business (LOB) to indicate whether the value-based contract is for Medicare, Medicaid, or commercial (private insurance)."
+Description: "The Line of Business (LOB) Extension is used to indicate whether the value-based contract is for Medicare, Medicaid, or commercial (private insurance)."
 * ^context[+].type = #element
 * ^context[=].expression = "Measure"
 * value[x] 1..1 
@@ -52,7 +52,7 @@ Description: "Paid through date is the ending date of the pay cycle."
 Extension: PaymentStream
 Id: payment-stream
 Title: "Payment Stream"
-Description: "Type of payment stream. A value-based contract may contain different types of payment streams, such as quality incentive payment and care coordination fee."
+Description: "The Payment Stream Extension is a complex extension that defines the type of payment stream. A value-based contract may contain different types of payment streams, such as quality incentive payment and care coordination fee."
 * ^context[+].type = #element
 * ^context[=].expression = "MeasureReport"
 * ^context[+].type = #element
@@ -75,7 +75,7 @@ Description: "Type of payment stream. A value-based contract may contain differe
 Extension: ProgramModel
 Id: program-model
 Title: "Program Model"
-Description: "The Program Model Extension defines the HCP-LAN Alternative Payment Model (APM) framework specified APM categories and which cohort this program model applies to."
+Description: "The Program Model Extension is a complex extension, which defines the HCP-LAN Alternative Payment Model (APM) framework specified APM categories and which cohort this program model applies to."
 * ^context[+].type = #element
 * ^context[=].expression = "Measure"
 //* value[x] 1..1 
@@ -95,8 +95,8 @@ Description: "The Program Model Extension defines the HCP-LAN Alternative Paymen
 
 Extension: OrganizationSubject
 Id: organization-subject
-Title: "Orgnization Subject"
-Description: "Additional resource type, Organization, as Subject reference. MeasureReport in FHIR R5 has Organization as a choice for MeasureReport.subject."
+Title: "Organization Subject"
+Description: "The Organization Subject Extension allows using Organization as an alternative resource type for the Subject reference."
 * ^context.type = #element
 * ^context.expression = "MeasureReport.subject"
 * value[x] 0..1 
@@ -105,7 +105,7 @@ Description: "Additional resource type, Organization, as Subject reference. Meas
 Extension: ServicePeriod
 Id: service-period
 Title: "Service Period"
-Description: "Service period for the payment stream."
+Description: "The Service period for a payment stream."
 * ^context[+].type = #element
 * ^context[=].expression = "MeasureReport"
 * ^context[+].type = #element
@@ -116,7 +116,7 @@ Description: "Service period for the payment stream."
 Extension: Score
 Id: score
 Title: "Score"
-Description: "The score of a measure."
+Description: "The Score Extension is used to specify the score of a measure, such as star score."
 * ^context[+].type = #element
 * ^context[=].expression = "MeasureReport"
 * value[x] 1..1 
@@ -125,7 +125,7 @@ Description: "The score of a measure."
 Extension: Threshold
 Id: threshold
 Title: "Threshold"
-Description: "Threshold defined for measuring performance."
+Description: "The Threshold Extension is a complex extension that defines a threshold needed to be met when measuring performance."
 * ^context[+].type = #element
 * ^context[=].expression = "MeasureReport"
 * value[x] 0..0
