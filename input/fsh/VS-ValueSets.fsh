@@ -22,7 +22,7 @@ Description: "Type of payment stream."
 * codes from system payment-stream
 
 ValueSet: HCPLANFramework
-Title: "HCPLAN Framework"
+Title: "HCPLAN Framework Categories"
 Id: hcplan-framework
 Description: "HCPLAN framework categories for value-based performance. HCPLAN framework represents payments from public and private payers to provider organizations."
 * ^experimental = false
@@ -38,37 +38,23 @@ Description: "What type of incentive."
 ValueSet: VBPCohort
 Title: "Cohort"
 Id: vbp-cohort
-Description: "Type of cohort population."
+Description: "Cohort types."
 * ^experimental = false
 * codes from system vbp-cohort
-
-//ValueSet: QualityProgram
-//Title: "Quality Program"
-//Id: quality-program
-//Description: "Quality program"
-//* ^experimental = false
-//* codes from system quality-program
 
 ValueSet: VBPRMeasurePopulation
 Title: "VBP Measure Population Type"
 Id: vbp-measure-population
-Description: "Measure population that includes calculated-denominator and cacluated-numerator."
+Description: "Measure population type that includes calculated-denominator and cacluated-numerator."
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/measure-population
 * include $vbp-measure-population#calculated-denominator "calculated-donominator"
 * include $vbp-measure-population#calculated-numerator "calculated-numerator"
 
-//ValueSet: QualityStarRating
-//Title: "Quality Star Rating"
-//Id: quality-star-rating
-//Description: "Quality star rating"
-//* ^experimental = false
-//* codes from system quality-star-rating
-
 ValueSet: ThresholdType
 Title: "Threshold Type"
 Id: threshold-type
-Description: "The type or the name of the threshold."
+Description: "The threshold type."
 * ^experimental = false
 * codes from system threshold-type
 

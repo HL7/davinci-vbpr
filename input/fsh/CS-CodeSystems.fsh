@@ -88,7 +88,7 @@ Description: "Payment stream defined in a value-based contract. A value-based co
 * #ssl "Shared savings loss percent" "A two-sided shared saving value-based model that provides two-sided payment and risk to a provider. To be liable for shared losses, providers must meet or exceed a prescribed minmum loss rate (MLR). Once this MLR is met or exceeded, the providers will share in losses at a rate determined by its quality performance up to a loss recoupment limit (also referred to as a loss-sharing limit)."
 * #ssp "Shared savings percent" "A one-sided shared saving value-based model with no risk to a provider. Providers must meet or exceed a prescribed minimum savings rate (MSR), fulfill the minimum quality performance standards, to qualify for the shared savings."
 * #tcoc "Total cost of care" "The payer determines the benchmark expected costs for a population attributed to a provider over a time period, the provider offers care to the population, and the payer shares some proportion of the savings in the actual costs incurred (the Total Cost of Care or TCOC) relative to the benchmark – adjusted by whether the provider met quality goals."
-* #qip "Quality incentive payment" "Quality Incentive Payments (QIP) is designed to improve patient outcomes, service provider performance, and service quality. QIP is any incentive payment based on quality. Stars Incentive Payment (SIP), Star Score Threshold (SST), Pay for Reporting (P4R), Pay for Performance (P4P), Chronic Disease Management (CDM), Annual Health Assessment (AHA), Ulitization Incentive Payment (UBIP) are examples of QIP."
+* #qip "Quality incentive payment" "Quality Incentive Payment (QIP) is designed to improve patient outcomes, service provider performance, and service quality. QIP is any incentive payment based on quality. Stars Incentive Payment (SIP), Star Score Threshold (SST), Pay for Reporting (P4R), Pay for Performance (P4P), Chronic Disease Management (CDM), Annual Health Assessment (AHA), Ulitization Incentive Payment (UBIP) are examples of QIP."
   * #aha "Annual health assessment" "This payment stream type pays either a per variable member per month (PMPM) for each attributed based on the percentage or pays each member who has a recorded Annual Health Assesment."
   * #cdm "Chronic Disease Management" "A payment stream tha pays extra for members with chronic conditions. Chronic disease management programs are structured treatment plans that aim to help people better manage their chronic disease (e.g., diabetes, asthma, hypertension), and to maintain and improve quality of life. It is an effort to improve care quality, promote self-management, and reduce costs for patients with one or more chronic conditions." 
   * #p4r "Pay for reporting" "A payment model that is based on pay for reporting quality measure data. There is no min performance criteria requirement."
@@ -101,7 +101,7 @@ Description: "Payment stream defined in a value-based contract. A value-based co
 //* #mlrt "MLR target" "Medical loss ratio"
 
 CodeSystem: HCPLANFramework
-Title: "HCPLAN Framework"
+Title: "HCPLAN Framework Categories"
 Id: hcplan-framework
 Description: "HCPLAN Framework represents payments from public and private payers to provider organizations (including payments between the payment and delivery arms of highly integrated health systems). It is designed to accommodate payments in multiple categories that are made by a single payer, as well as single provider organizations that receive payments in different categories—potentially from the same payer. Although payments will be classified in discrete categories, the Framework captures a continuum of clinical and financial risk for provider organizations."
 * ^experimental = false
@@ -122,17 +122,17 @@ Title: "Incentive payment"
 Id: vbp-incentive
 Description: "What type of incentive for a payment stream such as quality incentive payment."
 * ^experimental = false
-* #chronic-care-mgmt "Chronic care management" "Chronic Care Management incentive payment."
+* #chronic-care-mgmt "Chronic care management" "Chronic Care Management incentive payment. Applicable to the payment streams such as Quality Incentive Payment (QIP) and Pay for Performance (P4P)."
 * #annual-visit "Annual office visit" "Annual Office Visit incentive payment."
 * ^caseSensitive = true
 
 CodeSystem: VbpCohort
 Title: "Cohort"
 Id: vbp-cohort
-Description: "Cohort population."
+Description: "The type of cohort, which represents a group of members with a shared characteristic."
 * ^experimental = false
-* #hmo "HMO cohort" "A cohort with those members are under HMO."
-* #ppo "PPO cohort" "A cohort with those members are under PPO."
+* #hmo "HMO cohort" "A cohort that consists of members who are under HMO."
+* #ppo "PPO cohort" "A cohort that consists of members who are under PPO."
 * ^caseSensitive = true
 
 CodeSystem: VbpMeasurePopulationType
@@ -147,7 +147,7 @@ Description: "Measure population type that includes calculated-denominator and c
 CodeSystem: ThresholdType
 Title: "Threshold Type"
 Id: threshold-type
-Description: "The type or the name of the threashold."
+Description: "The threashold type."
 * ^experimental = false
 * #star-1 "Star 1" "Threshold for star 1 in a star rating."
 * #star-2 "Star 2" "Threshold for star 2 in a star rating."

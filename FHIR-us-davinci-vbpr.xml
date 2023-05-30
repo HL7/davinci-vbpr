@@ -60,8 +60,8 @@
 <artifact deprecated="true" id="ValueSet/example-cmshcc" key="ValueSet-example-cmshcc" name="Example CMS Hierarchical Condition Category Value Set"/>
 <artifact id="StructureDefinition/group-reference" key="StructureDefinition-group-reference" name="Group Reference"/>
 <artifact deprecated="true" id="StructureDefinition/ra-groupReference" key="StructureDefinition-ra-groupReference" name="Group Reference Extension"/>
-<artifact id="ValueSet/hcplan-framework" key="ValueSet-hcplan-framework" name="HCPLAN Framework"/>
-<artifact id="CodeSystem/hcplan-framework" key="CodeSystem-hcplan-framework" name="HCPLAN Framework"/>
+<artifact id="ValueSet/hcplan-framework" key="ValueSet-hcplan-framework" name="HCPLAN Framework Categories"/>
+<artifact id="CodeSystem/hcplan-framework" key="CodeSystem-hcplan-framework" name="HCPLAN Framework Categories"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hiearchicalStatus" key="StructureDefinition-ra-hiearchicalStatus" name="Hiearchical Status Extension"/>
 <artifact deprecated="true" id="StructureDefinition/ra-hierarchicalStatus" key="StructureDefinition-ra-hierarchicalStatus" name="Hierarchical Status Extension"/>
 <artifact id="ValueSet/vbp-incentive" key="ValueSet-vbp-incentive" name="Incentive"/>
