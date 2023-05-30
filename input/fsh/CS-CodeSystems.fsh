@@ -51,23 +51,23 @@ Description: "Type of value-based performance metrics."
 * #1-gap-closed "1 gap closed" "Number of members with 1 closed gap."
 * #2-gap-closed "2 gaps closed" "Number of members with 2 closed gaps."
 * #paid-claim "Paid claim" "Total paid claim amount."
-* #paid-claim-pmpm "Paid claim PMPM" "Total paid claim per member per month (PMPM)."
-* #drg-expense "DRG expense" "Total DRG expense."
-* #drg-expense-pmpm "DRG expense PMPM" "DRG expense  per member per month (PMPM)."
+* #paid-claim-pmpm "Paid claim PMPM" "Paid claim per member per month (PMPM)."
+* #drg-expense "DRG expense" "Total diagnosis related group (DRG) expense."
+* #drg-expense-pmpm "DRG expense PMPM" "Diagnosis related group (DRG) expense per member per month (PMPM)."
 * #provider-quality-expense-pmpm "Provider quality expense PMPM" "Provider quality expense per member per month (PMPM)."
 * #subrogation-pmpm "Subrogation PMPM" "Subrogation per member per month (PMPM)."
 * #avg-member-office-visit "Average members with office visit" "Average number of members with office visit."
-* #ed-visit "ED visit" "Number of Emergency Department (ED) visits."
+* #ed-visit "ED visit" "Total number of Emergency Department (ED) visits."
 * #eligible-member "Eligible members" "Total number of eligible members."
 * #inpatient-acute "Inpatient acute" "Total number of inpatient acute stays."
 * #inpatient-admission "Inpatient admission" "Total number of inpatient admissions."
-* #nurse-hotline "Nurse hotline" "Total nurse hotline."
+* #nurse-hotline "Nurse hotline" "Total number calls of the nurse hotline."
 * #nurse-hotline-pmpm "Nurse hotline PMPM" "Total nurse hotline per member per month (PMPM)."
 * #snf-avg-los "Skilled Nursing Facility average length of stay" "The number of skilled nursing facility average length of stay."
 * #readmission "Readmission" "Total number of readmissions"
 * #snf-admission "Skilled Nursing Facility admission" "Total number of skilled nursing facility admissions."
 * #provider-quality-expense "Provider quality expense" "Total provider quality expense."
-* #subrogation "Subrogation" "Total subrogation."
+* #subrogation "Subrogation" "Total subrogation amount."
 * #avg-membership "Average membership" "Average membership."
 * #goal-hcc-raf "Goal HCC RAF" "Goal or target hierarchical condition category (HCC) Risk Adjustment Factor (RAF)."
 * #actual-hcc-raf "Actual HCC RAF" "Acutal hierarchical condition category (HCC) Risk Adjustment Factor (RAF)."
@@ -80,8 +80,7 @@ Description: "Payment stream defined in a value-based contract. A value-based co
 * ^experimental = false
 * ^hierarchyMeaning = #is-a
 * ^caseSensitive = true
-* #ccf "Care coordination fee" "A payment model that providers are paid a per member per month (PMPM) incentive payments
-on a specific schedule."
+* #ccf "Care coordination fee" "A payment model that providers are paid a per member per month (PMPM) incentive payments on a specific schedule."
 * #ccf-with-risk "Care coordination fee with risk adjustment" "A payment model that providers are paid a per variable member per month (PMPM) incentive payments on a specific schedule based on risk."
 * #eoc "Episode of care" "Episodes-of-care refers to an all-inclusive health-and-payment model in which a single, bundled payment includes all services associated with the treatment for an illness, condition or medical event rather than a separate fee-for-service model."
 * #pcpcp "Primary Care Physician (PCP) capitation payment" "Capitation is a payment arrangement for health care services in which an entity (e.g., a physician or group of physicians) receives a risk adjusted amount of money for each person attributed to them, per period of time, regardless of the volume of services that person seeks."
@@ -95,7 +94,7 @@ on a specific schedule."
   * #p4r "Pay for reporting" "A payment model that is based on pay for reporting quality measure data. There is no min performance criteria requirement."
   * #p4p "Pay for performance" "A payment model where providers are given financial incentives for meeting certain quality performance criteria."
   * #sip "Stars incentive payment" "A payment model that is based on meeting certain individual star performance criteria."
-  * #sst "Star score threshold" "A payment model that is based on meeting certain Provider star performance criteria."
+  * #sst "Star score threshold" "A payment model that is based on meeting certain provider star performance criteria."
   * #ubip "Utilization incentive payment" "A payment model that compares current utilization to a benchmark utilization and pays a variable per variable member per month (PMPM) for different rate of change in utilization."
 //* #cxp "Custom x participation" "Custom x participation"
 //* #cxra "Custom x regional adjustment" "custom x regional adjustment"
@@ -123,8 +122,8 @@ Title: "Incentive payment"
 Id: vbp-incentive
 Description: "What type of incentive for a payment stream such as quality incentive payment."
 * ^experimental = false
-* #chronic-care-mgmt "Chronic care management incentive program" "Chronic Care Management Incentive Program"
-* #annual-visit "Annuall office visits" "Annuall Office Visit"
+* #chronic-care-mgmt "Chronic care management" "Chronic Care Management incentive payment."
+* #annual-visit "Annual office visit" "Annual Office Visit incentive payment."
 * ^caseSensitive = true
 
 CodeSystem: VbpCohort
@@ -132,14 +131,14 @@ Title: "Cohort"
 Id: vbp-cohort
 Description: "Cohort population."
 * ^experimental = false
-* #hmo "HMO cohort" "Cohort population that is under HMO"
-* #ppo "PPO cohort" "Cohort population that is under PPO"
+* #hmo "HMO cohort" "A cohort with those members are under HMO."
+* #ppo "PPO cohort" "A cohort with those members are under PPO."
 * ^caseSensitive = true
 
 CodeSystem: VbpMeasurePopulationType
 Title: "Value-Based Performance Measure Population Type"
 Id: vbp-measure-population
-Description: "Measure population type."
+Description: "Measure population type that includes calculated-denominator and calculated-numerator."
 * ^experimental = false
 * #calculated-denominator "Calculated denominator. For example, for a proportion measure, the calculated denominator = (denominator – denominator exclusion – denominator exception)."
 * #calculated-numerator "Calculated numerator. For example, for a proportion measure, the calculated numerator = (numerator - numerator exclusion)."
@@ -150,14 +149,14 @@ Title: "Threshold Type"
 Id: threshold-type
 Description: "The type or the name of the threashold."
 * ^experimental = false
-* #star-1 "Star 1"
-* #star-2 "Star 2"
-* #star-3 "Star 3"
-* #star-4 "Star 4"
-* #star-5 "Star 5"
-* #hedis-50-percentile "hedis-50-percentile"
-* #hedis-75-percentile "hedis-75-percentile"
-* #hedis-90-percentile "hedis-90-percentile"
+* #star-1 "Star 1" "Threshold for star 1 in a star rating."
+* #star-2 "Star 2" "Threshold for star 2 in a star rating."
+* #star-3 "Star 3" "Threshold for star 3 in a star rating."
+* #star-4 "Star 4" "Threshold for star 4 in a star rating."
+* #star-5 "Star 5" "Threshold for star 5 in a star rating."
+* #hedis-50-percentile "hedis-50-percentile" "Threshold for HEDIS 50 percentile."
+* #hedis-75-percentile "hedis-75-percentile" "Threshold for HEDIS 75 percentile."
+* #hedis-90-percentile "hedis-90-percentile" "Threshold for HEDIS 90 percentile."
 * ^caseSensitive = true
 
 CodeSystem: MeasureStratifierExample
@@ -165,6 +164,6 @@ Title: "Measure Stratifier Example"
 Id: measure-stratifier-example
 Description: "Example stratifiers that could be used to stratify measure or performance metrics."
 * ^experimental = true
-* #region-cohort "region and cohort" "Stratification on both region and cohort"
-* #region "Region" "Region stratification"
+* #region-cohort "region and cohort" "Stratification on both region and cohort."
+* #region "Region" "Stratification on region."
 * ^caseSensitive = true
