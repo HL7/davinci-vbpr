@@ -33,4 +33,5 @@
 [Star Score]: StructureDefinition-star-score.html
 [Threshold]: StructureDefinition-threshold.html
 
-
+<!-- references -->
+[CQFM Composite Measure]: http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/composite-measure-cqfm

@@ -78,7 +78,7 @@ Figure 2-2 provides a structural overview of the VBP MeasureReport. (Note: purpl
 
 [VBP Quality MeasureReport] is based on the DEQM Summary MeasureReport with a few extensions. 
 -	`MeasureReport.threshold`: value-based performance reports often include threshold information for a measure, for example, the threshold for this measure for a 4 star in a star rating is 85%. The `type` indicates what kind of threshold. The `threshold` is the value of the threshold, such as 85%. The gap that needs to meet the threshold can be represented using the optional `gapToThreshold`.  
--	`MeasureReport.score`: this score is used to represent score such as a star rating score.
+-	`MeasureReport.score`: this score is used to represent scores such as a star rating score.
 
 This profile has defined a VBP Measure Population Type value set. This value set added two new codes calculated-denominator and calculated-numerator to the Measure Population Type value set from the base. The calculated-denominator is the resulting denominator when calculating performance rate, for a proportion measure, this would be the result of denominator – denominator exclusion – denominator exception. Same applies to the calculated-numerator. 
 
@@ -90,6 +90,11 @@ Figure 2-3 and Figure 2-4 used the colorectal caner screening and the breast can
 
 #### Value-Based Performance (VBP) Measure
 
+The [VBP Measure] is used to represent value-based contract information that are needed for value-based performance reporting. This profile added a few extensions to represent the following:
+-	lineOfBusiness: line of business whether it is Medicare, Medicaid, or commercial. 
+-	programModel: HCP-LAN APM framework categories. A value-based contract may have different HCP-LAN APM framework category applicable for different cohort. 
+-	paymentStream: value-based payment models such as care coordination fee, shared savings percent, shared savings gated on quality.
+The [VBP Measure] profile is derived from the [CQFM Composite Measure] profile. This is to reuse the composite measure structure to represent the list of quality measures that are specified in a value-based contract. 
 
 {% include img-portrait.html img="vbp-measure.png" caption = "Figure 2-5 VBP Measure overview" %}
 
