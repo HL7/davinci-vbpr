@@ -11,7 +11,7 @@ Economic challenges and higher healthcare costs have expanded these value-based 
 
 For the purpose of this implementation guide, any report that meets the definition of a value-based payment model, meaning a contract that links financial incentives to providers’ financial, quality, and risk performance on defined measures, will be considered a Value-Based Performance Report. Reporting performance against the specific details of a contract may include financial, quality, utilization, etc. over defined time periods.
 
-In this implementation guide, we use the term metrics to refer to finanacial measures in the report, and the term quality measures or measures to refer to the quality measures such as the colorectral cancer screening measure. 
+In this implementation guide, we use the term metrics to refer to financial measures in the report, and the term quality measures or measures to refer to the quality measures such as the colorectal cancer screening measure. 
 
 
 ### Preconditions and Assumptions
@@ -34,18 +34,64 @@ This following is a list of pre-requisites for using this implementation guide:
 - Provider submits attributed member quality and risk adjustment data to payer  
 - Payer and provider has established security and privacy practices in place
 
+### Actors
+
+The actors involved in exchanging value-based performance reports are Clients and Servers.
+* **Clients** are the actors requesting value-based performance reports. 
+* **Servers** are the actors receiving the request for retrieving the value-based performance reports. 
+In the scenario where Payer sends the value-based performance reports to Provider, the Payer acts as the Server and the Provider acts as the Client. 
+
+### Resources
+
+There are three profiles specified in this implementation guide:  
+* The Value-Based Performance MeasureReport is the main resource that represents a value-based performance report, which could include data on metrics including financial, utilization,  quality, etc.  
+* The Value-Based Performance MeasureReport `evaluatedResource` references the VBP Quality MeasureReport profile. This profile derives from the DEQM Summary MeasureReport and provides additional capability to support the need for exchanging quality measure data relevant for value-based performance reporting. 
+* Relevant value-based contract level information is represented using the Value-Based Performance Measure. 
+
+{% include img-portrait.html img="resources.png" caption = "Figure 2-1 Resources Overview" %}
+
+### Value-Based Reporting Framework
+
+Value-based payment models are expected to grow across all lines of business. The adoption of value-based care has accelerated in recent years, and this trend could continue in the coming years as payers, employers, and the government embrace these value-based care models. Value-based contracts encompass a broad variety of models, such as capitation, pay-for-performance, pay-for-quality, and shared savings to name a few. The performance metrics that these value-based contracts need to measure, and to track are also very broad that spans over financial, quality, utilization and more. 
+Because of the challenges with ever-expanding value-based payment models and performance metrics associated with those models, it would be impossible and unsustainable to specify a comprehensive list of named representations for these different value-based care models and metrics. This implementation guide has taken the approach of defining a framework for value-based performance reporting. The profiles specified in this IG provides standard structural representation that is intended to support reporting on various value-based payment models, commonly used payment models and performance metrics are defined in value sets with extensible binding. It provides flexibility for reporting value-based payment models and metrics that are not specifically called out in the IG.
+
+#### Value-Based Performance MeasureReport
+
+The [VBP MeasureReport] is a profile on the MeasureReport resource. Each `MeasureReport.group` corresponds to a performance metric. 
+-	The `MeasureReport.group.code` has an extensible binding to the Performance Metric value set. This value set contains a list of commonly used performance metrics for various value-based payment models. Several extensions are added to the group element to provide additional information about a performance metric. 
+-	`measureScore` is the value of a performance metric. An extension alternate-measurescore is added to allow additional data types including decimal, integer, CodeableConcept, and Money to be used in addition to Quantity.
+-	`paymentStream` is a complex extension. The `type` is required, which has an extensible binding to the Payment Stream value set. The Payment Stream defines commonly used value-based payment models such as care coordination fee, shared savings percent, shared savings gated on quality, and etcetera. The `incentive` is an optional field. The intent use of this is to provide more granular incentive program information to a selected payment stream. The paymentStream has cardinality of 0..*. It is possible for a performance metric to be associated with different paymentStreams. 
+-	`baseline` is a complex extension. The baseline value of the performance metric and the time period the baseline was measured could be provided. 
+-	`servicePeriod` is the service period for a performance metric. Each performance metric may have a different service period. 
+-	`paidThroughDate` is the ending date of the pay cycle.
+
+Value-based performance report often include data on performance on overall population and stratified results on those performance metrics based on variety of stratifiers such as regions, TINs, PMO or HMO. 
+-	The MeasureReport.group.stratifer provides the capabilities of stratifying based on a single stratifier or a number of stratifiers. 
+-	For example, if stratify by regions only, stratifier.stratum.value would be selecting from a list of codes that represents the regions. The exact codes maybe specific to a payer or provider organization. If stratify by a compound stratifier, such as both region and cohort (either HMO or PMO), this will be represented using stratifier.stratum.component. 
+
+Many value-based payment models involve quality. The IG reuses the Data Exchange for Quality Measure (DEQM) Summary MeasureReport for reports on quality measures. The [VBP MeasureReport] profile created a slice on the `MeasureReport.evaluatedResource` to reference the [VBP Quality MeasureReport] profile, which is derived from the DEQM Summary MeasureReport. The `groupReference` extension allows a VBP MeasureReport be linked to a specific performance metric by using the `group.id`.
+
+Figure 2-2 provides a structural overview of the VBP MeasureReport. (Note: purple elements indicate extension)
+{% include img-portrait.html img="vbp-measurereport.png" caption = "Figure 2-2 VBP MeasureReport overview" %}
+
+#### Value-Based Performance (VBP) Quality MeasureReport
+
+[VBP Quality MeasureReport] is based on the DEQM Summary MeasureReport with a few extensions. 
+-	`MeasureReport.threshold`: value-based performance reports often include threshold information for a measure, for example, the threshold for this measure for a 4 star in a star rating is 85%. The `type` indicates what kind of threshold. The `threshold` is the value of the threshold, such as 85%. The gap that needs to meet the threshold can be represented using the optional `gapToThreshold`.  
+-	`MeasureReport.score`: this score is used to represent score such as a star rating score.
+
+This profile has defined a VBP Measure Population Type value set. This value set added two new codes calculated-denominator and calculated-numerator to the Measure Population Type value set from the base. The calculated-denominator is the resulting denominator when calculating performance rate, for a proportion measure, this would be the result of denominator – denominator exclusion – denominator exception. Same applies to the calculated-numerator. 
+
+Figure 2-3 and Figure 2-4 used the colorectal caner screening and the breast cancer screening measures as examples to illustrate the use of the VBP Quality MeasureReport. 
+
+{% include img-portrait.html img="vbp-quality-measurereport-colorectalcancer.png" caption = "Figure 2-3 VBP Quality MeasureReport overview - colorectal cancer screening measure example" %}
+
+{% include img-portrait.html img="vbp-quality-measurereport-breastcancer.png" caption = "Figure 2-4 VBP Quality MeasureReport overview - breast cancer screening measure example" %}
+
+#### Value-Based Performance (VBP) Measure
 
 
-
-### VBP Performance MeasureReport, VBP Quality MeasureReport, and VBP Measure Profiles
-
-{% include img-portrait.html img="vbp-measurereport.png" caption = "Figure 2-1 VBP Performance MeasureReport overview" %}
-
-{% include img-portrait.html img="vbp-quality-measurereport-colorectalcancer.png" caption = "Figure 2-2 VBP Quality MeasureReport overview - colorectal cancer screening measure example" %}
-
-{% include img-portrait.html img="vbp-quality-measurereport-breastcancer.png" caption = "Figure 2-3 VBP Quality MeasureReport overview - breast cancer screening measure example" %}
-
-{% include img-portrait.html img="vbp-measure.png" caption = "Figure 2-4 VBP Measure overview" %}
+{% include img-portrait.html img="vbp-measure.png" caption = "Figure 2-5 VBP Measure overview" %}
 
 
 ### Must Support

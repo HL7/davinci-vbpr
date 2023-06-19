@@ -131,7 +131,8 @@ Description: "The Threshold Extension is a complex extension that defines a thre
 * value[x] 0..0
 * extension contains 
     threshold 1..1 MS and 
-    type 1..1 MS 
+    type 1..1 MS and
+    gapToThreshold 0..1 MS 
 * extension[threshold] only Extension    
 * extension[threshold] ^short = "The threshold percentile"
 * extension[threshold] ^definition = "The threshold percentile"
@@ -143,6 +144,12 @@ Description: "The Threshold Extension is a complex extension that defines a thre
 * extension[type].value[x] only CodeableConcept
 * extension[type].value[x] 1..1
 * extension[type].value[x] from threshold-type (extensible)
+* extension[gapToThreshold] only Extension
+* extension[gapToThreshold] ^short = "Gap to achieve the threshold"
+* extension[gapToThreshold] ^definition = "Gap to achieve the threshold"
+* extension[gapToThreshold].value[x] 1..1 
+* extension[gapToThreshold].value[x] only decimal or Quantity
+
 
 //Extension: Weight
 //Id: weight
