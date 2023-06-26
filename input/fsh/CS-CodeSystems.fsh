@@ -1,4 +1,4 @@
-CodeSystem: VbpPerformanceMetrics
+CodeSystem: VbpPerformanceMetricsCS
 Title: "Performance Metric"
 Id: vbp-performance-metric
 Description: "Type of value-based performance metrics."
@@ -73,7 +73,7 @@ Description: "Type of value-based performance metrics."
 * #actual-hcc-raf "Actual HCC RAF" "Acutal hierarchical condition category (HCC) Risk Adjustment Factor (RAF)."
 * ^caseSensitive = true
 
-CodeSystem: PaymentStream
+CodeSystem: PaymentStreamCS
 Title: "Payment Stream"
 Id: payment-stream
 Description: "Payment stream defined in a value-based contract. A value-based contract may contain multiple payment streams."
@@ -100,7 +100,7 @@ Description: "Payment stream defined in a value-based contract. A value-based co
 //* #cxra "Custom x regional adjustment" "custom x regional adjustment"
 //* #mlrt "MLR target" "Medical loss ratio"
 
-CodeSystem: HCPLANFramework
+CodeSystem: HCPLANFrameworkCS
 Title: "HCPLAN Framework Categories"
 Id: hcplan-framework
 Description: "HCPLAN Framework represents payments from public and private payers to provider organizations (including payments between the payment and delivery arms of highly integrated health systems). It is designed to accommodate payments in multiple categories that are made by a single payer, as well as single provider organizations that receive payments in different categories—potentially from the same payer. Although payments will be classified in discrete categories, the Framework captures a continuum of clinical and financial risk for provider organizations."
@@ -117,7 +117,7 @@ Description: "HCPLAN Framework represents payments from public and private payer
 * #4N "Category 4N" "Capitated Payments not linked to quality."
 * ^caseSensitive = true
 
-CodeSystem: VbpIncentive
+CodeSystem: VbpIncentiveCS
 Title: "Incentive payment"
 Id: vbp-incentive
 Description: "What type of incentive for a payment stream such as quality incentive payment."
@@ -126,7 +126,7 @@ Description: "What type of incentive for a payment stream such as quality incent
 * #annual-visit "Annual office visit" "Annual Office Visit incentive payment."
 * ^caseSensitive = true
 
-CodeSystem: VbpCohort
+CodeSystem: VbpCohortCS
 Title: "Cohort"
 Id: vbp-cohort
 Description: "The type of cohort, which represents a group of members with a shared characteristic."
@@ -135,7 +135,7 @@ Description: "The type of cohort, which represents a group of members with a sha
 * #ppo "PPO cohort" "A cohort that consists of members who are under PPO."
 * ^caseSensitive = true
 
-CodeSystem: VbpMeasurePopulationType
+CodeSystem: VbpMeasurePopulationTypeCS
 Title: "Value-Based Performance Measure Population Type"
 Id: vbp-measure-population
 Description: "Measure population type that includes calculated-denominator and calculated-numerator."
@@ -144,7 +144,7 @@ Description: "Measure population type that includes calculated-denominator and c
 * #calculated-numerator "Calculated numerator. For example, for a proportion measure, the calculated numerator = (numerator - numerator exclusion)."
 * ^caseSensitive = true
 
-CodeSystem: ThresholdType
+CodeSystem: ThresholdTypeCS
 Title: "Threshold Type"
 Id: threshold-type
 Description: "The threashold type."
@@ -159,7 +159,7 @@ Description: "The threashold type."
 * #hedis-90-percentile "hedis-90-percentile" "Threshold for HEDIS 90 percentile."
 * ^caseSensitive = true
 
-CodeSystem: MeasureStratifierExample
+CodeSystem: MeasureStratifierExampleCS
 Title: "Measure Stratifier Example"
 Id: measure-stratifier-example
 Description: "Example stratifiers that could be used to stratify measure or performance metrics."
