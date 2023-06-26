@@ -6,7 +6,7 @@
 [Glossary]: glossary.html
 [Guidance]: guidance.html
 [Terminology]: artifacts.html#terminology-value-sets
-[Capability Statements]: capabilities.html
+[Capability Statements]: artifacts.html#behavior-capability-statements
 
 [Clinical Quality Information (CQI) Work Group]: http://www.hl7.org/Special/committees/cqi/overview.cfm
 [Da Vinci Project]: https://www.hl7.org/about/davinci/
