@@ -105,6 +105,7 @@ menu:
     Profiles: artifacts.html#structures-resource-profiles
     Extensions: artifacts.html#structures-extension-definitions
     Terminology: artifacts.html#terminology-value-sets 
+    Capability Statements: artifacts.html#behavior-capability-statements    
   Examples: examples.html
   Glossary: glossary.html
   Downloads: downloads.html
