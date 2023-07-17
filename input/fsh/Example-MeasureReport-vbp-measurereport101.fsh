@@ -5,7 +5,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 
 * meta.profile = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/vbp-performance-measurereport"
 * meta.extension[0].url = "http://hl7.org/fhir/StructureDefinition/instance-name"
-* meta.extension[=].valueString = "VBP Quality MeasureReport Example 101"
+* meta.extension[=].valueString = "VBP MeasureReport Example 101"
 * meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
 * meta.extension[=].valueMarkdown = "This is an example Value-Based Performance MeasureReport for the *VBP MeasureReport* profile., which includes examples for payment streams shared savings - gated on quality, care coordination fee, quality incentive payment for the chronic care management incentive program, quality incentive payment for the annual office visits, and quality measure performance."
 

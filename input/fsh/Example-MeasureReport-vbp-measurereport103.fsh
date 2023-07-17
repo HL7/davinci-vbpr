@@ -6,9 +6,9 @@ which includes quality measures and alternative measures."
 
 * meta.profile = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/vbp-performance-measurereport"
 * meta.extension[0].url = "http://hl7.org/fhir/StructureDefinition/instance-name"
-* meta.extension[=].valueString = "VBP Quality MeasureReport Example 103"
+* meta.extension[=].valueString = "VBP MeasureReport Example 103"
 * meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
-* meta.extension[=].valueMarkdown = "This is an example Value-Based Performance MeasureReport for the *VBP MeasureReport* profile., which includes utilization and quality."
+* meta.extension[=].valueMarkdown = "This is an example Value-Based Performance MeasureReport for the *VBP MeasureReport* profile., which includes quality measures and alternative measures."
 
 //* extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 //* extension.valueDate = "2022-12-31"

@@ -9,7 +9,7 @@ Description: "The Alternate Measure Score Extension allows other data type choic
 * ^context[+].type = #element
 * ^context[=].expression = "MeasureReport.group.stratifier.stratum.measureScore"
 * value[x] 0..1 
-* value[x] only decimal or integer or Money or CodeableConcept
+* value[x] only decimal or integer or Money or CodeableConcept or boolean
 
 Extension: Baseline
 Id: baseline

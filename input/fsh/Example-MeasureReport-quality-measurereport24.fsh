@@ -35,7 +35,7 @@ Description: "This is an example Plan All-Cause Readmissions MeasureReport for t
 
 * status = #complete
 * type = #summary
-* measure = "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-diabetes-HbA1c"
+* measure = "http://example.org/Measure/measure-diabetes-HbA1c"
 * date = "2021-04-02"
 * period.start = "2020-01-01"
 * period.end = "2021-03-31"

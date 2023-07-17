@@ -1,9 +1,4 @@
 
-<div class="bg-info" markdown="1">
-This page is under development.
-</div>
-
-
 |Term|Definition|
 |---|---|
 |**Administraive Cost**|A general term that refers to Medicare and Medicaid administrative costs, as well as CMS administrative costs. Medicare administrative costs are comprised of the Medicare related outlays and non-CMS administrative outlays. Medicaid administrative costs refer to the Federal share of the States' expenditures for administration of the Medicaid program. CMS administrative costs are the costs of operating CMS (e.g., salaries and expenses, facilities, equipment, rent and utilities, etc.). These costs are reflected in the Program Management account.[source](https://www.cms.gov/glossary?term=administrative+cost&items_per_page=10&viewmode=grid)|

@@ -1,6 +1,3 @@
-<div class="bg-info" markdown="1">
-This implementation guide is under development.
-</div>
 
 ###  Summary
 
