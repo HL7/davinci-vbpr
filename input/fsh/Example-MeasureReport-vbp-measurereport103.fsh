@@ -15,6 +15,7 @@ which includes quality measures and alternative measures."
 * status = #complete
 * type = #summary
 * measure = "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-vbp-measure02"
+* subject.display = "Every Hospital"
 * subject.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/organization-subject"
 * subject.extension.valueReference = Reference(Organization/vbp-provider02)
 * date = "2022-12-31"

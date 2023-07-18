@@ -3,12 +3,13 @@
   "version" : "1.0.0-ballot",
   "path" : "http://hl7.org/fhir/us/davinci-vbpr/2023Sep",
   "status" : "ballot",
-  "sequence" : "STU1 (v1.0.0)",
-  "desc" : "STU1 (v1.0.0)",
+  "sequence" : "STU1",
+  "desc" : "STU1 (v1.0.0) ballot",
   "descmd" : "The Sept 2023 Ballot Version: This is the initial ballot of the Da Vinci Value-Based Performance Reporting Implementation Guide.",
   "first" : true,
   "title" : "Da Vinci Value-Based Performance Reporting Implementation Guide",
-  "ci-build" : "https://build.fhir.org/ig/HL7/davinci-vbpr/StructureDefinition-threshold.html",
+  "ci-build" : "https://build.fhir.org/ig/HL7/davinci-vbpr",
   "category" : "quality and financial management",
-  "introduction" : "A value-based contract is a written contractual agreement between parties in which the payment for health care goods and services is tied to predetermined, mutually agreed upon terms that are based on clinical circumstances, patient outcomes, financial benchmarks, and other specified measures of the appropriateness and effectiveness of the services rendered. With the shift from fee-for-service to value-based care, value-based contracts have emerged as a mechanism that payers may use to better align their contracting structures with broader changes in the health care system. Standardization of payer/provider performance reporting for quality and risk contracts is crucial for health systems and other provider organizations to receive timely interim reports to track and manage their performance on value-based contracts during the term. This implementation guide standardizes the value-based performance reporting format and exchange methods between payers and providers.  Standardized bi-directional, FHIR-based communication will connect payer baseline reporting data with provider organization data at the population level. It will also provide the flexibility to compare interim progress at different times during the contract performance period, in addition to notifying providers of non-clinical pre-defined events that may have a direct effect on financial performance and ultimately success."
+  "introduction" : "A value-based contract is a written contractual agreement between parties in which the payment for health care goods and services is tied to predetermined, mutually agreed upon terms that are based on clinical circumstances, patient outcomes, financial benchmarks, and other specified measures of the appropriateness and effectiveness of the services rendered. With the shift from fee-for-service to value-based care, value-based contracts have emerged as a mechanism that payers may use to better align their contracting structures with broader changes in the health care system. Standardization of payer/provider performance reporting for quality and risk contracts is crucial for health systems and other provider organizations to receive timely interim reports to track and manage their performance on value-based contracts during the term. This implementation guide standardizes the value-based performance reporting format and exchange methods between payers and providers.  Standardized bi-directional, FHIR-based communication will connect payer baseline reporting data with provider organization data at the population level. It will also provide the flexibility to compare interim progress at different times during the contract performance period, in addition to notifying providers of non-clinical pre-defined events that may have a direct effect on financial performance and ultimately success.",
+  "mode" : "working"
 }

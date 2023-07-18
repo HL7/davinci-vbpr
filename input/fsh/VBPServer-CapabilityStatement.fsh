@@ -23,8 +23,7 @@ and search parameters that a VBP Reporting Server could support are defined. VBP
 * fhirVersion = #4.0.1
 * patchFormat = #application/json-patch+json
 //* insert CapabilityCommon
-* implementationGuide[0] = "http://hl7.org/fhir/us/davinci-vbpr/ImplementationGuide/fhir.us.davinci-vbpr"
-* implementationGuide[+] = "http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm"
+* implementationGuide[0] = "http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm"
 * implementationGuide[+] = "http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures"
 
 //* rest[+]

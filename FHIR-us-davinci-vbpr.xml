@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-vbpr/2023Sep" ciUrl="https://build.fhir.org/ig/HL7/davinci-vbpr/StructureDefinition-threshold.html" defaultVersion="1.0.0-ballot" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/davinci-ra" url="http://hl7.org/fhir/us/davinci-vbpr">
-<version code="current" url="https://build.fhir.org/ig/HL7/davinci-vbpr/StructureDefinition-threshold.html"/>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/us/davinci-vbpr/2023Sep" ciUrl="https://build.fhir.org/ig/HL7/davinci-vbpr" defaultVersion="1.0.0-ballot" defaultWorkgroup="cqi" gitUrl="https://github.com/HL7/davinci-ra" url="http://hl7.org/fhir/us/davinci-vbpr">
+<version code="current" url="https://build.fhir.org/ig/HL7/davinci-vbpr"/>
 <version code="1.0.0-ballot" url="http://hl7.org/fhir/us/davinci-vbpr/2023Sep"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -127,6 +127,7 @@
 <artifact id="StructureDefinition/vbp-measure" key="StructureDefinition-vbp-measure" name="Value-Based Performance Measure"/>
 <artifact id="CodeSystem/vbp-measure-population" key="CodeSystem-vbp-measure-population" name="Value-Based Performance Measure Population Type"/>
 <artifact id="StructureDefinition/vbp-performance-measurereport" key="StructureDefinition-vbp-performance-measurereport" name="Value-Based Performance MeasureReport"/>
+<artifact id="SearchParameter/measurereport-subject-organization" key="SearchParameter-measurereport-subject-organization" name="measurereport-subject-organization"/>
 <artifact id="MeasureReport/quality-measurereport01" key="MeasureReport-quality-measurereport01" name="quality-measurereport01"/>
 <artifact id="MeasureReport/quality-measurereport02" key="MeasureReport-quality-measurereport02" name="quality-measurereport02"/>
 <artifact id="MeasureReport/quality-measurereport03" key="MeasureReport-quality-measurereport03" name="quality-measurereport03"/>
