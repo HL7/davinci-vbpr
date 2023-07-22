@@ -42,10 +42,10 @@ Description: "This is an example Member Satisfaction Survey MeasureReport for th
 * reporter = Reference(Organization/vbp-payer01)
 * improvementNotation = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase "Increased score indicates improvement"
 
-//* group.population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
-//* group.population[=].id = "pop1-num"
-//* group.population[=].count = 1
-//* group.population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
-//* group.population[=].id = "pop2-denom"
-//* group.population[=].count = 6
-* group.measureScore.value = 0.916
+* group.population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
+* group.population[=].id = "pop1-num"
+* group.population[=].count = 18
+* group.population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
+* group.population[=].id = "pop2-denom"
+* group.population[=].count = 20
+* group.measureScore.value = 0.9

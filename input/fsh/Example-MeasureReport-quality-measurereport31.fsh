@@ -42,25 +42,25 @@ Description: "This is an example Colorectal Cancer Screening MeasureReport for t
 * reporter = Reference(Organization/vbp-payer01)
 * improvementNotation = http://terminology.hl7.org/CodeSystem/measure-improvement-notation#increase "Increased score indicates improvement"
 
-* group.population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
-* group.population[=].id = "pop1"
-* group.population[=].count = 62
-* group.population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
-* group.population[=].id = "pop2"
-* group.population[=].count = 82
+//* group.population[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-numerator
+//* group.population[=].id = "pop1"
+//* group.population[=].count = 62
+//* group.population[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population#calculated-denominator
+//* group.population[=].id = "pop2"
+//* group.population[=].count = 82
 
-//* group.population[0].code = http://terminology.hl7.org/CodeSystem/measure-population#initial-population
-//* group.population[=].id = "pop3"
-//* group.population[=].count = 520
-//* group.population[+].code = http://terminology.hl7.org/CodeSystem/measure-population#denominator
-//* group.population[=].id = "pop4"
-//* group.population[=].count = 520
-//* group.population[+].code = http://terminology.hl7.org/CodeSystem/measure-population#denominator-exclusion
-//* group.population[=].id = "pop5"
-//* group.population[=].count = 0
-//* group.population[+].code = http://terminology.hl7.org/CodeSystem/measure-population#numerator
-//* group.population[=].id = "pop6"
-//* group.population[=].count = 180
+* group.population[0].code = http://terminology.hl7.org/CodeSystem/measure-population#initial-population
+* group.population[=].id = "pop3"
+* group.population[=].count = 82
+* group.population[+].code = http://terminology.hl7.org/CodeSystem/measure-population#denominator
+* group.population[=].id = "pop4"
+* group.population[=].count = 82
+* group.population[+].code = http://terminology.hl7.org/CodeSystem/measure-population#denominator-exclusion
+* group.population[=].id = "pop5"
+* group.population[=].count = 0
+* group.population[+].code = http://terminology.hl7.org/CodeSystem/measure-population#numerator
+* group.population[=].id = "pop6"
+* group.population[=].count = 62
 
 * group.measureScore.value = 0.76
 

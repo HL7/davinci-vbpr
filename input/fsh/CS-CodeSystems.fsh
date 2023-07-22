@@ -18,9 +18,9 @@ Description: "Type of value-based performance metrics."
 * #actual-hcc-raf "Actual HCC RAF" "Acutal hierarchical condition category (HCC) Risk Adjustment Factor (RAF)."
 * #earnings-ccf "Earnings CCF" "Earnings from care coordination fees."
 * #performance-ccf "Performance CCF" "Performance for care coordination fees."
-* #potential-upside-ccf "Potential Upside CCF" "Potential upside earnings for care coordination fees."
-* #potential-downside-ccf "Potential Downside CCF" "Potential downside earnings for care coordination fees."
-* #earned-incentive "earned-incentive" "Earned incentive payment."
+* #potential-upside-ccf "Potential upside CCF" "Potential upside earnings for care coordination fees."
+* #potential-downside-ccf "Potential downside CCF" "Potential downside earnings for care coordination fees."
+* #earned-incentive "Earned incentive" "Earned incentive payment."
 * #earnings-qip "Earnings QIP" "Earnings from quality incentive payments."
 * #performance-qip "Performance QIP" "Performance for quality incentive payments."
 * #potential-upside-qip "Potential upside QIP" "Potential upside earnings for quality incentive payments."
@@ -169,8 +169,8 @@ Title: "Value-Based Performance Measure Population Type"
 Id: vbp-measure-population
 Description: "Measure population type that includes calculated-denominator and calculated-numerator."
 * ^experimental = false
-* #calculated-denominator "Calculated denominator. For example, for a proportion measure, the calculated denominator = (denominator – denominator exclusion – denominator exception)."
-* #calculated-numerator "Calculated numerator. For example, for a proportion measure, the calculated numerator = (numerator - numerator exclusion)."
+* #calculated-denominator "Calculated Denominator" "Calculated denominator. For example, for a proportion measure, the calculated denominator = (denominator – denominator exclusion – denominator exception)."
+* #calculated-numerator "Calculated Numerator" "Calculated numerator. For example, for a proportion measure, the calculated numerator = (numerator - numerator exclusion)."
 * ^caseSensitive = true
 
 CodeSystem: ThresholdTypeCS
@@ -183,9 +183,9 @@ Description: "The threashold type."
 * #star-3 "Star 3" "Threshold for star 3 in a star rating."
 * #star-4 "Star 4" "Threshold for star 4 in a star rating."
 * #star-5 "Star 5" "Threshold for star 5 in a star rating."
-* #hedis-50-percentile "hedis-50-percentile" "Threshold for HEDIS 50 percentile."
-* #hedis-75-percentile "hedis-75-percentile" "Threshold for HEDIS 75 percentile."
-* #hedis-90-percentile "hedis-90-percentile" "Threshold for HEDIS 90 percentile."
+* #hedis-50-percentile "HEDIS 50 Percentile" "Threshold for HEDIS 50 percentile."
+* #hedis-75-percentile "HEDIS 75 Percentile" "Threshold for HEDIS 75 percentile."
+* #hedis-90-percentile "HEDIS 90 Percentile" "Threshold for HEDIS 90 percentile."
 * ^caseSensitive = true
 
 CodeSystem: MeasureStratifierExampleCS
