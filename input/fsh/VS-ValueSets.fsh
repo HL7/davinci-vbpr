@@ -6,7 +6,7 @@ Description: "Type of value-based performance reporting performance metric."
 * codes from system vbp-performance-metric
 
 ValueSet: LineOfBusinessVS
-Title: "Line of Business"
+Title: "Line of Business Value Set"
 Id: lob
 Description: "Type of line of business."
 * ^experimental = false
@@ -15,7 +15,7 @@ Description: "Type of line of business."
 * $SOP#5 "PRIVATE HEALTH INSURANCE"
 
 ValueSet: PaymentStreamVS
-Title: "Payment Stream"
+Title: "Payment Stream Value Set"
 Id: vbp-payment-stream
 Description: "Type of payment stream."
 * ^experimental = false
