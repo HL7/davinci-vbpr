@@ -53,8 +53,7 @@ WARNING: Measure/vbp-measure01: Measure: A measure should contain at least one g
 WARNING: Measure/vbp-measure02: Measure: A measure should contain at least one group
 
 # INFORMATION: 'https://nahdo.org/sopt' code system is in THO, but THO doesn't define the codes. 
-INFORMATION: Measure/vbp-measure01: Measure.extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://nahdo.org/sopt' is unknown so the code cannot be validated
-
+INFORMATION: Measure/vbp-measure01: Measure.extension[0].value.ofType(CodeableConcept).coding[0]: The definition for the Code System with URI 'https://nahdo.org/sopt' doesnt provide any codes so the code cannot be validated
 INFORMATION: ValueSet/lob: ValueSet.compose[0].include[0].concept[0]: UNKNOWN_CODESYSTEM; The provided code http://hl7.org/fhir/ValueSet/@all is not in the value set '' (from Tx-Server)
 INFORMATION: MeasureReport/vbp-measurereport104: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
 INFORMATION: MeasureReport/vbp-measurereport103: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
