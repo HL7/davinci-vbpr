@@ -1,5 +1,5 @@
 CodeSystem: VbpPerformanceMetricsCS
-Title: "Performance Metric"
+Title: "Performance Metric Codes"
 Id: vbp-performance-metric
 Description: "Type of value-based performance metrics."
 * ^experimental = false
@@ -103,7 +103,7 @@ Description: "Type of value-based performance metrics."
 * ^caseSensitive = true
 
 CodeSystem: PaymentStreamCS
-Title: "Payment Stream"
+Title: "Payment Stream Codes"
 Id: payment-stream
 Description: "Payment stream defined in a value-based contract. A value-based contract may contain multiple payment streams."
 * ^experimental = false
@@ -130,7 +130,7 @@ Description: "Payment stream defined in a value-based contract. A value-based co
 //* #mlrt "MLR target" "Medical loss ratio"
 
 CodeSystem: HCPLANFrameworkCS
-Title: "HCPLAN Framework Categories"
+Title: "HCPLAN Framework Categories Codes"
 Id: hcplan-framework
 Description: "HCPLAN Framework represents payments from public and private payers to provider organizations (including payments between the payment and delivery arms of highly integrated health systems). It is designed to accommodate payments in multiple categories that are made by a single payer, as well as single provider organizations that receive payments in different categories—potentially from the same payer. Although payments will be classified in discrete categories, the Framework captures a continuum of clinical and financial risk for provider organizations."
 * ^experimental = false
@@ -147,7 +147,7 @@ Description: "HCPLAN Framework represents payments from public and private payer
 * ^caseSensitive = true
 
 CodeSystem: VbpIncentiveCS
-Title: "Incentive payment"
+Title: "Incentive Payment Codes"
 Id: vbp-incentive
 Description: "What type of incentive for a payment stream such as quality incentive payment."
 * ^experimental = false
@@ -156,7 +156,7 @@ Description: "What type of incentive for a payment stream such as quality incent
 * ^caseSensitive = true
 
 CodeSystem: VbpCohortCS
-Title: "Cohort"
+Title: "Cohort Codes"
 Id: vbp-cohort
 Description: "The type of cohort, which represents a group of members with a shared characteristic."
 * ^experimental = false
@@ -165,7 +165,7 @@ Description: "The type of cohort, which represents a group of members with a sha
 * ^caseSensitive = true
 
 CodeSystem: VbpMeasurePopulationTypeCS
-Title: "Value-Based Performance Measure Population Type"
+Title: "Value-Based Performance Measure Population Type Codes"
 Id: vbp-measure-population
 Description: "Measure population type that includes calculated-denominator and calculated-numerator."
 * ^experimental = false
@@ -174,7 +174,7 @@ Description: "Measure population type that includes calculated-denominator and c
 * ^caseSensitive = true
 
 CodeSystem: ThresholdTypeCS
-Title: "Threshold Type"
+Title: "Threshold Type Codes"
 Id: threshold-type
 Description: "The threashold type."
 * ^experimental = false
@@ -189,7 +189,7 @@ Description: "The threashold type."
 * ^caseSensitive = true
 
 CodeSystem: MeasureStratifierExampleCS
-Title: "Measure Stratifier Example"
+Title: "Measure Stratifier Example Codes"
 Id: measure-stratifier-example
 Description: "Example stratifiers that could be used to stratify measure or performance metrics."
 * ^experimental = true
