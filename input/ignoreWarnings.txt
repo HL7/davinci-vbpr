@@ -7,18 +7,30 @@ WARNING: ValueSet/lob: ValueSet.compose[0].include[0].concept[2]: The code '5' i
 WARNING: ValueSet.where(id = 'lob'): Error from server: Unable to provide support for code system https://nahdo.org/sopt
 
 # WARNING: MeasureReport.measure: Canonical URL does not resolve. 
-WARNING: MeasureReport/quality-measurereport14: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-A1c-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport13: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-retinopathy-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport15: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-nephropathy-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport01: MeasureReport: The Measure 'http://example.org/Measure/measure-breast-cancer-screening-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport02: MeasureReport: The Measure 'http://example.org/Measure/measure-colorectal-cancer-screening-FHIR' could not be resolved, so no validation can be performed against the Measure
 WARNING: MeasureReport/quality-measurereport03: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR' could not be resolved, so no validation can be performed against the Measure
 WARNING: MeasureReport/quality-measurereport04: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-eye-exam-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport05: MeasureReport: The Measure 'http://example.org/Measure/measure-med-adherence-cholesterol-statins-FHIR' could not be resolved, so no validation can be performed against the Measure
 WARNING: MeasureReport/quality-measurereport06: MeasureReport: The Measure 'http://example.org/Measure/measure-med-adherence-hypertension-FHIR' could not be resolved, so no validation can be performed against the Measure
 WARNING: MeasureReport/quality-measurereport07: MeasureReport: The Measure 'http://example.org/Measure/measure-med-adherence-diabetes-meds-FHIR' could not be resolved, so no validation can be performed against the Measure
 WARNING: MeasureReport/quality-measurereport08: MeasureReport: The Measure 'http://example.org/Measure/measure-statin-therapy-cardiovascular-disease-FHIR' could not be resolved, so no validation can be performed against the Measure
 WARNING: MeasureReport/quality-measurereport09: MeasureReport: The Measure 'http://example.org/Measure/measure-statin-use-diabetes-supd-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport05: MeasureReport: The Measure 'http://example.org/Measure/measure-med-adherence-cholesterol-statins-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport33: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-eye-exam-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport11: MeasureReport: The Measure 'http://example.org/Measure/measure-breast-cancer-screening-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport12: MeasureReport: The Measure 'http://example.org/Measure/measure-colorectal-cancer-screening-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport13: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-retinopathy-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport14: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-A1c-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport15: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-nephropathy-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport20: MeasureReport: The Measure 'http://example.org/Measure/measure-breast-cancer-screening-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport21: MeasureReport: The Measure 'http://example.org/Measure/measure-colorectal-cancer-screening-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport22: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-HbA1c' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport23: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-HbA1c' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport24: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-HbA1c' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport25: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-HbA1c' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport30: MeasureReport: The Measure 'http://example.org/Measure/measure-breast-cancer-screening-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport31: MeasureReport: The Measure 'http://example.org/Measure/measure-colorectal-cancer-screening-FHIR' could not be resolved, so no validation can be performed against the Measure
 WARNING: MeasureReport/quality-measurereport32: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport33: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-eye-exam-FHIR' could not be resolved, so no validation can be performed against the Measure
 
 # WARNING: Example intentionally to include Performance Metrics that are not in the value set (extensible binding), only text and no code. 
 WARNING: MeasureReport/vbp-measurereport104: MeasureReport.group[1].code: No code provided, and a code should be provided from the value set 'Performance Metric' (http://hl7.org/fhir/us/davinci-vbpr/ValueSet/vbp-performance-metric|1.0.0-ballot)
@@ -35,6 +47,10 @@ WARNING: MeasureReport/vbp-measurereport104: MeasureReport.group[11].code: No co
 WARNING: MeasureReport/vbp-measurereport104: MeasureReport.group[12].code: No code provided, and a code should be provided from the value set 'Performance Metric' (http://hl7.org/fhir/us/davinci-vbpr/ValueSet/vbp-performance-metric|1.0.0-ballot)
 WARNING: MeasureReport/vbp-measurereport104: MeasureReport.group[13].code: No code provided, and a code should be provided from the value set 'Performance Metric' (http://hl7.org/fhir/us/davinci-vbpr/ValueSet/vbp-performance-metric|1.0.0-ballot)
 WARNING: MeasureReport/vbp-measurereport104: MeasureReport.group[14].code: No code provided, and a code should be provided from the value set 'Performance Metric' (http://hl7.org/fhir/us/davinci-vbpr/ValueSet/vbp-performance-metric|1.0.0-ballot)
+
+# WARNING: The group is optional and it is not included in these example value-based performance measures. 
+WARNING: Measure/vbp-measure01: Measure: A measure should contain at least one group
+WARNING: Measure/vbp-measure02: Measure: A measure should contain at least one group
 
 # INFORMATION: 'https://nahdo.org/sopt' code system is in THO, but THO doesn't define the codes. 
 INFORMATION: Measure/vbp-measure01: Measure.extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://nahdo.org/sopt' is unknown so the code cannot be validated

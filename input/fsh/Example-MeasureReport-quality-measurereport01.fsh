@@ -41,7 +41,8 @@ Description: "This is an example Breast Cancer Screening MeasureReport for the *
 
 * status = #complete
 * type = #summary
-* measure = "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm125-FHIR"
+//* measure = "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm125-FHIR"
+* measure = "http://example.org/Measure/measure-breast-cancer-screening-FHIR"
 * date = "2023-01-15"
 * period.start = "2022-01-01"
 * period.end = "2022-11-30"
@@ -140,3 +141,4 @@ Description: "This is an example Breast Cancer Screening MeasureReport for the *
 * group.stratifier.stratum[=].population[=].id = "strat-pop16"
 * group.stratifier.stratum[=].population[=].count = 50
 * group.stratifier.stratum[=].measureScore.value = 0.56
+

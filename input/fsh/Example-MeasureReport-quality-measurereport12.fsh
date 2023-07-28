@@ -22,7 +22,8 @@ Description: "This is an example Colorectal Cancer Screening MeasureReport for t
 
 * status = #complete
 * type = #summary
-* measure = "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR"
+//* measure = "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR"
+* measure = "http://example.org/Measure/measure-colorectal-cancer-screening-FHIR"
 * date = "2022-12-31"
 * period.start = "2022-10-01"
 * period.end = "2022-12-31"
