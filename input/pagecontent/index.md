@@ -98,11 +98,28 @@ Future versions of this implementation guide will include functionalities to sup
 - Provider doesn’t meet all of the measure to qualify-how does the provider know where they are? Splits and mergers in - provider groups for attribution (whole year /partial year contribution)
 - Consolidating data inputs to create a report from heterogeneous sources
 
-
-
 ---
 
+### Credits
 
+This implementation guide was made possible by the thoughtful contributions of the following people and organizations:
+
+- *The [Da Vinci Project](http://www.hl7.org/about/davinci/index.cfm?ref=common) member organizations.*
+
+
+- *Vincent Powell, Providence*
+- *Semira Singh, Providence*
+- *Michael Pattwell, Edifecs*
+- *Tom Dean, Edifecs*
+- *David Degandi, Cambia Health Solutions*
+- *Omar Amezquita, Cambia Health Solutions*
+- *Katie Roan, Optum*
+- *Rao Yogesh, Optum*
+- *Bryn Rhodes, Smile Digital Health*
+- *Rob Reynolds, Smile Digital Health*
+- *Teresa Younkin, Point-of-Care Partners*
+- *Yan Heras, Optimum eHealth*
+- *Viet Nguyen, Stratametrics*
 
 ---
 
