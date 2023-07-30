@@ -3,8 +3,8 @@ Parent: MeasureReport
 Id: vbp-performance-measurereport
 Title: "Value-Based Performance MeasureReport"
 Description: "Value-Based Performance MeasureReport is a payer-generated performance report against the specific details (metrics) of a value-based contract (VBC) or a value-based purchasing (VBP) which may include financial, quality, utilization, etc. over a time period."
-* ^status = #draft
-* ^version = "0.1.0"
+* ^status = #active
+* ^version = "1.0.0-ballot"
 * . ^short = "A value-based performance report"
 //* meta 1..1 MS
 //* meta.profile 1.. MS

@@ -33,5 +33,13 @@
 [Star Score]: StructureDefinition-star-score.html
 [Threshold]: StructureDefinition-threshold.html
 
+<!-- Search Parameters -->
+[Organization Subject Search Parameter]: SearchParameter-measurereport-subject-organization.html
+
+<!-- Value Set -->
+[Performance Metric]: ValueSet-vbp-performance-metric.html
+[VBP Measure Population Type]: ValueSet-vbp-measure-population.html
+
 <!-- references -->
 [CQFM Composite Measure]: http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/composite-measure-cqfm
+[Data Exchange for Quality Measure (DEQM) Summary MeasureReport]: http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm
