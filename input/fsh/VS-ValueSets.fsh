@@ -45,7 +45,7 @@ Description: "Cohort types."
 ValueSet: VBPRMeasurePopulationVS
 Title: "VBP Measure Population Type"
 Id: vbp-measure-population
-Description: "Measure population type that includes calculated-denominator and cacluated-numerator."
+Description: "Measure population type that includes calculated-denominator and calculated-numerator."
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/measure-population
 * include $vbp-measure-population#calculated-denominator "calculated-donominator"

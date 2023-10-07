@@ -1,7 +1,7 @@
 Extension: AlternateMeasureScore
 Id: alternate-measurescore
 Title: "Alternate Measure Score"
-Description: "The Alternate Measure Score Extension allows other data type choices be used for the measureScore element in addition to Quantity. The alternate data type for measure score is determined by the performance metric type."
+Description: "The Alternate Measure Score Extension allows other data type choices to be used for the measureScore element in addition to Quantity. The alternate data type for measure score is determined by the performance metric type."
 * ^context[+].type = #element
 * ^context[=].expression = "MeasureReport"
 * ^context[+].type = #element

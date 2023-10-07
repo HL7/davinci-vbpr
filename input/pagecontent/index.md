@@ -31,7 +31,7 @@ This implementation guide is divided into several pages which are listed at the 
 
 ### Background
 {: #background}
-Value-Based Performance Reporting (VBPR) offer insights into the performance of healthcare providers and organizations by evaluating their financial, quality, cost, and efficiency aspects. These reports play a crucial role in assessing and comparing providers within value-based contracts. The objective of such contracts is to encourage superior care, enhance patient outcomes, and lower costs by compensating providers according to their performance, as opposed to the quantity of services provided.
+Value-Based Performance Reporting (VBPR) offers insights into the performance of healthcare providers and organizations by evaluating their financial, quality, cost, and efficiency aspects. These reports play a crucial role in assessing and comparing providers within value-based contracts. The objective of such contracts is to encourage superior care, enhance patient outcomes, and lower costs by compensating providers according to their performance, as opposed to the quantity of services provided.
 
 Payer-generated performance reports are crucial because payers are generally the arbiters in determining financial performance on risk contracts with health systems. Many times, payers have the best source of information on Per Member Per Month (PMPM) spend, contractual terms, regional or historical trends, and other financial information that health systems need to track and manage performance on those contracts. Claims data is important but insufficient on its own because state and federal requirements mask certain types of data that make accurate financial calculations difficult.  
 
@@ -58,7 +58,7 @@ HCP-LAN (Health Care Payment Learning and Action Network)<sup>[1](https://hcp-la
  
 - **Category 2**: Fee-for-Service with Links to Quality and Value: foundational payments for infrastructure and operations, pay for reporting, or shared savings. 
 
-- **Category 3**: APMs build on fee-for-service architecture: This level includes payment models that focus on upside risk only or that episode-based payment for procedures and comprehensive payments with upside and downside risk. This category also included risk-based payments NOT linked to quality.  
+- **Category 3**: APMs built on fee-for-service architecture: This level includes payment models that focus on upside risk only or episode-based payment for procedures and comprehensive payments with upside and downside risk. This category also included risk-based payments NOT linked to quality.  
 
 - **Category 4**: Population-based Payment: This level includes payment models where providers receive a fixed payment for a specific population, such as a patient panel, and are responsible for delivering all necessary care within that population. This category also includes global budgets or full/percent of premium payment and integrated finance and delivery system. This category also includes capitated payments not linked to quality. 
 
@@ -66,7 +66,7 @@ While a framework is in place to identify the types of value-based agreements pa
 - Lack of standardizations for value-based performance reporting format 
 - Data is in unstructured formats
 - Lack of common definitions, for example, Total Care Capitation (TCC) could have many different calculations
-- Data retrieval is time intensive because of reports coming from various portals and is not scalable
+- Data retrieval is time intensive because of reports come from various portals and is not scalable
 - Data is error-prone based on human error when entering into reporting systems
 - Misalignment on time periods when data is shared, and care is delivered. 
 - Various reporting, payment, and reconciliation periods can make tracking performance across contractual measures difficult for providers to understand how well they are performing prior to various settlement dates.

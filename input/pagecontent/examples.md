@@ -23,7 +23,7 @@ The example "shared savings - gated on quality" payment stream's weighted averag
 |[quality-measurereport04](MeasureReport-quality-measurereport04.html)|Example Quality Performance MeasureReport Diabetes Care - Eye Exam Controlled|
 |[quality-measurereport05](MeasureReport-quality-measurereport05.html)|Example Quality Performance MeasureReport Medication Adherence for Cholesterol (Statins)|
 |[quality-measurereport06](MeasureReport-quality-measurereport06.html)|Example Quality Performance MeasureReport Medication Adherence for Hypertension (RAS antagonists)|
-|[quality-measurereport07](MeasureReport-quality-measurereport07.html)|Example Quality Performance MeasureReport MMedication Adherence for Diabetes Medications|
+|[quality-measurereport07](MeasureReport-quality-measurereport07.html)|Example Quality Performance MeasureReport Medication Adherence for Diabetes Medications|
 |[quality-measurereport08](MeasureReport-quality-measurereport08.html)|Example Quality Performance MeasureReport Statin Therapy for Patients with Cardiovascular Disease|
 |[quality-measurereport09](MeasureReport-quality-measurereport09.html)|Example Quality Performance MeasureReport Statin Use in Persons with Diabetes (SUPD)|
 |[vbp-measure01](Measure-vbp-measure01.html)|Example VBP Measure|

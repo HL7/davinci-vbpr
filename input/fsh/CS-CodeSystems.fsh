@@ -68,7 +68,7 @@ Description: "Type of value-based performance metrics."
 * #annual-care-visit-bonus "Annual care visit bonus" "Bonus to qualified annual care visit (ACV). A type of quality incentive payment."
 * #avg-star-rating-bonus "Average star rating bonus" "Bonus earned when achieve a certain Average Star Rating. A type of quality incentive payment."
 * #avg-star-rating-improvement-bonus "Average star rating improvement bonus" "Bonus earned when achieve improvement performance year over year based on average star rating. A type of quality incentive payment"
-* #quality-metric-performance-incentive "Quality metric performance incentive" "Quality metric performance incentive paymetn is a type of quality incentive payment."
+* #quality-metric-performance-incentive "Quality metric performance incentive" "Quality metric performance incentive payment is a type of quality incentive payment."
 * #quality-pmt-chronic "Quality payment chronic disease management" "Quality payment chronic disease management."
 * #quality-pmt-office-visit "Quality payment annual office visit" "Quality payment annual office visit."
 * #shared-saving-deficit "Shared saving deficit" "The amount of shared saving deficit."
@@ -171,7 +171,7 @@ Description: "Measure population type that includes calculated-denominator and c
 CodeSystem: ThresholdTypeCS
 Title: "Threshold Type Codes"
 Id: threshold-type
-Description: "The threashold type."
+Description: "The threshold type."
 * ^experimental = false
 * #star-1 "Star 1" "Threshold for star 1 in a star rating."
 * #star-2 "Star 2" "Threshold for star 2 in a star rating."
