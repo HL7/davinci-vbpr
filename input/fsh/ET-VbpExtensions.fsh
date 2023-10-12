@@ -170,4 +170,11 @@ Description: "Reference to a group within the MeasureReport."
 * value[x] only string
 
 
-
+Extension: ContractualStatus
+Id: contractual-status
+Title: "Contractual Status"
+Description: "Contractual status of a measure whether it is tied to payment as specified in a value-based contract." 
+* ^context[+].type = #element
+* ^context[=].expression = "Measure"
+* value[x] 1..1 
+* valueCodeableConcept from measure-contractual-status (extensible)

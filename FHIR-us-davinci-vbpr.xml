@@ -9,6 +9,9 @@
 <artifact id="StructureDefinition/baseline" key="StructureDefinition-baseline" name="Baseline"/>
 <artifact id="ValueSet/vbp-cohort" key="ValueSet-vbp-cohort" name="Cohort"/>
 <artifact id="CodeSystem/vbp-cohort" key="CodeSystem-vbp-cohort" name="Cohort Codes"/>
+<artifact id="StructureDefinition/contractual-status" key="StructureDefinition-contractual-status" name="Contractual Status"/>
+<artifact id="Measure/vbp-measure02" key="Measure-vbp-measure02" name="Example Value-Based Contract - ABC Payer and EveryHospital"/>
+<artifact id="Measure/vbp-measure01" key="Measure-vbp-measure01" name="Example Value-Based Contract - ABC Payer and GoodHealth"/>
 <artifact id="StructureDefinition/group-reference" key="StructureDefinition-group-reference" name="Group Reference"/>
 <artifact id="ValueSet/hcplan-framework" key="ValueSet-hcplan-framework" name="HCPLAN Framework Categories"/>
 <artifact id="CodeSystem/hcplan-framework" key="CodeSystem-hcplan-framework" name="HCPLAN Framework Categories Codes"/>
@@ -16,6 +19,8 @@
 <artifact id="CodeSystem/vbp-incentive" key="CodeSystem-vbp-incentive" name="Incentive Payment Codes"/>
 <artifact id="StructureDefinition/lob" key="StructureDefinition-lob" name="Line of Business"/>
 <artifact id="ValueSet/lob" key="ValueSet-lob" name="Line of Business Value Set"/>
+<artifact id="ValueSet/measure-contractual-status" key="ValueSet-measure-contractual-status" name="Measure Contractual Status"/>
+<artifact id="CodeSystem/measure-contractual-status" key="CodeSystem-measure-contractual-status" name="Measure Contractual Status Codes"/>
 <artifact id="ValueSet/measure-stratifier-example" key="ValueSet-measure-stratifier-example" name="Measure Stratifier Example"/>
 <artifact id="CodeSystem/measure-stratifier-example" key="CodeSystem-measure-stratifier-example" name="Measure Stratifier Example Codes"/>
 <artifact id="StructureDefinition/organization-subject" key="StructureDefinition-organization-subject" name="Organization Subject"/>
@@ -63,8 +68,6 @@
 <artifact id="MeasureReport/quality-measurereport31" key="MeasureReport-quality-measurereport31" name="quality-measurereport31"/>
 <artifact id="MeasureReport/quality-measurereport32" key="MeasureReport-quality-measurereport32" name="quality-measurereport32"/>
 <artifact id="MeasureReport/quality-measurereport33" key="MeasureReport-quality-measurereport33" name="quality-measurereport33"/>
-<artifact id="Measure/vbp-measure01" key="Measure-vbp-measure01" name="vbp-measure01"/>
-<artifact id="Measure/vbp-measure02" key="Measure-vbp-measure02" name="vbp-measure02"/>
 <artifact id="MeasureReport/vbp-measurereport101" key="MeasureReport-vbp-measurereport101" name="vbp-measurereport101"/>
 <artifact id="MeasureReport/vbp-measurereport102" key="MeasureReport-vbp-measurereport102" name="vbp-measurereport102"/>
 <artifact id="MeasureReport/vbp-measurereport103" key="MeasureReport-vbp-measurereport103" name="vbp-measurereport103"/>

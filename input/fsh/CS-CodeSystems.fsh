@@ -63,6 +63,7 @@ Description: "Type of value-based performance metrics."
 * #med-expense-ratio "Medical expense ratio" "Medical expense ratio."
 * #med-expense-ratio-pmpm "Medical expense ratio PMPM" "Medical expense ratio per member per month (PMPM)."
 * #member-months "Member months" "Total member months in a given period."
+* #med-member-months "Medical member months" "Total medical member months in a given period."
 * #rx-member-months "Pharmacy member months" "Total pharmacy member months in a given period."
 * #adjusted-paid-claim "Adjusted paid claim" "Adjusted paid claim, excludes catastrophic claims."
 * #annual-care-visit-bonus "Annual care visit bonus" "Bonus to qualified annual care visit (ACV). A type of quality incentive payment."
@@ -188,6 +189,16 @@ Title: "Measure Stratifier Example Codes"
 Id: measure-stratifier-example
 Description: "Example stratifiers that could be used to stratify measure or performance metrics."
 * ^experimental = true
-* #region-cohort "region and cohort" "Stratification on both region and cohort."
+* #region-cohort "Region and cohort" "Stratification on both region and cohort."
 * #region "Region" "Stratification on region."
+* ^caseSensitive = true
+
+CodeSystem: MeasureContratualStatusCS
+Title: "Measure Contractual Status Codes"
+Id: measure-contractual-status
+Description: "Contractual status whether a measure is tied to payment as specified in a value-based contract."
+* ^experimental = false
+* #contractual "Contractual" "Measure is tied to payment contractually."
+* #contractual-alternate "Contractual Alternate" "Measure is identified as an alternate measure and is tied to payment contractually."
+* #reporting-only "Reporting Only" "Measure is for reporting only, it is not tied to payment."
 * ^caseSensitive = true

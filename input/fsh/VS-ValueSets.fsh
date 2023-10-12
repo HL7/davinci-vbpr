@@ -64,3 +64,10 @@ Id: measure-stratifier-example
 Description: "Example stratifiers that could be used to stratify measure or performance metrics."
 * ^experimental = true
 * codes from system measure-stratifier-example
+
+ValueSet: MeasureContratualStatusVS
+Title: "Measure Contractual Status"
+Id: measure-contractual-status
+Description: "Contractual status of a measure as specified in a value-based contract."
+* ^experimental = true
+* codes from system measure-contractual-status

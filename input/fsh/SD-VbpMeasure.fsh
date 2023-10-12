@@ -18,7 +18,12 @@ Description: "The measure definition that describes value-based contract level i
 * description MS
 * effectivePeriod ^short = "Value-based contract term period"
 * effectivePeriod MS
+
+* relatedArtifact[component].extension contains ContractualStatus named contractualStatus 1..1 MS
+* relatedArtifact[component].extension[contractualStatus] ^short = "contractual | contractual-alternate | reporting-only"
+
 * group.code from vbp-performance-metric (extensible)
 * group.code ^short = "Performance metric"
 * group.code MS
 * improvementNotation 0..0
+
