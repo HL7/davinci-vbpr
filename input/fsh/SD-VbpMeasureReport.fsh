@@ -54,6 +54,13 @@ Description: "Value-Based Performance MeasureReport is a payer-generated perform
 * group.stratifier.stratum.measureScore.extension contains AlternateMeasureScore named altMeasureScore 0..1 MS
 * group.stratifier.stratum.measureScore.extension[AlternateMeasureScore] ^short = "Additional data type choices for the stratified performance metric value"
 
+* group.stratifier.code MS
+* group.stratifier.code from measure-stratifier-example (example)
+* group.stratifier.stratum.value MS
+* group.stratifier.stratum.component.code MS
+* group.stratifier.stratum.component.code from measure-stratifier-example (example)
+* group.stratifier.stratum.component.value MS
+
 * evaluatedResource MS
 * evaluatedResource ^short = "What data was used to calculate the performance metric(s)"
 * evaluatedResource ^definition = "Evaluated resources are used to capture what data was involved in the calculation of performance metrics."

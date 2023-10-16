@@ -12,3 +12,8 @@ Description: "VBP quality measure report at the summary level for a population. 
 * extension contains Threshold named threshold 0..* MS 
 * group.population.code from vbp-measure-population (extensible)
 * group.stratifier.stratum.population.code from vbp-measure-population (extensible)
+
+* group.stratifier.code from measure-stratifier-example (example)
+* group.stratifier.stratum.component.code MS
+* group.stratifier.stratum.component.code from measure-stratifier-example (example)
+* group.stratifier.stratum.component.value MS
