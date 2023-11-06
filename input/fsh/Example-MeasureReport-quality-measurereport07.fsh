@@ -55,7 +55,7 @@ Description: "This is an example Medication Adherence for Diabetes Medications M
 * group.population[=].count = 380
 * group.measureScore.value = 0.632
 
-* group.stratifier.code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#region-cohort
+* group.stratifier.code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group.stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
 * group.stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
 * group.stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC

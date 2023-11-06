@@ -1,7 +1,7 @@
 
 ### Introduction
 
-Originally, value-based payment models were designed to reward healthcare providers with incentive payments for the quality of care they give to people with Medicare. The programs were designed to link provider performance of quality measures to provider payment and work with other CMS quality efforts to ensure that quality is being achieved. Value-based purchasing (VBP) refers to a broad set of performance-based payment strategies that link financial incentives to providers' performance on a set of defined measures. VBP programs are private or public programs that link financial reimbursement to performance on measures of quality (i.e., structure, process, outcomes, access, and patient experience) and cost or resource use.<sup>[1](https://www.rand.org/pubs/periodicals/health-quarterly/issues/v4/n3/09.html)</sup> 
+Originally, value-based payment models were designed to reward healthcare providers with incentive payments for the quality of care they give to people with Medicare. The programs were designed to link provider performance of quality measures to provider payment and work with other CMS quality efforts to ensure that quality is being achieved. Value-based purchasing refers to a broad set of performance-based payment strategies that link financial incentives to providers' performance on a set of defined measures. Value-based purchasing programs are private or public programs that link financial reimbursement to performance on measures of quality (i.e., structure, process, outcomes, access, and patient experience) and cost or resource use.<sup>[1](https://www.rand.org/pubs/periodicals/health-quarterly/issues/v4/n3/09.html)</sup> 
 
 Economic challenges and higher healthcare costs have expanded these value-based payment models to larger populations of patients and members. The industry has adopted several names for the original value-based payment models, including value-based purchasing, value-based contracting, value-based payments, and, most recently, alternative payment models. 
 
@@ -46,6 +46,12 @@ There are three profiles specified in this version of the implementation guide:
 
 {% include img-portrait.html img="resources.png" caption = "Figure 2-1 Resources Overview" %}
 
+### Workflow
+
+Figure 2-2 describes the workflow from Payer generating Value-Based Performance (VBP) Measure and VBP MeasureReport to Provider querying and getting the measures and reports from the Payer. 
+
+{% include img-portrait.html img="api-workflow.png" caption = "Figure 2-2 Value-based performance reporting workflow" %}
+
 ### Value-Based Reporting Framework
 
 Value-based payment models are expected to grow across all lines of business. The adoption of value-based care has accelerated in recent years, and this trend could continue in the coming years as payers, employers, and the government embrace these value-based care models. Value-based contracts encompass a broad variety of models, such as capitation, pay-for-performance, pay-for-quality, and shared savings to name a few. The performance metrics that these value-based contracts need to measure and to track are also very broad, which spans over financial, quality, utilization and more. 
@@ -72,7 +78,7 @@ A customized [Organization Subject Search Parameter] on the Value-Based Performa
 
 
 Figure 2-2 provides a structural overview of the VBP MeasureReport. (Note: elements that are added as extensions are indicated with purple background.)
-{% include img-portrait.html img="vbp-measurereport.png" caption = "Figure 2-2 VBP MeasureReport overview" %}
+{% include img-portrait.html img="vbp-measurereport.png" caption = "Figure 2-3 VBP MeasureReport overview" %}
 
 #### Value-Based Performance (VBP) Quality MeasureReport
 
@@ -84,9 +90,9 @@ This profile has defined a [VBP Measure Population Type] value set. This value s
 
 Figure 2-3 and Figure 2-4 used the colorectal cancer screening and the breast cancer screening measures as examples to illustrate the use of the VBP Quality MeasureReport. 
 
-{% include img-portrait.html img="vbp-quality-measurereport-colorectalcancer.png" caption = "Figure 2-3 VBP Quality MeasureReport overview - colorectal cancer screening measure example" %}
+{% include img-portrait.html img="vbp-quality-measurereport-colorectalcancer.png" caption = "Figure 2-4 VBP Quality MeasureReport overview - colorectal cancer screening measure example" %}
 
-{% include img-portrait.html img="vbp-quality-measurereport-breastcancer.png" caption = "Figure 2-4 VBP Quality MeasureReport overview - breast cancer screening measure example" %}
+{% include img-portrait.html img="vbp-quality-measurereport-breastcancer.png" caption = "Figure 2-5 VBP Quality MeasureReport overview - breast cancer screening measure example" %}
 
 #### Value-Based Performance (VBP) Measure
 
@@ -97,7 +103,7 @@ This profile added a few extensions to represent the following:
 -	programModel: HCP-LAN APM framework categories. A value-based contract may have a different HCP-LAN APM framework category applicable for a different cohort. 
 -	paymentStream: value-based payment models such as care coordination fee, shared savings percent, shared savings gated on quality.
 
-{% include img-portrait.html img="vbp-measure.png" caption = "Figure 2-5 VBP Measure overview" %}
+{% include img-portrait.html img="vbp-measure.png" caption = "Figure 2-6 VBP Measure overview" %}
 
 
 ### Must Support
