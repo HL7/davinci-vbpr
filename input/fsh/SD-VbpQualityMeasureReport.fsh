@@ -22,4 +22,4 @@ Description: "VBP quality measure report at the summary level for a population. 
 * group.stratifier.stratum.component.value MS
 
 * group.stratifier.stratum.extension contains Score named score 0..1 MS
-* group.stratifier.stratum.extension[score] ^short = "Score of a measure, such as star rating score"
+* group.stratifier.stratum.extension[score] ^short = "What score such as star rating score this stratum achieved"
