@@ -40,17 +40,18 @@ In the scenario where the Payer sends the value-based performance reports to the
 ### Resources
 
 There are three profiles specified in this version of the implementation guide:  
-* The Value-Based Performance MeasureReport is the main resource that represents a value-based performance report, which could include data on metrics including financial, utilization,  quality, etc.  
-* The Value-Based Performance MeasureReport `evaluatedResource` references the VBP Quality MeasureReport profile. This profile derives from the DEQM Summary MeasureReport and provides additional capability to support the need for exchanging quality measure data relevant for value-based performance reporting. 
-* Relevant value-based contract level information is represented using the Value-Based Performance Measure. 
+* The [Value-Based Performance MeasureReport](StructureDefinition-vbp-performance-measurereport.html) is the main resource that represents a value-based performance report, which could include data on metrics including financial, utilization, quality, etc.  
+* The Value-Based Performance MeasureReport `evaluatedResource` references the [VBP Quality MeasureReport](StructureDefinition-vbp-quality-measurereport.html) profile. This profile derives from the DEQM Summary MeasureReport and provides additional capability to support the need for exchanging quality measure data relevant for value-based performance reporting. 
+* Relevant value-based contract level information is represented using the [Value-Based Performance Measure](StructureDefinition-vbp-measure.html). 
 
 {% include img-portrait.html img="resources.png" caption = "Figure 2-1 Resources Overview" %}
 
 ### Workflow
 
-Figure 2-2 describes the workflow from Payer generating Value-Based Performance (VBP) Measure and VBP MeasureReport to Provider querying and getting the measures and reports from the Payer. 
+Figure 2-2 describes value-based performance reporting workflow between a Payer and a Provider. Payer creates Value-Based Performance Measure for a value-based contract and generates VBP MeasureReport for a performance period, Provider then periodically gets the reports from the Payer. 
 
 {% include img-portrait.html img="api-workflow.png" caption = "Figure 2-2 Value-based performance reporting workflow" %}
+
 
 ### Value-Based Reporting Framework
 
