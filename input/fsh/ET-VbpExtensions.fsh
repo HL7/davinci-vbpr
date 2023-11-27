@@ -137,7 +137,7 @@ Description: "The Threshold Extension is a complex extension that defines a thre
 * extension[threshold] ^short = "The threshold percentile"
 * extension[threshold] ^definition = "The threshold percentile"
 * extension[threshold].value[x] 1..1
-* extension[threshold].value[x] only decimal or Quantity
+* extension[threshold].value[x] only decimal or Quantity or Range
 * extension[type] only Extension
 * extension[type] ^short = "The type or the name of the threshold"
 * extension[type] ^definition = "The type or the name of the threshold, such as star-2 threshold in star rating"
