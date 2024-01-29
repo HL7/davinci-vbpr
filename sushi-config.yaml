@@ -5,6 +5,9 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.davinci-vbpr
 canonical: http://hl7.org/fhir/us/davinci-vbpr
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
+    valueCode: cqi
 name: ValueBasedPerformanceReporting
 title: Da Vinci Value-Based Performance Reporting Implementation Guide
 description: The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Value-Based Performance Reporting Implementation Guide (this IG) describes exchange of value-based performance reports among stakeholders such as payers, providers, and government care programs.
@@ -16,7 +19,7 @@ releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | rele
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: HL7 Clinical Quality Information Work Group
+  name: HL7 International / Clinical Quality Information
   url: http://www.hl7.org/Special/committees/cqi
   # email: test@example.org
 

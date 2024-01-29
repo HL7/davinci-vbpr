@@ -156,8 +156,8 @@ Title: "Cohort Codes"
 Id: vbp-cohort
 Description: "The type of cohort, which represents a group of members with a shared characteristic."
 * ^experimental = false
-* #hmo "HMO cohort" "A cohort that consists of members who are under HMO."
-* #ppo "PPO cohort" "A cohort that consists of members who are under PPO."
+* #hmo "HMO cohort" "A cohort that consists of members who are with health maintenance organization (HMO) plan."
+* #ppo "PPO cohort" "A cohort that consists of members who are with preferred provider organization (PPO) plan."
 * ^caseSensitive = true
 
 CodeSystem: VbpMeasurePopulationTypeCS
@@ -189,7 +189,6 @@ Title: "Measure Stratifier Example Codes"
 Id: measure-stratifier-example
 Description: "Example stratifiers that could be used to stratify measure or performance metrics."
 * ^experimental = true
-//* #cohort "cohort such as members with PPO and members with HMO."
 //* #region "Region" "Stratify based on regions."
 //* #region-cohort "Facility and cohort" "Stratify based on both facility and cohort."
 * #facility "Facility" "Stratify based on healthcare facilities, such as regions and hospitals."
@@ -200,6 +199,7 @@ Description: "Example stratifiers that could be used to stratify measure or perf
 //* #provider-group-cohort "Provider group and cohort" "Stratify based on provider group and cohort."
 * #geography "Geography" "Stratify based on geographical data, such as zip code and city."
 //* #geography-cohort "Geography and cohort" "Stratify based on geographical information and cohort."
+* #cohort "Cohort" "Stratify based on a group of members with a shared characteristic, such as members that are with PPO plan or members with HMO plan."
 * ^caseSensitive = true
 
 CodeSystem: MeasureContratualStatusCS

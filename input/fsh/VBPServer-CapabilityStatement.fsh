@@ -11,10 +11,6 @@ and search parameters that a VBP Reporting Server could support are defined. VBP
 * status = #active
 * date = "2023-06-25"
 * experimental = false
-* publisher = "HL7 International - Clinical Quality Information Work Group"
-* contact.telecom.system = #url
-* contact.telecom.value = "http://www.hl7.org/Special/committees/cqi/index.cfm"
-* jurisdiction = urn:iso:std:iso:3166#US
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"></div>"
 * text.status = #generated
 * kind = #requirements
