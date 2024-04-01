@@ -44,6 +44,8 @@ The Value-Based Performance Reporting Implementation Guide was developed under t
 - **Applied**: Grammatical Error ([FHIR-42443](https://jira.hl7.org/browse/FHIR-42443))
 - **Applied**: Incomplete/unclear sentence Guidance section 2.5.1 The Value-Based Performance MeasureReport ([FHIR-41889](https://jira.hl7.org/browse/FHIR-41889))
 - **Applied**: Main page discusses APMs but does not spell out the acronym ([FHIR-41894](https://jira.hl7.org/browse/FHIR-41894))
+- **Applied**: Need a way to identify if a measure is tied to payment, reporting only, or an alternate measure. ([FHIR-42876](https://jira.hl7.org/browse/FHIR-42876))
+- **Applied**: Definition of "Revenue" ([FHIR-42398](https://jira.hl7.org/browse/FHIR-42398))
 
 
 ### Version 1.0.0-ballot
