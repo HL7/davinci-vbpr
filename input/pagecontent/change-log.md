@@ -3,6 +3,7 @@ The Value-Based Performance Reporting Implementation Guide was developed under t
 
 ### version 1.0.0
 
+- **Applied**: Need to Validate HCPLAN Framework Codes with HTA ([FHIR-42385](https://jira.hl7.org/browse/FHIR-42385))
 - **Applied**: Word "the" missing in 2.3 ([FHIR-41697](https://jira.hl7.org/browse/FHIR-41697))
 - **Applied**: Version spelled incorrectly in 2.4 ([FHIR-41699](https://jira.hl7.org/browse/FHIR-41699))
 - **Applied**: measureScore not capitalized in 2.5.1, bullet point 2 ([FHIR-41700](https://jira.hl7.org/browse/FHIR-41700))

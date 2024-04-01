@@ -90,6 +90,8 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - fsh-generated/includes
   show-inherited-invariants: false
   version-comparison: n/a
+  special-url:
+    - http://terminology.hl7.org/CodeSystem/hcp-lan-apm-framework
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
 #
