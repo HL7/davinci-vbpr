@@ -86,7 +86,7 @@ The initial phase of this implementation guide focuses on:
 - Identifying and defining common data elements in a value-based performance report 
 - Supporting both Medicare value-based contracts (Medicare Advantage) and commercial value-based contracts, and other types of value-based contracts such as Medicaid.
 
-{% include img-portrait.html img="scope.png" caption="Figure 1-2 Scope"%}
+{% include img-portrait.html img="stu1_scope.png" caption="Figure 1-2 Scope"%}
 
 
 ---
