@@ -3,7 +3,7 @@
 
 The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Value-Based Performance Reporting (VBPR) Implementation Guide supports exchanging financial and quality performance data based on contractual performance measurements agreed to by payers and providers. 
 
-Value-based contracting is important to the US healthcare system for several reasons:
+Value-based contracting offers the following benefits to the US healthcare system:
 - Encourages providers to focus on quality outcomes and efficiency
 - Helps to reduce wasteful healthcare spending and improve the affordability of healthcare for individuals, employers, and the government
 - Promotes cost containment by incentivizing providers to improve the quality of care, rather than just providing more services
@@ -39,7 +39,7 @@ Payer-generated performance reports are crucial because payers are generally the
 
 - **Performance Categories**: Distinct areas of provider performance, such as clinical quality, cost, utilization, and patient experience, which are evaluated and weighted to calculate an overall performance score.
 - **Quality Measures**: Quantitative metrics that assess the performance of healthcare providers and organizations in terms of clinical outcomes, patient safety, patient experience, and adherence to clinical guidelines and best practices.
-- **Performance Benchmarks**: Comparative metrics used to evaluate provider performance against established industry standards or the historic performance of peer organizations.
+- **Performance Benchmarks**: Comparative metrics used to evaluate provider performance against established industry standards or the historic performance of peer organizations or clinician/organization's own performance over time.
 - **Incentive Payments**: Financial rewards or penalties applied to providers based on their performance to encourage improvements in care quality and efficiency.
 - **Risk Adjustment**: A methodology applied to account for differences in patient populations, such as demographic factors, clinical conditions, and social determinants of health, to ensure fair comparisons of provider performance.
 

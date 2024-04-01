@@ -51,6 +51,8 @@ The Value-Based Performance Reporting Implementation Guide was developed under t
 - **Applied**: Please clarify: "a future version will address from provider back to payer" ([FHIR-42383](https://jira.hl7.org/browse/FHIR-42383))
 - **Applied**: Regarding "Administrative Cost" definition ([FHIR-42393](https://jira.hl7.org/browse/FHIR-42393))
 - **Applied**: Define "PBP" in "Financial Benchmark" definition ([FHIR-42396](https://jira.hl7.org/browse/FHIR-42396))
+- **Applied**: egarding "Performance Benchmarks..." ([FHIR-42378](https://jira.hl7.org/browse/FHIR-42378))
+- **Applied**: Regarding "Value-based contracting is important to the US healthcare system for several reasons:" ([FHIR-42376](https://jira.hl7.org/browse/FHIR-42376))
 
 
 ### Version 1.0.0-ballot
