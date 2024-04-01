@@ -42,6 +42,8 @@ The Value-Based Performance Reporting Implementation Guide was developed under t
 - **Applied**: Change "Total MA Support Revenue" to "Total Medicare Advantage (MA) Support Revenue" ([FHIR-42402](https://jira.hl7.org/browse/FHIR-42402))
 - **Applied**: Define "NPM" in 5.1 ([FHIR-42404](https://jira.hl7.org/browse/FHIR-42404))
 - **Applied**: Grammatical Error ([FHIR-42443](https://jira.hl7.org/browse/FHIR-42443))
+- **Applied**: Incomplete/unclear sentence Guidance section 2.5.1 The Value-Based Performance MeasureReport ([FHIR-41889](https://jira.hl7.org/browse/FHIR-41889))
+- **Applied**: Main page discusses APMs but does not spell out the acronym ([FHIR-41894](https://jira.hl7.org/browse/FHIR-41894))
 
 
 ### Version 1.0.0-ballot
