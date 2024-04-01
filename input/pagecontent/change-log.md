@@ -46,6 +46,11 @@ The Value-Based Performance Reporting Implementation Guide was developed under t
 - **Applied**: Main page discusses APMs but does not spell out the acronym ([FHIR-41894](https://jira.hl7.org/browse/FHIR-41894))
 - **Applied**: Need a way to identify if a measure is tied to payment, reporting only, or an alternate measure. ([FHIR-42876](https://jira.hl7.org/browse/FHIR-42876))
 - **Applied**: Definition of "Revenue" ([FHIR-42398](https://jira.hl7.org/browse/FHIR-42398))
+- **Applied**: Category 4 ballet point definition ([FHIR-42381](https://jira.hl7.org/browse/FHIR-42381))
+- **Applied**: Add to challenges list ([FHIR-42382](https://jira.hl7.org/browse/FHIR-42382))
+- **Applied**: Please clarify: "a future version will address from provider back to payer" ([FHIR-42383](https://jira.hl7.org/browse/FHIR-42383))
+- **Applied**: Regarding "Administrative Cost" definition ([FHIR-42393](https://jira.hl7.org/browse/FHIR-42393))
+- **Applied**: Define "PBP" in "Financial Benchmark" definition ([FHIR-42396](https://jira.hl7.org/browse/FHIR-42396))
 
 
 ### Version 1.0.0-ballot

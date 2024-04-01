@@ -1,9 +1,9 @@
 
 |Term|Definition|
 |---|---|
-|Administrative Cost|A general term that refers to Medicare and Medicaid administrative costs, as well as CMS administrative costs. Medicare administrative costs are comprised of the Medicare related outlays and non-CMS administrative outlays. Medicaid administrative costs refer to the Federal share of the States' expenditures for administration of the Medicaid program. CMS administrative costs are the costs of operating CMS (e.g., salaries and expenses, facilities, equipment, rent and utilities, etc.). These costs are reflected in the Program Management account.[source](https://www.cms.gov/glossary?term=administrative+cost&items_per_page=10&viewmode=grid)|
+|Administrative Cost|Administrative costs are the expenses associated with operating a health plan and exclude the cost of claims. They are largely driven by staffing, technology, and operational processes.|
 |Adjustments|An adjustment is a request to reprocess the claim after taking into consideration some new or changed information. The information provided on the original claim is either corrected or supplemented.|
-|Alternative Payment Models (APMs)|Alternative payment models deviate from traditional fee-for-service (FFS) payment, insofar as they adjust FFS payments to account for performance on cost and quality metrics, or insofar as they use population-based payments that are linked to quality performance.[source](http://hcp-lan.org/workproducts/ds-whitepaper-final.pdf)|
+|Alternative Payment Models (APMs)|Alternative payment models deviate from traditional fee-for-service (FFS) payment, insofar as they adjust FFS payments to account for performance on cost and quality metrics, or insofar as they use population-based payments that are linked to quality performance. [source](http://hcp-lan.org/workproducts/ds-whitepaper-final.pdf)|
 |Average Risk Score|Average risk score for the population, which is a numeric score where a higher score indicates a riskier population on average. Note that within that population, each patient also has risk score, which helps to know which patient is riskier.|
 |Bonus Amount|VBP models may reward quality and cost savings separately, or they may link them. When treated separately, there is a discrete quality bonus, irrespective of the provider’s performance relative to their financial benchmark.|
 |Brand|Brand (for example Blue vs. non-blue)|
@@ -11,7 +11,7 @@
 |Care Coordination Fee (CCF)|Care coordination fees are the Per Member Per Month (PMPM) payments based on the number of patients that are assigned to primary care physicians|
 |Incurred but not reported (IBNR)|A type of reserve account used in the insurance industry as the provision for claims and/or events that have transpired, but have not yet been reported to an insurance company|
 |Fee-for-Service (FFS)|Traditional health care payment models, in which providers are paid separately for each service they deliver.|
-|Financial Benchmark|A financial benchmark is a population-based spending level that is used to establish opulation-based payment (PBP) rates for providers.|
+|Financial Benchmark|A set, risk-adjusted dollar amount typically determined by historical fee-for-service spend, market-based trends, or other methods that is used to measure financial performance in VBP Models. Programs using a financial benchmark most closely align with the HCP-LAN Categories 3 and 4. (source: [CAQH CORE Framework for Semantic Interoperability in Value-based Payments](https://www.caqh.org/hubfs/CORE/CORE_Framework_for_Semantic_Interoperability_in_Value_Based_Payments_vSI.1.0.pdf))|
 |Gating|Meet a performance threshold for other terms to apply. Establish a performance target or “gate” that must be cleared before an accountable provider organization can receive rewards.|
 |Inpatient Claims|Bills submitted for program level (facility-based) services |
 |Line of Business (LOB)|Commercial, Medicaid, Medicare, etc.|

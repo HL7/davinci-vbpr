@@ -60,7 +60,9 @@ HCP-LAN (Health Care Payment Learning and Action Network)<sup>[1](https://hcp-la
 
 - **Category 3**: APMs built on fee-for-service architecture: This level includes payment models that focus on upside risk only or episode-based payment for procedures and comprehensive payments with upside and downside risk. This category also included risk-based payments NOT linked to quality.  
 
-- **Category 4**: Population-based Payment: This level includes payment models where providers receive a fixed payment for a specific population, such as a patient panel, and are responsible for delivering all necessary care within that population. This category also includes global budgets or full/percent of premium payment and integrated finance and delivery system. This category also includes capitated payments not linked to quality. 
+- **Category 4**: Population-based Payment: Category 4 payment models involve prospective, population-based payments, structured in a manner that encourages providers to deliver well-coordinated, high-quality, person-centered care within either a defined scope of practice (4A), a comprehensive collection of care (4B), or a highly integrated finance and delivery system (4C). Category 4 APMs require accountability for measures of appropriate care to provide additional safeguards against incentives to limit necessary care. Absent this accountability, APMs that use prospective, population-based payments will be classified in Category 4N.
+
+This level includes payment models where providers receive a fixed payment for a specific population, such as a patient panel, and are responsible for delivering all necessary care within that population. This category also includes global budgets or full/percent of premium payment and integrated finance and delivery system. This category also includes capitated payments not linked to quality. 
 
 While a framework is in place to identify the types of value-based agreements payers and providers can participate in, there is a challenge in collecting, analyzing and reconciling the numerous reports providers receive from payers. Some of these challenges include:
 - Lack of standardizations for value-based performance reporting format 
@@ -70,6 +72,7 @@ While a framework is in place to identify the types of value-based agreements pa
 - Data is error-prone based on human error when entering into reporting systems
 - Misalignment on time periods when data is shared, and care is delivered. 
 - Various reporting, payment, and reconciliation periods can make tracking performance across contractual measures difficult for providers to understand how well they are performing prior to various settlement dates.
+- Variation in metrics used across payers and also variation in methodology – e.g., attribution.
 
 
 ### Scope
@@ -85,13 +88,6 @@ The initial phase of this implementation guide focuses on:
 
 {% include img-portrait.html img="scope.png" caption="Figure 1-2 Scope"%}
 
-Future versions of this implementation guide may include functionalities to support topics such as:
-- Final contract settlement calculations (including inclusions and exclusions)
-- Invalidations (risk adjustment/payment retroactivity)
-- Interim settlements
-- External (out of network) reconciliations
-- Other Alternative Payment Models (APM)  
-- Clinical Quality Language (CQL) for metrics definitions and calculations
 
 ---
 
