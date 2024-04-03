@@ -53,7 +53,8 @@ The Value-Based Performance Reporting Implementation Guide was developed under t
 - **Applied**: Define "PBP" in "Financial Benchmark" definition ([FHIR-42396](https://jira.hl7.org/browse/FHIR-42396))
 - **Applied**: Regarding "Performance Benchmarks..." ([FHIR-42378](https://jira.hl7.org/browse/FHIR-42378))
 - **Applied**: Regarding "Value-based contracting is important to the US healthcare system for several reasons:" ([FHIR-42376](https://jira.hl7.org/browse/FHIR-42376))
-
+- **Applied**: Definition of "Quality Incentive payment" ([FHIR-42397](https://jira.hl7.org/browse/FHIR-42397))
+- **Applied**: Regarding Figure 1-1 ([FHIR-42379](https://jira.hl7.org/browse/FHIR-42379))
 
 ### Version 1.0.0-ballot
 Initial content for the STU1 ballot.

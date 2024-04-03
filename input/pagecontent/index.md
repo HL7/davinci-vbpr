@@ -56,7 +56,7 @@ HCP-LAN (Health Care Payment Learning and Action Network)<sup>[1](https://hcp-la
 
 - **Category 1**: Fee-for-Service with No Link to Quality and Value: This level includes traditional fee-for-service payment models that do not provide incentives for quality improvement or cost containment. (Note that Category 1 is not addressed in this implementation guide).
  
-- **Category 2**: Fee-for-Service with Links to Quality and Value: foundational payments for infrastructure and operations, pay for reporting, or shared savings. 
+- **Category 2**: Fee-for-Service with Links to Quality and Value: foundational payments for infrastructure and operations, pay for reporting, or pay-for-performance. 
 
 - **Category 3**: APMs built on fee-for-service architecture: This level includes payment models that focus on upside risk only or episode-based payment for procedures and comprehensive payments with upside and downside risk. This category also included risk-based payments NOT linked to quality.  
 

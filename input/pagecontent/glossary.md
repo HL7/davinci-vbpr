@@ -22,7 +22,7 @@
 |Medical Loss Ratio Target (MLRT)|Actuarial estimate of MLR|
 |Population-Based Payment Model|A payment model in which a provider organization is given a population-based global budget or payment and accepts accountability for managing the total cost of care, quality, and outcomes for a defined patient population across the full continuum of care. They are payment models in Categories 3 and 4 of the HCP-LAN's APM Framework.|
 |Product|A product is a discrete package of health insurance coverage benefits that are offered using a particular product network type (such as health maintenance organization, preferred provider organization, exclusive provider organization, point of service, or indemnity) within a service area.|
-|Quality Incentive payment|Quality Incentive Program (QIP) represents a new pay for-performance program|
+|Quality Incentive payment|A type of payment that is tied to the achievement of performance or reporting on a set of established quality measures.|
 |Revenue Per Member Per Month (PMPM)|Revenue per member per month|
 |Revenue|Total revenues earned, which includes premiums and other resources that a payer receives.|
 |Runout|Runout is an administrative period of time following the end of the plan year that allows a participant extra time to submit eligible claims incurred during the plan year.|
