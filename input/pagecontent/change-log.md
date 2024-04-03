@@ -55,6 +55,8 @@ The Value-Based Performance Reporting Implementation Guide was developed under t
 - **Applied**: Regarding "Value-based contracting is important to the US healthcare system for several reasons:" ([FHIR-42376](https://jira.hl7.org/browse/FHIR-42376))
 - **Applied**: Definition of "Quality Incentive payment" ([FHIR-42397](https://jira.hl7.org/browse/FHIR-42397))
 - **Applied**: Regarding Figure 1-1 ([FHIR-42379](https://jira.hl7.org/browse/FHIR-42379))
+- **Applied**: "payment stream" is spelled various ways in 2.5.1 ([FHIR-41701](https://jira.hl7.org/browse/FHIR-41701))
+
 
 ### Version 1.0.0-ballot
 Initial content for the STU1 ballot.
