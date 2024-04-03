@@ -101,7 +101,7 @@ The [VBP Measure] is used to represent value-based contract information that are
 
 This profile added a few extensions to represent the following:
 -	lineOfBusiness: line of business whether it is Medicare, Medicaid, or commercial. 
--	programModel: HCP-LAN APM framework categories. A value-based contract may have a different HCP-LAN APM framework category applicable for a different cohort. 
+-	programModel: HCPLAN APM framework categories. A value-based contract may have a different HCPLAN APM framework category applicable for a different cohort. 
 -	paymentStream: value-based payment models such as care coordination fee, shared savings percent, shared savings gated on quality.
 
 {% include img-portrait.html img="vbp-measure.png" caption = "Figure 2-6 VBP Measure overview" %}

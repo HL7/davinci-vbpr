@@ -75,7 +75,7 @@ Description: "The Payment Stream Extension is a complex extension that defines t
 Extension: ProgramModel
 Id: program-model
 Title: "Program Model"
-Description: "The Program Model Extension is a complex extension, which defines the HCP-LAN Alternative Payment Model (APM) framework specified APM categories and which cohort this program model applies to."
+Description: "The Program Model Extension is a complex extension, which defines the The Health Care Payment Learning & Action Network (HCPLAN) Alternative Payment Model (APM) framework specified APM categories and which cohort this program model applies to."
 * ^context[+].type = #element
 * ^context[=].expression = "Measure"
 //* value[x] 1..1 
@@ -83,8 +83,8 @@ Description: "The Program Model Extension is a complex extension, which defines 
 * extension contains 
     hcplan 1..1 MS and 
     cohort 0..1 MS
-* extension[hcplan] ^short = "HCP-LAN APM framework APM category"
-* extension[hcplan] ^definition = "HCP-LAN APM framework APM category"
+* extension[hcplan] ^short = "HCPLAN APM framework APM category"
+* extension[hcplan] ^definition = "HCPLAN APM framework APM category"
 * extension[hcplan].value[x] 1..1
 * extension[hcplan].value[x] only CodeableConcept
 * extension[hcplan].value[x] from hcplan-framework (extensible)

@@ -11,7 +11,7 @@
 |Care Coordination Fee (CCF)|Care coordination fees are the Per Member Per Month (PMPM) payments based on the number of patients that are assigned to primary care physicians|
 |Incurred but not reported (IBNR)|A type of reserve account used in the insurance industry as the provision for claims and/or events that have transpired, but have not yet been reported to an insurance company|
 |Fee-for-Service (FFS)|Traditional health care payment models, in which providers are paid separately for each service they deliver.|
-|Financial Benchmark|A set, risk-adjusted dollar amount typically determined by historical fee-for-service spend, market-based trends, or other methods that is used to measure financial performance in VBP Models. Programs using a financial benchmark most closely align with the HCP-LAN Categories 3 and 4. (source: [CAQH CORE Framework for Semantic Interoperability in Value-based Payments](https://www.caqh.org/hubfs/CORE/CORE_Framework_for_Semantic_Interoperability_in_Value_Based_Payments_vSI.1.0.pdf))|
+|Financial Benchmark|A set, risk-adjusted dollar amount typically determined by historical fee-for-service spend, market-based trends, or other methods that is used to measure financial performance in VBP Models. Programs using a financial benchmark most closely align with the HCPLAN Categories 3 and 4. (source: [CAQH CORE Framework for Semantic Interoperability in Value-based Payments](https://www.caqh.org/hubfs/CORE/CORE_Framework_for_Semantic_Interoperability_in_Value_Based_Payments_vSI.1.0.pdf))|
 |Gating|Meet a performance threshold for other terms to apply. Establish a performance target or “gate” that must be cleared before an accountable provider organization can receive rewards.|
 |Inpatient Claims|Bills submitted for program level (facility-based) services |
 |Line of Business (LOB)|Commercial, Medicaid, Medicare, etc.|
@@ -20,7 +20,7 @@
 |Medical Cost Target|Projected medical cost|
 |Medical Loss Ratio (MLR)|The share of total health care premiums spent on medical claims.|
 |Medical Loss Ratio Target (MLRT)|Actuarial estimate of MLR|
-|Population-Based Payment Model|A payment model in which a provider organization is given a population-based global budget or payment and accepts accountability for managing the total cost of care, quality, and outcomes for a defined patient population across the full continuum of care. They are payment models in Categories 3 and 4 of the HCP-LAN's APM Framework.|
+|Population-Based Payment Model|A payment model in which a provider organization is given a population-based global budget or payment and accepts accountability for managing the total cost of care, quality, and outcomes for a defined patient population across the full continuum of care. They are payment models in Categories 3 and 4 of the HCPLAN's APM Framework.|
 |Product|A product is a discrete package of health insurance coverage benefits that are offered using a particular product network type (such as health maintenance organization, preferred provider organization, exclusive provider organization, point of service, or indemnity) within a service area.|
 |Quality Incentive payment|A type of payment that is tied to the achievement of performance or reporting on a set of established quality measures.|
 |Revenue Per Member Per Month (PMPM)|Revenue per member per month|

@@ -56,6 +56,7 @@ The Value-Based Performance Reporting Implementation Guide was developed under t
 - **Applied**: Definition of "Quality Incentive payment" ([FHIR-42397](https://jira.hl7.org/browse/FHIR-42397))
 - **Applied**: Regarding Figure 1-1 ([FHIR-42379](https://jira.hl7.org/browse/FHIR-42379))
 - **Applied**: "payment stream" is spelled various ways in 2.5.1 ([FHIR-41701](https://jira.hl7.org/browse/FHIR-41701))
+- **Applied**: HCP-LAN spelled differently throughout IG ([FHIR-41696](https://jira.hl7.org/browse/FHIR-41696))
 
 
 ### Version 1.0.0-ballot
