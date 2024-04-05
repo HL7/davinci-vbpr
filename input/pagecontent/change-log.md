@@ -57,6 +57,8 @@ The Value-Based Performance Reporting Implementation Guide was developed under t
 - **Applied**: Regarding Figure 1-1 ([FHIR-42379](https://jira.hl7.org/browse/FHIR-42379))
 - **Applied**: "payment stream" is spelled various ways in 2.5.1 ([FHIR-41701](https://jira.hl7.org/browse/FHIR-41701))
 - **Applied**: HCP-LAN spelled differently throughout IG ([FHIR-41696](https://jira.hl7.org/browse/FHIR-41696))
+- **Applied**: In the first bullet point of 5.4.4, change "it's" to "its". ([FHIR-41715](https://jira.hl7.org/browse/FHIR-41715))
+- **Applied**: In the first bullet point of 5.4.4, change "futher" to "further". ([FHIR-41716](https://jira.hl7.org/browse/FHIR-41716))
 
 
 ### Version 1.0.0-ballot

@@ -6,8 +6,19 @@ Description: "Value-Based Performance MeasureReport is a payer-generated perform
 * ^status = #active
 * ^version = "1.0.0-ballot"
 * . ^short = "A value-based performance report"
-//* meta 1..1 MS
-//* meta.profile 1.. MS
+
+* extension contains $measurereport-category named measurereport-category 1..1 MS
+* extension[measurereport-category].extension ..0
+* extension[measurereport-category].value[x] 1..
+* extension[measurereport-category].value[x].coding ^slicing.discriminator.type = #value
+* extension[measurereport-category].value[x].coding ^slicing.discriminator.path = "code"
+* extension[measurereport-category].value[x].coding ^slicing.rules = #open
+* extension[measurereport-category].value[x].coding ^slicing.ordered = false
+* extension[measurereport-category].value[x].coding contains vbp 1..1
+* extension[measurereport-category].value[x].coding[vbp].code 1..
+* extension[measurereport-category].value[x].coding[vbp].code = #vbp (exactly)
+* extension[measurereport-category].value[x].coding[vbp].display = "Value-Based Performance"
+
 * status MS
 * type = #summary (exactly)
 * type MS

@@ -5,9 +5,19 @@ Title: "VBP Quality MeasureReport"
 Description: "VBP quality measure report at the summary level for a population. This profile is derived from the Data Exchange for Quality Measure IG's DEQM Summary MeasureReport."
 * ^status = #active
 * ^version = "1.0.0-ballot"
-//* meta 1..1 MS
-//* meta.profile 1.. MS
-//* extension contains Weight named weight 0..1 MS
+
+* extension contains $measurereport-category named measurereport-category 1..1 MS
+* extension[measurereport-category].extension ..0
+* extension[measurereport-category].value[x] 1..
+* extension[measurereport-category].value[x].coding ^slicing.discriminator.type = #value
+* extension[measurereport-category].value[x].coding ^slicing.discriminator.path = "code"
+* extension[measurereport-category].value[x].coding ^slicing.rules = #open
+* extension[measurereport-category].value[x].coding ^slicing.ordered = false
+* extension[measurereport-category].value[x].coding contains vbp 1..1
+* extension[measurereport-category].value[x].coding[vbp].code 1..
+* extension[measurereport-category].value[x].coding[vbp].code = #vbp (exactly)
+* extension[measurereport-category].value[x].coding[vbp].display = "Value-Based Performance"
+
 * extension contains Score named score 0..1 MS
 * extension[score] ^short = "Score of a measure, such as star rating score"
 * extension contains Threshold named threshold 0..* MS 

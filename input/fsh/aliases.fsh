@@ -14,6 +14,7 @@ Alias: $ClaimTypeValueSet = http://hl7.org/fhir/ValueSet/claim-type
 //VBPR aliases
 Alias: $vbp-quality-measurereport = http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/vbp-quality-measurereport
 Alias: $vbp-measure-population = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-measure-population
+Alias: $contractual-status = http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/contractual-status
 
 //DEQM
 Alias: $DEQMSummaryMeasureReport = http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm
@@ -30,3 +31,6 @@ Alias: $coverage-type-cs = http://terminology.hl7.org/CodeSystem/v3-ActCode
 //Alias: $measure-population-vs = http://hl7.org/fhir/ValueSet/measure-population
 
 //Alias: $payerVS = http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591
+
+Alias: $measurereport-category = http://hl7.org/fhir/StructureDefinition/measurereport-category
+Alias: $measurereport-category-CS = http://hl7.org/fhir/CodeSystem/measurereport-category

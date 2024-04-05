@@ -11,6 +11,10 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 
 //* extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
 //* extension.valueDate = "2022-12-31"
+
+* extension[0].url = "http://hl7.org/fhir/StructureDefinition/measurereport-category"
+* extension[=].valueCodeableConcept = http://hl7.org/fhir/CodeSystem/measurereport-category#vbp
+
 * status = #complete
 * type = #summary
 * measure = "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-vbp-measure02"

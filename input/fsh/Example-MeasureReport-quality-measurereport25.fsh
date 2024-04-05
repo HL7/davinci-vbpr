@@ -12,6 +12,9 @@ Description: "This is an example Member Satisfaction Survey MeasureReport for th
 * extension[0].url = "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring"
 * extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/measure-scoring#proportion
 
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/measurereport-category"
+* extension[=].valueCodeableConcept = http://hl7.org/fhir/CodeSystem/measurereport-category#vbp
+
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/score"
 * extension[=].valueDecimal = 3
 
