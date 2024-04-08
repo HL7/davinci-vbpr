@@ -59,6 +59,7 @@ The Value-Based Performance Reporting Implementation Guide was developed under t
 - **Applied**: HCP-LAN spelled differently throughout IG ([FHIR-41696](https://jira.hl7.org/browse/FHIR-41696))
 - **Applied**: In the first bullet point of 5.4.4, change "it's" to "its". ([FHIR-41715](https://jira.hl7.org/browse/FHIR-41715))
 - **Applied**: In the first bullet point of 5.4.4, change "futher" to "further". ([FHIR-41716](https://jira.hl7.org/browse/FHIR-41716))
+- **Applied**: "Metric" and "measure" are defined as two different things. ([FHIR-42386](https://jira.hl7.org/browse/FHIR-42386))
 
 
 ### Version 1.0.0-ballot
