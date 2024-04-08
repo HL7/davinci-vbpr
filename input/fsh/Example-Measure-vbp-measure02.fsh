@@ -31,49 +31,44 @@ Description: "This is an example measure for the *VBP Measure* profile."
 
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * extension[=].extension[0].url = "type"
-* extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ubip
-* extension[=].extension[=].valueCodeableConcept.text = "Utilization incentive payment"
+* extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#ubip "Utilization incentive payment"
+//* extension[=].extension[=].valueCodeableConcept.text = "Utilization incentive payment"
 
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
 * extension[=].extension[+].url = "type"
-* extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#p4p
-* extension[=].extension[=].valueCodeableConcept.text = "Pay for performance"
+* extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/payment-stream#p4p "Pay for performance"
+//* extension[=].extension[=].valueCodeableConcept.text = "Pay for performance"
 
 * relatedArtifact[0].extension.url = "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-weight"
 * relatedArtifact[=].extension.valueDecimal = 1
-
-* relatedArtifact[+].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/contractual-status"
-* relatedArtifact[=].extension.valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-contractual-status#contractual
+* relatedArtifact[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/contractual-status"
+* relatedArtifact[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-contractual-status#contractual "Contractual"
 * relatedArtifact[=].type = #composed-of
 * relatedArtifact[=].display = "Breast Cancer Screening"
 * relatedArtifact[=].resource = "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm125-FHIR"
 
-* relatedArtifact[0].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/contractual-status"
-* relatedArtifact[=].extension.valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-contractual-status#contractual
-* relatedArtifact[=].type = #composed-of
-* relatedArtifact[=].display = "Breast Cancer Screening"
-* relatedArtifact[=].resource = "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm125-FHIR"
-
-* relatedArtifact[+].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/contractual-status"
-* relatedArtifact[=].extension.valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-contractual-status#contractual
+* relatedArtifact[+].extension.url = "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-weight"
+* relatedArtifact[=].extension.valueDecimal = 3
+* relatedArtifact[=].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/contractual-status"
+* relatedArtifact[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-contractual-status#contractual
 * relatedArtifact[=].type = #composed-of
 * relatedArtifact[=].display = "Colorectal Cancer Screening"
 * relatedArtifact[=].resource = "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm130-FHIR"
 
-* relatedArtifact[+].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/contractual-status"
-* relatedArtifact[=].extension.valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-contractual-status#contractual-alternate
+* relatedArtifact[+].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/contractual-status"
+* relatedArtifact[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-contractual-status#contractual-alternate
 * relatedArtifact[=].type = #composed-of
 * relatedArtifact[=].display = "Diabetic Retinopathy: Communication with the Physician Managing Ongoing Diabetes Care"
 * relatedArtifact[=].resource = "http://example.org/Measure/measure-diabetes-retinopathy-FHIR"
 
-* relatedArtifact[+].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/contractual-status"
-* relatedArtifact[=].extension.valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-contractual-status#contractual-alternate
+* relatedArtifact[+].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/contractual-status"
+* relatedArtifact[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-contractual-status#contractual-alternate
 * relatedArtifact[=].type = #composed-of
 * relatedArtifact[=].display = "Diabetes: Hemoglobin A1c (HbA1c) Poor Control (> 9%)"
 * relatedArtifact[=].resource = "http://example.org/Measure/measure-diabetes-A1c-FHIR"
 
-* relatedArtifact[+].extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/contractual-status"
-* relatedArtifact[=].extension.valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-contractual-status#reporting-only
+* relatedArtifact[+].extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/contractual-status"
+* relatedArtifact[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-contractual-status#reporting-only
 * relatedArtifact[=].type = #composed-of
 * relatedArtifact[=].display = "Diabetes: Medical Attention for Nephropathy"
 * relatedArtifact[=].resource = "http://example.org/Measure/measure-diabetes-nephropathy-FHIR"
