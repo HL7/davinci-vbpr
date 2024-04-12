@@ -60,6 +60,8 @@ The Value-Based Performance Reporting Implementation Guide was developed under t
 - **Applied**: In the first bullet point of 5.4.4, change "it's" to "its". ([FHIR-41715](https://jira.hl7.org/browse/FHIR-41715))
 - **Applied**: In the first bullet point of 5.4.4, change "futher" to "further". ([FHIR-41716](https://jira.hl7.org/browse/FHIR-41716))
 - **Applied**: "Metric" and "measure" are defined as two different things. ([FHIR-42386](https://jira.hl7.org/browse/FHIR-42386))
+- **Applied**: Need to use the measurereport-category extension ([FHIR-45203](https://jira.hl7.org/browse/FHIR-45203))
+
 
 
 ### Version 1.0.0-ballot
