@@ -9,8 +9,8 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
 * meta.extension[=].valueMarkdown = "This is an example Value-Based Performance MeasureReport for the *VBP MeasureReport* profile., which includes examples for payment streams shared savings - gated on quality, care coordination fee, quality incentive payment for the chronic care management incentive program, quality incentive payment for the annual office visits, and quality measure performance."
 
-* extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
-* extension.valueDate = "2022-12-31"
+* extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
+* extension[=].valueDate = "2022-12-31"
 
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/measurereport-category"
 * extension[=].valueCodeableConcept = http://hl7.org/fhir/CodeSystem/measurereport-category#vbp
@@ -44,33 +44,33 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].measureScore.extension.valueMoney.value = 5
 * group[=].measureScore.extension.valueMoney.currency = #USD
 
-* group[=].stratifier.stratum[0].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[0].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 //* group[=].stratifier.stratum[=].measureScore.value = 1000
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
 * group[=].measureScore.extension.valueMoney.value = 1000
 * group[=].measureScore.extension.valueMoney.currency = #USD
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 //* group[=].stratifier.stratum[=].measureScore.value = 500
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
 * group[=].measureScore.extension.valueMoney.value = 500
 * group[=].measureScore.extension.valueMoney.currency = #USD
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 //* group[=].stratifier.stratum[=].measureScore.value = 1000
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
 * group[=].measureScore.extension.valueMoney.value = 1000
 * group[=].measureScore.extension.valueMoney.currency = #USD
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 //* group[=].stratifier.stratum[=].measureScore.value = 500
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
@@ -105,28 +105,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#member-months
 * group[=].code.text = "Member months"
 * group[=].measureScore.value = 300
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore.value = 100
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 50
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 50
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore.value = 200
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 150
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 50
 * group[+].id = "ssq-group-02"
@@ -143,28 +143,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#avg-risk-score
 * group[=].code.text = "Average risk score"
 * group[=].measureScore.value = 0.7
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore.value = 0.8
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 0.9
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 1
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore.value = 1.1
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 1.2
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 1.3
 
@@ -181,28 +181,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#revenue
 * group[=].code.text = "Total revenue"
 * group[=].measureScore.value = 10000
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore.value = 6000
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 3000
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 3000
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore.value = 4000
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 2000
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 2000
 
@@ -220,28 +220,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#revenue-pmpm
 * group[=].code.text = "Revenue PMPM"
 * group[=].measureScore.value = 33
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore.value = 60
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 60
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 60
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore.value = 20
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 13
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 40
 
@@ -259,28 +259,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#med-rx-cost
 * group[=].code.text = "Medical pharmacy cost"
 * group[=].measureScore.value = 9000
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore.value = 5000
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 3000
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 2000
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore.value = 4000
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 2000
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 3000
 
@@ -298,28 +298,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#med-rx-cost-pmpm
 * group[=].code.text = "Medical pharmacy cost PMPM"
 * group[=].measureScore.value = 30
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore.value = 50
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 60
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 40
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore.value = 20
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 13
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 60
 
@@ -337,28 +337,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#med-cost-fund
 * group[=].code.text = "Medical cost fund"
 * group[=].measureScore = 90 '%'
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore = 83.3 '%'
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore = 100 '%'
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore = 66.7 '%'
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore = 100 '%'
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore = 100 '%'
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore = 150 '%'
 
@@ -375,28 +375,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#med-cost-target
 * group[=].code.text = "Medical cost target"
 * group[=].measureScore = 85 '%'
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore = 85 '%'
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore = 85 '%'
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore = 85 '%'
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore = 85 '%'
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore = 85 '%'
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore = 85 '%'
 
@@ -414,28 +414,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#med-rx-cost-target
 * group[=].code.text = "Medical pharmacy cost target"
 * group[=].measureScore.value = 8500
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore.value = 5100
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 2550
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 2550
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore.value = 3400
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 1700
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 1700
 
@@ -452,28 +452,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#variance-cost
 * group[=].code.text = "Variance cost"
 * group[=].measureScore.value = -500
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore.value = 100
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 450
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 550
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore.value = -600
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = -300
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = -1300
 
@@ -490,28 +490,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#avg-risk-score-market
 * group[=].code.text = "Average risk score market"
 * group[=].measureScore.value = 0.7
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore.value = 0.71
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 0.72
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 0.72
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore.value = 0.71
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 0.7
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 0.69
 
@@ -528,28 +528,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valueDate = "2022-12-31"
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#avg-revenue-pmpm-market
 * group[=].measureScore.value = 35
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore.value = 40
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 32
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 36
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore.value = 50
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 29
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 30
 
@@ -566,28 +566,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].extension[=].valueDate = "2022-12-31"
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#avg-med-rx-cost-pmpm-market
 * group[=].measureScore = 94.3 '%'
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore = 102.5 '%'
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore = 109.4 '%'
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore = 83.3 '%'
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore = 70 '%'
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore = 103.4 '%'
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore = 110 '%'
 
@@ -605,28 +605,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#ccf
 * group[=].code.text = "Care coordination fee"
 * group[=].measureScore.value = 1500
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore.value = 500
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 250
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 250
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore.value = 1000
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 750
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 250
 
@@ -644,28 +644,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#quality-pmt-chronic
 * group[=].code.text = "Qulaity payment chronic"
 * group[=].measureScore.value = 11900
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore.value = 3966.67
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 1983.33
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 1983.33
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore.value = 7933.33
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 5950
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 1983.33
 
@@ -683,28 +683,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#quality-pmt-office-visit
 * group[=].code.text = "Qulaity payment office visit"
 * group[=].measureScore.value = 300
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore.value = 100
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 50
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 50
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore.value = 200
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = 150
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 50
 
@@ -721,28 +721,28 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#shared-saving-deficit
 * group[=].code.text = "Shared saving deficit"
 * group[=].measureScore.value = -400
-* group[=].stratifier.stratum[0].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
+* group[=].stratifier.stratum[0].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
 * group[=].stratifier.stratum[=].measureScore.value = 50
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = -360
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#hmo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = 275
-* group[=].stratifier.stratum[+].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
+* group[=].stratifier.stratum[+].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
 * group[=].stratifier.stratum[=].measureScore.value = -480
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 1"
 * group[=].stratifier.stratum[=].measureScore.value = -240
-* group[=].stratifier.stratum[+].component[0].code = http://loinc.org#87520-3
-* group[=].stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#PPO
-* group[=].stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC
+* group[=].stratifier.stratum[+].component[0].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#cohort
+* group[=].stratifier.stratum[=].component[=].value = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-cohort#ppo
+* group[=].stratifier.stratum[=].component[+].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group[=].stratifier.stratum[=].component[=].value.text = "Region 2"
 * group[=].stratifier.stratum[=].measureScore.value = -1040
 

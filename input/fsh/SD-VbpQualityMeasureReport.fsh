@@ -4,7 +4,7 @@ Id: vbp-quality-measurereport
 Title: "VBP Quality MeasureReport"
 Description: "VBP quality measure report at the summary level for a population. This profile is derived from the Data Exchange for Quality Measure IG's DEQM Summary MeasureReport."
 * ^status = #active
-* ^version = "1.0.0-ballot"
+* ^version = "1.0.0"
 
 * extension contains $measurereport-category named measurereport-category 1..1 MS
 * extension[measurereport-category].extension ..0

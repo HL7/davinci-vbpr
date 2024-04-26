@@ -10,9 +10,9 @@ extension:
     valueCode: cqi
 name: ValueBasedPerformanceReporting
 title: Da Vinci Value-Based Performance Reporting Implementation Guide
-description: The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Value-Based Performance Reporting Implementation Guide (this IG) describes exchange of value-based performance reports among stakeholders such as payers, providers, and government care programs.
+description: The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Value-Based Performance Reporting Implementation Guide (this IG) specifies standard representations of value-based performance reports that are exchanged payers and providers, which include performance metrics on financial, utilization, etc. and quality measures for varies types of value-based contracts. 
 status: active # draft | active | retired | unknown
-version: 1.0.0
+version: 1.0.0-preview
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
 releaseLabel: qa-preview # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use

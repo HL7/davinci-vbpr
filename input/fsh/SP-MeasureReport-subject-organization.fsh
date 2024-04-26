@@ -2,7 +2,7 @@ Instance: measurereport-subject-organization
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://hl7.org/fhir/us/davinci-vbpr/SearchParameter/measurereport-subject-organization"
-* version = "1.0.0-ballot"
+* version = "1.0.0"
 * name = "MeasureReportSubjectOrganization"
 * status = #active
 * code = #subject-organization

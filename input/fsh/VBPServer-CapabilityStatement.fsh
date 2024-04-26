@@ -9,7 +9,7 @@ and search parameters that a VBP Reporting Server could support are defined. VBP
 * url = "http://hl7.org/fhir/us/davinci-vbpr/CapabilityStatement/vbp-reporting-server"
 * name = "VBPReportingServerCapabilityStatement"
 * status = #active
-* date = "2023-06-25"
+* date = "2024-04-25"
 * experimental = false
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"></div>"
 * text.status = #generated
@@ -148,6 +148,11 @@ and search parameters that a VBP Reporting Server could support are defined. VBP
 * rest.resource[=].searchParam[+].name = "subject"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/SearchParameter/MeasureReport-subject"
 * rest.resource[=].searchParam[=].type = #reference
-
+* rest.resource[=].searchParam[+].name = "measurereport-category"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/us/davinci-vbpr/SearchParameter/measurereport-category"
+* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[+].name = "measurereport-subject-organization"
+* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/us/davinci-vbpr/SearchParameter/measurereport-subject-organization"
+* rest.resource[=].searchParam[=].type = #reference
 
 

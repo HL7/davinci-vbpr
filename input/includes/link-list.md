@@ -35,6 +35,7 @@
 
 <!-- Search Parameters -->
 [Organization Subject Search Parameter]: SearchParameter-measurereport-subject-organization.html
+[MeasureReport Category Search Parameter]: SearchParameter-measurereport-category.html
 
 <!-- Value Set -->
 [Performance Metric]: ValueSet-vbp-performance-metric.html

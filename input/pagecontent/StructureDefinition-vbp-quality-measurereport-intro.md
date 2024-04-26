@@ -5,6 +5,7 @@ The Value-Based Performance (VBP) Quality MeasureReport derives from the [DEQM S
 The [Formal Views](StructureDefinition-vbp-quality-measurereport.html#profile) below provides the formal summary, definitions, and terminology requirements.
 
 **Each Value-Based Performance Measure has the following mandatory elements:**
+1. A `measurereport-category` - with the fixed code `vbp`
 1. A `url` - a canonical identifier for this measure (value-based contract)
 1. A `version` - version of the measure (value-based contract)
 1. A `name` - a computer friendly name for this measure (value-based contract)

@@ -4,7 +4,7 @@ Id: vbp-performance-measurereport
 Title: "Value-Based Performance MeasureReport"
 Description: "Value-Based Performance MeasureReport is a payer-generated performance report against the specific details (metrics) of a value-based contract (VBC) or a value-based purchasing (VBP) which may include financial, quality, utilization, etc. over a time period."
 * ^status = #active
-* ^version = "1.0.0-ballot"
+* ^version = "1.0.0"
 * . ^short = "A value-based performance report"
 
 * extension contains $measurereport-category named measurereport-category 1..1 MS
