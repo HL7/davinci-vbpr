@@ -1,0 +1,174 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "vbp-quality-measurereport",
+  "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/vbp-quality-measurereport",
+  "version": "1.0.0",
+  "name": "VbpQualityMeasureReport",
+  "title": "VBP Quality MeasureReport",
+  "status": "active",
+  "description": "VBP quality measure report at the summary level for a population. This profile is derived from the Data Exchange for Quality Measure IG's DEQM Summary MeasureReport.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MeasureReport",
+  "baseDefinition": "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MeasureReport.extension",
+        "path": "MeasureReport.extension",
+        "min": 1
+      },
+      {
+        "id": "MeasureReport.extension:measurereport-category",
+        "path": "MeasureReport.extension",
+        "sliceName": "measurereport-category",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/measurereport-category"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.extension:measurereport-category.extension",
+        "path": "MeasureReport.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "MeasureReport.extension:measurereport-category.value[x].coding",
+        "path": "MeasureReport.extension.value[x].coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "MeasureReport.extension:measurereport-category.value[x].coding.code",
+        "path": "MeasureReport.extension.value[x].coding.code",
+        "min": 1,
+        "max": "1",
+        "fixedCode": "vbp"
+      },
+      {
+        "id": "MeasureReport.extension:score",
+        "path": "MeasureReport.extension",
+        "sliceName": "score",
+        "short": "Score of a measure, such as star rating score",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/score"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.extension:threshold",
+        "path": "MeasureReport.extension",
+        "sliceName": "threshold",
+        "short": "Threshold needed to be met when measuring performance",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/threshold"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.population.code",
+        "path": "MeasureReport.group.population.code",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/us/davinci-vbpr/ValueSet/vbp-measure-population"
+        }
+      },
+      {
+        "id": "MeasureReport.group.stratifier.code",
+        "path": "MeasureReport.group.stratifier.code",
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/us/davinci-vbpr/ValueSet/measure-stratifier-example"
+        }
+      },
+      {
+        "id": "MeasureReport.group.stratifier.stratum.extension",
+        "path": "MeasureReport.group.stratifier.stratum.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MeasureReport.group.stratifier.stratum.extension:score",
+        "path": "MeasureReport.group.stratifier.stratum.extension",
+        "sliceName": "score",
+        "short": "What score such as star rating score this stratum achieved",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/score"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.stratifier.stratum.component.code",
+        "path": "MeasureReport.group.stratifier.stratum.component.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/us/davinci-vbpr/ValueSet/measure-stratifier-example"
+        }
+      },
+      {
+        "id": "MeasureReport.group.stratifier.stratum.component.value",
+        "path": "MeasureReport.group.stratifier.stratum.component.value",
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.stratifier.stratum.population.code",
+        "path": "MeasureReport.group.stratifier.stratum.population.code",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/us/davinci-vbpr/ValueSet/vbp-measure-population"
+        }
+      }
+    ]
+  }
+}

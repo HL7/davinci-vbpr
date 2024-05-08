@@ -7,8 +7,16 @@ Description: "Value-Based Performance MeasureReport is a payer-generated perform
 * ^version = "1.0.0"
 * . ^short = "A value-based performance report"
 
-* extension contains $measurereport-category named measurereport-category 1..1 MS
+//* extension contains $measurereport-category named measurereport-category 1..1 MS
 //* extension[measurereport-category].extension ..0
+//* extension[measurereport-category] ^short = "report category: value-based performance report"
+//* extension[measurereport-category].value[x].coding 1..1
+//* extension[measurereport-category].value[x].coding.code 1..
+//* extension[measurereport-category].value[x].coding.code = #vbp (exactly)
+//* extension[measurereport-category].value[x].coding.display = "Value-Based Performance"
+
+* extension contains $measurereport-category named measurereport-category 1..1 MS
+* extension[measurereport-category].extension ..0
 * extension[measurereport-category] ^short = "report category: value-based performance report"
 * extension[measurereport-category].value[x].coding 1..1
 * extension[measurereport-category].value[x].coding.code 1..

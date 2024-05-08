@@ -1,0 +1,420 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "vbp-performance-measurereport",
+  "url": "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/vbp-performance-measurereport",
+  "version": "1.0.0",
+  "name": "VbpMeasureReport",
+  "title": "Value-Based Performance MeasureReport",
+  "status": "active",
+  "description": "Value-Based Performance MeasureReport is a payer-generated performance report against the specific details (metrics) of a value-based contract (VBC) or a value-based purchasing (VBP) which may include financial, quality, utilization, etc. over a time period.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MeasureReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MeasureReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MeasureReport",
+        "path": "MeasureReport",
+        "short": "A value-based performance report"
+      },
+      {
+        "id": "MeasureReport.extension",
+        "path": "MeasureReport.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "MeasureReport.extension:measurereport-category",
+        "path": "MeasureReport.extension",
+        "sliceName": "measurereport-category",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/measurereport-category"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },      
+      {
+        "id": "MeasureReport.extension:measurereport-category.extension",
+        "path": "MeasureReport.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "MeasureReport.extension:measurereport-category.value[x].coding",
+        "path": "MeasureReport.extension.value[x].coding",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "MeasureReport.extension:measurereport-category.value[x].coding.code",
+        "path": "MeasureReport.extension.value[x].coding.code",
+        "min": 1,
+        "max": "1",        
+        "fixedCode": "vbp"
+      },
+      {
+        "id": "MeasureReport.status",
+        "path": "MeasureReport.status",
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.type",
+        "path": "MeasureReport.type",
+        "fixedCode": "summary",
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.measure",
+        "path": "MeasureReport.measure",
+        "short": "A Measure definition with contract level data for a value-based contract the report is for",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/vbp-measure"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.subject",
+        "path": "MeasureReport.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole",
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.subject.extension",
+        "path": "MeasureReport.subject.extension",
+        "min": 1
+      },
+      {
+        "id": "MeasureReport.subject.extension:orgSubject",
+        "path": "MeasureReport.subject.extension",
+        "sliceName": "orgSubject",
+        "short": "What organization the report is for",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/organization-subject"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.date",
+        "path": "MeasureReport.date",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.reporter",
+        "path": "MeasureReport.reporter",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.period",
+        "path": "MeasureReport.period",
+        "short": "What performance period the report covers",
+        "definition": "What performance period the report covers. If the report contains multiple payment streams and each with different service periods, the report period covers the entire time span of these payment streams service periods. ",
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.improvementNotation",
+        "path": "MeasureReport.improvementNotation",
+        "max": "0"
+      },
+      {
+        "id": "MeasureReport.group",
+        "path": "MeasureReport.group",
+        "short": "Performance metrics in the report. Each group contains data for a performance metric.",
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.id",
+        "path": "MeasureReport.group.id",
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.extension",
+        "path": "MeasureReport.group.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MeasureReport.group.extension:paymentStream",
+        "path": "MeasureReport.group.extension",
+        "sliceName": "paymentStream",
+        "short": "The payment stream the performance metric is part of",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/payment-stream"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.extension:servicePeriod",
+        "path": "MeasureReport.group.extension",
+        "sliceName": "servicePeriod",
+        "short": "The service period for the performance metric",
+        "definition": "The service period may be the same as or a subset of the performance period the report covers.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/service-period"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.extension:paidThroughDate",
+        "path": "MeasureReport.group.extension",
+        "sliceName": "paidThroughDate",
+        "short": "Ending date of the pay cycle",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.extension:baseline",
+        "path": "MeasureReport.group.extension",
+        "sliceName": "baseline",
+        "short": "The baseline for the performance metric",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/baseline"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.code",
+        "path": "MeasureReport.group.code",
+        "short": "Performance metric",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://hl7.org/fhir/us/davinci-vbpr/ValueSet/vbp-performance-metric"
+        }
+      },
+      {
+        "id": "MeasureReport.group.measureScore",
+        "path": "MeasureReport.group.measureScore",
+        "short": "The performance metric value"
+      },
+      {
+        "id": "MeasureReport.group.measureScore.extension:altMeasureScore",
+        "path": "MeasureReport.group.measureScore.extension",
+        "sliceName": "altMeasureScore",
+        "short": "Additional data type choices for the value of the performance metric",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.stratifier",
+        "path": "MeasureReport.group.stratifier",
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.stratifier.code",
+        "path": "MeasureReport.group.stratifier.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/us/davinci-vbpr/ValueSet/measure-stratifier-example"
+        }
+      },
+      {
+        "id": "MeasureReport.group.stratifier.stratum",
+        "path": "MeasureReport.group.stratifier.stratum",
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.stratifier.stratum.value",
+        "path": "MeasureReport.group.stratifier.stratum.value",
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.stratifier.stratum.component.code",
+        "path": "MeasureReport.group.stratifier.stratum.component.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/us/davinci-vbpr/ValueSet/measure-stratifier-example"
+        }
+      },
+      {
+        "id": "MeasureReport.group.stratifier.stratum.component.value",
+        "path": "MeasureReport.group.stratifier.stratum.component.value",
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.stratifier.stratum.measureScore",
+        "path": "MeasureReport.group.stratifier.stratum.measureScore",
+        "short": "Stratified performance metric value",
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.group.stratifier.stratum.measureScore.extension:altMeasureScore",
+        "path": "MeasureReport.group.stratifier.stratum.measureScore.extension",
+        "sliceName": "altMeasureScore",
+        "short": "Additional data type choices for the stratified performance metric value",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.evaluatedResource",
+        "path": "MeasureReport.evaluatedResource",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "reference"
+            }
+          ],
+          "ordered": false,
+          "rules": "open",
+          "description": "quality measure MeasureReport(s) for quality measure performance"
+        },
+        "short": "What data was used to calculate the performance metric(s)",
+        "definition": "Evaluated resources are used to capture what data was involved in the calculation of performance metrics.",
+        "mustSupport": true
+      },
+      {
+        "id": "MeasureReport.evaluatedResource:qualityReport",
+        "path": "MeasureReport.evaluatedResource",
+        "sliceName": "qualityReport",
+        "short": "quality measure MeasureReport",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/vbp-quality-measurereport"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MeasureReport.evaluatedResource:qualityReport.extension:groupRef",
+        "path": "MeasureReport.evaluatedResource.extension",
+        "sliceName": "groupRef",
+        "short": "Reference a performance metric (MeasureReport.group.id) on this value-based performance report",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/group-reference"
+            ]
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}
