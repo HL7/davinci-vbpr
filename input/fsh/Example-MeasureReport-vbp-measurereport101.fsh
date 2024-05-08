@@ -9,11 +9,12 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
 * meta.extension[=].valueMarkdown = "This is an example Value-Based Performance MeasureReport for the *VBP MeasureReport* profile., which includes examples for payment streams shared savings - gated on quality, care coordination fee, quality incentive payment for the chronic care management incentive program, quality incentive payment for the annual office visits, and quality measure performance."
 
-* extension[0].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
-* extension[=].valueDate = "2022-12-31"
-
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/measurereport-category"
+//* extension[0].url = "http://hl7.org/fhir/StructureDefinition/measurereport-category"
+* extension[0].url = $measurereport-category
 * extension[=].valueCodeableConcept = http://hl7.org/fhir/CodeSystem/measurereport-category#vbp
+
+* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/paid-through-date"
+* extension[=].valueDate = "2022-12-31"
 
 * status = #complete
 * type = #summary

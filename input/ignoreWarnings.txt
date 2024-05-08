@@ -1,6 +1,6 @@
 == Suppressed Messages ==
 
-# Will this be fixed in the next Publisher release? (https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/auto-oid.20root.20parameter)
+# Looks like this issue is to be resolved in the next IG Publisher release? (https://chat.fhir.org/#narrow/stream/179252-IG-creation/topic/OID.20request.20for.20CPG.20IG.20please)
 ERROR: ImplementationGuide/hl7.fhir.uv.cql: ImplementationGuide.definition.extension[12].extension[0].value.ofType(string): The value provided ('auto-oid-root') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'auto-oid-root' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0'; The provided code '#auto-oid-root' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0')
 ERROR: ImplementationGuide/hl7.fhir.uv.cql: ImplementationGuide.definition.extension[41].extension[0].value.ofType(code): The value provided ('auto-oid-root') was not found in the value set 'ig-parameters Codes ValueSet' (http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0), and a code is required from this value set  (error message = The System URI could not be determined for the code 'auto-oid-root' in the ValueSet 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0'; The provided code '#auto-oid-root' was not found in the value set 'http://hl7.org/fhir/tools/ValueSet/ig-parameters|0.1.0')
 
@@ -62,7 +62,7 @@ INFORMATION: CodeSystem/vbp-measure-population: CodeSystem: Most code systems de
 INFORMATION: CodeSystem/vbp-performance-metric: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
 # INFORMATION: The Measure Scoring code system in THO has the status of draft. 
-# Code System: Measure Scoring (http://terminology.hl7.org/CodeSystem/measure-scoring) with draft status in THO
+# Code System: Measure Scoring (http://terminology.hl7.org/CodeSystem/measure-scoring) with draft status in THO. An issue is logged: https://jira.hl7.org/browse/FHIR-45630
 INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
 INFORMATION: MeasureReport/quality-measurereport02: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
 INFORMATION: MeasureReport/quality-measurereport03: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
@@ -88,7 +88,7 @@ INFORMATION: MeasureReport/quality-measurereport31: MeasureReport.extension[0].v
 INFORMATION: MeasureReport/quality-measurereport32: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
 INFORMATION: MeasureReport/quality-measurereport33: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
 
-# Code System: Measure Population (http://terminology.hl7.org/CodeSystem/measure-population) with draft status in THO
+# Code System: Measure Population (http://terminology.hl7.org/CodeSystem/measure-population) with draft status in THO. An issue is logged: https://jira.hl7.org/browse/FHIR-45630
 INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
 INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
 INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].population[2].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
