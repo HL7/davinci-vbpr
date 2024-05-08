@@ -189,17 +189,11 @@ CodeSystem: MeasureStratifierExampleCS
 Title: "Measure Stratifier Example Codes"
 Id: measure-stratifier-example
 Description: "Example stratifiers that could be used to stratify measure or performance metrics."
-* ^experimental = true
-//* #region "Region" "Stratify based on regions."
-//* #region-cohort "Facility and cohort" "Stratify based on both facility and cohort."
+* ^experimental = false
 * #facility "Facility" "Stratify based on healthcare facilities, such as regions and hospitals."
-//* #facility-cohort "Facility and cohort" "Stratify based on healthcare facilities and cohort."
 * #taxid "TIN" "Stratify based on Tax Identifier (TIN)."
-//* #taxid-cohort "TIN" "Stratify based on Tax Identifier (TIN) and cohort."
 * #group "Group" "Stratify based on group such as a group of tax ids."
-//* #provider-group-cohort "Provider group and cohort" "Stratify based on provider group and cohort."
 * #geography "Geography" "Stratify based on geographical data, such as zip code and city."
-//* #geography-cohort "Geography and cohort" "Stratify based on geographical information and cohort."
 * #cohort "Cohort" "Stratify based on a group of members with a shared characteristic, such as members that are with PPO plan or members with HMO plan."
 * ^caseSensitive = true
 

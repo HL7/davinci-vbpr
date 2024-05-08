@@ -33,6 +33,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 
 * group[+].id = "group-02"
 //* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric
+* group[=].code = http://my-local-organization/CodeSystem/vbp-performance-metric#hcc
 * group[=].code.text = "Hierarchical Condition Category"
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
 * group[=].measureScore.extension.valueMoney.value = 500
@@ -40,6 +41,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 
 * group[+].id = "group-03"
 //* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#quality-pmt-office-visit "Quality payment annual office visit"
 * group[=].code.text = "Preventive Care Visits"
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
 * group[=].measureScore.extension.valueMoney.value = 180
@@ -47,6 +49,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 
 * group[+].id = "group-04"
 //* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric
+* group[=].code = http://my-local-organization/CodeSystem/vbp-performance-metric#star-performance
 * group[=].code.text = "Star Performance"
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
 * group[=].measureScore.extension.valueMoney.value = 132884
@@ -54,6 +57,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 
 * group[+].id = "group-05"
 //* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric
+* group[=].code = http://my-local-organization/CodeSystem/vbp-performance-metric#advance-care-planning
 * group[=].code.text = "Advance Care Planning"
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
 * group[=].measureScore.extension.valueMoney.value = 100
@@ -61,6 +65,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 
 * group[+].id = "group-06"
 //* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric
+* group[=].code = http://my-local-organization/CodeSystem/vbp-performance-metric#encounter-palliative-care
 * group[=].code.text = "Encounter Palliative Care"
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
 * group[=].measureScore.extension.valueMoney.value = 1200
@@ -68,6 +73,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 
 * group[+].id = "group-07"
 //* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric
+* group[=].code = http://my-local-organization/CodeSystem/vbp-performance-metric#supplemental-data
 * group[=].code.text = "Supplemental Data"
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
 * group[=].measureScore.extension.valueMoney.value = 0
@@ -75,28 +81,32 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 
 * group[+].id = "group-08"
 //* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric
+* group[=].code = http://my-local-organization/CodeSystem/vbp-performance-metric#closed-gaps
 * group[=].code.text = "Estimated YTD Grand Total"
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
 * group[=].measureScore.extension.valueMoney.value = 134864
 * group[=].measureScore.extension.valueMoney.currency = #USD
 
 * group[+].id = "group-09"
-//* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric
+* group[=].code = http://my-local-organization/CodeSystem/vbp-performance-metric#total-gaps
 * group[=].code.text = "Total gaps"
 * group[=].measureScore.value = 2
 
 * group[+].id = "group-10"
 //* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric
-* group[=].code.text = "Cloosed gaps"
+* group[=].code = http://my-local-organization/CodeSystem/vbp-performance-metric#closed-gaps
+* group[=].code.text = "Closed gaps"
 * group[=].measureScore.value = 2
 
 * group[+].id = "group-11"
 //* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric
+* group[=].code = http://my-local-organization/CodeSystem/vbp-performance-metric#min-base-incentive-target
 * group[=].code.text = "Minimum Base Incentive Target Percentage"
 * group[=].measureScore = 80 '%'
 
 * group[+].id = "group-12"
 //* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric
+* group[=].code = http://my-local-organization/CodeSystem/vbp-performance-metric#base-incentive-pm
 * group[=].code.text = "Base Incentive Per Member"
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
 * group[=].measureScore.extension.valueMoney.value = 125
@@ -104,19 +114,22 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 
 * group[+].id = "group-13"
 //* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric
+* group[=].code = http://my-local-organization/CodeSystem/vbp-performance-metric#early-performance-bonus-met
 * group[=].code.text = "Early Performance Bonus Met"
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
 * group[=].measureScore.extension.valueBoolean = false
 
 * group[+].id = "group-14"
 //* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric
+* group[=].code = http://my-local-organization/CodeSystem/vbp-performance-metric#estimated-bonus-incentive-pm
 * group[=].code.text = "Estimated Bonus Incentive Per Member"
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
 * group[=].measureScore.extension.valueMoney.value = 0
 * group[=].measureScore.extension.valueMoney.currency = #USD
 
 * group[+].id = "group-15"
-//* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric
+* group[=].code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/vbp-performance-metric#earned-incentive "Earned incentive"
+//* group[=].code = http://my-local-organization/CodeSystem/vbp-performance-metric#estimated-incentive
 * group[=].code.text = "Estimate Incentive"
 * group[=].measureScore.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/alternate-measurescore"
 * group[=].measureScore.extension.valueMoney.value = 500

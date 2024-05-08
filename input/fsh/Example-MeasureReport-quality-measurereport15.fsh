@@ -21,6 +21,7 @@ Description: "This is an example Diabetes: Medical Attention for Nephropathy Mea
 * extension[=].extension[=].valueQuantity = 80 '%'
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/threshold-type#star-3
+// Note that the number of patients to goal = 30 is not represented in the report, this value can be derived from using threadhold. 600*0.8 - 450 = 30
 
 * status = #complete
 * type = #summary

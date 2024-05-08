@@ -22,6 +22,8 @@ Description: "This is an example Diabetes: Hemoglobin A1c (HbA1c) Poor Control (
 * extension[=].extension[=].valueQuantity = 61 '%'
 * extension[=].extension[+].url = "type"
 * extension[=].extension[=].valueCodeableConcept = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/threshold-type#star-3
+// Note that the number of patients to goal = 55 is not represented in the report, this value can be derived from using threadhold. 500*0.61 - 250 = 55
+
 
 * status = #complete
 * type = #summary

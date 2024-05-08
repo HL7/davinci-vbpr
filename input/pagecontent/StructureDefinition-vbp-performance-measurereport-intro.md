@@ -3,7 +3,7 @@
 The [Formal Views](StructureDefinition-vbp-performance-measurereport.html#profile) below provides the formal summary, definitions, and terminology requirements.
 
 **Each Value-Based Performance MeasureReport has the following mandatory elements**
-1. A `measurereport-category` - with the fixed code `vbp`
+1. A `measurereport-category` - with a fixed code `vbp`
 1. A `status` - status of this report
 1. A `type` - with a fixed value `summary`
 1. A `measure` - that references the Value-Based Performance Measure
