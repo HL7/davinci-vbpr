@@ -64,11 +64,6 @@
         "mustSupport": true
       },      
       {
-        "id": "MeasureReport.extension:measurereport-category.extension",
-        "path": "MeasureReport.extension.extension",
-        "max": "0"
-      },
-      {
         "id": "MeasureReport.extension:measurereport-category.value[x].coding",
         "path": "MeasureReport.extension.value[x].coding",
         "min": 1,

@@ -28,11 +28,6 @@
   "differential": {
     "element": [
       {
-        "id": "MeasureReport.extension",
-        "path": "MeasureReport.extension",
-        "min": 1
-      },
-      {
         "id": "MeasureReport.extension:measurereport-category",
         "path": "MeasureReport.extension",
         "sliceName": "measurereport-category",
@@ -47,11 +42,6 @@
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "MeasureReport.extension:measurereport-category.extension",
-        "path": "MeasureReport.extension.extension",
-        "max": "0"
       },
       {
         "id": "MeasureReport.extension:measurereport-category.value[x].coding",
