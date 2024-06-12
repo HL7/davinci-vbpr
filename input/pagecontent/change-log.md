@@ -63,7 +63,6 @@ The Value-Based Performance Reporting Implementation Guide was developed under t
 - **Applied**: Need to use the measurereport-category extension ([FHIR-45203](https://jira.hl7.org/browse/FHIR-45203))
 
 
-
 ### Version 1.0.0-ballot
 Initial content for the STU1 ballot.
 

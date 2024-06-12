@@ -9,7 +9,6 @@ For the purpose of this implementation guide, any report that meets the definiti
 
 In this implementation guide, we use the term metrics to refer to financial measures in the report, and the term quality measures or measures to refer to the quality measures such as the colorectal cancer screening measure. 
 
-
 ### Preconditions and Assumptions
 
 This following is a list of pre-requisites for using this implementation guide:
