@@ -29,13 +29,13 @@ This implementation guide is divided into several pages which are listed at the 
 - [Glossary]\: This page lists glossary and acronyms for this implementation guide.
 - [Downloads]\: This page provides links to downloadable artifacts.
 
-### Background
-{: #background}
+### Value-Based Performance Reporting 
+{: #vbpr}
 Value-Based Performance Reporting (VBPR) offers insights into the performance of healthcare providers and organizations by evaluating their financial, quality, cost, and efficiency aspects. These reports play a crucial role in assessing and comparing providers within value-based contracts. The objective of such contracts is to encourage superior care, enhance patient outcomes, and lower costs by compensating providers according to their performance, as opposed to the quantity of services provided.
 
 Payer-generated performance reports are crucial because payers are generally the arbiters in determining financial performance on risk contracts with health systems. Many times, payers have the best source of information on Per Member Per Month (PMPM) spend, contractual terms, regional or historical trends, and other financial information that health systems need to track and manage performance on those contracts. Claims data is important but insufficient on its own because state and federal requirements mask certain types of data that make accurate financial calculations difficult.  
 
-#### Key Components of VBPR Reports
+#### Key Components of VBP Reports
 
 - **Performance Categories**: Distinct areas of provider performance, such as clinical quality, cost, utilization, and patient experience, which are evaluated and weighted to calculate an overall performance score.
 - **Quality Measures**: Quantitative metrics that assess the performance of healthcare providers and organizations in terms of clinical outcomes, patient safety, patient experience, and adherence to clinical guidelines and best practices.
@@ -74,44 +74,7 @@ While a framework is in place to identify the types of value-based agreements pa
 - Various reporting, payment, and reconciliation periods can make tracking performance across contractual measures difficult for providers to understand how well they are performing prior to various settlement dates.
 - Variation in metrics used across payers and also variation in methodology – e.g., attribution.
 
-
-### Scope
-
-The goals of implementation guide are:
-- Standardize the format of payer-generated value-based performance report and 
-- Exchange standardized payer-generated value-based performance report from payer to provider. 
-
-The initial phase of this implementation guide focuses on:
-- Defining standardized data structure and data elements on value-based performance reports
-- Identifying and defining common data elements in a value-based performance report 
-- Supporting both Medicare value-based contracts (Medicare Advantage) and commercial value-based contracts, and other types of value-based contracts such as Medicaid.
-
-{% include img-portrait.html img="stu1_scope.png" caption="Figure 1-2 Scope"%}
-
-
 ---
 
-### Credits
-
-This implementation guide was made possible by the thoughtful contributions of the following people and organizations:
-
-- *The [Da Vinci Project](http://www.hl7.org/about/davinci/index.cfm?ref=common) member organizations.*
-
-
-- *Vincent Powell, Providence*
-- *Semira Singh, Providence*
-- *Michael Pattwell, Edifecs*
-- *Tom Dean, Edifecs*
-- *David Degandi, Cambia Health Solutions*
-- *Omar Amezquita, Cambia Health Solutions*
-- *Katie Roan, Optum*
-- *Rao Yogesh, Optum*
-- *Bryn Rhodes, Smile Digital Health*
-- *Rob Reynolds, Smile Digital Health*
-- *Teresa Younkin, Point-of-Care Partners*
-- *Yan Heras, Optimum eHealth*
-- *Viet Nguyen, Stratametrics*
-
----
 
 {% include link-list.md %}

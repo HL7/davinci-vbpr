@@ -32,19 +32,7 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 
-dependencies:
-  #hl7.fhir.us.core:
-  #  version: 6.1.0
-  #  uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
-  #  id: uscore6
-  #  reason: |
-  #    Needed for systems supporting USCDI v3
-  #hl7.fhir.us.core.v311:
-  #  version: 3.1.1
-  #  uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
-  #  id: uscore3
-  #  reason: |
-  #    Needed for systems supporting USCDI v1
+
   #hl7.fhir.us.davinci-deqm.v500: 
   #  version: 5.0.0-ballot
   #  uri: http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm
@@ -52,21 +40,46 @@ dependencies:
   #hl7.fhir.us.davinci-deqm.v310: 
   #  version: 3.1.0
   #  uri: http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm
-  #  id: deqm3          
-  hl7.fhir.us.core: 6.1.0
-  hl7.fhir.us.davinci-deqm: 5.0.0-ballot
-  hl7.fhir.us.cqfmeasures: 5.0.0
-  hl7.fhir.uv.crmi: 1.0.0
-  hl7.terminology: 5.5.0
-  hl7.fhir.uv.extensions.r4: 
-    id: ext
-    version: 5.1.0
-   
-#   hl7.fhir.us.mcode:
-#     id: mcode
-#     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-#     version: 1.0.0
-#
+  #  id: deqm3  
+
+# ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
+# │  List of IG dependencies                                                                       │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+dependencies:
+  hl7.fhir.us.core:
+    version: 6.1.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore6
+    reason: |
+      Needed for systems supporting USCDI v3  
+  # hl7.fhir.extensions.r4:   
+  # version: 4.0.1
+  hl7.fhir.uv.extensions.r4:  
+    version: 5.1.0   
+    id: ext    
+    reason: |
+      Needed for the measurereport-category extension.  
+  hl7.fhir.us.davinci-deqm: 
+    version: 5.0.0-ballot 
+    uri: http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm
+    id: deqm5
+    reason: |  
+      Needed the USCore 6.1.0 based DEQM Summary MeasureReport profile       
+  hl7.fhir.us.cqfmeasures: 
+    version: 5.0.0
+    uri: http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures
+    id: qm3
+    reason: |  
+      Needed the Composite Measure profile
+  hl7.fhir.uv.crmi: 
+    version: 1.0.0
+    uri: http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi
+    id: crmi
+    reason: |  
+      Needed the CRMI Shareable Measure profile
+  hl7.terminology: 6.1.0
+
+
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
@@ -81,24 +94,27 @@ dependencies:
 #
 pages:
   index.md:
-    title: Home
+    title: IG Home
+  background.md:
+    title: Background      
+  fhir.md:
+    title: Reading this IG
+  credits.md:
+    title: Projects and Participants       
   guidance.md:
     title: Guidance
-  examples.md:
-    title: Examples
+  security.md:    
+    title: Security, Privacy, and Safety  
   glossary.md:
     title: Glossary
+  artifacts.html:    
+    Artifacts Summary
+  examples.md:
+    title: Examples
   downloads.md:
     title: Downloads
   change-log.md:
-    title: Change Log           
-  
-  
-#   examples.xml:
-#     title: Examples Overview
-#     simpleExamples.xml:
-#     complexExamples.xml:
-#
+    title: Change Log      
 #
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -119,14 +135,14 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - input/intro-notes
     - fsh-generated/includes
   show-inherited-invariants: false
-  version-comparison: n/a
+  version-comparison: 
+    - 1.0.0    
   special-url:
     - http://terminology.hl7.org/CodeSystem/hcp-lan-apm-framework
   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
   path-history: http://hl7.org/fhir/us/davinci-vbpr/history.html
   auto-oid-root: 2.16.840.1.113883.4.642.40.30
-
 #
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
@@ -138,17 +154,35 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Guidance: guidance.html
+  Background:
+    Background: background.html
+    Reading this IG: fhir.html
+    Projects and Participants: credits.html
+  Specification:
+    Guidance: guidance.html
+    Security, Privacy, and Safety: security.html
+    Glossary: glossary.html
   FHIR Artifacts: 
+    Artifacts Summary: artifacts.html
     Profiles: artifacts.html#structures-resource-profiles
     Extensions: artifacts.html#structures-extension-definitions
     Terminology: artifacts.html#terminology-value-sets 
     Search Parameters: artifacts.html#behavior-search-parameters
-    Capability Statements: artifacts.html#behavior-capability-statements    
-  Examples: examples.html
-  Glossary: glossary.html
-  Downloads: downloads.html
-  Change Log: change-log.html
+    Capability Statements: artifacts.html#behavior-capability-statements   
+    Examples: examples.html
+  Base Specs:
+    FHIR R4 Spec: new-tab http://hl7.org/fhir/R4/
+    HRex 1.1.0: new-tab https://hl7.org/fhir/us/davinci-hrex/STU1.1/
+    Da Vinci DEQM 5.0.0: new-tab https://hl7.org/fhir/us/core/STU6.1/
+    US Core 6.1.0: new-tab https://hl7.org/fhir/us/core/STU6.1/
+  Support:
+    Project Page: new-tab https://confluence.hl7.org/pages/viewpage.action?pageId=94643888
+    Specification Jira Dashboard: new-tab https://jira.hl7.org/secure/Dashboard.jspa?selectPageId=17323
+    Implementer Support: new-tab https://confluence.hl7.org/display/DVP/VBPR+Implementer+Support
+    Propose a Change: new-tab https://jira.hl7.org/secure/CreateIssueDetails!init.jspa?pid=10405&issuetype=10600&customfield_11302=FHIR-us-davinci-vbpr
+    Downloads: downloads.html
+  Change Log: change-log.html  
+
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

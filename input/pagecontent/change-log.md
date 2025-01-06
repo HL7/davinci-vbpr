@@ -1,6 +1,11 @@
 
 The Value-Based Performance Reporting Implementation Guide was developed under the  [Da Vinci Project].
 
+### version 1.1.0
+- Changed to be based on USCore 6.1.0 and Da Vinci DEQM 5.0.0. 
+- Re-organized the menu and pages for consistencies among Da Vinci IGs.
+- Removed the dependency on the Quality Measure IG. 
+
 ### version 1.0.0
 
 - **Applied**: Need to Validate HCPLAN Framework Codes with HTA ([FHIR-42385](https://jira.hl7.org/browse/FHIR-42385))
