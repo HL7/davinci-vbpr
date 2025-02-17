@@ -109,8 +109,18 @@ pages:
     title: Glossary
   artifacts.html:    
     Artifacts Summary
+  profiles.md:
+    title: Profiles         
+  extensions.md:
+    title: Extensions
+  terminology.md:
+    title: Terminology
+  search-parameters.md:
+    title: Search Parameters    
+  capabilities.md:
+    title: Capability Statements     
   examples.md:
-    title: Examples
+    title: Examples       
   downloads.md:
     title: Downloads
   change-log.md:
@@ -164,11 +174,11 @@ menu:
     Glossary: glossary.html
   FHIR Artifacts: 
     Artifacts Summary: artifacts.html
-    Profiles: artifacts.html#structures-resource-profiles
-    Extensions: artifacts.html#structures-extension-definitions
-    Terminology: artifacts.html#terminology-value-sets 
-    Search Parameters: artifacts.html#behavior-search-parameters
-    Capability Statements: artifacts.html#behavior-capability-statements   
+    Profiles: profiles.html
+    Extensions: extensions.html
+    Terminology: terminology.html 
+    Search Parameters: search-parameters.html
+    Capability Statements: capabilities.html  
     Examples: examples.html
   Base Specs:
     FHIR R4 Spec: new-tab http://hl7.org/fhir/R4/

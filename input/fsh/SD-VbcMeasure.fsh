@@ -30,9 +30,6 @@ Description: "The measure definition that describes value-based contract level i
 * relatedArtifact[component].extension contains Weight named weight 0..1 MS
 * relatedArtifact[component].extension contains ContractualStatus named contractualStatus 1..1 MS
 * relatedArtifact[component].extension[contractualStatus] ^short = "contractual | contractual-alternate | reporting-only"
-//* relatedArtifact[component].extension contains
-//    $cqfm-groupId named groupId 0..1 MS and
-//    $cqfm-weight named weight 0..1 MS
 * relatedArtifact[component].type 1..1 MS
 * relatedArtifact[component].type only code
 * relatedArtifact[component].type = #composed-of (exactly)
