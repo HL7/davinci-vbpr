@@ -171,7 +171,7 @@ Description: "Contractual status of a measure whether it is tied to payment as s
 Extension: Weight
 Id: weight
 Title: "Weight"
-Description: "What is the weight of the contribution of this measure to the overall performance score."
+Description: "What is the weight of the contribution of this measure to the overall performance score specified by a value-based contract."
 * . 0..1
 * ^context[+].type = #element
 * ^context[=].expression = "Measure.relatedArtifact"

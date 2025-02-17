@@ -42,7 +42,8 @@ Description: "The measure definition that describes value-based contract level i
 * relatedArtifact[component].resource 1..1 MS
 * relatedArtifact[component].resource only Canonical(Measure)
 
-* compositeScoring MS
+* scoring 0..0
+* compositeScoring 0..0
 
 * group MS
 * group.code from vbp-performance-metric (extensible)

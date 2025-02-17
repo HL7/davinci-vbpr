@@ -7,7 +7,7 @@ Usage: #definition
 * status = #active
 * code = #category
 * base = #MeasureReport
-* type = #string
+* type = #token
 * description = "Search based on the measurereport-category extension"
 * expression = "MeasureReport.extension('http://hl7.org/fhir/StructureDefinition/measurereport-category').value"
 * xpath = "f:MeasureReport/f:extension[@url='http://hl7.org/fhir/StructureDefinition/measurereport-category'].value"
