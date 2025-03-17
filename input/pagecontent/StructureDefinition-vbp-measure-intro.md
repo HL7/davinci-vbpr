@@ -1,7 +1,5 @@
 {% assign id = {{include.id}} %}
 
-The Value-Based Performance Measure is designed to derive from the [CQFM Composite Measure](http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/composite-measure-cqfm) profile because value-based contracts may include performance based on quality measures. Basing on the CQMF Composite Measure profile would allow the Value-Based Performance Measure profile to reuse the standardized representation of a composite measure as defined in the [Quality Measure Implementation Guide](http://hl7.org/fhir/us/cqfmeasures/) to represent the list of quality measures and the weight of each measure in a value-based contract that tie to a payment stream using `Measure.relatedArtifact`.  
-
 The [Formal Views](StructureDefinition-vbp-measure.html#profile) below provides the formal summary, definitions, and terminology requirements.
 
 **Each Value-Based Performance Measure has the following mandatory elements:**

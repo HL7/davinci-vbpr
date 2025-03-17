@@ -21,7 +21,7 @@ fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: STU1 # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
-jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
+jurisdiction: urn:iso:std:iso:3166#US "United States of America"
 publisher:
   name: HL7 International / Clinical Quality Information
   url: http://www.hl7.org/Special/committees/cqi
@@ -65,12 +65,6 @@ dependencies:
     id: deqm5
     reason: |  
       Needed the USCore 6.1.0 based DEQM Summary MeasureReport profile       
-  hl7.fhir.us.cqfmeasures: 
-    version: 5.0.0
-    uri: http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures
-    id: qm3
-    reason: |  
-      Needed the Composite Measure profile
   hl7.fhir.uv.crmi: 
     version: 1.0.0
     uri: http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi

@@ -60,7 +60,7 @@ Figure 2-3 and Figure 2-4 used the colorectal cancer screening and the breast ca
 
 #### Value-Based Performance (VBP) Measure
 
-The [VBP Measure] is used to represent value-based contract information that are needed for value-based performance reporting. The [VBP Measure] profile is derived from the [CQFM Composite Measure] profile. This is to reuse the composite measure structure to represent the list of quality measures that are specified in a value-based contract. 
+The [VBP Measure] is used to represent value-based contract information that are needed for value-based performance reporting. 
 
 This profile added a few extensions to represent the following:
 -	lineOfBusiness: line of business whether it is Medicare, Medicaid, or commercial. 
@@ -81,6 +81,6 @@ For more information, see the definition of [Must Support](http://hl7.org/fhir/R
 
 This implementation guide relies on the following specifications:
 - [FHIR R4](http://hl7.org/fhir/R4/)
-- [US Core STU3.1.1](http://hl7.org/fhir/us/core/STU3.1.1)
+- [US Core STU6.1.0](https://hl7.org/fhir/us/core/STU6.1/)
 
 {% include link-list.md %}
