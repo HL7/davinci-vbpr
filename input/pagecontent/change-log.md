@@ -1,6 +1,13 @@
 
 The Value-Based Performance Reporting Implementation Guide was developed under the  [Da Vinci Project].
 
+### version 1.1.0
+- Updated to be based on USCore 6.1.0 and Da Vinci DEQM 5.0.0. 
+- Re-organized the menu and pages for consistencies among Da Vinci IGs.
+- **Applied**: Derived value-based performance measure from CRMIShareableMeasure, created a Weight extension, and removed dependency on QM IG ([FHIR-49188](https://jira.hl7.org/browse/FHIR-49188))
+- **Applied**: Changed measurereport-category search parameter type to token ([FHIR-48932](https://jira.hl7.org/browse/FHIR-48932))(Applied [here](SearchParameter-measurereport-category.html))
+- **Applied**: Removed marking value set as experimental ([FHIR-49816](https://jira.hl7.org/browse/FHIR-49816))(Applied [here](ValueSet-measure-contractual-status.html),[here](ValueSet-measure-stratifier-example.html))
+
 ### version 1.0.0
 
 - **Applied**: Need to Validate HCPLAN Framework Codes with HTA ([FHIR-42385](https://jira.hl7.org/browse/FHIR-42385))

@@ -44,6 +44,7 @@
 <artifact id="StructureDefinition/vbp-measure" key="StructureDefinition-vbp-measure" name="Value-Based Performance Measure"/>
 <artifact id="CodeSystem/vbp-measure-population" key="CodeSystem-vbp-measure-population" name="Value-Based Performance Measure Population Type Codes"/>
 <artifact id="StructureDefinition/vbp-performance-measurereport" key="StructureDefinition-vbp-performance-measurereport" name="Value-Based Performance MeasureReport"/>
+<artifact id="StructureDefinition/weight" key="StructureDefinition-weight" name="Weight"/>
 <artifact id="SearchParameter/measurereport-category" key="SearchParameter-measurereport-category" name="measurereport-category"/>
 <artifact id="SearchParameter/measurereport-subject-organization" key="SearchParameter-measurereport-subject-organization" name="measurereport-subject-organization"/>
 <artifact id="MeasureReport/quality-measurereport01" key="MeasureReport-quality-measurereport01" name="quality-measurereport01"/>
@@ -80,11 +81,20 @@
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
+<page key="background" name="Background"/>
+<page key="capabilities" name="Capability Statements"/>
 <page key="change-log" name="Change Log"/>
 <page key="downloads" name="Downloads"/>
 <page key="examples" name="Examples"/>
+<page key="extensions" name="Extensions"/>
 <page key="glossary" name="Glossary"/>
 <page key="guidance" name="Guidance"/>
-<page key="index" name="Home"/>
+<page key="index" name="IG Home"/>
+<page key="profiles" name="Profiles"/>
+<page key="credits" name="Projects and Participants"/>
+<page key="fhir" name="Reading this IG"/>
+<page key="search-parameters" name="Search Parameters"/>
+<page key="security" name="Security, Privacy, and Safety"/>
 <page key="toc" name="Table of Contents"/>
+<page key="terminology" name="Terminology"/>
 </specification>

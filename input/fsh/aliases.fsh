@@ -34,3 +34,9 @@ Alias: $coverage-type-cs = http://terminology.hl7.org/CodeSystem/v3-ActCode
 
 Alias: $measurereport-category = http://hl7.org/fhir/StructureDefinition/measurereport-category
 Alias: $measurereport-category-CS = http://hl7.org/fhir/CodeSystem/measurereport-category
+
+//CRMI IG
+Alias: $CRMIShareableMeasure = http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablemeasure
+
+Alias: $standard-status = http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+Alias: $fmm = http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm

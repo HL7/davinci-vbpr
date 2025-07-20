@@ -8,14 +8,18 @@ canonical: http://hl7.org/fhir/us/davinci-vbpr
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
     valueCode: cqi
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+    valueCode: "trial-use"
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
+    valueInteger: "1"      
 name: ValueBasedPerformanceReporting
 title: Da Vinci Value-Based Performance Reporting Implementation Guide
 description: The Da Vinci Fast Healthcare Interoperability Resource (FHIR) Value-Based Performance Reporting Implementation Guide (this IG) specifies standard representations of value-based performance reports that are exchanged payers and providers, which include performance metrics on financial, utilization, etc. and quality measures for varies types of value-based contracts. 
 status: active # draft | active | retired | unknown
-version: 1.0.0
+version: 1.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
-releaseLabel: STU1 # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: STU 1.1 # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
@@ -27,20 +31,36 @@ publisher:
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
 #
+
 dependencies:
-  hl7.fhir.us.core: 3.1.1
-  hl7.fhir.us.davinci-deqm: 3.1.0
-  hl7.fhir.us.cqfmeasures: 3.0.0
-  hl7.terminology: 5.5.0
-  hl7.fhir.uv.extensions.r4: 
-    id: ext
-    version: 5.1.0
+  hl7.fhir.us.core:
+    version: 6.1.0
+    uri: http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core
+    id: uscore6
+    reason: |
+      Needed for systems supporting USCDI v3  
+  # hl7.fhir.extensions.r4:   
+  # version: 4.0.1
+  hl7.fhir.uv.extensions.r4:  
+    version: 5.1.0   
+    id: ext    
+    reason: |
+      Needed for the measurereport-category extension.  
+  hl7.fhir.us.davinci-deqm: 
+    version: 5.0.0 
+    uri: http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm
+    id: deqm5
+    reason: |  
+      Needed the USCore 6.1.0 based DEQM Summary MeasureReport profile       
+  hl7.fhir.uv.crmi: 
+    version: 1.0.0
+    uri: http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi
+    id: crmi
+    reason: |  
+      Needed the CRMI Shareable Measure profile
+  # hl7.terminology.r4: 6.3.0
+  # hl7.terminology: 5.5.0
    
-#   hl7.fhir.us.mcode:
-#     id: mcode
-#     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-#     version: 1.0.0
-#
 #
 # The pages property corresponds to IG.definition.page. SUSHI can
 # auto-generate the page list, but if the author includes pages in
@@ -55,18 +75,83 @@ dependencies:
 #
 pages:
   index.md:
-    title: Home
-  guidance.md:
-    title: Guidance
-  examples.md:
-    title: Examples
+    title: IG Home
+  background.md:
+    title: Background   
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"          
+  fhir.md:
+    title: Reading this IG
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"       
   glossary.md:
     title: Glossary
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"                  
+  credits.md:
+    title: Projects and Participants   
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"    
+  guidance.md:
+    title: Guidance
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"      
+  security.md:    
+    title: Security, Privacy, and Safety  
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"         
+  artifacts.html:    
+    title: Artifacts Summary
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"      
+  profiles.md:
+    title: Profiles    
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"         
+  extensions.md:
+    title: Extensions
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"      
+  terminology.md:
+    title: Terminology
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"      
+  search-parameters.md:
+    title: Search Parameters    
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"      
+  capabilities.md:
+    title: Capability Statements    
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "trial-use"       
+  examples.md:
+    title: Examples   
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"         
   downloads.md:
     title: Downloads
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"      
   change-log.md:
-    title: Change Log           
-  
+    title: Change Log   
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+        valueCode: "informative"          
+ 
   
 #   examples.xml:
 #     title: Examples Overview
@@ -93,7 +178,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - input/intro-notes
     - fsh-generated/includes
   show-inherited-invariants: false
-  version-comparison: n/a
+  version-comparison: 1.0.0
   special-url:
     - http://terminology.hl7.org/CodeSystem/hcp-lan-apm-framework
   excludettl: true
@@ -112,17 +197,34 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Guidance: guidance.html
+  Background:
+    Background: background.html
+    Reading this IG: fhir.html
+    Glossary: glossary.html
+    Projects and Participants: credits.html
+  Specification:
+    Guidance: guidance.html
+    Security, Privacy, and Safety: security.html
   FHIR Artifacts: 
-    Profiles: artifacts.html#structures-resource-profiles
-    Extensions: artifacts.html#structures-extension-definitions
-    Terminology: artifacts.html#terminology-value-sets 
-    Search Parameters: artifacts.html#behavior-search-parameters
-    Capability Statements: artifacts.html#behavior-capability-statements    
-  Examples: examples.html
-  Glossary: glossary.html
-  Downloads: downloads.html
-  Change Log: change-log.html
+    Artifacts Summary: artifacts.html
+    Profiles: profiles.html
+    Extensions: extensions.html
+    Terminology: terminology.html 
+    Search Parameters: search-parameters.html
+    Capability Statements: capabilities.html  
+    Examples: examples.html
+  Base Specs:
+    FHIR R4 Spec: new-tab http://hl7.org/fhir/R4/
+    HRex 1.1.0: new-tab https://hl7.org/fhir/us/davinci-hrex/STU1.1/
+    Da Vinci DEQM 5.0.0: new-tab https://hl7.org/fhir/us/core/STU6.1/
+    US Core 6.1.0: new-tab https://hl7.org/fhir/us/core/STU6.1/
+  Support:
+    Project Page: new-tab https://confluence.hl7.org/pages/viewpage.action?pageId=94643888
+    Specification Jira Dashboard: new-tab https://jira.hl7.org/secure/Dashboard.jspa?selectPageId=17323
+    Implementer Support: new-tab https://confluence.hl7.org/display/DVP/VBPR+Implementer+Support
+    Propose a Change: new-tab https://jira.hl7.org/secure/CreateIssueDetails!init.jspa?pid=10405&issuetype=10600&customfield_11302=FHIR-us-davinci-vbpr
+    Downloads: downloads.html
+  Change Log: change-log.html  
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

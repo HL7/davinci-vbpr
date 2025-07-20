@@ -17,7 +17,6 @@
 [VBP MeasureReport]: StructureDefinition-vbp-performance-measurereport.html
 [VBP Quality MeasureReport]: StructureDefinition-vbp-quality-measurereport.html
 [VBP Measure]: StructureDefinition-vbp-measure.html
-[VBP Bundle]: StructureDefinition-vbp-bundle.html
 
 <!-- Extensions -->
 [Alternate MeasureScore]: StructureDefinition-alternate-measurescore.html
@@ -32,6 +31,7 @@
 [Service Period]: StructureDefinition-service-period.html
 [Star Score]: StructureDefinition-star-score.html
 [Threshold]: StructureDefinition-threshold.html
+[Weight]: StructureDefinition-weight.html
 
 <!-- Search Parameters -->
 [Organization Subject Search Parameter]: SearchParameter-measurereport-subject-organization.html

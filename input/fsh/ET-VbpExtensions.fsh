@@ -150,16 +150,6 @@ Description: "The Threshold Extension is a complex extension that defines a thre
 * extension[gapToThreshold].value[x] 1..1 
 * extension[gapToThreshold].value[x] only decimal or Quantity
 
-
-//Extension: Weight
-//Id: weight
-//Title: "Weight"
-//Description: "What is the weight of the contribution of this measure to the overall score."
-//* ^context[+].type = #element
-//* ^context[=].expression = "MeasureReport"
-//* value[x] 1..1 
-//* value[x] only decimal
-
 Extension: GroupReference
 Id: group-reference
 Title: "Group Reference"
@@ -169,7 +159,6 @@ Description: "Reference to a group within the MeasureReport."
 * value[x] 1..1 
 * value[x] only string
 
-
 Extension: ContractualStatus
 Id: contractual-status
 Title: "Contractual Status"
@@ -178,3 +167,13 @@ Description: "Contractual status of a measure whether it is tied to payment as s
 * ^context[=].expression = "Measure.relatedArtifact"
 * value[x] 1..1 
 * valueCodeableConcept from measure-contractual-status (extensible)
+
+Extension: Weight
+Id: weight
+Title: "Weight"
+Description: "What is the weight of the contribution of this measure to the overall performance score specified by a value-based contract."
+* . 0..1
+* ^context[+].type = #element
+* ^context[=].expression = "Measure.relatedArtifact"
+* value[x] 1..1 
+* value[x] only decimal
