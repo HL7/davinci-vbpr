@@ -118,7 +118,7 @@ that a VBP Reporting Server could support are defined. VBP Reporting Clients hav
 * rest.resource[=].searchParam[=].type = #reference
 * rest.resource[=].searchParam[+].name = "measurereport-category"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/us/davinci-vbpr/SearchParameter/measurereport-category"
-* rest.resource[=].searchParam[=].type = #string
+* rest.resource[=].searchParam[=].type = #token
 * rest.resource[=].searchParam[+].name = "measurereport-subject-organization"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/us/davinci-vbpr/SearchParameter/measurereport-subject-organization"
 * rest.resource[=].searchParam[=].type = #reference

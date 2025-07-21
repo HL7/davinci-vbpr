@@ -15,8 +15,8 @@ Description: "This is an example Breast Cancer Screening MeasureReport for the *
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/score"
 * extension[=].valueDecimal = 0
 
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/measurereport-category"
-* extension[=].valueCodeableConcept = http://hl7.org/fhir/CodeSystem/measurereport-category#vbp
+//* extension[+].url = "http://hl7.org/fhir/StructureDefinition/measurereport-category"
+//* extension[=].valueCodeableConcept = http://hl7.org/fhir/CodeSystem/measurereport-category#vbp
 
 //* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/weight"
 //* extension[=].valueDecimal = 1
@@ -44,7 +44,7 @@ Description: "This is an example Breast Cancer Screening MeasureReport for the *
 
 * status = #complete
 * type = #summary
-* measure = "http://hl7.org/fhir/us/cqfmeasures/Measure/measure-exm125-FHIR"
+* measure = "http://hl7.org/fhir/us/cqfmeasures/Measure/EXM125-FHIR|8.0.000"
 //* measure = "http://example.org/Measure/measure-breast-cancer-screening-FHIR"
 * date = "2023-01-15"
 * period.start = "2022-01-01"

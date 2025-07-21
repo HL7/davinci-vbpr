@@ -27,9 +27,7 @@
 [Paid Through Date]: StructureDefinition-paid-through-date.html
 [Payment Stream]: StructureDefinition-payment-stream.html
 [Program Model]: StructureDefinition-program-model.html
-[Quality Program]: StructureDefinition-quality-program.html
 [Service Period]: StructureDefinition-service-period.html
-[Star Score]: StructureDefinition-star-score.html
 [Threshold]: StructureDefinition-threshold.html
 [Weight]: StructureDefinition-weight.html
 

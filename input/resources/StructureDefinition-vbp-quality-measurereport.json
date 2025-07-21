@@ -28,35 +28,6 @@
   "differential": {
     "element": [
       {
-        "id": "MeasureReport.extension:measurereport-category",
-        "path": "MeasureReport.extension",
-        "sliceName": "measurereport-category",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/measurereport-category"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "MeasureReport.extension:measurereport-category.value[x].coding",
-        "path": "MeasureReport.extension.value[x].coding",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "MeasureReport.extension:measurereport-category.value[x].coding.code",
-        "path": "MeasureReport.extension.value[x].coding.code",
-        "min": 1,
-        "max": "1",
-        "fixedCode": "vbp"
-      },
-      {
         "id": "MeasureReport.extension:score",
         "path": "MeasureReport.extension",
         "sliceName": "score",

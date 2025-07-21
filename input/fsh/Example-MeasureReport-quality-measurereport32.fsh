@@ -12,8 +12,8 @@ Description: "This is an example Diabetes Care - Blood Sugar Controlled MeasureR
 * extension[0].url = "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring"
 * extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/measure-scoring#proportion
 
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/measurereport-category"
-* extension[=].valueCodeableConcept = http://hl7.org/fhir/CodeSystem/measurereport-category#vbp
+//* extension[+].url = "http://hl7.org/fhir/StructureDefinition/measurereport-category"
+//* extension[=].valueCodeableConcept = http://hl7.org/fhir/CodeSystem/measurereport-category#vbp
 
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/score"
 * extension[=].valueDecimal = 0
@@ -39,7 +39,7 @@ Description: "This is an example Diabetes Care - Blood Sugar Controlled MeasureR
 
 * status = #complete
 * type = #summary
-* measure = "http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR"
+* measure = "http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR|1.0.000"
 * date = "2023-05-30"
 * period.start = "2022-01-01"
 * period.end = "2022-08-31"

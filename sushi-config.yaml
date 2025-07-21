@@ -58,8 +58,16 @@ dependencies:
     id: crmi
     reason: |  
       Needed the CRMI Shareable Measure profile
-  # hl7.terminology.r4: 6.3.0
+  us.nlm.vsac: 0.23.0     
+  hl7.terminology.r4: 6.5.0
+  hl7.fhir.us.cqfmeasures: 
+    version: 5.0.0 
+    uri: http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures
+    id: cqfm5
+    reason: |  
+      Needed for examples (may be removed)  
   # hl7.terminology: 5.5.0
+
    
 #
 # The pages property corresponds to IG.definition.page. SUSHI can

@@ -20,10 +20,6 @@ Alias: $contractual-status = http://hl7.org/fhir/us/davinci-vbpr/StructureDefini
 Alias: $DEQMSummaryMeasureReport = http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/summary-measurereport-deqm
 //Alias: $CriteriaReference = http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-criteriaReference
 
-//QM IG
-Alias: $cqfmWeightExtension = http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/cqfm-weight
-Alias: $CQFMCompositeMeasure = http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/composite-measure-cqfm
-
 //Code System and Value Set
 Alias: $SOP = https://nahdo.org/sopt
 //Alias: $mesure-population-cs = http://terminology.hl7.org/CodeSystem/measure-population

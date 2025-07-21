@@ -12,8 +12,8 @@ Description: "This is an example Plan All-Cause Readmissions MeasureReport for t
 * extension[0].url = "http://hl7.org/fhir/us/davinci-deqm/StructureDefinition/extension-measureScoring"
 * extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/measure-scoring#proportion
 
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/measurereport-category"
-* extension[=].valueCodeableConcept = http://hl7.org/fhir/CodeSystem/measurereport-category#vbp
+//* extension[+].url = "http://hl7.org/fhir/StructureDefinition/measurereport-category"
+//* extension[=].valueCodeableConcept = http://hl7.org/fhir/CodeSystem/measurereport-category#vbp
 
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/score"
 * extension[=].valueDecimal = 2
@@ -38,7 +38,7 @@ Description: "This is an example Plan All-Cause Readmissions MeasureReport for t
 
 * status = #complete
 * type = #summary
-* measure = "http://example.org/Measure/measure-diabetes-HbA1c"
+* measure = "http://example.org/Measure/measure-diabetes-HbA1c|1.0.000"
 * date = "2021-04-02"
 * period.start = "2020-01-01"
 * period.end = "2021-03-31"

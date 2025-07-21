@@ -14,8 +14,8 @@ Description: "This is an example Medication Adherence for Cholesterol (Statins) 
 * extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/score"
 * extension[=].valueDecimal = 0
 
-* extension[+].url = "http://hl7.org/fhir/StructureDefinition/measurereport-category"
-* extension[=].valueCodeableConcept = http://hl7.org/fhir/CodeSystem/measurereport-category#vbp
+//* extension[+].url = "http://hl7.org/fhir/StructureDefinition/measurereport-category"
+//* extension[=].valueCodeableConcept = http://hl7.org/fhir/CodeSystem/measurereport-category#vbp
 
 //* extension[+].url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/weight"
 //* extension[=].valueDecimal = 3
@@ -43,7 +43,7 @@ Description: "This is an example Medication Adherence for Cholesterol (Statins) 
 
 * status = #complete
 * type = #summary
-* measure = "http://example.org/Measure/measure-med-adherence-cholesterol-statins-FHIR"
+* measure = "http://example.org/Measure/measure-med-adherence-cholesterol-statins-FHIR|1.0.000"
 * date = "2023-01-15"
 * period.start = "2022-01-01"
 * period.end = "2022-11-30"
