@@ -32,7 +32,7 @@ The table below lists the resources profiled or otherwise used in this specifica
     <tr><td><a href="{{site.data.fhir.path}}codesystem.html">CodeSystem</a></td><td>Used to define custom codes specific to this guide</td></tr>
     <tr><td><a href="{{site.data.fhir.path}}measure.html">Measure</a></td><td></td>Used to represent a VBP contract. Also used in example quality measure reports for measures.</tr>
     <tr><td><a href="{{site.data.fhir.path}}measurereport.html">MeasureReport</a></td><td>Used for value-based performance reports and for quality measure reports.</td></tr>
-    <tr><td><a href="{{site.data.fhir.path}}organization.html">Organization</a></td><td>TODO: </td></a></td></tr>    
+    <tr><td><a href="{{site.data.fhir.path}}organization.html">Organization</a></td><td>Used to represent the organization who the report is for or the reporter of the report</td></a></td></tr>    
     <tr><td><a href="{{site.data.fhir.path}}searchparameter.html">SearchParameter</a></td><td>Used in defining additional search parameters used by this IG</td></tr>
     <tr><td><a href="{{site.data.fhir.path}}structuredefinition.html">StructureDefinition</a></td><td>Used when defining profiles and extensions in this guide</td></tr>
     <tr><td><a href="{{site.data.fhir.path}}valueset.html">ValueSet</a></td><td>Used to define a list of codes used by VBPR profiles and extensions</td></tr>    
