@@ -225,7 +225,7 @@ menu:
     Glossary: glossary.html
     Project and Participants: credits.html
   Specification:
-    Conformance Expectations: Conformance.html
+    Conformance Expectations: conformance.html
     Guidance: guidance.html
     Privacy, Safety, and Security: security.html
   FHIR Artifacts: 
