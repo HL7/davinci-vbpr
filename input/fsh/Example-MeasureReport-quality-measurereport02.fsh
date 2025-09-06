@@ -71,7 +71,6 @@ Description: "This is an example Colorectal Cancer Screening MeasureReport for t
 * group.population[=].count = 180
 * group.measureScore.value = 0.356
 
-* group.stratifier.code = http://hl7.org/fhir/us/davinci-vbpr/CodeSystem/measure-stratifier-example#facility
 * group.stratifier.stratum[0].component[0].code = http://loinc.org#87520-3
 * group.stratifier.stratum[=].component[=].value = http://terminology.hl7.org/CodeSystem/v3-ActCode#HMO
 * group.stratifier.stratum[=].component[+].code = http://terminology.hl7.org/CodeSystem/v3-ActCode#LOC

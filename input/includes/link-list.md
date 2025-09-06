@@ -1,4 +1,4 @@
-[Home]: index.html "Home Page"
+[IG Home]: index.html "Home Page"
 
 [Profiles and Extensions]: artifacts.html#structures-resource-profiles
 [Downloads]: downloads.html

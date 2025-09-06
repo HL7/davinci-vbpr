@@ -391,7 +391,8 @@
               "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/vbp-quality-measurereport"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "MeasureReport.evaluatedResource:qualityReport.extension:groupRef",

@@ -1,26 +1,10 @@
 == Suppressed Messages ==
 
 # CQI WG agreed that there is a need to support stratifying MeasureReport.group using locally defined stratifiers such as regions within a provider organization. The WG will work on approaches to support this use case in the future (https://confluence.hl7.org/display/CQIWC/2024-04-26+Meeting+Minutes) (https://jira.hl7.org/browse/FHIR-42736). 
-ERROR: MeasureReport/quality-measurereport01: MeasureReport.group[0].stratifier[0]: The code for this group stratifier has no match in the measure definition
-ERROR: MeasureReport/quality-measurereport02: MeasureReport.group[0].stratifier[0]: The code for this group stratifier has no match in the measure definition
+ERROR: MeasureReport/quality-measurereport01: MeasureReport.group[0].stratifier[0]: Group should have a code that matches the group stratifier definition in the measure
+ERROR: MeasureReport/quality-measurereport02: MeasureReport.group[0].stratifier[0]: Group should have a code that matches the group stratifier definition in the measure
 
 # WARNING: The reason that the Canonical URL does not resolve is because these are example urls. 
-WARNING: MeasureReport/quality-measurereport03: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport04: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-eye-exam-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport05: MeasureReport: The Measure 'http://example.org/Measure/measure-med-adherence-cholesterol-statins-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport06: MeasureReport: The Measure 'http://example.org/Measure/measure-med-adherence-hypertension-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport07: MeasureReport: The Measure 'http://example.org/Measure/measure-med-adherence-diabetes-meds-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport08: MeasureReport: The Measure 'http://example.org/Measure/measure-statin-therapy-cardiovascular-disease-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport09: MeasureReport: The Measure 'http://example.org/Measure/measure-statin-use-diabetes-supd-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport13: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-retinopathy-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport14: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-A1c-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport15: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-nephropathy-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport22: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-HbA1c' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport23: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-HbA1c' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport24: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-HbA1c' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport25: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-HbA1c' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport32: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR' could not be resolved, so no validation can be performed against the Measure
-WARNING: MeasureReport/quality-measurereport33: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-eye-exam-FHIR' could not be resolved, so no validation can be performed against the Measure
 
 # WARNING: The code has an extensible binding to Performance Metric value set. This particular example intentionally used some locally defined performance metrics to demonstrate how to report on metrics that are not defined in the Performance Metric code system. 
 WARNING: MeasureReport/vbp-measurereport104: MeasureReport.group[1].code.coding[0].system: A definition for CodeSystem 'http://my-local-organization/CodeSystem/vbp-performance-metric' could not be found, so the code cannot be validated
@@ -40,6 +24,25 @@ WARNING: MeasureReport/vbp-measurereport104: MeasureReport.group[13].code.coding
 WARNING: Measure/vbp-measure01: Measure: A measure should contain at least one group
 WARNING: Measure/vbp-measure02: Measure: A measure should contain at least one group
 
+# WARNING: 
+WARNING: MeasureReport/quality-measurereport03: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport03: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport04: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-eye-exam-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport05: MeasureReport: The Measure 'http://example.org/Measure/measure-med-adherence-cholesterol-statins-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport06: MeasureReport: The Measure 'http://example.org/Measure/measure-med-adherence-hypertension-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport07: MeasureReport: The Measure 'http://example.org/Measure/measure-med-adherence-diabetes-meds-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport08: MeasureReport: The Measure 'http://example.org/Measure/measure-statin-therapy-cardiovascular-disease-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport09: MeasureReport: The Measure 'http://example.org/Measure/measure-statin-use-diabetes-supd-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport13: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-retinopathy-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport14: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-A1c-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport15: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-nephropathy-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport22: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-HbA1c|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport23: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-HbA1c|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport24: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-HbA1c|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport25: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-HbA1c|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport32: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
+WARNING: MeasureReport/quality-measurereport33: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-eye-exam-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
+
 # INFORMATION: 'https://nahdo.org/sopt' code system is in THO, but THO doesn't define the codes. 
 INFORMATION: MeasureReport/vbp-measurereport104: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
 INFORMATION: MeasureReport/vbp-measurereport103: MeasureReport.measure: The scoring system in this measure is unknown, so the measureScore values cannot be checked
@@ -56,85 +59,17 @@ INFORMATION: CodeSystem/vbp-incentive: CodeSystem: Most code systems defined in 
 INFORMATION: CodeSystem/vbp-measure-population: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/vbp-performance-metric: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
-# INFORMATION: The Measure Scoring code system in THO has the status of draft. 
-# Code System: Measure Scoring (http://terminology.hl7.org/CodeSystem/measure-scoring) with draft status in THO. An issue is logged: https://jira.hl7.org/browse/FHIR-45630
-INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport02: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport03: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport04: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport05: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport06: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport07: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport08: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport09: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport11: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport12: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport13: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport14: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport15: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport20: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport21: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport22: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport23: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport24: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport25: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport30: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport31: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport32: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
-INFORMATION: MeasureReport/quality-measurereport33: MeasureReport.extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-scoring|3.0.0
+# This STU1.1 update is intended to support USCore 6.1.0. It depends on DEQM 5.0.0, which is based on USCore 6.1.0. 
+WARNING: ImplementationGuide/hl7.fhir.us.davinci-vbpr: ImplementationGuide.dependsOn[0]: The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent appropriate version is 8.0.0. This reference is getting old and the more recent version should be considered
 
-# Code System: Measure Population (http://terminology.hl7.org/CodeSystem/measure-population) with draft status in THO. An issue is logged: https://jira.hl7.org/browse/FHIR-45630
-INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].population[2].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].population[3].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].stratifier[0].stratum[0].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].stratifier[0].stratum[0].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].stratifier[0].stratum[1].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].stratifier[0].stratum[1].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].stratifier[0].stratum[2].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].stratifier[0].stratum[2].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].stratifier[0].stratum[3].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport01: MeasureReport.group[0].stratifier[0].stratum[3].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport02: MeasureReport.group[0].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport02: MeasureReport.group[0].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport02: MeasureReport.group[0].population[2].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport02: MeasureReport.group[0].population[3].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport02: MeasureReport.group[0].stratifier[0].stratum[0].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport02: MeasureReport.group[0].stratifier[0].stratum[0].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport02: MeasureReport.group[0].stratifier[0].stratum[1].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport02: MeasureReport.group[0].stratifier[0].stratum[1].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport02: MeasureReport.group[0].stratifier[0].stratum[2].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport02: MeasureReport.group[0].stratifier[0].stratum[2].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport02: MeasureReport.group[0].stratifier[0].stratum[3].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport02: MeasureReport.group[0].stratifier[0].stratum[3].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport11: MeasureReport.group[0].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport11: MeasureReport.group[0].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport11: MeasureReport.group[0].population[2].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport11: MeasureReport.group[0].population[3].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport12: MeasureReport.group[0].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport12: MeasureReport.group[0].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport12: MeasureReport.group[0].population[2].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport12: MeasureReport.group[0].population[3].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport20: MeasureReport.group[0].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport20: MeasureReport.group[0].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport20: MeasureReport.group[0].population[2].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport20: MeasureReport.group[0].population[3].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport21: MeasureReport.group[0].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport21: MeasureReport.group[0].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport21: MeasureReport.group[0].population[2].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport21: MeasureReport.group[0].population[3].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport30: MeasureReport.group[0].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport30: MeasureReport.group[0].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport30: MeasureReport.group[0].population[2].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport30: MeasureReport.group[0].population[3].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport31: MeasureReport.group[0].population[0].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport31: MeasureReport.group[0].population[1].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport31: MeasureReport.group[0].population[2].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
-INFORMATION: MeasureReport/quality-measurereport31: MeasureReport.group[0].population[3].code: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/measure-population|1.0.0
+# Not applicable Da Vinci Warnings - This IG depends on the Da Vinci Data Exchange for Quality Measures (DEQM) IG STU5.0.0 which supports USCore 6.1.0 only.  DEQM IG does not support multiple versions of USCore simultaneously.
+WARNING: DA VINCI: The Base Specs menu item must have a child called US Core 3.1.1.
+WARNING: DA VINCI: The Base Specs menu item must have a child called US Core 7.0.0.
+WARNING: DA VINCI: This IG does not include an explicit dependency on US Core 7.0.0.
+WARNING: DA VINCI: This IG does not include an explicit dependency on US Core 3.1.1.
 
-# Code System: Organization Type (http://terminology.hl7.org/CodeSystem/organization-type) with draft status in THO
-INFORMATION: Organization/vbp-payer01: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|2.0.0
-INFORMATION: Organization/vbp-provider01: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|2.0.0
-INFORMATION: Organization/vbp-provider02: Organization.type[0]: Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|2.0.0
+# Not applicable Da Vinci Warnings - The 1.0.0-ballot is the initial ballot, Jira tracker items were not applicable.
+WARNING: DA VINCI: The Change Log page (change-log.html) does not include any Jira tracker items links for the section with title Version 1.0.0-ballot
 
+# Not applicable Da Vinci Warnings - Textual dependency on Hrex has been declared. 
+WARNING: DA VINCI: This IG does not depend on HRex.  Either add a formal dependency or confirm that a textual dependency has been declared.
