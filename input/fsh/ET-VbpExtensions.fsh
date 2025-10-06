@@ -93,15 +93,6 @@ Description: "The Program Model Extension is a complex extension, which defines 
 * extension[cohort].value[x] only CodeableConcept 
 * extension[cohort].value[x] from vbp-cohort (extensible)
 
-Extension: OrganizationSubject
-Id: organization-subject
-Title: "Organization Subject"
-Description: "The Organization Subject Extension allows using Organization as an alternative resource type for the Subject reference."
-* ^context.type = #element
-* ^context.expression = "MeasureReport.subject"
-* value[x] 0..1 
-* value[x] only Reference($us-core-organization)
-
 Extension: ServicePeriod
 Id: service-period
 Title: "Service Period"

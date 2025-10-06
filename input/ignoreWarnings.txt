@@ -4,6 +4,9 @@
 ERROR: MeasureReport/quality-measurereport01: MeasureReport.group[0].stratifier[0]: Group should have a code that matches the group stratifier definition in the measure
 ERROR: MeasureReport/quality-measurereport02: MeasureReport.group[0].stratifier[0]: Group should have a code that matches the group stratifier definition in the measure
 
+# This appears to be a known error when deriving from CRMI Shareable Measure profile: https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/ShareableMeasure.20QA.20error/with/538123816
+ERROR: Measure.extension: The reference http://hl7.org/fhir/ValueSet/version-algorithm could not be resolved
+
 # WARNING: The reason that the Canonical URL does not resolve is because these are example urls. 
 
 # WARNING: The code has an extensible binding to Performance Metric value set. This particular example intentionally used some locally defined performance metrics to demonstrate how to report on metrics that are not defined in the Performance Metric code system. 

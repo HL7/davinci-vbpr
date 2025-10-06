@@ -6,8 +6,8 @@ The [Formal Views](StructureDefinition-vbp-performance-measurereport.html#profil
 1. A `measurereport-category` - with a fixed code `vbp`
 1. A `status` - status of this report
 1. A `type` - with a fixed value `summary`
-1. A `measure` - that references the Value-Based Performance Measure
-1. An `orgSubject` extention on `subject` - that references the organization the report is for
+1. A `measure` - references a Value-Based Performance Measure
+1. A `subject` - references an ATR Group
 1. A `date` 
 1. A `reporter` - references the organization who is reporting the data
 1. A `period` - the performance period the report covers

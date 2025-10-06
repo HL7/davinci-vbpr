@@ -57,7 +57,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/measurereport-category"
+              "http://hl7.org/fhir/StructureDefinition/measurereport-category|5.2.0"
             ]
           }
         ],
@@ -109,31 +109,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner",
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole",
-              "http://hl7.org/fhir/StructureDefinition/Group"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "MeasureReport.subject.extension",
-        "path": "MeasureReport.subject.extension",
-        "min": 1
-      },
-      {
-        "id": "MeasureReport.subject.extension:orgSubject",
-        "path": "MeasureReport.subject.extension",
-        "sliceName": "orgSubject",
-        "short": "What organization the report is for",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/organization-subject"
+              "http://hl7.org/fhir/us/davinci-atr/StructureDefinition/atr-group"
             ]
           }
         ],
@@ -153,7 +129,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0",
+              "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole|6.1.0"              
             ]
           }
         ],

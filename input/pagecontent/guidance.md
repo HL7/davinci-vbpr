@@ -70,17 +70,8 @@ This profile added a few extensions to represent the following:
 {% include img-portrait.html img="vbp-measure.png" caption = "Figure 2-6 VBP Measure overview" %}
 
 
-### Must Support
-Certain elements in the profiles defined in this implementation guide are marked as Must Support. This flag is used to indicate that the element plays a critical role in defining and sharing value-based performance reports, and implementations SHALL understand and process the element.
 
-This IG uses US Core profiles where appropriate, therefore, the implications of the Must Support flag for US Core profiles must also be considered.
 
-For more information, see the definition of [Must Support](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) in the base FHIR specification.
 
-### Dependencies
-
-This implementation guide relies on the following specifications:
-- [FHIR R4](http://hl7.org/fhir/R4/)
-- [US Core STU6.1.0](https://hl7.org/fhir/us/core/STU6.1/)
 
 {% include link-list.md %}

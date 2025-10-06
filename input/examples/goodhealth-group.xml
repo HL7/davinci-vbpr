@@ -1,0 +1,26 @@
+<Group xmlns="http://hl7.org/fhir">
+   <id value="goodhealth-group"></id>
+   <meta>
+      <profile value="http://hl7.org/fhir/us/davinci-atr/StructureDefinition/atr-group"/>
+   </meta>   
+   <extension url="http://hl7.org/fhir/us/davinci-atr/StructureDefinition/ext-contractValidityPeriod">
+      <valuePeriod>
+         <start value="2022-01-01"></start>
+         <end value="2024-12-31"></end>
+      </valuePeriod>
+   </extension>
+   <extension url="http://hl7.org/fhir/us/davinci-atr/StructureDefinition/ext-attributionListStatus">
+      <valueCode value="final"/>
+   </extension>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.4.4"></system>
+      <value value="789456231"></value>
+   </identifier>
+   <type value="person"/>
+   <actual value="true"/>
+   <name value="Group for ABC Payer and Good Health Clinic Value-Based Contract"></name>
+   <managingEntity>
+      <reference value="Organization/vbp-provider01"></reference>
+      <display value="Good Health Clinic"></display>
+   </managingEntity>
+</Group>

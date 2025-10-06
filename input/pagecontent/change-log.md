@@ -4,9 +4,10 @@ The Value-Based Performance Reporting Implementation Guide was developed under t
 ### version 1.1.0
 - Updated the IG to be based on USCore 6.1.0 and Da Vinci Data Exchange of Quality Measures (DEQM) 5.0.0.
 - Re-organized the menu and pages for consistencies across Da Vinci implementation guides.
+- [FHIR-52950](https://jira.hl7.org/browse/FHIR-52950) - Updated the Value-Based Performance MeasureReport subject element to reference the ATR Group profile and removed the Subject Organization extension. Updated the reporter element to also reference USCore Practitioner and USCore PractitionerRole. 
 - [FHIR-49188](https://jira.hl7.org/browse/FHIR-49188) - Derived value-based performance measure from CRMIShareableMeasure instead of the CQFM Composite Measure profile, defined a Weight extension, and removed dependency on the Quality Measures IG 
 - [FHIR-48932](https://jira.hl7.org/browse/FHIR-48932) -  Corrected the measurereport-category search parameter type to token 
-- [FHIR-52120](https://jira.hl7.org/browse/FHIR-52120) - Removed constraining measurereport-category to 1..1 with a fixed value of "vbp" from the VBP Quality MeasureReport profile. 
+- [FHIR-52120](https://jira.hl7.org/browse/FHIR-52120) - Removed the constraint on measurereport-category in the VBP Quality MeasureReport profile: the measurereport-category is no longer constrained to 1..1 with a fixed value of "vbp". 
 - [FHIR-49816](https://jira.hl7.org/browse/FHIR-49816) - Removed marking the measure constractual status value set and the masure stratifier example value set as experimental.
 - [FHIR-52527](https://jira.hl7.org/browse/FHIR-52527) - Removed MeasureReport.group.stratifier.code from those examples where group.stratifier.stratum.component.code is present due to changes made to DEQM Summary MeasureReport in DEQM STU5.0.0.
 

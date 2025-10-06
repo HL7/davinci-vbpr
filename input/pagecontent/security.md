@@ -1,4 +1,4 @@
-This implementation guide **SHALL** meet the requirements defined in the [Security and Privacy](https://hl7.org/fhir/us/davinci-hrex/security.html) section of the [Da Vinci Health Record Exchange (HRex)](https://hl7.org/fhir/us/davinci-hrex/index.html). Implementers **SHALL** read and adhere to the guidance for the following topics:
+This implementation guide **SHALL** meet the requirements defined in the [Security and Privacy](https://hl7.org/fhir/us/davinci-hrex/STU1.1/security.html) section of the [Da Vinci Health Record Exchange (HRex)](https://hl7.org/fhir/us/davinci-hrex/STU1.1/index.html). Implementers **SHALL** read and adhere to the guidance for the following topics:
 
 - Statutes, Regulations, and Guiding Principles
 - FHIR Clinical Safy, Security and Implementation Guidance

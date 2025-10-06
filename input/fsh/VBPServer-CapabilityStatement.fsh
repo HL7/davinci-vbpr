@@ -20,14 +20,12 @@ and search parameters that a VBP Reporting Server could support are defined. VBP
 * patchFormat = #application/json-patch+json
 //* insert CapabilityCommon
 * implementationGuide[0] = "http://hl7.org/fhir/us/davinci-deqm/ImplementationGuide/hl7.fhir.us.davinci-deqm"
-* implementationGuide[+] = "http://hl7.org/fhir/us/cqfmeasures/ImplementationGuide/hl7.fhir.us.cqfmeasures"
+* implementationGuide[+] = "http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi"
 
 //* rest[+]
-//  * mode = #server
-//  * documentation = "Da Vinci Value-Based Performance Reporting Server **SHALL** support the profiles specified in this implementation guide."
 * rest.mode = #server
 * rest.security.description = "For general security consideration refer to the [Security and Privacy Considerations](http://hl7.org/fhir/R4/secpriv-module.html)."
-* rest.documentation = "Da Vinci Value-Based Performance Reporting Server **SHALL** support the profiles specified in this implementation guide."
+* rest.documentation = "Da Vinci Value-Based Performance Reporting Server SHALL support the profiles specified in this implementation guide."
 * rest.interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.interaction[=].extension.valueCode = #SHOULD
 * rest.interaction[=].code = #batch
@@ -151,8 +149,5 @@ and search parameters that a VBP Reporting Server could support are defined. VBP
 * rest.resource[=].searchParam[+].name = "measurereport-category"
 * rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/us/davinci-vbpr/SearchParameter/measurereport-category"
 * rest.resource[=].searchParam[=].type = #token
-* rest.resource[=].searchParam[+].name = "measurereport-subject-organization"
-* rest.resource[=].searchParam[=].definition = "http://hl7.org/fhir/us/davinci-vbpr/SearchParameter/measurereport-subject-organization"
-* rest.resource[=].searchParam[=].type = #reference
 
 

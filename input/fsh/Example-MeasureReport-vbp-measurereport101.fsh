@@ -17,8 +17,7 @@ Description: "This is an example Value-Based Performance MeasureReport for the *
 * type = #summary
 * measure = "https://build.fhir.org/ig/HL7/davinci-vbpr/Measure-vbp-measure01"
 * subject.display = "Good Health Clinic"
-* subject.extension.url = "http://hl7.org/fhir/us/davinci-vbpr/StructureDefinition/organization-subject"
-* subject.extension.valueReference = Reference(Organization/vbp-provider01)
+* subject = Reference(Group/goodhealth-group)
 * date = "2023-01-15"
 * reporter = Reference(Organization/vbp-payer01)
 * period.start = "2022-01-01"

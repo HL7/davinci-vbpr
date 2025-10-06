@@ -23,7 +23,6 @@
 [Baseline]: StructureDefinition-baseline.html
 [Group Reference]: StructureDefinition-group-reference.html
 [Line of Business]: StructureDefinition-lob.html
-[Organization Subject]: StructureDefinition-organization-subject.html
 [Paid Through Date]: StructureDefinition-paid-through-date.html
 [Payment Stream]: StructureDefinition-payment-stream.html
 [Program Model]: StructureDefinition-program-model.html
@@ -32,7 +31,6 @@
 [Weight]: StructureDefinition-weight.html
 
 <!-- Search Parameters -->
-[Organization Subject Search Parameter]: SearchParameter-measurereport-subject-organization.html
 [MeasureReport Category Search Parameter]: SearchParameter-measurereport-category.html
 
 <!-- Value Set -->

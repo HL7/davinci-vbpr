@@ -7,7 +7,8 @@ Description: "This is an example of Provider organization the Value-Based Perfor
 * meta.extension[=].valueString = "Provider"
 * meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"
 * meta.extension[=].valueMarkdown = "Provider organization the Value-Based Performance Report is for."
-* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+//* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+* meta.profile = "http://hl7.org/fhir/us/davinci-atr/StructureDefinition/atr-organization"
 * active = true
 * type = http://terminology.hl7.org/CodeSystem/organization-type#prov "Healthcare Provider"
 * name = "Every Hospital"
