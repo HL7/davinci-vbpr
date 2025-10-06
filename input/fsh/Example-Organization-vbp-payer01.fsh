@@ -2,7 +2,7 @@ Instance: vbp-payer01
 InstanceOf: Organization
 Usage: #example
 Description: "This is an example payer"
-* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization"
+* meta.profile = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0"
 * meta.extension[0].url = "http://hl7.org/fhir/StructureDefinition/instance-name"
 * meta.extension[=].valueString = "Payer"
 * meta.extension[+].url = "http://hl7.org/fhir/StructureDefinition/instance-description"

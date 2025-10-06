@@ -29,6 +29,7 @@ The example "shared savings - gated on quality" payment stream's weighted averag
 |[vbp-measure01](Measure-vbp-measure01.html)|Example VBP Measure|
 |[vbp-payer01](Organization-vbp-payer01.html)|Example Organization: ABC Payer|
 |[vbp-provider01](Organization-vbp-provider01.html)|Example Organization: Good Health Clinic|
+|[goodhealth-group](Group-goodhealth-group.html)|Example ATR Group: Member Attribution List for ABC Payer and Good Health Clinic Value-Based Contract|
 {: .grid}
 
 ### Example Value-Based Performance Report - vbp-measurereport102
@@ -48,6 +49,7 @@ The example "shared savings - gated on quality" is based on 5 quality measures.
 |[vbp-measure02](Measure-vbp-measure02.html)|Example VBP Measure|
 |[vbp-payer01](Organization-vbp-payer01.html)|Example Organization: ABC Payer|
 |[vbp-provider02](Organization-vbp-provider01.html)|Example Organization: Every Hospital|
+|[goodhospital-group](Group-everyhospital-group.html)|Example ATR Group: Member Attribution List for ABC Payer and Every Hospital Value-Based Contract|
 {: .grid}
 
 ### Example Value-Based Performance Report - vbp-measurereport103
@@ -63,6 +65,7 @@ The example shows an example report with 6 quality measures and 2 alternative me
 |[vbp-measure02](Measure-vbp-measure02.html)|Example VBP Measure|
 |[vbp-payer01](Organization-vbp-payer01.html)|Example Organization: ABC Payer|
 |[vbp-provider02](Organization-vbp-provider01.html)|Example Organization: Every Hospital|
+|[goodhospital-group](Group-everyhospital-group.html)|Example ATR Group: Member Attribution List for ABC Payer and Every Hospital Value-Based Contract|
 {: .grid}
 
 ### Example Value-Based Performance Report - vbp-measurereport104
@@ -75,6 +78,7 @@ The example shows an example report with 6 quality measures and 2 alternative me
 |[vbp-measure02](Measure-vbp-measure02.html)|Example VBP Measure|
 |[vbp-payer01](Organization-vbp-payer01.html)|Example Organization: ABC Payer|
 |[vbp-provider02](Organization-vbp-provider01.html)|Example Organization: Every Hospital|
+|[goodhospital-group](Group-everyhospital-group.html)|Example ATR Group: Member Attribution List for ABC Payer and Every Hospital Value-Based Contract|
 {: .grid}
 
 {% include link-list.md %}

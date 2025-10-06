@@ -11,11 +11,11 @@
 <artifact id="ValueSet/vbp-cohort" key="ValueSet-vbp-cohort" name="Cohort"/>
 <artifact id="CodeSystem/vbp-cohort" key="CodeSystem-vbp-cohort" name="Cohort Codes"/>
 <artifact id="StructureDefinition/contractual-status" key="StructureDefinition-contractual-status" name="Contractual Status"/>
+<artifact id="Group/everyhospital-group" key="Group-everyhospital-group" name="Every Hospital ATR Group"/>
 <artifact id="Measure/vbp-measure02" key="Measure-vbp-measure02" name="Example Value-Based Contract - ABC Payer and EveryHospital"/>
 <artifact id="Measure/vbp-measure01" key="Measure-vbp-measure01" name="Example Value-Based Contract - ABC Payer and GoodHealth"/>
+<artifact id="Group/goodhealth-group" key="Group-goodhealth-group" name="Good Health Clinic ATR Group"/>
 <artifact id="StructureDefinition/group-reference" key="StructureDefinition-group-reference" name="Group Reference"/>
-<artifact id="Group/everyhospital-group" key="Group-everyhospital-group" name="Group for ABC Payer and Every Hospital Value-Based Contract"/>
-<artifact id="Group/goodhealth-group" key="Group-goodhealth-group" name="Group for ABC Payer and Good Health Clinic Value-Based Contract"/>
 <artifact id="ValueSet/hcplan-framework" key="ValueSet-hcplan-framework" name="HCPLAN Framework Categories"/>
 <artifact id="CodeSystem/hcplan-framework" key="CodeSystem-hcplan-framework" name="HCPLAN Framework Categories Codes"/>
 <artifact id="ValueSet/vbp-incentive" key="ValueSet-vbp-incentive" name="Incentive"/>

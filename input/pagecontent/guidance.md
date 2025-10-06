@@ -37,9 +37,9 @@ Value-based performance reports often include data on performance on overall pop
 
 Many value-based payment models involve quality. The implementation guide reuses the [Data Exchange for Quality Measure (DEQM) Summary MeasureReport] for reports on quality measures. The [VBP MeasureReport] profile created a slice on the `MeasureReport.evaluatedResource` to reference the [VBP Quality MeasureReport] profile, which is derived from the DEQM Summary MeasureReport. The `groupReference` extension allows a VBP MeasureReport to be linked to a specific performance metric by using the `group.id` if needed.
 
-For a value-based performance report, the subject of the report is always an organization. Because Organization is not an allowable choice for the MeasureReport `subject` in FHIR R4 (note that in FHIR R5, MeasureReport.subject has been updated to support Organization), an [Organization Subject] extension is added to the `MeasureReport.subject` to allow an organization as the subject. 
-A customized [Organization Subject Search Parameter] on the Value-Based Performance MeasureReport is also defined to support a search by organization as the subject.  
-
+<div class="new-content" markdown="1">
+For a value-based performance report, the subject of the report is a reference to the [ATR Group](https://hl7.org/fhir/us/davinci-atr/STU2.1/StructureDefinition-atr-group.html) profile defined in the Da Vinci Member Attribution (ATR) List IG. ATR Group is a Member Attribution List that contain information related to the members who are attributed to a value-based contract.
+</div>
 
 Figure 2-2 provides a structural overview of the VBP MeasureReport. (Note: elements that are added as extensions are indicated with purple background.)
 {% include img-portrait.html img="vbp-measurereport.png" caption = "Figure 2-3 VBP MeasureReport overview" %}
