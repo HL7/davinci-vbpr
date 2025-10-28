@@ -1,12 +1,12 @@
 {
   "package-id" : "hl7.fhir.us.davinci-vbpr",
-  "version" : "1.0.0",
-  "path" : "http://hl7.org/fhir/us/davinci-vbpr/STU1",
+  "version" : "1.1.0",
+  "path" : "http://hl7.org/fhir/us/davinci-vbpr/STU1.1.0",
   "mode": "milestone",
   "status" : "trial-use",
-  "sequence" : "STU1",
-  "desc" : "STU1 (v1.0.0)",
-  "descmd" : "STU1 Publication",
+  "sequence" : "STU1.1",
+  "desc" : "STU 1.1.0 Release",
+  "descmd" : "STU 1.1.0 update aligned with US Core 6.1 and Da Vinci Data Exchange for Quality Measures (DEQM) 5.0.0",
   "first" : false
 }
 

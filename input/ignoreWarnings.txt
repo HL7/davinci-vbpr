@@ -27,8 +27,7 @@ WARNING: MeasureReport/vbp-measurereport104: MeasureReport.group[13].code.coding
 WARNING: Measure/vbp-measure01: Measure: A measure should contain at least one group
 WARNING: Measure/vbp-measure02: Measure: A measure should contain at least one group
 
-# WARNING: 
-WARNING: MeasureReport/quality-measurereport03: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
+# WARNING: These are intended to be example measures. 
 WARNING: MeasureReport/quality-measurereport03: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-blood-sugar-controlled-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
 WARNING: MeasureReport/quality-measurereport04: MeasureReport: The Measure 'http://example.org/Measure/measure-diabetes-care-eye-exam-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
 WARNING: MeasureReport/quality-measurereport05: MeasureReport: The Measure 'http://example.org/Measure/measure-med-adherence-cholesterol-statins-FHIR|1.0.000' could not be resolved, so no validation can be performed against the Measure
@@ -62,8 +61,24 @@ INFORMATION: CodeSystem/vbp-incentive: CodeSystem: Most code systems defined in 
 INFORMATION: CodeSystem/vbp-measure-population: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 INFORMATION: CodeSystem/vbp-performance-metric: CodeSystem: Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
-# This STU1.1 update is intended to support USCore 6.1.0. It depends on DEQM 5.0.0, which is based on USCore 6.1.0. 
+# This STU1.1 update is to support USCore 6.1.0. It depends on DEQM 5.0.0, which is based on USCore 6.1.0. 
 WARNING: ImplementationGuide/hl7.fhir.us.davinci-vbpr: ImplementationGuide.dependsOn[0]: The ImplementationGuide uses package hl7.fhir.us.core#6.1.0 released on 2023-06-30, but the most recent appropriate version is 8.0.0. This reference is getting old and the more recent version should be considered
+
+# Pinned the version 5.2.0 extension pack. These extensions are inherited from the CRMI IG STU 1.0.0, which is version 5.2.0. This profile is derived from the CRMI Shareable Measure profile.
+INFORMATION: StructureDefinition.snapshot.element[8].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability to 5.2.0 from choices of 1.0.0 (hl7.fhir.uv.extensions.r4#1.0.0), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.snapshot.element[9].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/cqf-artifactComment to 5.2.0 from choices of 1.0.0 (hl7.fhir.uv.extensions.r4#1.0.0), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.snapshot.element[10].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm to 5.2.0 from choices of 1.0.0 (hl7.fhir.uv.extensions.r4#1.0.0), 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+INFORMATION: StructureDefinition.snapshot.element[11].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+
+# This extension is inherited from the CRMI IG STU 1.0.0. This profile is derived from the CRMI Shareable Measure profile. 
+INFORMATION: StructureDefinition/vbp-measure: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
+
+# Pinned the version 5.2.0 extension pack. 
+INFORMATION: StructureDefinition.snapshot.element[12].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/measurereport-category to 5.2.0 from choices of 5.1.0 (hl7.fhir.uv.extensions.r4#5.1.0), 5.2.0 (hl7.fhir.uv.extensions.r4#5.2.0)
+
+# The Group uses the ATR Group profile from the Da Vinci ATR IG STU2.1, where the attributionListStatus element is required, and the Attribution List Status code system is marked as experimental (true). 
+INFORMATION: Group/everyhospital-group: Group.extension[1].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/us/davinci-atr/CodeSystem/atr-attribution-list-status|2.1.0
+INFORMATION: Group/goodhealth-group: Group.extension[1].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/us/davinci-atr/CodeSystem/atr-attribution-list-status|2.1.0
 
 # Not applicable Da Vinci Warnings - This IG depends on the Da Vinci Data Exchange for Quality Measures (DEQM) IG STU5.0.0 which supports USCore 6.1.0 only.  DEQM IG does not support multiple versions of USCore simultaneously.
 WARNING: DA VINCI: The Base Specs menu item must have a child called US Core 3.1.1.

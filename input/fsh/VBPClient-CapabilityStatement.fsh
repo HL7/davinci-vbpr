@@ -25,7 +25,7 @@ that a VBP Reporting Server could support are defined. VBP Reporting Clients hav
 //* rest[+]
 * rest.mode = #client
 * rest.security.description = "For general security consideration refer to the [Security and Privacy Considerations](http://hl7.org/fhir/R4/secpriv-module.html)."
-* rest.documentation = "Da Vinci Value-Based Performance Reporting Server SHALL support the profiles specified in this implementation guide."
+* rest.documentation = "Da Vinci Value-Based Performance Reporting Server §SHALL§ support the profiles specified in this implementation guide."
 * rest.interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.interaction[=].extension.valueCode = #SHOULD
 * rest.interaction[=].code = #batch
