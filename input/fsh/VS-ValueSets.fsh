@@ -48,8 +48,8 @@ Id: vbp-measure-population
 Description: "Measure population type that includes calculated-denominator and calculated-numerator."
 * ^experimental = false
 * include codes from system http://terminology.hl7.org/CodeSystem/measure-population|2.0.0
-* include $vbp-measure-population#calculated-denominator "calculated-donominator"
-* include $vbp-measure-population#calculated-numerator "calculated-numerator"
+* include $vbp-measure-population#calculated-denominator "Calculated Denominator"
+* include $vbp-measure-population#calculated-numerator "Calculated Numerator"
 
 ValueSet: ThresholdTypeVS
 Title: "Threshold Type"
