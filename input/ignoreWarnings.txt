@@ -7,8 +7,6 @@ ERROR: MeasureReport/quality-measurereport02: MeasureReport.group[0].stratifier[
 # This appears to be a known error when deriving from CRMI Shareable Measure profile: https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/ShareableMeasure.20QA.20error/with/538123816
 ERROR: Measure.extension: The reference http://hl7.org/fhir/ValueSet/version-algorithm could not be resolved
 
-# WARNING: The reason that the Canonical URL does not resolve is because these are example urls. 
-
 # WARNING: The code has an extensible binding to Performance Metric value set. This particular example intentionally used some locally defined performance metrics to demonstrate how to report on metrics that are not defined in the Performance Metric code system. 
 WARNING: MeasureReport/vbp-measurereport104: MeasureReport.group[1].code.coding[0].system: A definition for CodeSystem 'http://my-local-organization/CodeSystem/vbp-performance-metric' could not be found, so the code cannot be validated
 WARNING: MeasureReport/vbp-measurereport104: MeasureReport.group[3].code.coding[0]: A definition for CodeSystem 'http://my-local-organization/CodeSystem/vbp-performance-metric' could not be found, so the code cannot be validated
