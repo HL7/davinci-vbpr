@@ -14,6 +14,49 @@ Figure 2-2 describes value-based performance reporting workflow between a Payer 
 
 {% include img-portrait.html img="api-workflow.png" caption = "Figure 2-2 Value-based performance reporting workflow" %}
 
+### Member Attribution for Value-Based Contract
+
+Before value-based performance reporting can be performed, it is important to first establish a Member Attribution List based on the applicable contract so that the payer and provider have a shared understanding of which patients, providers, organizations, and attribution periods are in scope for exchanging value-based performance reports.
+
+Value-based performance reporting often depends on the level at which a contract is defined, such as provider NPI, TIN, or a combined NPI/TIN level. The Da Vinci Member Attribution (ATR) List IG is the implementation guide that helps payers and providers to create and manage FHIR-based standardized member attribution lists for value-based contracts. A member attribution list is represented as a FHIR Group resource, it tells payers and providers exactly which patients are attributed to which clinicians or organizations for a given-based contract and provides APIs to exchange and maintain that “roster”. 
+
+VBPR does not require a single contract level for all implementations. Instead, it relies on ATR to communicate the applicable contract level, associated provider and organization identifiers, and the effective dates that govern attribution for reporting purposes.
+
+ATR information may support VBPR reporting by helping systems determine:
+
+- Which contract a patient is attributed to.
+- Whether the applicable reporting level is NPI, TIN, or NPI/TIN.
+- Which Organization and/or Practitioner is associated with that contract.
+- The time period during which the attribution applies.
+
+VBPR clients and servers can use this ATR information to parameterize performance reporting requests, construct the appropriate reporting cohorts, and ensure that results are produced at the contract level defined by the payer and provider agreement.
+
+#### Example 1 – Provider NPI Associated with Multiple TINs
+A single provider NPI may be associated with multiple TINs during the performance period, for example when the provider practices at multiple locations or under different legal entities. In some value-based arrangements, separate contracts may exist for each NPI/TIN combination rather than for the NPI alone.
+
+In this scenario, ATR can represent the distinct contract levels by using separate Groups, identifiers, and associated references for each applicable NPI/TIN combination. Each Group can identify the relevant contract, the associated provider and organization, the attributed patient population, and the period during which the attribution list is valid.
+
+For VBPR purposes, the workflow may be handled as follows:
+- ATR identifies that the same NPI participates in more than one contract level because it is associated with multiple TINs.
+- ATR defines a separate attributed population for each applicable NPI/TIN contract level.
+- VBPR uses those ATR-defined populations to generate separate or stratified performance results for each NPI/TIN contract level rather than attributing all results to the NPI alone.
+
+This approach allows a payer, provider organization, or value-based contracting platform to preserve the contractual distinction between different TIN relationships for the same provider and to report performance consistently with how the contracts are configured.
+
+#### Example 2 – Provider NPI Moving from One TIN to Another during the Performance Period
+A provider NPI may move from one TIN to another during the performance period due to a merger, acquisition, employment change, or other organizational transition. In these situations, the responsible reporting entity may change during the performance period even though the provider remains the same individual.
+
+In this scenario, ATR can support VBPR by representing the attribution change with updated identifiers, organization references, and valid periods. Depending on implementation approach, this may be represented through separate effective-dated Groups or through attribution details that distinguish the applicable contract level over time.
+
+For VBPR purposes, the workflow may be handled as follows:
+- Two seperate ATR Groups were created, one for the provider that was associated with one TIN for an earlier portion of the performance period and another for the same provider associated with a different TIN beginning on the effective date of the change.
+- VBPR uses the ATR attribution periods to determine which patients should be associated with each TIN for the relevant portion of the performance period.
+- VBPR then generates results for the appropriate groups that reflect the contract level in effect at the time the attributed activity occurred, helping support accurate performance across organizational transitions.
+
+This approach helps avoid misattribution when provider affiliation changes mid-period and supports reporting that is more consistent with contract administration, attribution rules, and organizational accountability.
+
+#### Implementation Note
+Implementers should determine, through payer-provider agreement and implementation guidance, whether reports are expected at the NPI level, TIN level, or NPI/TIN level. Where ATR is used, VBPR should treat ATR attribution data as the basis for identifying the applicable contract level and patient population for the report being generated.
 
 ### Value-Based Reporting Framework
 
